@@ -61,7 +61,7 @@ analytics: UA-338939-1
 
 # Table of contents in each post
 # Change the value to 'no' if Table of Contents is not required.
-toc:  yes
+#toc:  yes
 
 # Share buttons
 # Change it to `no` to remove share buttons.
@@ -70,7 +70,7 @@ share: yes
 # Comments by Disqus
 # Sign up with Disqus to get your shortcode. Leave it blank if you do not want to run diqus code on the website.
 # Leave it blank to remove disqus completely.
-disqus: webjeda-demo
+#disqus: webjeda-demo
 
 
 # Define whether recent posts should be shown at the bottom of each post.
@@ -114,6 +114,9 @@ compress_html:
   startings: []
 
 collections:
+  presentations:
+    output: true
+    permalink: /publications/presentations/:path/
   projects:
     output: true
     permalink: /projects/:path/

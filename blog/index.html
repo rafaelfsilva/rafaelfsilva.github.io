@@ -1,0 +1,22 @@
+---
+layout: page
+title: News
+description: Find all the posts here.
+---
+
+{% for post in paginator.posts %}
+<a class="nostyle" href="{{site.baseurl}}{{post.url}}">
+    <div class="blog cards borders blog-list" data-aos='fade-up'>
+        <div class="image" style="background-image: url({{post.image}}); background-size: contain">
+        </div>
+        <div class="content">
+            <h4>{{post.title}}</h4>
+            <p class="description small">{{post.content | strip_html | truncate: 250 }}</p>
+            <p class="small date" style="float: right; color: #999">{{post.date | date: '%B %d, %Y'}}</p>
+        </div>
+    </div>
+</a>
+
+{% endfor %}
+
+{% include pagination.html %}
