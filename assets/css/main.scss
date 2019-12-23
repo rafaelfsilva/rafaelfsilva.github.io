@@ -1,0 +1,116 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+// $base-ff:          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$base-ff:          'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$head-ff:          'Raleway', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$base-fs:          18px;
+$base-fw:          400;
+$small-fs:         $base-fs * 0.775;
+$base-lh:          1.7;
+$color:            #444;
+$brand-color:      {{site.color-scheme}};
+$h-color:          #eee;
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+
+$theme-colors: (
+  "primary": $brand-color
+);
+
+
+// Width of the content area
+$content-width:    800px;
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+/***
+ *
+ *     ,-----.       ,--.                               ,--.
+ *    '  .--./ ,---. |  | ,---. ,--.--.     ,---.  ,---.|  ,---.  ,---. ,--,--,--. ,---.
+ *    |  |    | .-. ||  || .-. ||  .--'    (  .-' | .--'|  .-.  || .-. :|        || .-. :
+ *    '  '--'\' '-' '|  |' '-' '|  |       .-'  `)\ `--.|  | |  |\   --.|  |  |  |\   --.
+ *     `-----' `---' `--' `---' `--'       `----'  `---'`--' `--' `----'`--`--`--' `----'
+ *
+ */
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+//@import "bootstrap/bootstrap.css";
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/button-group";
+@import "bootstrap/input-group";
+@import "bootstrap/custom-forms";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/card";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/pagination";
+@import "bootstrap/badge";
+@import "bootstrap/jumbotron";
+@import "bootstrap/alert";
+@import "bootstrap/progress";
+@import "bootstrap/media";
+@import "bootstrap/list-group";
+@import "bootstrap/close";
+@import "bootstrap/toasts";
+@import "bootstrap/modal";
+@import "bootstrap/tooltip";
+@import "bootstrap/popover";
+@import "bootstrap/carousel";
+@import "bootstrap/spinners";
+@import "bootstrap/utilities";
+@import "bootstrap/print";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "loader",
+        "google-fonts",
+        "base",
+        "style",
+        "aos",
+        "post",
+        "toc",
+        "table",
+        "contact",
+        "pagination",
+        "syntax-highlighting",
+        "breadcrumbs",
+        "recent",
+        "author",
+        "share",
+        "skillbar",
+        "custom",
+        "main"
+;

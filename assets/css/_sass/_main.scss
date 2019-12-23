@@ -1,0 +1,18 @@
+.interests {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.interests strong {
+  color: $brand-color;
+}
+
+.bibliography li {
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+}
+
+.collapse.in {
+  visibility: visible;
+  display: block;
+}
