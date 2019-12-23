@@ -127,4 +127,4 @@ plugins:
   - jekyll-feed       # Adds feed to the website at /feed.xml
   - jekyll-paginate   # Used for sorting posts by page numbers.
   - jekyll-seo-tag    # Adds all the important SEO meta tags by default.
-#  - jekyll-scholar
+  - jekyll-scholar
