@@ -6,11 +6,9 @@
     <i class="ai ai-doi"></i>
 </a>
 {% endif %}
-{% if entry.url %}
 <a href="/files/publications/{{ entry.key }}.pdf" target="_blank" alt="PDF">
     <i class="far fa-file-pdf"></i>
 </a>
-{% endif %}
 {{ reference }}
 <br />
 <a data-toggle="collapse" href="#bib-{{ entry.key }}" role="button" aria-expanded="false"
