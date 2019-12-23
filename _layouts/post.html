@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<!--                            
+This layout is used for posts. Changing anything here will affect all posts(not pages)
+ -->
+{% include breadcrumbs.html %}
+
+<div class="meta" data-aos="fade-up">
+    <p>
+        <small>
+      <span>
+        <i class="fa fa-calendar" aria-hidden="true"></i> {{page.date |
+        date_to_string }}&nbsp;
+      </span>
+            <span>
+        <i class="fa fa-user" aria-hidden="true"></i> {{page.author }}&nbsp;
+      </span>
+
+            <span>
+        <i class="fa fa-clock-o" aria-hidden="true"></i> {% include
+        reading-time.html %}
+      </span>
+        </small>
+    </p>
+</div>
+
+<div class="featured-image"
+     style="background-image: url({{site.baseurl}}{{page.image}}); background-size: contain; height: 400px"
+     data-aos="zoom-in"></div>
+
+<div class="container">
+    <article>
+        {% if site.toc %}{% include toc.html html=content class="toc.rev.clearfix"
+        %}{% endif %} {{content}}
+    </article>
+</div>
+<hr class="dashed"/>
+<div class="container">
+    {% if site.share %} {% include share-buttons.html %} {% endif %} {% if
+    page.categories %} {% include categories-post.html %} {% endif %} {% if
+    site.disqus %} {% include disqus.html %} {% endif %} {% if site.recent-posts
+    %} {% include recent.html %} {% endif %}
+</div>
