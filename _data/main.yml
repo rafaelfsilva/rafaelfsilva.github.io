@@ -7,7 +7,7 @@ email: rafsilva@isi.edu # The contact form submissions will be received in this 
 
 menu:
   - title: Publications
-    link: /publications
+    link: /publications/
 
   - title: Projects
     link: /projects/
