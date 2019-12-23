@@ -8,7 +8,7 @@ description: Research Publications
 <article><h2 class="bibliography">2019</h2>
                             <ol class="bibliography">
                                 <li><a href="/files/publications/bogol-iwsg-2019.pdf" target="_blank" alt="PDF"> <i
-                                        class="far fa-file-pdf"></i> </a> <span id="bogol-iwsg-2019">Bogol, S., Brenner, P., Brinckman, A., Deelman, E., Ferreira da Silva, R., Gupta, S., … Wyngaard, S. (2019). A Secure Gateway for Enabling ASIC Design Collaborations. In <i>11th International Workshop on Science Gateways (IWSG 2019)</i>. Retrieved from https://rafaelsilva.org/files/publications/bogol-iwsg-2019.pdf</span>
+                                        class="far fa-file-pdf"></i> </a> <span id="bogol-iwsg-2019">Bogol, S., Brenner, P., Brinckman, A., Deelman, E., Ferreira da Silva, R., Gupta, S., … Wyngaard, S. (2019). A Secure Gateway for Enabling ASIC Design Collaborations. In <i>11th International Workshop on Science Gateways (IWSG 2019)</i>.</span>
                                     <br/> <a data-toggle="collapse" href="#bib-bogol-iwsg-2019" role="button"
                                              aria-expanded="false" aria-controls="bib-bogol-iwsg-2019"
                                              style="color: #999"> [BibTex] </a>
@@ -18,8 +18,7 @@ description: Research Publications
   author = {Bogol, Steve and Brenner, Paul and Brinckman, Adam and Deelman, Ewa and Ferreira da Silva, Rafael and Gupta, Sandeep and Nabrzyski, Jarek and Park, Soowang and Perez, Damian and Rynge, Mats and Taylor, Ian and Vahi, Karan and Werf, Matt Vander and Sarah, Rucker and Wyngaard, Sebastian},
   booktitle = {11th International Workshop on Science Gateways (IWSG 2019)},
   year = {2019},
-  pages = {},
-  url = {https://rafaelsilva.org/files/publications/bogol-iwsg-2019.pdf}
+  pages = {}
 }</code></pre>
                                         </figure>
                                     </div>
@@ -84,8 +83,7 @@ description: Research Publications
   number = {},
   pages = {208--220},
   year = {2019},
-  doi = {10.1016/j.future.2019.06.016},
-  url = {https://rafaelsilva.org/files/publications/ferreiradasilva-fgcs-bb-2019.pdf}
+  doi = {10.1016/j.future.2019.06.016}
 }</code></pre>
                                         </figure>
                                     </div>
@@ -899,8 +897,7 @@ description: Research Publications
   publisher = {IGI Global},
   year = {2015},
   author = {Ferreira da Silva, Rafael and Glatard, Tristan and Desprez, Fr\'{e}d\'{e}ric},
-  doi = {10.4018/978-1-4666-8213-9.ch006},
-  url = {https://rafaelsilva.org/files/publications/ferreiradasilva-igi-2015.pdf}
+  doi = {10.4018/978-1-4666-8213-9.ch006}
 }</code></pre>
                                         </figure>
                                     </div>
@@ -1147,7 +1144,6 @@ description: Research Publications
   volume = {},
   year = {2014},
   number = {76},
-  url = {http://www.frontiersin.org/neuroinformatics/10.3389/conf.fninf.2014.18.00076/full},
   doi = {10.3389/conf.fninf.2014.18.00076},
   issn = {1662-5196}
 }</code></pre>
@@ -1283,8 +1279,7 @@ description: Research Publications
   series = {CloudCom},
   volume = {2},
   pages = {19--26},
-  doi = {10.1109/CloudCom.2013.98},
-  url = {https://rafaelsilva.org/files/publications/azarnoosh-crc-2013.pdf}
+  doi = {10.1109/CloudCom.2013.98}
 }</code></pre>
                                         </figure>
                                     </div>
@@ -1614,7 +1609,7 @@ description: Research Publications
                             <h2 class="bibliography">2009</h2>
                             <ol class="bibliography">
                                 <li><a href="/files/publications/brasileiro-eela2-2009.pdf" target="_blank" alt="PDF">
-                                    <i class="far fa-file-pdf"></i> </a> <span id="brasileiro-eela2-2009">Brasileiro, F., Duarte, A., Ferreira da Silva, R., &amp; Gaudêncio, M. (2009). On the co-existence of service and opportunistic grids. In <i>First EELA-2 Conference</i> (pp. 51–62). Retrieved from https://rafaelsilva.org/files/publications/brasileiro-eela2-2009.pdf</span>
+                                    <i class="far fa-file-pdf"></i> </a> <span id="brasileiro-eela2-2009">Brasileiro, F., Duarte, A., Ferreira da Silva, R., &amp; Gaudêncio, M. (2009). On the co-existence of service and opportunistic grids. In <i>First EELA-2 Conference</i> (pp. 51–62).</span>
                                     <br/> <a data-toggle="collapse" href="#bib-brasileiro-eela2-2009" role="button"
                                              aria-expanded="false" aria-controls="bib-brasileiro-eela2-2009"
                                              style="color: #999"> [BibTex] </a>
@@ -1624,8 +1619,7 @@ description: Research Publications
   author = {Brasileiro, Francisco and Duarte, Alexandre and Ferreira da Silva, Rafael and Gaud{\^e}ncio, Matheus},
   booktitle = {First EELA-2 Conference},
   year = {2009},
-  pages = {51--62},
-  url = {https://rafaelsilva.org/files/publications/brasileiro-eela2-2009.pdf}
+  pages = {51--62}
 }</code></pre>
                                         </figure>
                                     </div>
