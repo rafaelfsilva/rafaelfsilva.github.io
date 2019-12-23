@@ -1,0 +1,11 @@
+<h3 class="m0a">Recent News</h3>
+<div class="projects">
+    {% for item in site.posts limit: 4 %}
+    <a href="{{item.url}}" class="nostyle p-2">
+        <div class="project borders cards" data-aos="fade-up">
+            <div class="project-image" style="background-image: url({{item.image}})"></div>
+            <p class="title text-center">{{item.title}}</p>
+        </div>
+    </a>
+    {% endfor %}
+</div>
