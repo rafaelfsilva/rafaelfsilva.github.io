@@ -839,14 +839,14 @@ description: Research Publications
                             <h2 class="bibliography">2015</h2>
                             <ol class="bibliography">
                                 <li><a href="http://dx.doi.org/10.1016/j.future.2014.09.014" target="_blank" alt="DOI">
-                                    <i class="ai ai-doi"></i> </a> <a href="/files/publications/Chen-FGCS-2014.pdf"
+                                    <i class="ai ai-doi"></i> </a> <a href="/files/publications/chen-fgcs-2014.pdf"
                                                                       target="_blank" alt="PDF"> <i
-                                        class="far fa-file-pdf"></i> </a> <span id="Chen-FGCS-2014">Chen, W., Ferreira da Silva, R., Deelman, E., &amp; Sakellariou, R. (2015). Using Imbalance Metrics to Optimize Task Clustering in Scientific Workflow Executions. <i>Future Generation Computer Systems</i>, <i>46</i>(0), 69–84. https://doi.org/10.1016/j.future.2014.09.014</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-Chen-FGCS-2014" role="button"
-                                             aria-expanded="false" aria-controls="bib-Chen-FGCS-2014"
+                                        class="far fa-file-pdf"></i> </a> <span id="chen-fgcs-2014">Chen, W., Ferreira da Silva, R., Deelman, E., &amp; Sakellariou, R. (2015). Using Imbalance Metrics to Optimize Task Clustering in Scientific Workflow Executions. <i>Future Generation Computer Systems</i>, <i>46</i>(0), 69–84. https://doi.org/10.1016/j.future.2014.09.014</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-chen-fgcs-2014" role="button"
+                                             aria-expanded="false" aria-controls="bib-chen-fgcs-2014"
                                              style="color: #999"> [BibTex] </a>
-                                    <div class="collapse" id="bib-Chen-FGCS-2014">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@article{Chen-FGCS-2014,
+                                    <div class="collapse" id="bib-chen-fgcs-2014">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@article{chen-fgcs-2014,
   title = {Using Imbalance Metrics to Optimize Task Clustering in Scientific Workflow Executions},
   journal = {Future Generation Computer Systems},
   volume = {46},
@@ -1086,15 +1086,15 @@ description: Research Publications
                                         </figure>
                                     </div>
                                 </li>
-                                <li><a href="/files/publications/FerreiradaSilva-MODSIM-2014.pdf" target="_blank"
+                                <li><a href="/files/publications/ferreiradasilva-modsim-2014.pdf" target="_blank"
                                        alt="PDF"> <i class="far fa-file-pdf"></i> </a> <span
-                                        id="FerreiradaSilva-MODSIM-2014">Ferreira da Silva, R., Fahringer, T., Durillo, J. J., &amp; Deelman, E. (2014). A Unified Approach for Modeling and Optimization of Energy, Makespan and Reliability for Scientific Workflows on Large-Scale Computing Infrastructures. In <i>Workshop on Modeling &amp; Simulation of Systems and Applications</i>.</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-FerreiradaSilva-MODSIM-2014"
+                                        id="ferreiradasilva-modsim-2014">Ferreira da Silva, R., Fahringer, T., Durillo, J. J., &amp; Deelman, E. (2014). A Unified Approach for Modeling and Optimization of Energy, Makespan and Reliability for Scientific Workflows on Large-Scale Computing Infrastructures. In <i>Workshop on Modeling &amp; Simulation of Systems and Applications</i>.</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-ferreiradasilva-modsim-2014"
                                              role="button" aria-expanded="false"
-                                             aria-controls="bib-FerreiradaSilva-MODSIM-2014" style="color: #999">
+                                             aria-controls="bib-ferreiradasilva-modsim-2014" style="color: #999">
                                         [BibTex] </a>
-                                    <div class="collapse" id="bib-FerreiradaSilva-MODSIM-2014">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@inproceedings{FerreiradaSilva-MODSIM-2014,
+                                    <div class="collapse" id="bib-ferreiradasilva-modsim-2014">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@inproceedings{ferreiradasilva-modsim-2014,
   title = {A Unified Approach for Modeling and Optimization of Energy, Makespan and Reliability for Scientific Workflows on Large-Scale Computing Infrastructures},
   author = {Ferreira da Silva, Rafael and Fahringer, Thomas and Durillo, Juan J. and Deelman, Ewa},
   booktitle = {Workshop on Modeling \&amp; Simulation of Systems and Applications},
@@ -1106,14 +1106,14 @@ description: Research Publications
                                 </li>
                                 <li><a href="http://dx.doi.org/10.1002/cpe.3303" target="_blank" alt="DOI"> <i
                                         class="ai ai-doi"></i> </a> <a
-                                        href="/files/publications/FerreiradaSilva-CCPE-2014.pdf" target="_blank"
+                                        href="/files/publications/ferreiradasilva-ccpe-2014.pdf" target="_blank"
                                         alt="PDF"> <i class="far fa-file-pdf"></i> </a> <span
-                                        id="FerreiradaSilva-CCPE-2014">Ferreira da Silva, R., Glatard, T., &amp; Desprez, F. (2014). Controlling fairness and task granularity in distributed, online, non-clairvoyant workflow executions. <i>Concurrency and Computation: Practice and Experience</i>, <i>26</i>(14), 2347–2366. https://doi.org/10.1002/cpe.3303</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-FerreiradaSilva-CCPE-2014" role="button"
-                                             aria-expanded="false" aria-controls="bib-FerreiradaSilva-CCPE-2014"
+                                        id="ferreiradasilva-ccpe-2014">Ferreira da Silva, R., Glatard, T., &amp; Desprez, F. (2014). Controlling fairness and task granularity in distributed, online, non-clairvoyant workflow executions. <i>Concurrency and Computation: Practice and Experience</i>, <i>26</i>(14), 2347–2366. https://doi.org/10.1002/cpe.3303</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-ferreiradasilva-ccpe-2014" role="button"
+                                             aria-expanded="false" aria-controls="bib-ferreiradasilva-ccpe-2014"
                                              style="color: #999"> [BibTex] </a>
-                                    <div class="collapse" id="bib-FerreiradaSilva-CCPE-2014">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@article{FerreiradaSilva-CCPE-2014,
+                                    <div class="collapse" id="bib-ferreiradasilva-ccpe-2014">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@article{ferreiradasilva-ccpe-2014,
   title = {Controlling fairness and task granularity in distributed, online, non-clairvoyant workflow executions},
   journal = {Concurrency and Computation: Practice and Experience},
   volume = {26},
@@ -1129,15 +1129,15 @@ description: Research Publications
                                 </li>
                                 <li><a href="http://dx.doi.org/10.3389/conf.fninf.2014.18.00076" target="_blank"
                                        alt="DOI"> <i class="ai ai-doi"></i> </a> <a
-                                        href="/files/publications/Glatard-NeuroInformatics-2014.pdf" target="_blank"
+                                        href="/files/publications/glatard-neuroinformatics-2014.pdf" target="_blank"
                                         alt="PDF"> <i class="far fa-file-pdf"></i> </a> <span
-                                        id="Glatard-NeuroInformatics-2014">Glatard, T., Lewis, L. B., Ferreira da Silva, R., Rousseau, M.-E., Lepage, C., Rioux, P., … Evans, A. C. (2014). Extending provenance information in CBRAIN to address reproducibility issues across computing platforms. <i>Frontiers in Neuroinformatics</i>, (76). https://doi.org/10.3389/conf.fninf.2014.18.00076</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-Glatard-NeuroInformatics-2014"
+                                        id="glatard-neuroinformatics-2014">Glatard, T., Lewis, L. B., Ferreira da Silva, R., Rousseau, M.-E., Lepage, C., Rioux, P., … Evans, A. C. (2014). Extending provenance information in CBRAIN to address reproducibility issues across computing platforms. <i>Frontiers in Neuroinformatics</i>, (76). https://doi.org/10.3389/conf.fninf.2014.18.00076</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-glatard-neuroinformatics-2014"
                                              role="button" aria-expanded="false"
-                                             aria-controls="bib-Glatard-NeuroInformatics-2014" style="color: #999">
+                                             aria-controls="bib-glatard-neuroinformatics-2014" style="color: #999">
                                         [BibTex] </a>
-                                    <div class="collapse" id="bib-Glatard-NeuroInformatics-2014">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@article{Glatard-NeuroInformatics-2014,
+                                    <div class="collapse" id="bib-glatard-neuroinformatics-2014">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@article{glatard-neuroinformatics-2014,
   author = {Glatard, Tristan and Lewis, Lindsay B and Ferreira da Silva, Rafael and Rousseau, Marc-Etienne and Lepage, Claude and Rioux, Pierre and Mahani, Najmeh and Deelman, Ewa and Evans, Alan C},
   title = {Extending provenance information in CBRAIN to address reproducibility issues across computing platforms},
   journal = {Frontiers in Neuroinformatics},
@@ -1150,13 +1150,13 @@ description: Research Publications
                                         </figure>
                                     </div>
                                 </li>
-                                <li><a href="/files/publications/James-XSEDE-2014.pdf" target="_blank" alt="PDF"> <i
-                                        class="far fa-file-pdf"></i> </a> <span id="James-XSEDE-2014">James, D., Wilkins-Diehr, N., Stodden, V., Colbry, D., Rosales, C., Fahey, M., … Suriarachchi, I. (2014). Standing Together for Reproducibility in Large-Scale Computing: Report on reproducibility@XSEDE. Retrieved from http://arxiv.org/abs/1412.5557</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-James-XSEDE-2014" role="button"
-                                             aria-expanded="false" aria-controls="bib-James-XSEDE-2014"
+                                <li><a href="/files/publications/james-xsede-2014.pdf" target="_blank" alt="PDF"> <i
+                                        class="far fa-file-pdf"></i> </a> <span id="james-xsede-2014">James, D., Wilkins-Diehr, N., Stodden, V., Colbry, D., Rosales, C., Fahey, M., … Suriarachchi, I. (2014). Standing Together for Reproducibility in Large-Scale Computing: Report on reproducibility@XSEDE. Retrieved from http://arxiv.org/abs/1412.5557</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-james-xsede-2014" role="button"
+                                             aria-expanded="false" aria-controls="bib-james-xsede-2014"
                                              style="color: #999"> [BibTex] </a>
-                                    <div class="collapse" id="bib-James-XSEDE-2014">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@misc{James-XSEDE-2014,
+                                    <div class="collapse" id="bib-james-xsede-2014">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@misc{james-xsede-2014,
   title = {Standing Together for Reproducibility in Large-Scale Computing: Report on reproducibility@{XSEDE}},
   year = {2014},
   url = {http://arxiv.org/abs/1412.5557},
@@ -1165,13 +1165,13 @@ description: Research Publications
                                         </figure>
                                     </div>
                                 </li>
-                                <li><a href="/files/publications/Juve-USC-2014.pdf" target="_blank" alt="PDF"> <i
-                                        class="far fa-file-pdf"></i> </a> <span id="Juve-USC-2014">Juve, G., Tovar, B., Ferreira da Silva, R., Robinson, C., Thain, D., Deelman, E., … Livny, M. (2014). <i>Practical Resource Monitoring for Robust High Throughput Computing</i>. University of Southern California.</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-Juve-USC-2014" role="button"
-                                             aria-expanded="false" aria-controls="bib-Juve-USC-2014"
+                                <li><a href="/files/publications/juve-usc-2014.pdf" target="_blank" alt="PDF"> <i
+                                        class="far fa-file-pdf"></i> </a> <span id="juve-usc-2014">Juve, G., Tovar, B., Ferreira da Silva, R., Robinson, C., Thain, D., Deelman, E., … Livny, M. (2014). <i>Practical Resource Monitoring for Robust High Throughput Computing</i>. University of Southern California.</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-juve-usc-2014" role="button"
+                                             aria-expanded="false" aria-controls="bib-juve-usc-2014"
                                              style="color: #999"> [BibTex] </a>
-                                    <div class="collapse" id="bib-Juve-USC-2014">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@techreport{Juve-USC-2014,
+                                    <div class="collapse" id="bib-juve-usc-2014">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@techreport{juve-usc-2014,
   author = {Juve, Gideon and Tovar, Benjamin and Ferreira da Silva, Rafael and Robinson, Casey and Thain, Douglas and Deelman, Ewa and Allcock, William and Livny, Miron},
   title = {Practical Resource Monitoring for Robust High Throughput Computing},
   institution = {University of Southern California},
@@ -1183,13 +1183,13 @@ description: Research Publications
                                         </figure>
                                     </div>
                                 </li>
-                                <li><a href="/files/publications/Malawski-NSFCLOUD-2014.pdf" target="_blank" alt="PDF">
-                                    <i class="far fa-file-pdf"></i> </a> <span id="Malawski-NSFCLOUD-2014">Malawski, M., Nowakowski, P., Gubala, T., Kasztelnik, M., Bubak, M., Ferreira da Silva, R., … Nabrzyski, J. (2014). Experiments with Complex Scientific Applications on Hybrid Cloud Infrastructures. In <i>NSFCloud Workshop on Experimental Support for Cloud Computing</i>.</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-Malawski-NSFCLOUD-2014" role="button"
-                                             aria-expanded="false" aria-controls="bib-Malawski-NSFCLOUD-2014"
+                                <li><a href="/files/publications/malawski-nsfcloud-2014.pdf" target="_blank" alt="PDF">
+                                    <i class="far fa-file-pdf"></i> </a> <span id="malawski-nsfcloud-2014">Malawski, M., Nowakowski, P., Gubala, T., Kasztelnik, M., Bubak, M., Ferreira da Silva, R., … Nabrzyski, J. (2014). Experiments with Complex Scientific Applications on Hybrid Cloud Infrastructures. In <i>NSFCloud Workshop on Experimental Support for Cloud Computing</i>.</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-malawski-nsfcloud-2014" role="button"
+                                             aria-expanded="false" aria-controls="bib-malawski-nsfcloud-2014"
                                              style="color: #999"> [BibTex] </a>
-                                    <div class="collapse" id="bib-Malawski-NSFCLOUD-2014">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@inproceedings{Malawski-NSFCLOUD-2014,
+                                    <div class="collapse" id="bib-malawski-nsfcloud-2014">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@inproceedings{malawski-nsfcloud-2014,
   title = {Experiments with Complex Scientific Applications on Hybrid Cloud Infrastructures},
   year = {2014},
   author = {Malawski, Maciej and Nowakowski, Piotr and Gubala, Tomasz and Kasztelnik, Marek and Bubak, Marian and Ferreira da Silva, Rafael and Deelman, Ewa and Nabrzyski, Jarek},
@@ -1201,14 +1201,14 @@ description: Research Publications
                                 </li>
                                 <li><a href="http://dx.doi.org/10.1007/978-3-319-14325-5_39" target="_blank" alt="DOI">
                                     <i class="ai ai-doi"></i> </a> <a
-                                        href="/files/publications/SantanaPerez-REPPAR-2014.pdf" target="_blank"
+                                        href="/files/publications/santanaperez-reppar-2014.pdf" target="_blank"
                                         alt="PDF"> <i class="far fa-file-pdf"></i> </a> <span
-                                        id="SantanaPerez-REPPAR-2014">Santana-Perez, I., Ferreira da Silva, R., Rynge, M., Deelman, E., Pérez-Hernández, M. S., &amp; Corcho, O. (2014). A Semantic-Based Approach to Attain Reproducibility of Computational Environments in Scientific Workflows: A Case Study. In L. Lopes, J. Žilinskas, A. Costan, R. G. Cascella, G. Kecskemeti, E. Jeannot, … M. Alexander (Eds.), <i>Euro-Par 2014: Parallel Processing Workshops</i> (Vol. 8805, pp. 452–463). https://doi.org/10.1007/978-3-319-14325-5_39</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-SantanaPerez-REPPAR-2014" role="button"
-                                             aria-expanded="false" aria-controls="bib-SantanaPerez-REPPAR-2014"
+                                        id="santanaperez-reppar-2014">Santana-Perez, I., Ferreira da Silva, R., Rynge, M., Deelman, E., Pérez-Hernández, M. S., &amp; Corcho, O. (2014). A Semantic-Based Approach to Attain Reproducibility of Computational Environments in Scientific Workflows: A Case Study. In L. Lopes, J. Žilinskas, A. Costan, R. G. Cascella, G. Kecskemeti, E. Jeannot, … M. Alexander (Eds.), <i>Euro-Par 2014: Parallel Processing Workshops</i> (Vol. 8805, pp. 452–463). https://doi.org/10.1007/978-3-319-14325-5_39</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-santanaperez-reppar-2014" role="button"
+                                             aria-expanded="false" aria-controls="bib-santanaperez-reppar-2014"
                                              style="color: #999"> [BibTex] </a>
-                                    <div class="collapse" id="bib-SantanaPerez-REPPAR-2014">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@incollection{SantanaPerez-REPPAR-2014,
+                                    <div class="collapse" id="bib-santanaperez-reppar-2014">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@incollection{santanaperez-reppar-2014,
   title = {A Semantic-Based Approach to Attain Reproducibility of Computational Environments in Scientific Workflows: A Case Study},
   author = {Santana-Perez, Idafen and Ferreira da Silva, Rafael and Rynge, Mats and Deelman, Ewa and P\'erez-Hern\'andez, Mar\'ia S. and Corcho, Oscar},
   booktitle = {Euro-Par 2014: Parallel Processing Workshops},
@@ -1222,13 +1222,13 @@ description: Research Publications
                                         </figure>
                                     </div>
                                 </li>
-                                <li><a href="/files/publications/SantanaPerez-XSEDE-2014.pdf" target="_blank" alt="PDF">
-                                    <i class="far fa-file-pdf"></i> </a> <span id="SantanaPerez-XSEDE-2014">Santana-Perez, I., Ferreira da Silva, R., Rynge, M., Deelman, E., Pérez-Hernández, M. S., &amp; Corcho, O. (2014). Leveraging Semantics to Improve Reproducibility in Scientific Workflows. \urlhttps://www.xsede.org/documents/659353/703287/xsede14_santana-perez.pdf.</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-SantanaPerez-XSEDE-2014" role="button"
-                                             aria-expanded="false" aria-controls="bib-SantanaPerez-XSEDE-2014"
+                                <li><a href="/files/publications/santanaperez-xsede-2014.pdf" target="_blank" alt="PDF">
+                                    <i class="far fa-file-pdf"></i> </a> <span id="santanaperez-xsede-2014">Santana-Perez, I., Ferreira da Silva, R., Rynge, M., Deelman, E., Pérez-Hernández, M. S., &amp; Corcho, O. (2014). Leveraging Semantics to Improve Reproducibility in Scientific Workflows. \urlhttps://www.xsede.org/documents/659353/703287/xsede14_santana-perez.pdf.</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-santanaperez-xsede-2014" role="button"
+                                             aria-expanded="false" aria-controls="bib-santanaperez-xsede-2014"
                                              style="color: #999"> [BibTex] </a>
-                                    <div class="collapse" id="bib-SantanaPerez-XSEDE-2014">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@misc{SantanaPerez-XSEDE-2014,
+                                    <div class="collapse" id="bib-santanaperez-xsede-2014">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@misc{santanaperez-xsede-2014,
   author = {Santana-Perez, Idafen and Ferreira da Silva, Rafael and Rynge, Mats and Deelman, Ewa and P\'erez-Hern\'andez, Mar\'ia S. and Corcho, Oscar},
   title = {Leveraging Semantics to Improve Reproducibility in Scientific Workflows},
   note = {Reproducibility@XSEDE},
@@ -1286,13 +1286,13 @@ description: Research Publications
                                 </li>
                                 <li><a href="http://dx.doi.org/10.1016/j.future.2012.09.003" target="_blank" alt="DOI">
                                     <i class="ai ai-doi"></i> </a> <a
-                                        href="/files/publications/CamarasuPop-FGCS-2013.pdf" target="_blank" alt="PDF">
-                                    <i class="far fa-file-pdf"></i> </a> <span id="CamarasuPop-FGCS-2013">Camarasu-Pop, S., Glatard, T., Ferreira da Silva, R., Gueth, P., Sarrut, D., &amp; Benoit-Cattin, H. (2013). Monte Carlo simulation on heterogeneous distributed systems: A computing framework with parallel merging and checkpointing strategies. <i>Future Generation Computer Systems</i>, <i>29</i>(3), 728–738. https://doi.org/10.1016/j.future.2012.09.003</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-CamarasuPop-FGCS-2013" role="button"
-                                             aria-expanded="false" aria-controls="bib-CamarasuPop-FGCS-2013"
+                                        href="/files/publications/camarasupop-fgcs-2013.pdf" target="_blank" alt="PDF">
+                                    <i class="far fa-file-pdf"></i> </a> <span id="camarasupop-fgcs-2013">Camarasu-Pop, S., Glatard, T., Ferreira da Silva, R., Gueth, P., Sarrut, D., &amp; Benoit-Cattin, H. (2013). Monte Carlo simulation on heterogeneous distributed systems: A computing framework with parallel merging and checkpointing strategies. <i>Future Generation Computer Systems</i>, <i>29</i>(3), 728–738. https://doi.org/10.1016/j.future.2012.09.003</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-camarasupop-fgcs-2013" role="button"
+                                             aria-expanded="false" aria-controls="bib-camarasupop-fgcs-2013"
                                              style="color: #999"> [BibTex] </a>
-                                    <div class="collapse" id="bib-CamarasuPop-FGCS-2013">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@article{CamarasuPop-FGCS-2013,
+                                    <div class="collapse" id="bib-camarasupop-fgcs-2013">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@article{camarasupop-fgcs-2013,
   title = {Monte Carlo simulation on heterogeneous distributed systems: A computing framework with parallel merging and checkpointing strategies},
   journal = {Future Generation Computer Systems},
   volume = {29},
@@ -1307,14 +1307,14 @@ description: Research Publications
                                     </div>
                                 </li>
                                 <li><a href="http://dx.doi.org/10.1109/eScience.2013.40" target="_blank" alt="DOI"> <i
-                                        class="ai ai-doi"></i> </a> <a href="/files/publications/Chen-eScience-2013.pdf"
+                                        class="ai ai-doi"></i> </a> <a href="/files/publications/chen-escience-2013.pdf"
                                                                        target="_blank" alt="PDF"> <i
-                                        class="far fa-file-pdf"></i> </a> <span id="Chen-eScience-2013">Chen, W., Ferreira da Silva, R., Deelman, E., &amp; Sakellariou, R. (2013). Balanced Task Clustering in Scientific Workflows. In <i>IEEE 9th International Conference on eScience</i> (pp. 188–195). https://doi.org/10.1109/eScience.2013.40</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-Chen-eScience-2013" role="button"
-                                             aria-expanded="false" aria-controls="bib-Chen-eScience-2013"
+                                        class="far fa-file-pdf"></i> </a> <span id="chen-escience-2013">Chen, W., Ferreira da Silva, R., Deelman, E., &amp; Sakellariou, R. (2013). Balanced Task Clustering in Scientific Workflows. In <i>IEEE 9th International Conference on eScience</i> (pp. 188–195). https://doi.org/10.1109/eScience.2013.40</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-chen-escience-2013" role="button"
+                                             aria-expanded="false" aria-controls="bib-chen-escience-2013"
                                              style="color: #999"> [BibTex] </a>
-                                    <div class="collapse" id="bib-Chen-eScience-2013">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@inproceedings{Chen-eScience-2013,
+                                    <div class="collapse" id="bib-chen-escience-2013">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@inproceedings{chen-escience-2013,
   author = {Chen, Weiwei and Ferreira da Silva, Rafael and Deelman, Ewa and Sakellariou, Rizos},
   booktitle = {IEEE 9th International Conference on eScience},
   series = {eScience'13},
@@ -1369,15 +1369,15 @@ description: Research Publications
                                 </li>
                                 <li><a href="http://dx.doi.org/10.1007/978-3-642-40047-6_28" target="_blank" alt="DOI">
                                     <i class="ai ai-doi"></i> </a> <a
-                                        href="/files/publications/FerreiradaSilva-EuroPar-2013-Granularity.pdf"
+                                        href="/files/publications/ferreiradasilva-europar-2013-granularity.pdf"
                                         target="_blank" alt="PDF"> <i class="far fa-file-pdf"></i> </a> <span
-                                        id="FerreiradaSilva-EuroPar-2013-Granularity">Ferreira da Silva, R., Glatard, T., &amp; Desprez, F. (2013). On-Line, Non-clairvoyant Optimization of Workflow Activity Granularity on Grids. In F. Wolf, B. Mohr, &amp; D. Mey (Eds.), <i>Euro-Par 2013 Parallel Processing</i> (Vol. 8097, pp. 255–266). https://doi.org/10.1007/978-3-642-40047-6_28</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-FerreiradaSilva-EuroPar-2013-Granularity"
+                                        id="ferreiradasilva-europar-2013-granularity">Ferreira da Silva, R., Glatard, T., &amp; Desprez, F. (2013). On-Line, Non-clairvoyant Optimization of Workflow Activity Granularity on Grids. In F. Wolf, B. Mohr, &amp; D. Mey (Eds.), <i>Euro-Par 2013 Parallel Processing</i> (Vol. 8097, pp. 255–266). https://doi.org/10.1007/978-3-642-40047-6_28</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-ferreiradasilva-europar-2013-granularity"
                                              role="button" aria-expanded="false"
-                                             aria-controls="bib-FerreiradaSilva-EuroPar-2013-Granularity"
+                                             aria-controls="bib-ferreiradasilva-europar-2013-granularity"
                                              style="color: #999"> [BibTex] </a>
-                                    <div class="collapse" id="bib-FerreiradaSilva-EuroPar-2013-Granularity">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@incollection{FerreiradaSilva-EuroPar-2013-Granularity,
+                                    <div class="collapse" id="bib-ferreiradasilva-europar-2013-granularity">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@incollection{ferreiradasilva-europar-2013-granularity,
   year = {2013},
   booktitle = {Euro-Par 2013 Parallel Processing},
   volume = {8097},
@@ -1393,15 +1393,15 @@ description: Research Publications
                                 </li>
                                 <li><a href="http://dx.doi.org/10.1007/978-3-642-40047-6_13" target="_blank" alt="DOI">
                                     <i class="ai ai-doi"></i> </a> <a
-                                        href="/files/publications/FerreiradaSilva-EuroPar-2013-Fairness.pdf"
+                                        href="/files/publications/ferreiradasilva-europar-2013-fairness.pdf"
                                         target="_blank" alt="PDF"> <i class="far fa-file-pdf"></i> </a> <span
-                                        id="FerreiradaSilva-EuroPar-2013-Fairness">Ferreira da Silva, R., Glatard, T., &amp; Desprez, F. (2013). Workflow Fairness Control on Online and Non-clairvoyant Distributed Computing Platforms. In F. Wolf, B. Mohr, &amp; D. Mey (Eds.), <i>Euro-Par 2013 Parallel Processing</i> (Vol. 8097, pp. 102–113). https://doi.org/10.1007/978-3-642-40047-6_13</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-FerreiradaSilva-EuroPar-2013-Fairness"
+                                        id="ferreiradasilva-europar-2013-fairness">Ferreira da Silva, R., Glatard, T., &amp; Desprez, F. (2013). Workflow Fairness Control on Online and Non-clairvoyant Distributed Computing Platforms. In F. Wolf, B. Mohr, &amp; D. Mey (Eds.), <i>Euro-Par 2013 Parallel Processing</i> (Vol. 8097, pp. 102–113). https://doi.org/10.1007/978-3-642-40047-6_13</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-ferreiradasilva-europar-2013-fairness"
                                              role="button" aria-expanded="false"
-                                             aria-controls="bib-FerreiradaSilva-EuroPar-2013-Fairness"
+                                             aria-controls="bib-ferreiradasilva-europar-2013-fairness"
                                              style="color: #999"> [BibTex] </a>
-                                    <div class="collapse" id="bib-FerreiradaSilva-EuroPar-2013-Fairness">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@incollection{FerreiradaSilva-EuroPar-2013-Fairness,
+                                    <div class="collapse" id="bib-ferreiradasilva-europar-2013-fairness">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@incollection{ferreiradasilva-europar-2013-fairness,
   year = {2013},
   booktitle = {Euro-Par 2013 Parallel Processing},
   volume = {8097},
@@ -1417,14 +1417,14 @@ description: Research Publications
                                 </li>
                                 <li><a href="http://dx.doi.org/10.1016/j.future.2013.06.012" target="_blank" alt="DOI">
                                     <i class="ai ai-doi"></i> </a> <a
-                                        href="/files/publications/FerreiradaSilva-FGCS-2013.pdf" target="_blank"
+                                        href="/files/publications/ferreiradasilva-fgcs-2013.pdf" target="_blank"
                                         alt="PDF"> <i class="far fa-file-pdf"></i> </a> <span
-                                        id="FerreiradaSilva-FGCS-2013">Ferreira da Silva, R., Glatard, T., &amp; Desprez, F. (2013). Self-healing of workflow activity incidents on distributed computing infrastructures. <i>Future Generation Computer Systems</i>, <i>29</i>(8), 2284–2294. https://doi.org/10.1016/j.future.2013.06.012</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-FerreiradaSilva-FGCS-2013" role="button"
-                                             aria-expanded="false" aria-controls="bib-FerreiradaSilva-FGCS-2013"
+                                        id="ferreiradasilva-fgcs-2013">Ferreira da Silva, R., Glatard, T., &amp; Desprez, F. (2013). Self-healing of workflow activity incidents on distributed computing infrastructures. <i>Future Generation Computer Systems</i>, <i>29</i>(8), 2284–2294. https://doi.org/10.1016/j.future.2013.06.012</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-ferreiradasilva-fgcs-2013" role="button"
+                                             aria-expanded="false" aria-controls="bib-ferreiradasilva-fgcs-2013"
                                              style="color: #999"> [BibTex] </a>
-                                    <div class="collapse" id="bib-FerreiradaSilva-FGCS-2013">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@article{FerreiradaSilva-FGCS-2013,
+                                    <div class="collapse" id="bib-ferreiradasilva-fgcs-2013">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@article{ferreiradasilva-fgcs-2013,
   title = {Self-healing of workflow activity incidents on distributed computing infrastructures},
   journal = {Future Generation Computer Systems},
   volume = {29},
@@ -1459,14 +1459,14 @@ description: Research Publications
                                     </div>
                                 </li>
                                 <li><a href="http://dx.doi.org/10.1109/TMI.2012.2220154" target="_blank" alt="DOI"> <i
-                                        class="ai ai-doi"></i> </a> <a href="/files/publications/Glatard-TMI-2013.pdf"
+                                        class="ai ai-doi"></i> </a> <a href="/files/publications/glatard-tmi-2013.pdf"
                                                                        target="_blank" alt="PDF"> <i
-                                        class="far fa-file-pdf"></i> </a> <span id="Glatard-TMI-2013">Glatard, T., Lartizien, C., Gibaud, B., Ferreira da Silva, R., Forestier, G., Cervenansky, F., … Friboulet, D. (2013). A Virtual Imaging Platform for Multi-Modality Medical Image Simulation. <i>IEEE Transactions on Medical Imaging</i>, <i>32</i>(1), 110–118. https://doi.org/10.1109/TMI.2012.2220154</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-Glatard-TMI-2013" role="button"
-                                             aria-expanded="false" aria-controls="bib-Glatard-TMI-2013"
+                                        class="far fa-file-pdf"></i> </a> <span id="glatard-tmi-2013">Glatard, T., Lartizien, C., Gibaud, B., Ferreira da Silva, R., Forestier, G., Cervenansky, F., … Friboulet, D. (2013). A Virtual Imaging Platform for Multi-Modality Medical Image Simulation. <i>IEEE Transactions on Medical Imaging</i>, <i>32</i>(1), 110–118. https://doi.org/10.1109/TMI.2012.2220154</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-glatard-tmi-2013" role="button"
+                                             aria-expanded="false" aria-controls="bib-glatard-tmi-2013"
                                              style="color: #999"> [BibTex] </a>
-                                    <div class="collapse" id="bib-Glatard-TMI-2013">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@article{Glatard-TMI-2013,
+                                    <div class="collapse" id="bib-glatard-tmi-2013">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@article{glatard-tmi-2013,
   author = {Glatard, T. and Lartizien, C. and Gibaud, B. and Ferreira da Silva, R. and Forestier, G. and Cervenansky, F. and Alessandrini, M. and Benoit-Cattin, H. and Bernard, O. and Camarasu-Pop, S. and Cerezo, N. and Clarysse, P. and Gaignard, A. and Hugonnard, P. and Liebgott, H. and Marache, S. and Marion, A. and Montagnat, J. and Tabary, J. and Friboulet, D.},
   journal = {IEEE Transactions on Medical Imaging},
   title = {A Virtual Imaging Platform for Multi-Modality Medical Image Simulation},
@@ -1484,15 +1484,15 @@ description: Research Publications
                             <ol class="bibliography">
                                 <li><a href="http://dx.doi.org/10.1109/CCGrid.2012.24" target="_blank" alt="DOI"> <i
                                         class="ai ai-doi"></i> </a> <a
-                                        href="/files/publications/FerreiradaSilva-CCGrid-2012.pdf" target="_blank"
+                                        href="/files/publications/ferreiradasilva-ccgrid-2012.pdf" target="_blank"
                                         alt="PDF"> <i class="far fa-file-pdf"></i> </a> <span
-                                        id="FerreiradaSilva-CCGrid-2012">Ferreira da Silva, R., Glatard, T., &amp; Desprez, F. (2012). Self-Healing of Operational Workflow Incidents on Distributed Computing Infrastructures. In <i>12th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing</i> (pp. 318–325). https://doi.org/10.1109/CCGrid.2012.24</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-FerreiradaSilva-CCGrid-2012"
+                                        id="ferreiradasilva-ccgrid-2012">Ferreira da Silva, R., Glatard, T., &amp; Desprez, F. (2012). Self-Healing of Operational Workflow Incidents on Distributed Computing Infrastructures. In <i>12th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing</i> (pp. 318–325). https://doi.org/10.1109/CCGrid.2012.24</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-ferreiradasilva-ccgrid-2012"
                                              role="button" aria-expanded="false"
-                                             aria-controls="bib-FerreiradaSilva-CCGrid-2012" style="color: #999">
+                                             aria-controls="bib-ferreiradasilva-ccgrid-2012" style="color: #999">
                                         [BibTex] </a>
-                                    <div class="collapse" id="bib-FerreiradaSilva-CCGrid-2012">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@inproceedings{FerreiradaSilva-CCGrid-2012,
+                                    <div class="collapse" id="bib-ferreiradasilva-ccgrid-2012">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@inproceedings{ferreiradasilva-ccgrid-2012,
   author = {Ferreira da Silva, Rafael and Glatard, Tristan and Desprez, Fr\'ed\'eric},
   booktitle = {12th {IEEE/ACM} International Symposium on Cluster, Cloud and Grid Computing},
   series = {CCGrid'12},
@@ -1505,14 +1505,14 @@ description: Research Publications
                                     </div>
                                 </li>
                                 <li><a href="http://dx.doi.org/10.1109/ISBI.2012.6235493" target="_blank" alt="DOI"> <i
-                                        class="ai ai-doi"></i> </a> <a href="/files/publications/Glatard-ISBI-2012.pdf"
+                                        class="ai ai-doi"></i> </a> <a href="/files/publications/glatard-isbi-2012.pdf"
                                                                        target="_blank" alt="PDF"> <i
-                                        class="far fa-file-pdf"></i> </a> <span id="Glatard-ISBI-2012">Glatard, T., Marion, A., Benoit-Cattin, H., Camarasu-Pop, S., Clarysse, P., Ferreira da Silva, R., … Friboulet, D. (2012). Multi-modality image simulation with the Virtual Imaging Platform: Illustration on cardiac echography and MRI. In <i>9th IEEE International Symposium on Biomedical Imaging</i> (pp. 98–101). https://doi.org/10.1109/ISBI.2012.6235493</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-Glatard-ISBI-2012" role="button"
-                                             aria-expanded="false" aria-controls="bib-Glatard-ISBI-2012"
+                                        class="far fa-file-pdf"></i> </a> <span id="glatard-isbi-2012">Glatard, T., Marion, A., Benoit-Cattin, H., Camarasu-Pop, S., Clarysse, P., Ferreira da Silva, R., … Friboulet, D. (2012). Multi-modality image simulation with the Virtual Imaging Platform: Illustration on cardiac echography and MRI. In <i>9th IEEE International Symposium on Biomedical Imaging</i> (pp. 98–101). https://doi.org/10.1109/ISBI.2012.6235493</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-glatard-isbi-2012" role="button"
+                                             aria-expanded="false" aria-controls="bib-glatard-isbi-2012"
                                              style="color: #999"> [BibTex] </a>
-                                    <div class="collapse" id="bib-Glatard-ISBI-2012">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@inproceedings{Glatard-ISBI-2012,
+                                    <div class="collapse" id="bib-glatard-isbi-2012">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@inproceedings{glatard-isbi-2012,
   author = {Glatard, T. and Marion, A. and Benoit-Cattin, H. and Camarasu-Pop, S. and Clarysse, P. and Ferreira da Silva, R. and Forestier, G. and Gibaud, B. and Lartizien, C. and Liebgott, H. and Moulin, K. and Friboulet, D.},
   booktitle = {9th {IEEE} International Symposium on Biomedical Imaging},
   series = {ISBI},
@@ -1529,13 +1529,13 @@ description: Research Publications
                             <ol class="bibliography">
                                 <li><a href="http://dx.doi.org/10.1007/s10723-010-9177-5" target="_blank" alt="DOI"> <i
                                         class="ai ai-doi"></i> </a> <a
-                                        href="/files/publications/Brasileiro-JoGC-2011.pdf" target="_blank" alt="PDF">
-                                    <i class="far fa-file-pdf"></i> </a> <span id="Brasileiro-JoGC-2011">Brasileiro, F., Gaudencio, M., Ferreira da Silva, R., Duarte, A., Carvalho, D., Scardaci, D., … Gavillet, P. (2011). Using a Simple Prioritisation Mechanism to Effectively Interoperate Service and Opportunistic Grids in the EELA-2 e-Infrastructure. <i>Journal of Grid Computing</i>, <i>9</i>(2), 241–257. https://doi.org/10.1007/s10723-010-9177-5</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-Brasileiro-JoGC-2011" role="button"
-                                             aria-expanded="false" aria-controls="bib-Brasileiro-JoGC-2011"
+                                        href="/files/publications/brasileiro-jogc-2011.pdf" target="_blank" alt="PDF">
+                                    <i class="far fa-file-pdf"></i> </a> <span id="brasileiro-jogc-2011">Brasileiro, F., Gaudencio, M., Ferreira da Silva, R., Duarte, A., Carvalho, D., Scardaci, D., … Gavillet, P. (2011). Using a Simple Prioritisation Mechanism to Effectively Interoperate Service and Opportunistic Grids in the EELA-2 e-Infrastructure. <i>Journal of Grid Computing</i>, <i>9</i>(2), 241–257. https://doi.org/10.1007/s10723-010-9177-5</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-brasileiro-jogc-2011" role="button"
+                                             aria-expanded="false" aria-controls="bib-brasileiro-jogc-2011"
                                              style="color: #999"> [BibTex] </a>
-                                    <div class="collapse" id="bib-Brasileiro-JoGC-2011">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@article{Brasileiro-JoGC-2011,
+                                    <div class="collapse" id="bib-brasileiro-jogc-2011">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@article{brasileiro-jogc-2011,
   year = {2011},
   journal = {Journal of Grid Computing},
   volume = {9},
@@ -1548,15 +1548,15 @@ description: Research Publications
                                         </figure>
                                     </div>
                                 </li>
-                                <li><a href="/files/publications/FerreiradaSilva-HealthGrid-2011.pdf" target="_blank"
+                                <li><a href="/files/publications/ferreiradasilva-healthgrid-2011.pdf" target="_blank"
                                        alt="PDF"> <i class="far fa-file-pdf"></i> </a> <span
-                                        id="FerreiradaSilva-HealthGrid-2011">Ferreira da Silva, R., Camarasu-Pop, S., Grenier, B., Hamar, V., Manset, D., Montagnat, J., … Glatard, T. (2011). Multi-infrastructure workflow execution for medical simulation in the Virtual Imaging Platform. In <i>2011 HealthGrid Conference</i>.</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-FerreiradaSilva-HealthGrid-2011"
+                                        id="ferreiradasilva-healthgrid-2011">Ferreira da Silva, R., Camarasu-Pop, S., Grenier, B., Hamar, V., Manset, D., Montagnat, J., … Glatard, T. (2011). Multi-infrastructure workflow execution for medical simulation in the Virtual Imaging Platform. In <i>2011 HealthGrid Conference</i>.</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-ferreiradasilva-healthgrid-2011"
                                              role="button" aria-expanded="false"
-                                             aria-controls="bib-FerreiradaSilva-HealthGrid-2011" style="color: #999">
+                                             aria-controls="bib-ferreiradasilva-healthgrid-2011" style="color: #999">
                                         [BibTex] </a>
-                                    <div class="collapse" id="bib-FerreiradaSilva-HealthGrid-2011">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@inproceedings{FerreiradaSilva-HealthGrid-2011,
+                                    <div class="collapse" id="bib-ferreiradasilva-healthgrid-2011">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@inproceedings{ferreiradasilva-healthgrid-2011,
   author = {Ferreira da Silva, Rafael and Camarasu-Pop, Sorina and Grenier, Baptiste and Hamar, Vanessa and Manset, David and Montagnat, Johan and Revillard, J\'er\^ome and Rojas Balderrama, Javier and Tsaregorodtsev, Andrei and Glatard, Tristan},
   booktitle = {2011 HealthGrid Conference},
   title = {Multi-infrastructure workflow execution for medical simulation in the Virtual Imaging Platform},
@@ -1566,14 +1566,14 @@ description: Research Publications
                                     </div>
                                 </li>
                                 <li><a href="http://dx.doi.org/10.1109/CBMS.2011.5999141" target="_blank" alt="DOI"> <i
-                                        class="ai ai-doi"></i> </a> <a href="/files/publications/Marion-CBMS-2011.pdf"
+                                        class="ai ai-doi"></i> </a> <a href="/files/publications/marion-cbms-2011.pdf"
                                                                        target="_blank" alt="PDF"> <i
-                                        class="far fa-file-pdf"></i> </a> <span id="Marion-CBMS-2011">Marion, A., Forestier, G., Benoit-Cattin, H., Camarasu-Pop, S., Clarysse, P., Ferreira da Silva, R., … Friboulet, D. (2011). Multi-modality medical image simulation of biological models with the Virtual Imaging Platform (VIP). In <i>2011 24th International Symposium on Computer-Based Medical Systems</i> (pp. 1–6). https://doi.org/10.1109/CBMS.2011.5999141</span>
-                                    <br/> <a data-toggle="collapse" href="#bib-Marion-CBMS-2011" role="button"
-                                             aria-expanded="false" aria-controls="bib-Marion-CBMS-2011"
+                                        class="far fa-file-pdf"></i> </a> <span id="marion-cbms-2011">Marion, A., Forestier, G., Benoit-Cattin, H., Camarasu-Pop, S., Clarysse, P., Ferreira da Silva, R., … Friboulet, D. (2011). Multi-modality medical image simulation of biological models with the Virtual Imaging Platform (VIP). In <i>2011 24th International Symposium on Computer-Based Medical Systems</i> (pp. 1–6). https://doi.org/10.1109/CBMS.2011.5999141</span>
+                                    <br/> <a data-toggle="collapse" href="#bib-marion-cbms-2011" role="button"
+                                             aria-expanded="false" aria-controls="bib-marion-cbms-2011"
                                              style="color: #999"> [BibTex] </a>
-                                    <div class="collapse" id="bib-Marion-CBMS-2011">
-                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@inproceedings{Marion-CBMS-2011,
+                                    <div class="collapse" id="bib-marion-cbms-2011">
+                                        <figure class="highlight"><pre><code class="language-plain" data-lang="plain">@inproceedings{marion-cbms-2011,
   author = {Marion, A. and Forestier, G. and Benoit-Cattin, H. and Camarasu-Pop, S. and Clarysse, P. and Ferreira da Silva, R. and Gibaud, B. and Glatard, T. and Hugonnard, P. and Lartizien, C. and Liebgott, H. and Specovius, S. and Tabary, J. and Valette, S. and Friboulet, D.},
   booktitle = {2011 24th International Symposium on Computer-Based Medical Systems},
   series = {CBMS},
@@ -1645,3 +1645,4 @@ description: Research Publications
                                 </li>
                             </ol>
                         </article>
+                        
