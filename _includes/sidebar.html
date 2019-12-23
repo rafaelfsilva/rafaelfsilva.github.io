@@ -1,0 +1,59 @@
+<div class="sidebar">
+    <div class="author-container shadow">
+        <div class="author">
+            <img src="{{site.data.main.image}}" width="100%" height="auto;" alt="{{site.title}}"
+                 onclick="location.href='/'">
+        </div>
+        <div class="about text-center">
+            <h1 class="title"><a href="/{{site.baseurl}}">{{site.data.main.name}}</a></h1>
+        </div>
+        <div class="bio text-center">
+            <p class="m0">{{site.data.main.profession}}</p>
+        </div>
+        <hr class="dashed">
+        <div class="social text-center">
+            <ul class="portfolio p0">
+                {% for item in site.data.main.menu %}
+                <li><a {% if page.url== item.link %}class="active" {% endif %} href="{{item.link}}">{{item.title}}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <hr class="dashed">
+        <div class="social text-center">
+            <ul class="sm p0 m0a">
+                <li>
+                    <a href="{{site.data.main.social.linkedin.link}}" target="_blank">
+                        <i class="fab {{site.data.main.social.linkedin.icon}}"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{site.data.main.social.googlescholar.link}}" target="_blank">
+                        <i class="ai {{site.data.main.social.googlescholar.icon}}"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{site.data.main.social.researchgate.link}}" target="_blank">
+                        <i class="ai {{site.data.main.social.researchgate.icon}}"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{site.data.main.social.dblp.link}}" target="_blank">
+                        <i class="ai {{site.data.main.social.dblp.icon}}"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{site.data.main.social.orcid.link}}" target="_blank">
+                        <i class="ai {{site.data.main.social.orcid.icon}}"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{site.data.main.social.github.link}}" target="_blank">
+                        <i class="fab {{site.data.main.social.github.icon}}"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
