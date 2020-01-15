@@ -48,7 +48,7 @@ enable-chartjs: yes
 permalink: /blog/:title/
 
 # Pagination - Posts per page in the blog index.
-paginate: 4
+paginate: 6
 paginate_path: /blog/page:num/
 
 # Jekyll will read contents inside _pages only if we tell it to.
