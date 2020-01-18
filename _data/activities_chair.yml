@@ -1,0 +1,40 @@
+- chair:
+  - conference: "14th WORKS, Workshop"
+    year: 2019
+    location: Denver, USA
+
+  - conference: "BC2DC, Workshop"
+    year: 2019
+    location: San Diego, CA
+
+  - conference: "13th WORKS, Workshop"
+    year: 2018
+    location: Dallas, USA
+
+- track:
+  - conference: "16th eScience Conference"
+    year: 2020
+    location: Osaka, Japan
+
+  - conference: "15th eScience Conference"
+    year: 2019
+    location: San Diego, USA
+
+- organizer:
+  - conference: "NSF SI2 PI Meeting"
+    year: 2018
+    location: Washington D.C., USA
+
+- publicity:
+  - conference: 12th WORKS, Workshop
+    year: 2017
+    location: Denver, USA
+
+  - conference: 11th WORKS, Workshop
+    year: 2016
+    location: Salt Lake City, USA
+
+- local:
+  - conference: 28th SBAC-PAD
+    year: 2016
+    location: Los Angeles, USA

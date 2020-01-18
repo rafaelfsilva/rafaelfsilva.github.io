@@ -9,10 +9,13 @@ menu:
   - title: Publications
     link: /publications/
 
-  - title: Projects
-    link: /projects/
+  - title: Activities
+    link: /activities/
 
-  - title: Blog
+#  - title: Projects
+#    link: /projects/
+
+  - title: News
     link: /blog/
 
   - title: Contact

@@ -1,0 +1,84 @@
+---
+layout: page
+title: Professional Activities
+permalink: /activities/
+description: Professional Activities
+---
+
+<h3>Journals</h3>
+
+{% if site.data.activities_editor.size > 0 %}
+<div class="activities row">
+    <div class="col-sm-12 col-md-12" style="font-size: 0.9em">
+        {% for n in site.data.activities_editor %}
+        <strong>{{ n.journal }}</strong><br/>
+        {{ n.year }} – {{ n.role }}, {{ n.description }}
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+<hr/>
+
+<h3>Conferences Chair</h3>
+
+{% if site.data.activities_chair.size > 0 %}
+<div class="activities">
+    <div class="row">
+        <div class="col-sm-6 col-md-6">
+            <strong>Chair</strong><br/>
+            {% for n in site.data.activities_chair %}
+            {% for c in n.chair %}
+            {{ c.year }} – {{ c.conference }}, {{ c.location }}<br/>
+            {% endfor %}
+            {% endfor %}
+        </div>
+
+        <div class="col-sm-6 col-md-6">
+            <strong>Track Chair</strong><br/>
+            {% for n in site.data.activities_chair %}
+            {% for c in n.track %}
+            {{ c.year }} – {{ c.conference }}, {{ c.location }}<br/>
+            {% endfor %}
+            {% endfor %}
+        </div>
+
+        <div class="col-sm-6 col-md-6">
+            <strong>Organizer</strong><br/>
+            {% for n in site.data.activities_chair %}
+            {% for c in n.organizer %}
+            {{ c.year }} – {{ c.conference }}, {{ c.location }}<br/>
+            {% endfor %}
+            {% endfor %}
+        </div>
+
+        <div class="col-sm-6 col-md-6">
+            <strong>Publicity Chair</strong><br/>
+            {% for n in site.data.activities_chair %}
+            {% for c in n.publicity %}
+            {{ c.year }} – {{ c.conference }}, {{ c.location }}<br/>
+            {% endfor %}
+            {% endfor %}
+        </div>
+
+        <div class="col-sm-6 col-md-6">
+            <strong>Local Arrangements Chair</strong><br/>
+            {% for n in site.data.activities_chair %}
+            {% for c in n.local %}
+            {{ c.year }} – {{ c.conference }}, {{ c.location }}<br/>
+            {% endfor %}
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+{% endif %}
+
+<hr/>
+
+<h3>Program Committee Member</h3>
+
+<div class="activities">
+    <div class="row">
+    </div>
+</div>
