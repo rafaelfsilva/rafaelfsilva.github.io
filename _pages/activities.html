@@ -5,16 +5,16 @@ permalink: /activities/
 description: Professional Activities
 ---
 
-<h3>Journals</h3>
+<h3>Journals Editor</h3>
 
 {% if site.data.activities_editor.size > 0 %}
 <div class="activities row">
-    <div class="col-sm-12 col-md-12">
-        {% for n in site.data.activities_editor %}
-        <strong>{{ n.journal }}</strong><br/>
-        {{ n.year }} – {{ n.role }}, {{ n.description }}
-        {% endfor %}
+    {% for n in site.data.activities_editor %}
+    <div class="col-sm-12 col-md-12" style="margin-bottom: 1em">
+        <strong><a href="{{ n.link }}" target="_blank">{{ n.journal }}</a></strong><br/>
+        {{ n.year }} – {{ n.role }}{% if n.description %}, {{ n.description }} {% endif %}
     </div>
+    {% endfor %}
 </div>
 {% endif %}
 
@@ -29,7 +29,7 @@ description: Professional Activities
             <strong>Chair</strong><br/>
             {% for n in site.data.activities_chair %}
             {% for c in n.chair %}
-            {{ c.year }} – {{ c.conference }}, {{ c.location }}<br/>
+            {{ c.year }} – <a href="{{ n.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
             {% endfor %}
             {% endfor %}
         </div>
@@ -38,7 +38,7 @@ description: Professional Activities
             <strong>Track Chair</strong><br/>
             {% for n in site.data.activities_chair %}
             {% for c in n.track %}
-            {{ c.year }} – {{ c.conference }}, {{ c.location }}<br/>
+            {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
             {% endfor %}
             {% endfor %}
         </div>
@@ -47,7 +47,7 @@ description: Professional Activities
             <strong>Organizer</strong><br/>
             {% for n in site.data.activities_chair %}
             {% for c in n.organizer %}
-            {{ c.year }} – {{ c.conference }}, {{ c.location }}<br/>
+            {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
             {% endfor %}
             {% endfor %}
         </div>
@@ -56,7 +56,7 @@ description: Professional Activities
             <strong>Publicity Chair</strong><br/>
             {% for n in site.data.activities_chair %}
             {% for c in n.publicity %}
-            {{ c.year }} – {{ c.conference }}, {{ c.location }}<br/>
+            {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
             {% endfor %}
             {% endfor %}
         </div>
@@ -65,7 +65,7 @@ description: Professional Activities
             <strong>Local Arrangements Chair</strong><br/>
             {% for n in site.data.activities_chair %}
             {% for c in n.local %}
-            {{ c.year }} – {{ c.conference }}, {{ c.location }}<br/>
+            {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
             {% endfor %}
             {% endfor %}
         </div>
@@ -76,9 +76,45 @@ description: Professional Activities
 
 <hr/>
 
-<h3>Program Committee Member</h3>
+<h3>Program Committees Member</h3>
 
 <div class="activities">
     <div class="row">
+        {% for n in site.data.activities_pc %}
+        <div class="col-sm-12 col-md-12">
+            {{ n.year }} – <a href="{{ n.link }}" target="_blank">{{ n.conference }}</a>{% if n.series %} ({{ n.series
+            }}){% endif %}, {{ n.location }}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<hr/>
+
+<h3>Funding Agencies Reviewer</h3>
+
+<div class="activities">
+    <div class="row">
+        {% for n in site.data.activities_funding %}
+        <div class="col-sm-12 col-md-12">
+            {{ n.year }} – <a href="{{ n.link }}" target="_blank">{{ n.agency }}</a>{% if n.acronym %} ({{ n.acronym
+            }}){% endif %}, {{ n.description }}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<hr/>
+
+<h3>Journals Reviewer</h3>
+
+<div class="activities">
+    <div class="row">
+        {% for n in site.data.activities_journal %}
+        <div class="col-sm-12 col-md-12">
+            {{ n.year }} – <a href="{{ n.link }}" target="_blank">{{ n.journal }}</a>{% if n.acronym %} ({{ n.acronym
+            }}){% endif %}
+        </div>
+        {% endfor %}
     </div>
 </div>

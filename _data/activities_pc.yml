@@ -1,0 +1,155 @@
+- conference: 40th IEEE International Conference on Distributed Computing Systems
+  series: ICDCS
+  year: 2020
+  location: Singapore
+  link: https://icdcs2020.sg
+
+- conference: IEEE Cluster
+  series:
+  year: 2019
+  location: Albuquerque, NM, USA
+  link: https://clustercomp.org/2019/
+
+- conference: 48th International Conference on Parallel Processing
+  series: ICPP
+  year: 2019
+  location: Kyoto, Japan
+  link: https://www.hpcs.cs.tsukuba.ac.jp/icpp2019/index.html
+
+- conference: 14th Workflows in Support of Large-Scale Science
+  series: WORKS
+  year: 2019
+  location: Denver, USA
+  link: http://works.cs.cardiff.ac.uk
+
+- conference: 8th International Workshop on Clouds and (eScience) Applications Management
+  series: CloudAM
+  year: 2019
+  location: Auckland, New Zealand
+  link: http://eventos.unizar.es/35766/detail/2019-international-workshop-on-cloud-and-edge-computing-and-applications-management.html
+
+- conference: 31st International Symposium on Computer Architecture and High Performance Computing
+  series: SBAC-PAD
+  year: 2019
+  location: Campo Grande, Brazil
+  link: http://sbac-pad.facom.ufms.br
+
+- conference: IEEE Cluster
+  series:
+  year: 2018
+  location: Belfast, UK
+  link: https://cluster2018.github.io
+
+- conference: 13th Workflows in Support of Large-Scale Science
+  series: WORKS
+  year: 2018
+  location: Dallas, USA
+  link: http://works.cs.cf.ac.uk/2018/
+
+- conference: 7th International Workshop on Clouds and (eScience) Applications Management
+  series: CloudAM
+  year: 2018
+  location: Zurich, Switzerland
+  link: http://webdiis.unizar.es/~rafaelt/cloudam2018/
+
+- conference: 30th International Symposium on Computer Architecture and High Performance Computing
+  series: SBAC-PAD
+  year: 2018
+  location: Lyon, France
+  link: https://graal.ens-lyon.fr/sbac-pad/
+
+- conference: 18th IEEE/ACM International Symposium on Cluster, Cloud, and Grid Computing
+  series: CCGrid
+  year: 2018
+  location: Washington DC, USA
+  link: https://ccgrid2018.seas.gwu.edu
+
+- conference: 16th International Conference on High Performance Computing & Simulation
+  series: HPCS
+  year: 2018
+  location: Orléans, France
+  link: http://hpcs2018.cisedu.info
+
+- conference: IEEE Cluster
+  series:
+  year: 2017
+  location: Honolulu, USA
+  link: https://cluster17.github.io
+
+- conference: 12th Workflows in Support of Large-Scale Science
+  series: WORKS
+  year: 2017
+  location: Denver, USA
+  link: http://works.cs.cf.ac.uk/2017/
+
+- conference: 6th International Workshop on Clouds and (eScience) Applications Management
+  series: CloudAM
+  year: 2017
+  location: Austin, USA
+  link: http://cloudam2017.lncc.br
+
+- conference: 29th International Symposium on Computer Architecture and High Performance Computing
+  series: SBAC-PAD
+  year: 2017
+  location: Campinas, Brazil
+  link: http://www2.sbc.org.br/sbac/2017/
+
+- conference: 17th IEEE/ACM International Symposium on Cluster, Cloud, and Grid Computing
+  series: CCGrid
+  year: 2017
+  location: Madrid, Spain
+  link: https://www.arcos.inf.uc3m.es/ccgrid2017/
+
+- conference: 15th International Conference on High Performance Computing & Simulation
+  series: HPCS
+  year: 2017
+  location: Genoa, Italy
+  link: http://hpcs2017.cisedu.info
+
+- conference: 11th Workflows in Support of Large-Scale Science
+  series: WORKS
+  year: 2016
+  location: Salt Lake City, USA
+  link: http://works.cs.cf.ac.uk/2016
+
+- conference: 5th International Workshop on Clouds and (eScience) Applications Management
+  series: CloudAM
+  year: 2016
+  location: Shanghai, China
+  link: http://cloudam2016.lncc.br
+
+- conference: 28th International Symposium on Computer Architecture and High Performance Computing
+  series: SBAC-PAD
+  year: 2016
+  location: Los Angeles, USA
+  link: http://www2.sbc.org.br/sbac/2016/
+
+- conference: 16th IEEE/ACM International Symposium on Cluster, Cloud, and Grid Computing
+  series: CCGrid
+  year: 2016
+  location: Cartagena, Colombia
+  link: http://ccgrid2016.uniandes.edu.co
+
+- conference: 1st International Workshop on Reproducible Open Science
+  series: RepScience
+  year: 2016
+  location: Hannover, Germany
+  link: http://repscience2016.research-infrastructures.eu
+
+- conference: 4th International Workshop on Clouds and (eScience) Applications Management
+  series: CloudAM
+  year: 2015
+  location: Limassol, Cyprus
+  link: http://cloudam2015.lncc.br
+
+- conference: 15th IEEE/ACM International Symposium on Cluster, Cloud, and Grid Computing
+  series: CCGrid
+  year: 2015
+  location: Shenzhen, China
+  link: http://cloud.siat.ac.cn/ccgrid2015/
+
+- conference: 3rd International Workshop on Clouds and (eScience) Applications Management
+  series: CloudAM
+  year: 2014
+  location: London, UK
+  link: http://cloudam2014.lncc.br
