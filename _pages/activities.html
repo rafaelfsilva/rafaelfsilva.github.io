@@ -9,7 +9,7 @@ description: Professional Activities
 
 {% if site.data.activities_editor.size > 0 %}
 <div class="activities row">
-    <div class="col-sm-12 col-md-12" style="font-size: 0.9em">
+    <div class="col-sm-12 col-md-12">
         {% for n in site.data.activities_editor %}
         <strong>{{ n.journal }}</strong><br/>
         {{ n.year }} – {{ n.role }}, {{ n.description }}
