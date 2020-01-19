@@ -118,3 +118,18 @@ description: Professional Activities
         {% endfor %}
     </div>
 </div>
+
+<hr/>
+
+<h3>Conferences Reviewer</h3>
+
+<div class="activities">
+    <div class="row">
+        {% for n in site.data.activities_conference %}
+        <div class="col-sm-12 col-md-12">
+            {{ n.year }} – <a href="{{ n.link }}" target="_blank">{{ n.conference }}</a>{% if n.series %} ({{ n.series
+            }}){% endif %}, {{ n.location }}
+        </div>
+        {% endfor %}
+    </div>
+</div>

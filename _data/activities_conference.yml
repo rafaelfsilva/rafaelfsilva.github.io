@@ -1,0 +1,93 @@
+- conference: 20th IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
+  series: CCGrid
+  year: 2019
+  location: Melbourne, Australia
+  link: http://cloudbus.org/ccgrid2020/mainpage.html
+
+- conference: ACM Platform for Advanced Scientific Computing
+  series: PASC
+  year: 2019
+  location: Zurich, Switzerland
+  link: https://pasc19.pasc-conference.org
+
+- conference: 13th IEEE International Conference on eScience
+  series: eScience
+  year: 2017
+  location: Auckland, New Zealand
+  link:
+
+- conference: IEEE Cluster
+  year: 2016
+  location: Taipei, Taiwan
+  link:
+
+- conference: 30th IEEE International Parallel & Distributed Processing Symposium
+  series: IPDPS
+  year: 2016
+  location: Chicago, USA
+  link:
+
+- conference: 11th IEEE International Conference on eScience
+  series: eScience
+  year: 2015
+  location: Munich, Germany
+  link:
+
+- conference: 10th Workflows in Support of Large-Scale Science
+  series: WORKS
+  year: 2015
+  location: Austin, USA
+  link:
+
+- conference: 11th International Conference on Parallel Processing and Applied Mathematics
+  series: PPAM
+  year: 2015
+  location: Krakow, Poland
+  link:
+
+- conference: Euro-Par
+  year: 2015
+  location: Vienna, Austria
+  link:
+
+- conference: 10th IEEE International Conference on eScience
+  series: eScience
+  year: 2014
+  location: Guaruja, Brazil
+  link:
+
+- conference: IEEE International Conference on Cloud Engineering
+  series: IC2E
+  year: 2014
+  location: Tempe, USA
+  link:
+
+- conference: International Conference for High Performance Computing, Networking, Storage, and Analysis
+  series: SC
+  year: 2014
+  location: New Orleans, USA
+  link:
+
+- conference: 14th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing
+  series: CCGrid
+  year: 2014
+  location: Chicago, USA
+  link:
+
+- conference: 10th International Conference on Parallel Processing and Applied Mathematics
+  series: PPAM
+  year: 2013
+  location: Warsaw, Poland
+  link:
+
+- conference: International Conference for High Performance Computing, Networking, Storage, and Analysis
+  series: SC
+  year: 2013
+  location: Denver, USA
+  link:
+
+- conference: 1st International Workshop on Autonomic Management of Grid and Cloud Computing
+  series: AMGCC
+  year: 2013
+  location: Miami, USA
+  link:
