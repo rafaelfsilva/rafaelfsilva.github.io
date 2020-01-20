@@ -11,10 +11,11 @@
             <p class="m0" style="line-height: 1.5em">{{site.data.main.profession}}</p>
         </div>
         <hr class="dashed">
-        <div class="social text-center">
-            <ul class="portfolio p0">
+        <div>
+            <ul class="menu">
                 {% for item in site.data.main.menu %}
-                <li><a {% if page.url== item.link %}class="active" {% endif %} href="{{item.link}}">{{item.title}}</a>
+                <li>
+                    <a {% if page.url== item.link %}class="active" {% endif %} href="{{item.link}}">{{item.title}}</a>
                 </li>
                 {% endfor %}
             </ul>

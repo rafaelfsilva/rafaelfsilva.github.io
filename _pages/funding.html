@@ -1,0 +1,72 @@
+---
+layout: page
+title: Funding
+permalink: /funding/
+description: Funding
+---
+
+<h3>National Science Foundation</h3>
+
+<div class="activities">
+    <div class="row">
+        {% for n in site.data.funding %}
+        {% for c in n.nsf %}
+        <div class="col-sm-12 col-md-12" style="margin-bottom: 1em">
+            <strong>{{ c.title }}</strong><br/>
+            Period: {{ c.period }} – Total Amount: ${{ c.amount }}<br/>
+            Program: {{ c.program }}<br/>
+            Awards:
+            {% for d in c.awards %}
+            #<a href="{{ d.link }}" target="_blank">{{ d.id }}</a>
+            {% endfor %}
+        </div>
+        {% endfor %}
+        {% endfor %}
+    </div>
+</div>
+
+<hr/>
+
+<h3>Defense Advanced Research Projects Agency</h3>
+
+<div class="activities">
+    <div class="row">
+        {% for n in site.data.funding %}
+        {% for c in n.darpa %}
+        <div class="col-sm-12 col-md-12" style="margin-bottom: 1em">
+            <strong>{{ c.title }}</strong><br/>
+            Period: {{ c.period }} – Total Amount: ${{ c.amount }}<br/>
+            Program: {{ c.program }}<br/>
+            Awards:
+            {% for d in c.awards %}
+            #<a href="{{ d.link }}" target="_blank">{{ d.id }}</a>
+            {% endfor %}
+        </div>
+        {% endfor %}
+        {% endfor %}
+    </div>
+</div>
+
+<hr/>
+
+<h3>International Funding / Collaborations / Others</h3>
+
+<div class="activities">
+    <div class="row">
+        {% for n in site.data.funding %}
+        {% for c in n.international %}
+        <div class="col-sm-12 col-md-12" style="margin-bottom: 1em">
+            <strong>{{ c.title }}</strong><br/>
+            Period: {{ c.period }} – Total Amount: {{ c.amount }}<br/>
+            Program: {{ c.program }}<br/>
+            {% if c.awards %}
+            Awards:
+            {% for d in c.awards %}
+            #<a href="{{ d.link }}" target="_blank">{{ d.id }}</a>
+            {% endfor %}
+            {% endif %}
+        </div>
+        {% endfor %}
+        {% endfor %}
+    </div>
+</div>

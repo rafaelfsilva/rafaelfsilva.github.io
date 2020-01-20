@@ -2,18 +2,18 @@
 
 image: /assets/images/2019-rafael-ferreira-da-silva-square.jpg
 name: 'Rafael Ferreira da Silva, Ph.D.'
-profession: '<strong>Research Assistant Professor</strong><br /><a href="https://www.cs.usc.edu" target="_blank">Department of Computer Science</a><br /><a href="https://usc.edu" target="_blank">University of Southern California</a><br /><br /><strong>Research Lead</strong><br /><a href="https://scitech.isi.edu" target="_blank">Science Automation Technologies (SciTech)</a><br /><a href="https://isi.edu" target="_blank">USC Information Sciences Institute</a>'
+profession: '<strong>Research Assistant Professor</strong><br /><a href="https://www.cs.usc.edu" target="_blank">Department of Computer Science</a><br /><a href="https://usc.edu" target="_blank">University of Southern California</a><br/><br/><strong>Research Lead</strong><br /><a href="https://scitech.isi.edu" target="_blank">Science Automation Technologies (SciTech)</a><br /><a href="https://isi.edu" target="_blank">USC Information Sciences Institute</a>'
 email: rafsilva@isi.edu
 
 menu:
   - title: Publications
     link: /publications/
 
-  - title: Activities
+  - title: Professional Activities
     link: /activities/
 
-#  - title: Projects
-#    link: /projects/
+  - title: Funding
+    link: /funding/
 
   - title: News
     link: /blog/

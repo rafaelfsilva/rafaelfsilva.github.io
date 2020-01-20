@@ -383,3 +383,28 @@ a.nostyle {
 .activities .col-sm-6, .activities .col-md-6 {
   margin-bottom: 1em;
 }
+
+ul.menu {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+
+  li {
+    display: block;
+    background-color: #f7f7f7;
+    margin-bottom: 0.2em;
+    padding-left: 0.7em;
+    font-size: 0.8em;
+    font-weight: bold;
+    + li:before {
+      //content: ">> ";
+    }
+
+    a.active {
+      color: $color;
+      pointer-events: none;
+      cursor: default;
+    }
+  }
+}
