@@ -1,0 +1,59 @@
+---
+layout: page
+title: Current and Past Students
+permalink: /for-students/alumni
+description: Current and Past Students
+---
+
+<h3>Student Worker</h3>
+
+<div class="activities" style="margin-top: 1em">
+    <div class="row">
+        {% for n in site.data.alumni %}
+        {% for c in n.worker %}
+        <div class="col-sm-6 col-md-6">
+            <div style="float: left; margin-right: 1em">
+                <img src="/assets/images/alumni/{{ c.photo }}" width="60px"/>
+            </div>
+            <a href="{{ c.linkedin }}" target="_blank"> <i class="fab {{site.data.main.social.linkedin.icon}}"></i></a>
+            <strong>{{ c.name }}</strong> <br/>
+            <p style="font-size: 0.8em; line-height: 1.3em">
+                {{ c.period }}, {{ c.degree }}<br/>
+                <i style="color: #999">{{ c.description }}</i>
+            </p>
+        </div>
+        {% endfor %}
+        {% endfor %}
+    </div>
+</div>
+
+<hr/>
+
+<h3>Directed Research</h3>
+
+<div class="activities" style="margin-top: 1em">
+    <div class="row">
+        {% for n in site.data.alumni %}
+        {% for c in n.dr %}
+        <div class="col-sm-6 col-md-6" style="margin-bottom: 0.5em">
+            <a href="{{ c.linkedin }}" target="_blank"> <i class="fab {{site.data.main.social.linkedin.icon}}"></i></a>
+            <strong>{{ c.name }}</strong> <br/>
+            <p style="font-size: 0.8em; line-height: 1.3em">
+                {{ c.period }}, {{ c.degree }}<br/>
+            </p>
+        </div>
+        {% endfor %}
+        {% endfor %}
+    </div>
+</div>
+
+<br/><br/>
+
+<figure>
+    <img src="/assets/images/view-palos-verdes.jpg"
+
+         sizes="(max-width: 800px) 100vw, 800px"/>
+    <figcaption>
+        <span style="color: #808080; font-size: 0.8em">Sunset from Palos Verdes, CA – 20 miles South of USC/ISI.</span>
+    </figcaption>
+</figure>
