@@ -1,0 +1,30 @@
+---
+layout: page
+title: Media
+permalink: /activities/media/
+description: Media
+---
+
+<h3>2010–Present</h3>
+
+<div class="activities">
+    <div class="row">
+        {% for n in site.data.media %}
+        <div class="col-sm-12 col-md-12" style="margin-bottom: 1em">
+            <i>{{ n.date }}</i><br/>
+            <strong><a href="{{ n.link }}" target="_blank">{{ n.title }}</a></strong>
+            <br/>{{ n.venue }}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<hr/>
+<figure>
+    <img src="/assets/images/view-marina-del-rey.jpg"
+
+         sizes="(max-width: 800px) 100vw, 800px"/>
+    <figcaption>
+        <span style="color: #808080; font-size: 0.8em">Marina del Rey, CA - View from USC/ISI at sunrise.</span>
+    </figcaption>
+</figure>
