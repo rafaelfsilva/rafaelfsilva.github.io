@@ -13,7 +13,10 @@ menu:
     link: /activities/
 
   - title: Current and Past Students
-    link: /for-students/alumni/
+    link: /alumni/
+
+  - title: Teaching
+    link: /teaching/
 
   - title: Funding
     link: /funding/

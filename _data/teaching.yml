@@ -1,0 +1,12 @@
+- semester: "Fall 2018"
+  class: "INF 553: Foundations and Applications of Data Mining"
+  description: "Data mining and machine learning algorithms for analyzing very large data sets. Emphasis on Map Reduce and case studies."
+  material: "inf-553-fall-2018"
+  material_desc: "Lecture slides, example programs, and project reports."
+
+- semester: "Spring 2017"
+  class: "CSCI 104: Data Structures and Object Oriented Design"
+  url: "http://bits.usc.edu/cs104/index.html"
+  description: " Introduction to standard data structures (linear structures such as linked lists, (balanced) trees, priority queues, and hashtables), using the C++ programming language."
+  material: "csci-104-spring-2017"
+  material_desc: "Lecture slides and example programs."
