@@ -27,9 +27,6 @@ menu:
   - title: Media
     link: /activities/media/
 
-  - title: Contact
-    link: /contact/
-
 social:
   linkedin:
     icon: fa-linkedin
