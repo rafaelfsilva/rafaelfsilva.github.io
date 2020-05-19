@@ -95,10 +95,12 @@ a.nostyle {
 
 .cards {
   border-radius: 2px;
+  min-height: 16em;
+  background-color: #fafafa;
   // border: 1px solid #ddd;
   &:hover {
-    -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -292,7 +294,7 @@ a.nostyle {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   @include media-query($on-palm) {
     display: block;
@@ -306,6 +308,7 @@ a.nostyle {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #fff;
     height: 200px;
     width: 100%;
     border-bottom: 1px solid #eee;
@@ -313,6 +316,9 @@ a.nostyle {
 
   .title {
     margin: 10px;
+    font-size: 0.9em;
+    line-height: 1.3em;
+    text-align: left !important;
   }
 }
 
