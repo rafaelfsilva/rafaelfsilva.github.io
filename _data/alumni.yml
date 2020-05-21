@@ -1,11 +1,4 @@
 - worker:
-    - name: Samuel He
-      photo: samuel-he.jpg
-      linkedin: https://www.linkedin.com/in/samuel-he-001a2b16a
-      degree: B.S. in Computer Science
-      period: 2020-Present
-      description: 'Samuel works on the NSF-funded <a href="https://wrench-project.org" target="_blank">WRENCH</a> project. His work is focused on the development of WRENCH-enabled simulators for energy efficiency and scheduling.'
-
     - name: Vivian (Tongyu) Zhu
       photo: tongyu-zhu.jpg
       linkedin: https://www.linkedin.com/in/tongyu-zhu-00091/
@@ -19,6 +12,13 @@
       degree: B.S. in Computer Science
       period: 2018-Present
       description: 'Gautam works on the NSF-funded <a href="https://wrench-project.org" target="_blank">WRENCH</a> project. His work is focused on the development of visualization components for simulation outputs based on D3.js.'
+
+    - name: Samuel He
+      photo: samuel-he.jpg
+      linkedin: https://www.linkedin.com/in/samuel-he-001a2b16a
+      degree: B.S. in Computer Science
+      period: 2020-2020
+      description: 'Samuel works on the NSF-funded <a href="https://wrench-project.org" target="_blank">WRENCH</a> project. His work is focused on the development of WRENCH-enabled simulators for energy efficiency and scheduling.'
 
     - name: James Oeth
       photo: james-oeth.jpg
