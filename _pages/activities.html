@@ -29,7 +29,7 @@ description: Professional Activities
             <strong>Chair</strong><br/>
             {% for n in site.data.activities_chair %}
             {% for c in n.chair %}
-            {{ c.year }} – <a href="{{ n.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
+            {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
             {% endfor %}
             {% endfor %}
         </div>
