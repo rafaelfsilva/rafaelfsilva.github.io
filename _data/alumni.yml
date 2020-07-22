@@ -1,10 +1,17 @@
 - worker:
+    - name: Tabitha See Ya Lee
+      photo: tabitha-see-ya-lee.jpg
+      linkedin: https://www.linkedin.com/in/tabitha-sy-lee/
+      degree: B.S. in Computer Science (Vanderbilt University)
+      period: 2020-2020
+      description: 'Tabitha works on the NSF-funded <a href="https://eduwrench.org" target="_blank">eduWRENCH</a> project. Her work is focused on the development of simulation-driven pedagogical modules for CI Services concepts.'
+
     - name: Vivian (Tongyu) Zhu
       photo: tongyu-zhu.jpg
       linkedin: https://www.linkedin.com/in/tongyu-zhu-00091/
       degree: B.S. in Computer Science
       period: 2019-Present
-      description: 'Vivian works on the NSF-funded <a href="https://eduwrench.org" target="_blank">eduWRENCH</a> project. Her work is focused on the development of React-based web UI for hosting pedadogic modules.'
+      description: 'Vivian works on the NSF-funded <a href="https://eduwrench.org" target="_blank">eduWRENCH</a> project. Her work is focused on the development of React-based web UI for hosting pedagogical modules.'
 
     - name: Gautam Jethwani
       photo: gautam-jethwani.jpg
@@ -18,7 +25,7 @@
       linkedin: https://www.linkedin.com/in/samuel-he-001a2b16a
       degree: B.S. in Computer Science
       period: 2020-2020
-      description: 'Samuel works on the NSF-funded <a href="https://wrench-project.org" target="_blank">WRENCH</a> project. His work is focused on the development of WRENCH-enabled simulators for energy efficiency and scheduling.'
+      description: 'Samuel worked on the NSF-funded <a href="https://wrench-project.org" target="_blank">WRENCH</a> project. His work focused on the development of WRENCH-enabled simulators for energy efficiency and scheduling.'
 
     - name: James Oeth
       photo: james-oeth.jpg

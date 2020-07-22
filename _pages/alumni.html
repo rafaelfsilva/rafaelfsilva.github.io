@@ -5,7 +5,7 @@ permalink: /students/alumni/
 description: Current and Past Students
 ---
 
-<h3>Student Worker</h3>
+<h3>Student Worker / Intern</h3>
 
 <div class="activities" style="margin-top: 1em">
     <div class="row">
@@ -13,7 +13,7 @@ description: Current and Past Students
         {% for c in n.worker %}
         <div class="col-sm-6 col-md-6">
             <div style="float: left; margin-right: 1em">
-                <img src="/assets/images/alumni/{{ c.photo }}" width="60px"/>
+                <img src="/assets/images/alumni/{{ c.photo }}" width="60px" style="border-radius: 0.5em; box-shadow: #666 2px 2px 2px"/>
             </div>
             <a href="{{ c.linkedin }}" target="_blank"> <i class="fab {{site.data.main.social.linkedin.icon}}"></i></a>
             <strong>{{ c.name }}</strong> <br/>
