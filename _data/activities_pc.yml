@@ -1,3 +1,9 @@
+- conference: IEEE Cluster
+  series:
+  year: 2021
+  location: Portland, USA
+  link: https://clustercomp.org
+
 - conference: 15th Workflows in Support of Large-Scale Science
   series: WORKS
   year: 2020
