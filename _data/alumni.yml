@@ -7,19 +7,26 @@
       description: 'Tainã Coleman is a PhD student at the University of Southern California. She received her BS in Computer Engineering from Universidade Federal de Itajubá in Brazil and her MS in Computer Science from California State University Long Beach. Her research interests include Machine Learning, Data Science, and Distributed Computing.'
 
 - worker:
+    - name: Jason Feuerstein
+      photo: jason-feuerstein.png
+      linkedin: https://www.linkedin.com/in/jasonfeuerstein
+      degree: B.S. in Computer Science
+      period: 2020-present
+      description: 'Jason works on the NSF-funded <a href="https://eduwrench.org" target="_blank">eduWRENCH</a> project. His work is focused on the front-end development of the UI for hosting pedagogical modules.'
+
     - name: Tabitha See Ya Lee
       photo: tabitha-see-ya-lee.jpg
       linkedin: https://www.linkedin.com/in/tabitha-sy-lee/
       degree: B.S. in Computer Science (Vanderbilt University)
       period: 2020-2020
-      description: 'Tabitha works on the NSF-funded <a href="https://eduwrench.org" target="_blank">eduWRENCH</a> project. Her work is focused on the development of simulation-driven pedagogical modules for CI Services concepts.'
+      description: 'Tabitha worked on the NSF-funded <a href="https://eduwrench.org" target="_blank">eduWRENCH</a> project. Her work was focused on the development of simulation-driven pedagogical modules for CI Services concepts.'
 
     - name: Vivian (Tongyu) Zhu
       photo: tongyu-zhu.jpg
       linkedin: https://www.linkedin.com/in/tongyu-zhu-00091/
       degree: B.S. in Computer Science
       period: 2019-2020
-      description: 'Vivian works on the NSF-funded <a href="https://eduwrench.org" target="_blank">eduWRENCH</a> project. Her work is focused on the development of React-based web UI for hosting pedagogical modules.'
+      description: 'Vivian worked on the NSF-funded <a href="https://eduwrench.org" target="_blank">eduWRENCH</a> project. Her work was focused on the development of React-based web UI for hosting pedagogical modules.'
 
     - name: Gautam Jethwani
       photo: gautam-jethwani.jpg
