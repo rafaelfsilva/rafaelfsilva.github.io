@@ -1,3 +1,15 @@
+- conference: 35th IEEE International Parallel & Distributed Processing Symposium
+  series: IPDPS
+  year: 2021
+  location: Portland, USA
+  link: http://www.ipdps.org
+
+- conference: The International Conference for High Performance Computing, Networking, Storage, and Analysis
+  series: SC
+  year: 2021
+  location: 
+  link: http://sc21.supercomputing.org
+
 - conference: IEEE Cluster
   series:
   year: 2021
