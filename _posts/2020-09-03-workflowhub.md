@@ -33,5 +33,5 @@ generating synthetic workflows for all 6 applications.
 
 Read our [technical report](https://arxiv.org/abs/2009.00250) available at ArXiv.
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/ewOXrBdhPDiPPl" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/rafaelsilvajp/workflowhub-community-framework-for-enabling-scientific-workflow-research-and-development" title="WorkflowHub: Community Framework for Enabling Scientific Workflow Research and Development" target="_blank">WorkflowHub: Community Framework for Enabling Scientific Workflow Research and Development</a> </strong> from <strong><a href="https://www.slideshare.net/rafaelsilvajp" target="_blank">Rafael Ferreira da Silva</a></strong> </div>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/ewOXrBdhPDiPPl" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
