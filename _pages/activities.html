@@ -35,6 +35,15 @@ description: Professional Activities
         </div>
 
         <div class="col-sm-6 col-md-6">
+            <strong>Publicity Chair</strong><br/>
+            {% for n in site.data.activities_chair %}
+            {% for c in n.publicity %}
+            {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
+            {% endfor %}
+            {% endfor %}
+        </div>
+
+        <div class="col-sm-6 col-md-6">
             <strong>Track Chair</strong><br/>
             {% for n in site.data.activities_chair %}
             {% for c in n.track %}
@@ -51,16 +60,7 @@ description: Professional Activities
             {% endfor %}
             {% endfor %}
         </div>
-
-        <div class="col-sm-6 col-md-6">
-            <strong>Publicity Chair</strong><br/>
-            {% for n in site.data.activities_chair %}
-            {% for c in n.publicity %}
-            {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
-            {% endfor %}
-            {% endfor %}
-        </div>
-
+        
         <div class="col-sm-6 col-md-6">
             <strong>Local Arrangements Chair</strong><br/>
             {% for n in site.data.activities_chair %}
