@@ -1,4 +1,4 @@
-name: Build and deploy SciTech Jekyll site to GitHub Pages
+name: Build and deploy RafaelSilva.com Jekyll site to GitHub Pages
 
 on:
   push:
