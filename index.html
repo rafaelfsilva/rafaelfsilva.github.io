@@ -1,56 +1,95 @@
 ---
 layout: default
-type: home
-title: Research Interests
 ---
 
-<div>
-    <div class="interests row">
-        <div class="col-sm-6 col-md-4">
-            <strong>Modeling and Simulation</strong> of parallel and distributed computing systems
+<!-- Research Interests -->
+<div class="row">
+    <article class="post">
+        <div class="title">
+            <h2>Research Interests</h2>
         </div>
-        <div class="col-sm-6 col-md-4">
-            <strong>Scientific Workflows</strong> scheduling, optimization, fault-tolerance, and energy-efficiency
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <strong>Modeling and Simulation</strong> of parallel and distributed computing systems
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <strong>Scientific Workflows</strong> scheduling, optimization, fault-tolerance, and
+                energy-efficiency
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <strong>Distributed Computing</strong> on clouds, grids, and HPC clusters
+            </div>
         </div>
-        <div class="col-sm-6 col-md-4">
-            <strong>Distributed Computing</strong> on clouds, grids, and HPC clusters
-        </div>
-    </div>
+        <br/>
+    </article>
 </div>
 
-<hr class="dashed">
+<!-- Recent News -->
+<div class="row">
+    <article class="post">
+        <header>
+            <div class="title">
+                <h2><a href="single.html">Recent News</a></h2>
+            </div>
+        </header>
 
-<div class="row" style="margin-top: 2em !important; margin-bottom: 2em !important">
-    <div class="col-sm-12 col-md-12">
-        <strong>Featured Research Projects:</strong>
-    </div>
-    <div class="col-sm-6 col-md-6">
-        <div>
-            <a href="https://wrench-project.org" target="_blank">
-                <img src="assets/images/wrench.png" width="80" style="float: left; margin-right: 0.5em"/>
-            </a>
-            <p style="font-size: 0.8em; line-height: 1.3em">
-                The <a href="https://wrench-project.org" target="_blank">WRENCH project</a> is a simulation framework
-                that makes it possible to implement scalable and accurate simulators of complex cyberinfrastructure
-                systems quickly and easily.
-            </p>
-        </div>
-    </div>
-    <div class="col-sm-6 col-md-6">
-        <div>
-            <a href="https://workflowhub.org" target="_blank">
-                <img src="assets/images/workflowhub.png" width="55" style="float: left; margin-right: 0.5em"/>
-            </a>
-            <p style="font-size: 0.8em; line-height: 1.3em">
-                The <a href="https://workflowhub.org" target="_blank">WorkflowHub project</a> is a community framework
-                that enables scientific workflow research and development by providing tools for analyzing
-                workflow execution traces and generating synthetic traces.
-            </p>
-        </div>
-    </div>
+        {% include blogs.html %}
+
+        <footer>
+            <ul class="actions">
+                <li><a href="/blog" class="button large">See all News</a></li>
+            </ul>
+        </footer>
+
+    </article>
 </div>
 
-<hr class="dashed">
+<!-- Research Projects -->
+<div class="row">
+    <article class="post">
+        <header>
+            <div class="title">
+                <h2><a href="/projects">Research Projects</a></h2>
+                <p>Featured Research Projects</p>
+            </div>
+        </header>
 
-{% include blogs.html %}
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <div>
+                    <a href="https://wrench-project.org" target="_blank">
+                        <img src="assets/images/wrench.png" width="80" style="float: left; margin-right: 0.5em"/>
+                    </a>
+                    <p style="font-size: 0.8em; line-height: 1.3em">
+                        The <a href="https://wrench-project.org" target="_blank">WRENCH project</a> is a simulation
+                        framework
+                        that makes it possible to implement scalable and accurate simulators of complex
+                        cyberinfrastructure
+                        systems quickly and easily.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div>
+                    <a href="https://workflowhub.org" target="_blank">
+                        <img src="assets/images/workflowhub.png" width="55" style="float: left; margin-right: 0.5em"/>
+                    </a>
+                    <p style="font-size: 0.8em; line-height: 1.3em">
+                        The <a href="https://workflowhub.org" target="_blank">WorkflowHub project</a> is a community
+                        framework
+                        that enables scientific workflow research and development by providing tools for analyzing
+                        workflow execution traces and generating synthetic traces.
+                    </p>
+                </div>
+            </div>
+        </div>
 
+        <br/>
+
+        <footer>
+            <ul class="actions">
+                <li><a href="/projects" class="button large">See all Projects</a></li>
+            </ul>
+        </footer>
+    </article>
+</div>

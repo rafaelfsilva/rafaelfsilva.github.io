@@ -1,146 +1,178 @@
 ---
-layout: page
+layout: default
 title: Professional Activities
 permalink: /activities/
 description: Professional Activities
 ---
 
-<h3>Journals Editor</h3>
+<h2>Professional Activities</h2>
+<br/>
 
-{% if site.data.activities_editor.size > 0 %}
-<div class="activities row">
-    {% for n in site.data.activities_editor %}
-    <div class="col-sm-12 col-md-12" style="margin-bottom: 1em">
-        <strong><a href="{{ n.link }}" target="_blank">{{ n.journal }}</a></strong><br/>
-        {{ n.year }} – {{ n.role }}{% if n.description %}, {{ n.description }} {% endif %}
-    </div>
-    {% endfor %}
+<div class="row">
+    <article class="post">
+        <header>
+            <div class="title">
+                <h2>Journals Editor</h2>
+            </div>
+        </header>
+        {% if site.data.activities_editor.size > 0 %}
+        <div class="row">
+            {% for n in site.data.activities_editor %}
+            <div class="col-sm-12 col-md-12" style="margin-bottom: 1em">
+                <strong><a href="{{ n.link }}" target="_blank">{{ n.journal }}</a></strong><br/>
+                {{ n.year }} – {{ n.role }}{% if n.description %}, {{ n.description }} {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </article>
 </div>
-{% endif %}
 
-<hr/>
+<div class="row">
+    <article class="post">
+        <header>
+            <div class="title">
+                <h2>Conferences Chair</h2>
+            </div>
+        </header>
+        {% if site.data.activities_chair.size > 0 %}
+        <div class="activities">
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <strong>Chair</strong><br/>
+                    {% for n in site.data.activities_chair %}
+                    {% for c in n.chair %}
+                    {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
+                    {% endfor %}
+                    {% endfor %}
+                </div>
 
-<h3>Conferences Chair</h3>
+                <div class="col-sm-6 col-md-6">
+                    <strong>Publicity Chair</strong><br/>
+                    {% for n in site.data.activities_chair %}
+                    {% for c in n.publicity %}
+                    {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
+                    {% endfor %}
+                    {% endfor %}
+                </div>
 
-{% if site.data.activities_chair.size > 0 %}
-<div class="activities">
-    <div class="row">
-        <div class="col-sm-6 col-md-6">
-            <strong>Chair</strong><br/>
-            {% for n in site.data.activities_chair %}
-            {% for c in n.chair %}
-            {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
-            {% endfor %}
-            {% endfor %}
+                <div class="col-sm-6 col-md-6">
+                    <strong>Track Chair</strong><br/>
+                    {% for n in site.data.activities_chair %}
+                    {% for c in n.track %}
+                    {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
+                    {% endfor %}
+                    {% endfor %}
+                </div>
+
+                <div class="col-sm-6 col-md-6">
+                    <strong>Organizer</strong><br/>
+                    {% for n in site.data.activities_chair %}
+                    {% for c in n.organizer %}
+                    {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
+                    {% endfor %}
+                    {% endfor %}
+                </div>
+
+                <div class="col-sm-6 col-md-6">
+                    <strong>Local Arrangements Chair</strong><br/>
+                    {% for n in site.data.activities_chair %}
+                    {% for c in n.local %}
+                    {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
+                    {% endfor %}
+                    {% endfor %}
+                </div>
+            </div>
         </div>
-
-        <div class="col-sm-6 col-md-6">
-            <strong>Publicity Chair</strong><br/>
-            {% for n in site.data.activities_chair %}
-            {% for c in n.publicity %}
-            {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
-            {% endfor %}
-            {% endfor %}
-        </div>
-
-        <div class="col-sm-6 col-md-6">
-            <strong>Track Chair</strong><br/>
-            {% for n in site.data.activities_chair %}
-            {% for c in n.track %}
-            {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
-            {% endfor %}
-            {% endfor %}
-        </div>
-
-        <div class="col-sm-6 col-md-6">
-            <strong>Organizer</strong><br/>
-            {% for n in site.data.activities_chair %}
-            {% for c in n.organizer %}
-            {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
-            {% endfor %}
-            {% endfor %}
-        </div>
-        
-        <div class="col-sm-6 col-md-6">
-            <strong>Local Arrangements Chair</strong><br/>
-            {% for n in site.data.activities_chair %}
-            {% for c in n.local %}
-            {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
-            {% endfor %}
-            {% endfor %}
-        </div>
-
-    </div>
+        <br/>
+        {% endif %}
+    </article>
 </div>
-{% endif %}
 
-<hr/>
-
-<h3>Program Committees Member</h3>
-
-<div class="activities">
-    <div class="row">
+<div class="row">
+    <article class="post">
+        <header>
+            <div class="title">
+                <h2>Program Committees Member</h2>
+                <p>Served as PC member of {{ site.data.activities_pc.size }} conferences</p>
+            </div>
+        </header>
         {% for n in site.data.activities_pc %}
         <div class="col-sm-12 col-md-12">
             {{ n.year }} – <a href="{{ n.link }}" target="_blank">{{ n.conference }}</a>{% if n.series %} ({{ n.series
             }}){% endif %}, {{ n.location }}
         </div>
         {% endfor %}
-    </div>
+        <br/>
+    </article>
 </div>
 
-<hr/>
-
-<h3>Funding Agencies Reviewer</h3>
-
-<div class="activities">
-    <div class="row">
-        {% for n in site.data.activities_funding %}
-        <div class="col-sm-12 col-md-12">
-            {{ n.year }} – <a href="{{ n.link }}" target="_blank">{{ n.agency }}</a>{% if n.acronym %} ({{ n.acronym
-            }}){% endif %}, {{ n.description }}
+<div class="row">
+    <article class="post">
+        <header>
+            <div class="title">
+                <h2>Funding Agencies Reviewer</h2>
+            </div>
+        </header>
+        <div class="row">
+            {% for n in site.data.activities_funding %}
+            <div class="col-sm-12 col-md-12">
+                {{ n.year }} – <a href="{{ n.link }}" target="_blank">{{ n.agency }}</a>{% if n.acronym %} ({{ n.acronym
+                }}){% endif %}, {{ n.description }}
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
-    </div>
+        <br/>
+    </article>
 </div>
 
-<hr/>
-
-<h3>Journals Reviewer</h3>
-
-<div class="activities">
-    <div class="row">
-        {% for n in site.data.activities_journal %}
-        <div class="col-sm-12 col-md-12">
-            {{ n.year }} – <a href="{{ n.link }}" target="_blank">{{ n.journal }}</a>{% if n.acronym %} ({{ n.acronym
-            }}){% endif %}
+<div class="row">
+    <article class="post">
+        <header>
+            <div class="title">
+                <h2>Journals Reviewer</h2>
+                <p>Reviewed for {{ site.data.activities_journal.size }} international journals</p>
+            </div>
+        </header>
+        <div class="row">
+            {% for n in site.data.activities_journal %}
+            <div class="col-sm-12 col-md-12">
+                {{ n.year }} – <a href="{{ n.link }}" target="_blank">{{ n.journal }}</a>{% if n.acronym %} ({{
+                n.acronym
+                }}){% endif %}
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
-    </div>
+        <br/>
+    </article>
 </div>
 
-<hr/>
-
-<h3>Conferences Reviewer</h3>
-
-<div class="activities">
-    <div class="row">
-        {% for n in site.data.activities_conference %}
-        <div class="col-sm-12 col-md-12">
-            {{ n.year }} – <a href="{{ n.link }}" target="_blank">{{ n.conference }}</a>{% if n.series %} ({{ n.series
-            }}){% endif %}, {{ n.location }}
+<div class="row">
+    <article class="post">
+        <header>
+            <div class="title">
+                <h2>Conferences Reviewer</h2>
+                <p>Reviewed for {{ site.data.activities_conference.size }} international conferences</p>
+            </div>
+        </header>
+        <div class="row">
+            {% for n in site.data.activities_conference %}
+            <div class="col-sm-12 col-md-12">
+                {{ n.year }} – <a href="{{ n.link }}" target="_blank">{{ n.conference }}</a>{% if n.series %} ({{
+                n.series
+                }}){% endif %}, {{ n.location }}
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
-    </div>
+        <br/>
+    </article>
 </div>
 
-<br/><br/>
-
-<figure>
-    <img src="/assets/images/view-palos-verdes.jpg"
-
-         sizes="(max-width: 800px) 100vw, 800px"/>
-    <figcaption>
-        <span style="color: #808080; font-size: 0.8em">Sunset from Palos Verdes, CA – 20 miles South of USC/ISI.</span>
-    </figcaption>
-</figure>
+<div class="bottom">
+    <figure style="text-align: center">
+        <img src="/assets/images/view-palos-verdes.jpg" sizes="(max-width: 800px) 100vw, 800px" alt=""/>
+        <figcaption>
+            <span style="color: #808080; font-size: 0.8em">Sunset from Palos Verdes, CA – 20 miles South of USC/ISI.</span>
+        </figcaption>
+    </figure>
+</div>

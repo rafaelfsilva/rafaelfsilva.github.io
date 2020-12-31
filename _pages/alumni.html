@@ -1,83 +1,105 @@
 ---
-layout: page
+layout: default
 title: Current and Past Students
 permalink: /students/alumni/
-description: Current and Past Students
 ---
 
-<h3>PhD Students</h3>
+<h2>{{ page.title }}</h2>
+<br/>
 
-<div class="activities" style="margin-top: 1em">
-    <div class="row">
-        {% for n in site.data.alumni %}
-        {% for c in n.phd %}
-        <div class="col-sm-6 col-md-6">
-            <div style="float: left; margin-right: 1em">
-                <img src="/assets/images/alumni/{{ c.photo }}" width="80px" style="border-radius: 0.5em; box-shadow: #666 2px 2px 2px"/>
+<div class="row">
+    <article class="post">
+        <header>
+            <div class="title">
+                <h2>PhD Students</h2>
             </div>
-            <a href="{{ c.linkedin }}" target="_blank"> <i class="fab {{site.data.main.social.linkedin.icon}}"></i></a>
-            <strong>{{ c.name }}</strong> <br/>
-            <p style="font-size: 0.8em; line-height: 1.3em">
-                {{ c.period }}, {{ c.degree }}<br/>
-                <i style="color: #999">{{ c.description }}</i>
-            </p>
-        </div>
-        {% endfor %}
-        {% endfor %}
-    </div>
-</div>
-
-<hr/>
-
-<h3>Student Worker / Intern</h3>
-
-<div class="activities" style="margin-top: 1em">
-    <div class="row">
-        {% for n in site.data.alumni %}
-        {% for c in n.worker %}
-        <div class="col-sm-6 col-md-6">
-            <div style="float: left; margin-right: 1em">
-                <img src="/assets/images/alumni/{{ c.photo }}" width="60px" style="border-radius: 0.5em; box-shadow: #666 2px 2px 2px"/>
+        </header>
+        <div class="activities" style="margin-top: 1em">
+            <div class="row">
+                {% for n in site.data.alumni %}
+                {% for c in n.phd %}
+                <div class="col-sm-6 col-md-6">
+                    <div style="float: left; margin-right: 1em">
+                        <img src="/assets/images/alumni/{{ c.photo }}" width="80px"
+                             style="border-radius: 0.5em; box-shadow: #666 2px 2px 2px"/>
+                    </div>
+                    <a href="{{ c.linkedin }}" target="_blank"> <i
+                            class="fab {{site.data.main.social.linkedin.icon}}"></i></a>
+                    <strong>{{ c.name }}</strong> <br/>
+                    <p style="font-size: 0.8em; line-height: 1.3em">
+                        {{ c.period }}, {{ c.degree }}<br/>
+                        <i style="color: #999">{{ c.description }}</i>
+                    </p>
+                </div>
+                {% endfor %}
+                {% endfor %}
             </div>
-            <a href="{{ c.linkedin }}" target="_blank"> <i class="fab {{site.data.main.social.linkedin.icon}}"></i></a>
-            <strong>{{ c.name }}</strong> <br/>
-            <p style="font-size: 0.8em; line-height: 1.3em">
-                {{ c.period }}, {{ c.degree }}<br/>
-                <i style="color: #999">{{ c.description }}</i>
-            </p>
         </div>
-        {% endfor %}
-        {% endfor %}
-    </div>
+    </article>
 </div>
 
-<hr/>
-
-<h3>Directed Research</h3>
-
-<div class="activities" style="margin-top: 1em">
-    <div class="row">
-        {% for n in site.data.alumni %}
-        {% for c in n.dr %}
-        <div class="col-sm-6 col-md-6" style="margin-bottom: 0.5em">
-            <a href="{{ c.linkedin }}" target="_blank"> <i class="fab {{site.data.main.social.linkedin.icon}}"></i></a>
-            <strong>{{ c.name }}</strong> <br/>
-            <p style="font-size: 0.8em; line-height: 1.3em">
-                {{ c.period }}, {{ c.degree }}<br/>
-            </p>
+<div class="row">
+    <article class="post">
+        <header>
+            <div class="title">
+                <h2>Student Worker / Intern</h2>
+            </div>
+        </header>
+        <div class="activities" style="margin-top: 1em">
+            <div class="row">
+                {% for n in site.data.alumni %}
+                {% for c in n.worker %}
+                <div class="col-sm-6 col-md-6">
+                    <div style="float: left; margin-right: 1em">
+                        <img src="/assets/images/alumni/{{ c.photo }}" width="60px"
+                             style="border-radius: 0.5em; box-shadow: #666 2px 2px 2px"/>
+                    </div>
+                    <a href="{{ c.linkedin }}" target="_blank"> <i
+                            class="fab {{site.data.main.social.linkedin.icon}}"></i></a>
+                    <strong>{{ c.name }}</strong> <br/>
+                    <p style="font-size: 0.8em; line-height: 1.3em">
+                        {{ c.period }}, {{ c.degree }}<br/>
+                        <i style="color: #999">{{ c.description }}</i>
+                    </p>
+                </div>
+                {% endfor %}
+                {% endfor %}
+            </div>
         </div>
-        {% endfor %}
-        {% endfor %}
-    </div>
+    </article>
 </div>
 
-<br/><br/>
+<div class="row">
+    <article class="post">
+        <header>
+            <div class="title">
+                <h2>Directed Research</h2>
+            </div>
+        </header>
+        <div class="activities" style="margin-top: 1em">
+            <div class="row">
+                {% for n in site.data.alumni %}
+                {% for c in n.dr %}
+                <div class="col-sm-6 col-md-6" style="margin-bottom: 0.5em">
+                    <a href="{{ c.linkedin }}" target="_blank"> <i
+                            class="fab {{site.data.main.social.linkedin.icon}}"></i></a>
+                    <strong>{{ c.name }}</strong> <br/>
+                    <p style="font-size: 0.8em; line-height: 1.3em">
+                        {{ c.period }}, {{ c.degree }}<br/>
+                    </p>
+                </div>
+                {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+    </article>
+</div>
 
-<figure>
-    <img src="/assets/images/view-palos-verdes.jpg"
-
-         sizes="(max-width: 800px) 100vw, 800px"/>
-    <figcaption>
-        <span style="color: #808080; font-size: 0.8em">Sunset from Palos Verdes, CA – 20 miles South of USC/ISI.</span>
-    </figcaption>
-</figure>
+<div class="bottom">
+    <figure style="text-align: center">
+        <img src="/assets/images/view-palos-verdes.jpg" sizes="(max-width: 800px) 100vw, 800px" alt=""/>
+        <figcaption>
+            <span style="color: #808080; font-size: 0.8em">Sunset from Palos Verdes, CA – 20 miles South of USC/ISI.</span>
+        </figcaption>
+    </figure>
+</div>

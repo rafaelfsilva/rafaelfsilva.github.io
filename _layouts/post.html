@@ -2,44 +2,32 @@
 layout: default
 ---
 
-<!--                            
-This layout is used for posts. Changing anything here will affect all posts(not pages)
- -->
-{% include breadcrumbs.html %}
+<!-- Post -->
+<div class="row">
+    <article class="post">
+        <header>
+            <div class="title">
+                <h2>{{ page.title }}</h2>
+                <p>{{ page.subtitle }}</p>
+            </div>
+            <div class="meta">
+                <time class="published" datetime="2015-11-01"><i class="fa fa-calendar" aria-hidden="true"></i>
+                    {{page.date | date_to_string }}&nbsp;
+                </time>
+                <i class="fa fa-clock-o" aria-hidden="true"></i> {% include reading-time.html %}
+            </div>
+        </header>
 
-<div class="meta" data-aos="fade-up">
-    <p>
-        <small>
-      <span>
-        <i class="fa fa-calendar" aria-hidden="true"></i> {{page.date |
-        date_to_string }}&nbsp;
-      </span>
-            <span>
-        <i class="fa fa-user" aria-hidden="true"></i> {{page.author }}&nbsp;
-      </span>
+        <img class="image featured" src="{{site.baseurl}}{{page.image}}" alt=""/>
 
-            <span>
-        <i class="fa fa-clock-o" aria-hidden="true"></i> {% include
-        reading-time.html %}
-      </span>
-        </small>
-    </p>
-</div>
-
-<div class="featured-image"
-     style="background-image: url({{site.baseurl}}{{page.image}}); background-size: contain; height: 400px"
-     data-aos="zoom-in"></div>
-
-<div class="container">
-    <article>
         {% if site.toc %}{% include toc.html html=content class="toc.rev.clearfix"
         %}{% endif %} {{content}}
+
+        <footer>
+            <h5>Tags</h5>
+            <ul class="stats" style="margin-top: 3em">
+                {% if page.categories %} {% include categories-post.html %} {% endif %}
+            </ul>
+        </footer>
     </article>
-</div>
-<hr class="dashed"/>
-<div class="container">
-    {% if site.share %} {% include share-buttons.html %} {% endif %} {% if
-    page.categories %} {% include categories-post.html %} {% endif %} {% if
-    site.disqus %} {% include disqus.html %} {% endif %} {% if site.recent-posts
-    %} {% include recent.html %} {% endif %}
 </div>

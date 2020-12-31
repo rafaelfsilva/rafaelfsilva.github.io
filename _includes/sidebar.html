@@ -1,75 +1,73 @@
-<div class="sidebar">
-    <div class="author-container shadow">
-        <div class="author">
-            <img src="{{site.data.main.image}}" width="100%" height="auto;" alt="{{site.title}}"
-                 onclick="location.href='/'">
-        </div>
-        <div class="about text-center">
-            <h1 class="title"><a href="/{{site.baseurl}}">{{site.data.main.name}}</a></h1>
-        </div>
-        <div class="bio text-center">
-            <p class="m0" style="line-height: 1.5em">{{site.data.main.profession}}</p>
-        </div>
-        <hr class="dashed">
-        <div>
-            <ul class="menu">
-                {% for item in site.data.main.menu %}
-                <li>
-                    <a {% if page.url== item.link %}class="active" {% endif %} href="{{item.link}}">{{item.title}}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-        <hr class="dashed">
-        <div class="social text-center">
-            <ul class="sm p0 m0a">
-                <li>
-                    <a href="{{site.data.main.social.linkedin.link}}" target="_blank">
-                        <i class="fab {{site.data.main.social.linkedin.icon}}"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{site.data.main.social.googlescholar.link}}" target="_blank">
-                        <i class="ai {{site.data.main.social.googlescholar.icon}}"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{site.data.main.social.researchgate.link}}" target="_blank">
-                        <i class="ai {{site.data.main.social.researchgate.icon}}"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{site.data.main.social.dblp.link}}" target="_blank">
-                        <i class="ai {{site.data.main.social.dblp.icon}}"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{site.data.main.social.orcid.link}}" target="_blank">
-                        <i class="ai {{site.data.main.social.orcid.icon}}"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{site.data.main.social.github.link}}" target="_blank">
-                        <i class="fab {{site.data.main.social.github.icon}}"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+<section id="sidebar">
 
-        <hr class="dashed">
-
-        <div class="bio text-center">
-            <p class="m0" style="margin-left: 1.5em">
-                <strong>Contact</strong><br/>
-                Rafael Ferreira da Silva, Ph.D.<br/>
-                USC Information Sciences Institute<br/>
-                <i class="fas fa-map-marker-alt"></i> 4676 Admiralty Way Suite 1001<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp; Marina del Rey, CA, USA 90292<br/>
-                <i class="fas fa-phone"></i> Office: 310-448-8352<br/>
-                <i class="fas fa-envelope"></i> rafsilva@isi.edu<br/>
-                <i class="fas fa-envelope"></i> rafaelfe@usc.edu
+    <!-- Intro -->
+    <section id="intro">
+        <a href="/" class="logo"><img src="/assets/images/2019-rafael-ferreira-da-silva-square.jpg" alt=""/></a>
+        <header>
+            <h2>Rafael Ferreira da Silva, Ph.D.</h2>
+            <p style="margin-top: 1em">
+                <strong>Research Assistant Professor</strong><br/>
+                <a href="https://www.cs.usc.edu/" target="_blank">Department of Computer Science</a><br/>
+                <a href="https://usc.edu/" target="_blank">University of Southern California</a>
             </p>
-        </div>
+            <p>
+                <strong>Research Lead</strong><br/>
+                <a href="https://scitech.isi.edu/" target="_blank">Science Automation Technologies (SciTech)</a><br/>
+                <a href="https://isi.edu/" target="_blank">USC Information Sciences Institute</a>
+            </p>
+        </header>
 
-    </div>
-</div>
+        <ul class="icons">
+            <li>
+                <a href="{{site.data.main.social.linkedin.link}}" target="_blank">
+                    <i class="fab {{site.data.main.social.linkedin.icon}}"></i>
+                </a>
+            </li>
+            <li>
+                <a href="{{site.data.main.social.googlescholar.link}}" target="_blank">
+                    <i class="ai {{site.data.main.social.googlescholar.icon}}"></i>
+                </a>
+            </li>
+            <li>
+                <a href="{{site.data.main.social.researchgate.link}}" target="_blank">
+                    <i class="ai {{site.data.main.social.researchgate.icon}}"></i>
+                </a>
+            </li>
+            <li>
+                <a href="{{site.data.main.social.dblp.link}}" target="_blank">
+                    <i class="ai {{site.data.main.social.dblp.icon}}"></i>
+                </a>
+            </li>
+            <li>
+                <a href="{{site.data.main.social.orcid.link}}" target="_blank">
+                    <i class="ai {{site.data.main.social.orcid.icon}}"></i>
+                </a>
+            </li>
+            <li>
+                <a href="{{site.data.main.social.github.link}}" target="_blank">
+                    <i class="fab {{site.data.main.social.github.icon}}"></i>
+                </a>
+            </li>
+        </ul>
+
+    </section>
+
+    {% include footer.html %}
+
+</section>
+
+
+<!--<div class="sidebar">-->
+<!--    <div class="author-container shadow">-->
+<!--        <hr class="dashed">-->
+<!--        <div>-->
+<!--            <ul class="menu">-->
+<!--                {% for item in site.data.main.menu %}-->
+<!--                <li>-->
+<!--                    <a {% if page.url== item.link %}class="active" {% endif %} href="{{item.link}}">{{item.title}}</a>-->
+<!--                </li>-->
+<!--                {% endfor %}-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->

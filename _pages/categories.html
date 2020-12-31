@@ -1,19 +1,25 @@
 ---
 layout: default
-title: News
+permalink: /categories/
+title: Categories
+description: All the posts are sorted based on their category.
 ---
 
+<h2>{{ page.title }}</h2>
+<br/>
+
+{% for category in site.categories %}
+{% capture category_name %}{{ category | first }}{% endcapture %}
+<a name="{{ category_name | slugify }}"></a>
 <div class="row">
     <article class="post">
         <header>
             <div class="title">
-                <h2>News</h2>
-                <p>Find all the posts here.</p>
+                <h2>{{ category_name }}</h2>
             </div>
         </header>
-
         <div class="news">
-            {% for post in paginator.posts %}
+            {% for post in site.categories[category_name] %}
             <a href="{{site.baseurl}}{{post.url}}" class="card mb-3">
                 <img src="{{ post.image }}" class="card-img-top" alt="">
                 <div class="card-body">
@@ -24,9 +30,6 @@ title: News
             </a>
             {% endfor %}
         </div>
-
-        <footer>
-            {% include pagination.html %}
-        </footer>
     </article>
 </div>
+{% endfor %}

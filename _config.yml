@@ -1,80 +1,21 @@
-# ______ _            _                                   _
-# | ___ \ |          | |                                 | |
-# | |_/ / | __ _  ___| | _____ _   _ _ __ _ __ __ _ _ __ | |_
-# | ___ \ |/ _` |/ __| |/ / __| | | | '__| '__/ _` | '_ \| __|
-# | |_/ / | (_| | (__|   < (__| |_| | |  | | | (_| | | | | |_
-# \____/|_|\__,_|\___|_|\_\___|\__,_|_|  |_|  \__,_|_| |_|\__|
-# http://patorjk.com/software/taag/#p=testall&f=Blocks&t=Blackcurrant%0A
-
-# Almost all the things in the website can be customized from here.
-# Changing title and description according to your website requirement is important.
-
-
 title: Rafael Ferreira da Silva, Ph.D. - Research Assistant Professor
 description: 'Research Assistant Professor at USC Information Sciences Institute. Research: Scientific Workflows, Distributed Systems, Reproducibility, Data Science...'
 url: https://rafaelsilva.com
 
-# For more customizations, go to  _data/main.yml
-
-
-
-#   ,-----.       ,--.                   ,---.  ,--.
-#  '  .--./ ,---. |  | ,---. ,--.--.    '   .-' |  ,---.  ,---. ,--,--,--. ,---.
-#  |  |    | .-. ||  || .-. ||  .--'    `.  `-. |  .-.  || .-. :|        || .-. :
-#  '  '--'\' '-' '|  |' '-' '|  |       .-'    ||  | |  |\   --.|  |  |  |\   --.
-#   `-----' `---' `--' `---' `--'       `-----' `--' `--' `----'`--`--`--' `----'
-#
-# There are 5 color schemes to choose from.
-# The one at the bottom takes precedence.
-# Remove # before 'color-scheme' to activate particular color scheme.
-# You can add your own color code as well.
-
-# color-scheme: '#1abc9c' # Green
-# color-scheme: '#2693e6' # Blue
-# color-scheme: '#987ce6' # Purple
-# color-scheme: '#ea67a8' # Pink
-color-scheme: '#ec632b' # Orange
-
-# Kramdown is the default markdown processor used. It is supported by Github.
 markdown: kramdown
-
-# Mathjax setting
 enable-mathjax: yes
 
-# Charts
-enable-chartjs: yes
-
-# This defines how the URLs should look like.
 permalink: /blog/:title/
 
-# Pagination - Posts per page in the blog index.
-paginate: 6
+# Pagination
+paginate: 8
 paginate_path: /blog/page:num/
 
-# Jekyll will read contents inside _pages only if we tell it to.
 include:
   - _pages
 
 # Google Ananlytics Tracker.
 analytics: UA-338939-1
-
-# Table of contents in each post
-# Change the value to 'no' if Table of Contents is not required.
-#toc:  yes
-
-# Share buttons
-# Change it to `no` to remove share buttons.
-share: yes
-
-# Comments by Disqus
-# Sign up with Disqus to get your shortcode. Leave it blank if you do not want to run diqus code on the website.
-# Leave it blank to remove disqus completely.
-#disqus: webjeda-demo
-
-
-# Define whether recent posts should be shown at the bottom of each post.
-# Change it to `no` to remove recent posts.
-recent-posts: yes
 
 # scholar
 scholar:
@@ -83,34 +24,6 @@ scholar:
   group_order: descending
   type_order: [article, inproceedings, phdthesis, techreport]
   bibliography_template: bib
-
-
-# Editing items below this line can break the site
-##################################################
-
-#
-#   ,-----.                                                    ,--.
-#  '  .--./ ,---. ,--,--,--. ,---. ,--.--. ,---.  ,---.  ,---. `--' ,---. ,--,--,
-#  |  |    | .-. ||        || .-. ||  .--'| .-. :(  .-' (  .-' ,--.| .-. ||      \
-#  '  '--'\' '-' '|  |  |  || '-' '|  |   \   --..-'  `).-'  `)|  |' '-' '|  ||  |
-#   `-----' `---' `--`--`--'|  |-' `--'    `----'`----' `----' `--' `---' `--''--'
-#                           `--'
-# All compression variables are declared here.
-
-sass:
-  sass_dir: /assets/css/_sass
-  style: compressed
-
-#compress.html
-compress_html:
-  clippings: [html, head, meta, title, link, body, div, script, header, footer]
-  comments: ["<!-- ", " -->"]
-  endings: [all]
-  ignore:
-    envs: [local]
-  blanklines: false
-  profile: false
-  startings: []
 
 collections:
   presentations:
@@ -123,10 +36,9 @@ collections:
 exclude:
   - .git
 
-# These plugins are supported by github by default and can be installed locally using ruby gems
 plugins:
-  - jekyll-sitemap    # Adds sitemap to the website at /sitemap.xml
-  - jekyll-feed       # Adds feed to the website at /feed.xml
+#  - jekyll-sitemap    # Adds sitemap to the website at /sitemap.xml
+#  - jekyll-feed       # Adds feed to the website at /feed.xml
   - jekyll-paginate   # Used for sorting posts by page numbers.
-  - jekyll-seo-tag    # Adds all the important SEO meta tags by default.
-#  - jekyll-scholar
+#  - jekyll-seo-tag    # Adds all the important SEO meta tags by default.
+  - jekyll-scholar

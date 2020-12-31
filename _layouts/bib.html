@@ -2,11 +2,11 @@
 ---
 
 {% if entry.doi %}
-<a href="http://dx.doi.org/{{ entry.doi }}" target="_blank" alt="DOI">
+<a href="http://dx.doi.org/{{ entry.doi }}" target="_blank">
     <i class="ai ai-doi"></i>
 </a>
 {% endif %}
-<a href="/files/publications/{{ entry.key }}.pdf" target="_blank" alt="PDF">
+<a href="/files/publications/{{ entry.key }}.pdf" target="_blank">
     <i class="far fa-file-pdf"></i>
 </a>
 {{ reference }}

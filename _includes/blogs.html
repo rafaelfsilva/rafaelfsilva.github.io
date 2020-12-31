@@ -1,10 +1,13 @@
-<h3 class="m0a">Recent News</h3>
 <div class="projects">
     {% for item in site.posts limit: 6 %}
-    <a href="{{item.url}}" class="nostyle p-1">
-        <div class="project borders cards" data-aos="fade-up">
-            <div class="project-image" style="background-image: url({{item.image}})"></div>
-            <p class="title text-center">{{item.title}}</p>
+    <a href="{{ item.url }}" class="card mb-3">
+        <img src="{{ item.image }}" class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title" style="line-height: 1.2em">{{ item.title }}</h5>
+            <p class="card-text">{{ item.excerpt | strip_html | truncatewords: 20 }}</p>
+            <p class="card-text">
+                <small class="text-muted" style="color: #999 !important">{{ item.date | date: "%a, %b %d, %Y" }}</small>
+            </p>
         </div>
     </a>
     {% endfor %}
