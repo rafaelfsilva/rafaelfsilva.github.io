@@ -3579,7 +3579,11 @@ body.single #footer {
 }
 
 #menu .links > li a:hover h3 {
-    color: #2ebaae;
+    color: #BA5B35;
+}
+
+#menu .links li a:hover {
+    text-decoration: none;
 }
 
 #menu .links > li:first-child {
