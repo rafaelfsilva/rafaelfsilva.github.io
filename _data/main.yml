@@ -52,6 +52,10 @@ social:
     icon: ai-orcid
     link: http://orcid.org/0000-0002-1720-0928
 
+  twitter:
+    icon: fa-twitter
+    link: https://twitter.com/RafaelFSilva__
+
 expertise:
   - title: HTML5
     level: 45
