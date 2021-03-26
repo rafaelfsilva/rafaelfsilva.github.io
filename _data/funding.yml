@@ -1,4 +1,12 @@
 - nsf:
+  - title: "REU Site: SURF-I: Safe, Usable, Resilient and Fair Internet"
+    period: 03/2021-02/2024
+    amount: "405,000"
+    program: "CNS Division Of Computer and Network Systems"
+    awards:
+      - id: 2051101
+        link: https://nsf.gov/awardsearch/showAward?AWD_ID=2051101
+      
   - title: "CCRI: Planning: Collaborative Research: Infrastructure for Enabling Systematic Development and Research of Scientific Workflow Management Systems"
     period: 10/2020-09/2021
     amount: "100,000"
