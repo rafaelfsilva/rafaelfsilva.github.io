@@ -16,22 +16,20 @@ permalink: /funding/
             </div>
         </header>
         <div class="activities">
-            <div class="row">
-                {% for n in site.data.funding %}
-                {% for c in n.nsf %}
-                <div class="col-sm-12 col-md-12" style="margin-bottom: 2em; line-height: 1.5em">
-                    <strong>{{ c.title }}</strong><br/>
-                    Period: <strong style="color: #666 !important">{{ c.period }}</strong> – Total Amount: ${{ c.amount
-                    }}<br/>
-                    Program: {{ c.program }}<br/>
-                    Awards:
-                    {% for d in c.awards %}
-                    #<a href="{{ d.link }}" target="_blank">{{ d.id }}</a>
-                    {% endfor %}
-                </div>
-                {% endfor %}
+            {% for n in site.data.funding %}
+            {% for c in n.nsf %}
+            <div class="col-sm-12 col-md-12" style="margin-bottom: 2em; line-height: 1.5em">
+                <strong>{{ c.title }}</strong><br/>
+                Period: <strong style="color: #666 !important">{{ c.period }}</strong> – Total Amount: ${{ c.amount
+                }}<br/>
+                Program: {{ c.program }}<br/>
+                Awards:
+                {% for d in c.awards %}
+                #<a href="{{ d.link }}" target="_blank">{{ d.id }}</a>
                 {% endfor %}
             </div>
+            {% endfor %}
+            {% endfor %}
         </div>
     </article>
 </div>
@@ -45,22 +43,20 @@ permalink: /funding/
             </div>
         </header>
         <div class="activities">
-            <div class="row">
-                {% for n in site.data.funding %}
-                {% for c in n.darpa %}
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-bottom: 2em; line-height: 1.5em">
-                    <strong>{{ c.title }}</strong><br/>
-                    Period: <strong style="color: #666 !important">{{ c.period }}</strong> – Total Amount: ${{ c.amount
-                    }}<br/>
-                    Program: {{ c.program }}<br/>
-                    Awards:
-                    {% for d in c.awards %}
-                    #<a href="{{ d.link }}" target="_blank">{{ d.id }}</a>
-                    {% endfor %}
-                </div>
-                {% endfor %}
+            {% for n in site.data.funding %}
+            {% for c in n.darpa %}
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-bottom: 2em; line-height: 1.5em">
+                <strong>{{ c.title }}</strong><br/>
+                Period: <strong style="color: #666 !important">{{ c.period }}</strong> – Total Amount: ${{ c.amount
+                }}<br/>
+                Program: {{ c.program }}<br/>
+                Awards:
+                {% for d in c.awards %}
+                #<a href="{{ d.link }}" target="_blank">{{ d.id }}</a>
                 {% endfor %}
             </div>
+            {% endfor %}
+            {% endfor %}
         </div>
     </article>
 </div>
@@ -73,24 +69,22 @@ permalink: /funding/
             </div>
         </header>
         <div class="activities">
-            <div class="row">
-                {% for n in site.data.funding %}
-                {% for c in n.international %}
-                <div class="col-sm-12 col-md-12" style="margin-bottom: 2em; line-height: 1.5em">
-                    <strong>{{ c.title }}</strong><br/>
-                    Period: <strong style="color: #666 !important">{{ c.period }}</strong> – Total Amount: {{ c.amount
-                    }}<br/>
-                    Program: {{ c.program }}<br/>
-                    {% if c.awards %}
-                    Awards:
-                    {% for d in c.awards %}
-                    #<a href="{{ d.link }}" target="_blank">{{ d.id }}</a>
-                    {% endfor %}
-                    {% endif %}
-                </div>
+            {% for n in site.data.funding %}
+            {% for c in n.international %}
+            <div class="col-sm-12 col-md-12" style="margin-bottom: 2em; line-height: 1.5em">
+                <strong>{{ c.title }}</strong><br/>
+                Period: <strong style="color: #666 !important">{{ c.period }}</strong> – Total Amount: {{ c.amount
+                }}<br/>
+                Program: {{ c.program }}<br/>
+                {% if c.awards %}
+                Awards:
+                {% for d in c.awards %}
+                #<a href="{{ d.link }}" target="_blank">{{ d.id }}</a>
                 {% endfor %}
-                {% endfor %}
+                {% endif %}
             </div>
+            {% endfor %}
+            {% endfor %}
         </div>
     </article>
 </div>
