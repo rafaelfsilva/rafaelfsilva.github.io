@@ -1,8 +1,13 @@
 - chair:
+  - conference: 16th WORKS, Workshop
+    year: 2021
+    location: Saint-Louis, USA
+    link: https://works-workshop.org
+
   - conference: 15th WORKS, Workshop
     year: 2020
     location: Atlanta, USA
-    link: https://works-workshop.org
+    link: https://works-workshop.org/2020
 
   - conference: 14th WORKS, Workshop
     year: 2019
