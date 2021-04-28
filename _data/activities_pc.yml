@@ -22,6 +22,12 @@
   location: Stockholm, Sweden
   link: https://highperformanceserverless.github.io
 
+- conference: Workshop on Monitoring and Analysis for HPC Systems Plus Applications
+  series: HPCMASPA
+  year: 2021
+  location: Portland, USA
+  link: https://sites.google.com/view/hpcmaspa2021
+
 - conference: 15th Workflows in Support of Large-Scale Science
   series: WORKS
   year: 2020
