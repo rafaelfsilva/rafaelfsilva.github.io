@@ -15,7 +15,13 @@
   year: 2021
   location: Portland, USA
   link: https://clustercomp.org
-  
+
+- conference: 33rd International Symposium on Computer Architecture and High Performance Computing
+  series: SBAC-PAD
+  year: 2021
+  location: Belo Horizonte, Brazil
+  link: https://www.sbac-pad2021.dcc.ufmg.br
+
 - conference: 1st Workshop on High Performance Serverless Computing
   series: HiPS
   year: 2021
