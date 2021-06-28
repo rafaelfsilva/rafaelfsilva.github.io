@@ -2,7 +2,7 @@
     - name: Tainã Coleman
       photo: taina-coleman.jpg
       linkedin: https://www.linkedin.com/in/tainacoleman/
-      degree: Ph.D.. in Computer Science
+      degree: Ph.D. in Computer Science
       period: 2020-Present
       description: 'Tainã Coleman is a PhD student at the University of Southern California. She received her BS in Computer Engineering from Universidade Federal de Itajubá in Brazil and her MS in Computer Science from California State University Long Beach. Her research interests include Machine Learning, Data Science, and Distributed Computing.'
 
@@ -11,7 +11,7 @@
       photo: jason-feuerstein.png
       linkedin: https://www.linkedin.com/in/jasonfeuerstein
       degree: B.S. in Computer Science
-      period: 2020-present
+      period: 2020-2021
       description: 'Jason works on the NSF-funded <a href="https://eduwrench.org" target="_blank">eduWRENCH</a> project. His work is focused on the front-end development of the UI for hosting pedagogical modules.'
 
     - name: Tabitha See Ya Lee
@@ -32,7 +32,7 @@
       photo: gautam-jethwani.jpg
       linkedin: https://www.linkedin.com/in/gautamjethwani/
       degree: B.S. in Computer Science
-      period: 2018-Present
+      period: 2018-2021
       description: 'Gautam works on the NSF-funded <a href="https://wrench-project.org" target="_blank">WRENCH</a> project. His work is focused on the development of visualization components for simulation outputs based on D3.js.'
 
     - name: Samuel He
