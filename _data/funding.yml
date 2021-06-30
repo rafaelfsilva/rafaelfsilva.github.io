@@ -1,4 +1,14 @@
 - nsf:
+  - title: "Collaborative Research: Elements: Simulation-driven Evaluation of Cyberinfrastructure Systems"
+    period: 08/2021-07/2024
+    amount: "600,000"
+    program: "Software Institutes (CSSI)"
+    awards:
+      - id: 2103489
+        link: https://nsf.gov/awardsearch/showAward?AWD_ID=2103489
+      - id: 2103508
+        link: https://nsf.gov/awardsearch/showAward?AWD_ID=2103508
+
   - title: "Collaborative Research: EAGER: VisDict - Visual Dictionaries for Enhancing the Communication between Domain Scientists and Scientific Workflow Providers"
     period: 05/2021-10/2022
     amount: "264,500"
