@@ -5,8 +5,8 @@ excerpt: "In this presentation, I compiled a list of best practices for software
 date: 13 July 2021 
 layout: post 
 categories:
-- scientific software
-- best practices
+- scientific-software
+- best-practices
 
 ---
 
