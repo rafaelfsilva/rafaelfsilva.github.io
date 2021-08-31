@@ -1,8 +1,18 @@
 - nsf:
+  - title: "Collaborative Research: OAC Core: Simulation-driven runtime resource management for distributed workflow applications"
+    period: 10/2021-09/2024
+    amount: 500,000
+    program: "Computer and Information Science and Engineering (CISE): Core Programs"
+    awards:
+      - id: 2106059
+        link: https://nsf.gov/awardsearch/showAward?AWD_ID=2106059
+      - id: 2106147
+        link: https://nsf.gov/awardsearch/showAward?AWD_ID=2106147
+
   - title: "Collaborative Research: Elements: Simulation-driven Evaluation of Cyberinfrastructure Systems"
     period: 08/2021-07/2024
-    amount: "600,000"
-    program: "Software Institutes (CSSI)"
+    amount: 600,000
+    program: Software Institutes (CSSI)
     awards:
       - id: 2103489
         link: https://nsf.gov/awardsearch/showAward?AWD_ID=2103489
@@ -11,8 +21,8 @@
 
   - title: "Collaborative Research: EAGER: VisDict - Visual Dictionaries for Enhancing the Communication between Domain Scientists and Scientific Workflow Providers"
     period: 05/2021-10/2022
-    amount: "264,500"
-    program: "Computing and Communication Foundations (CCF)"
+    amount: 264,500
+    program: Computing and Communication Foundations (CCF)
     awards:
       - id: 2100561
         link: https://nsf.gov/awardsearch/showAward?AWD_ID=2100561
@@ -22,7 +32,7 @@
   - title: "REU Site: SURF-I: Safe, Usable, Resilient and Fair Internet"
     period: 03/2021-02/2024
     amount: "405,000"
-    program: "Computer and Network Systems (CNS)"
+    program: Computer and Network Systems (CNS)
     awards:
       - id: 2051101
         link: https://nsf.gov/awardsearch/showAward?AWD_ID=2051101
@@ -30,7 +40,7 @@
   - title: "CCRI: Planning: Collaborative Research: Infrastructure for Enabling Systematic Development and Research of Scientific Workflow Management Systems"
     period: 10/2020-09/2021
     amount: "100,000"
-    program: "CISE Community Research Infrastructure"
+    program: CISE Community Research Infrastructure
     awards:
       - id: 2016610
         link: https://nsf.gov/awardsearch/showAward?AWD_ID=2016610
@@ -42,7 +52,7 @@
   - title: "Collaborative Research: PPoSS: Planning: Performance Scalability, Trust, and Reproducibility: A Community Roadmap to Robust Science in High-throughput Applications"
     period: "10/2020-09/2021"
     amount: "250,000"
-    program: "Scalable Parallelism in the Extreme (SPX)"
+    program: Scalable Parallelism in the Extreme (SPX)
     awards:
       - id: 2028881
         link: https://nsf.gov/awardsearch/showAward?AWD_ID=2028881
