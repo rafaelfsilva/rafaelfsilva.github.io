@@ -1,7 +1,7 @@
 - nsf:
   - title: "Collaborative Research: OAC Core: Simulation-driven runtime resource management for distributed workflow applications"
     period: 10/2021-09/2024
-    amount: 500,000
+    amount: "499,988"
     program: "Computer and Information Science and Engineering (CISE): Core Programs"
     awards:
       - id: 2106059
@@ -11,7 +11,7 @@
 
   - title: "Collaborative Research: Elements: Simulation-driven Evaluation of Cyberinfrastructure Systems"
     period: 08/2021-07/2024
-    amount: 600,000
+    amount: "600,000"
     program: Software Institutes (CSSI)
     awards:
       - id: 2103489
@@ -21,7 +21,7 @@
 
   - title: "Collaborative Research: EAGER: VisDict - Visual Dictionaries for Enhancing the Communication between Domain Scientists and Scientific Workflow Providers"
     period: 05/2021-10/2022
-    amount: 264,500
+    amount: "264,500"
     program: Computing and Communication Foundations (CCF)
     awards:
       - id: 2100561
