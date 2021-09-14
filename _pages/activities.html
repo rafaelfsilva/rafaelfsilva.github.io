@@ -18,12 +18,14 @@ description: Professional Activities
         {% if site.data.activities_editor.size > 0 %}
         <div class="row">
             {% for n in site.data.activities_editor %}
-            <div class="col-sm-12 col-md-12" style="margin-bottom: 1em">
-                <strong><a href="{{ n.link }}" target="_blank">{{ n.journal }}</a></strong><br/>
-                {{ n.year }} – {{ n.role }}{% if n.description %}, {{ n.description }} {% endif %}
+            <div class="col-sm-12 col-md-12" style="margin-bottom: 0.5em">
+                <span class="date">{{ n.year }}</span>
+                <strong><a href="{{ n.link }}" target="_blank">{{ n.journal }}</a></strong>,
+                {{ n.role }}{% if n.description %}, {{ n.description }} {% endif %}
             </div>
             {% endfor %}
         </div>
+        <br/>
         {% endif %}
     </article>
 </div>
@@ -42,7 +44,8 @@ description: Professional Activities
                     <strong>Chair</strong><br/>
                     {% for n in site.data.activities_chair %}
                     {% for c in n.chair %}
-                    {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
+                    <span class="date">{{ c.year }}</span>
+                    <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
                     {% endfor %}
                     {% endfor %}
                 </div>
@@ -51,7 +54,8 @@ description: Professional Activities
                     <strong>Publicity Chair</strong><br/>
                     {% for n in site.data.activities_chair %}
                     {% for c in n.publicity %}
-                    {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
+                    <span class="date">{{ c.year }}</span>
+                    <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
                     {% endfor %}
                     {% endfor %}
                 </div>
@@ -60,7 +64,8 @@ description: Professional Activities
                     <strong>Track Chair</strong><br/>
                     {% for n in site.data.activities_chair %}
                     {% for c in n.track %}
-                    {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
+                    <span class="date">{{ c.year }}</span>
+                    <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
                     {% endfor %}
                     {% endfor %}
                 </div>
@@ -69,7 +74,8 @@ description: Professional Activities
                     <strong>Organizer</strong><br/>
                     {% for n in site.data.activities_chair %}
                     {% for c in n.organizer %}
-                    {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
+                    <span class="date">{{ c.year }}</span>
+                    <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
                     {% endfor %}
                     {% endfor %}
                 </div>
@@ -78,7 +84,8 @@ description: Professional Activities
                     <strong>Local Arrangements Chair</strong><br/>
                     {% for n in site.data.activities_chair %}
                     {% for c in n.local %}
-                    {{ c.year }} – <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
+                    <span class="date">{{ c.year }}</span>
+                    <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
                     {% endfor %}
                     {% endfor %}
                 </div>
@@ -99,7 +106,8 @@ description: Professional Activities
         </header>
         {% for n in site.data.activities_pc %}
         <div class="col-sm-12 col-md-12">
-            {{ n.year }} – <a href="{{ n.link }}" target="_blank">{{ n.conference }}</a>{% if n.series %} ({{ n.series
+            <span class="date">{{ n.year }}</span>
+            <a href="{{ n.link }}" target="_blank">{{ n.conference }}</a>{% if n.series %} ({{ n.series
             }}){% endif %}, {{ n.location }}
         </div>
         {% endfor %}
@@ -117,7 +125,8 @@ description: Professional Activities
         <div class="row">
             {% for n in site.data.activities_funding %}
             <div class="col-sm-12 col-md-12">
-                {{ n.year }} – <a href="{{ n.link }}" target="_blank">{{ n.agency }}</a>{% if n.acronym %} ({{ n.acronym
+                <span class="date">{{ n.year }}</span>
+                <a href="{{ n.link }}" target="_blank">{{ n.agency }}</a>{% if n.acronym %} ({{ n.acronym
                 }}){% endif %}, {{ n.description }}
             </div>
             {% endfor %}
@@ -137,7 +146,8 @@ description: Professional Activities
         <div class="row">
             {% for n in site.data.activities_journal %}
             <div class="col-sm-12 col-md-12">
-                {{ n.year }} – <a href="{{ n.link }}" target="_blank">{{ n.journal }}</a>{% if n.acronym %} ({{
+                <span class="date">{{ n.year }}</span>
+                <a href="{{ n.link }}" target="_blank">{{ n.journal }}</a>{% if n.acronym %} ({{
                 n.acronym
                 }}){% endif %}
             </div>
@@ -158,7 +168,8 @@ description: Professional Activities
         <div class="row">
             {% for n in site.data.activities_conference %}
             <div class="col-sm-12 col-md-12">
-                {{ n.year }} – <a href="{{ n.link }}" target="_blank">{{ n.conference }}</a>{% if n.series %} ({{
+                <span class="date">{{ n.year }}</span>
+                <a href="{{ n.link }}" target="_blank">{{ n.conference }}</a>{% if n.series %} ({{
                 n.series
                 }}){% endif %}, {{ n.location }}
             </div>
@@ -172,7 +183,7 @@ description: Professional Activities
     <figure style="text-align: center">
         <img src="/assets/images/view-palos-verdes.jpg" sizes="(max-width: 800px) 100vw, 800px" alt=""/>
         <figcaption>
-            <span style="color: #808080; font-size: 0.8em">Sunset from Palos Verdes, CA – 20 miles South of USC/ISI.</span>
+            <span style="color: #808080; font-size: 0.8em">Sunset from Palos Verdes, CA.</span>
         </figcaption>
     </figure>
 </div>

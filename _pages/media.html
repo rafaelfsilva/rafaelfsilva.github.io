@@ -19,13 +19,14 @@ description: Media
             <div class="row">
                 {% for n in site.data.media %}
                 <div class="col-sm-12 col-md-12" style="margin-bottom: 1em">
-                    <i>{{ n.date }}</i><br/>
-                    <strong><a href="{{ n.link }}" target="_blank">{{ n.title }}</a></strong>
-                    <br/>{{ n.venue }}
+                    <span class="date">{{ n.date }}</span>
+                    <strong><a href="{{ n.link }}" target="_blank">{{ n.title }}</a></strong>,
+                    <i>{{ n.venue }}</i>
                 </div>
                 {% endfor %}
             </div>
         </div>
+        <br/>
     </article>
 </div>
 
@@ -33,7 +34,7 @@ description: Media
     <figure style="text-align: center">
         <img src="/assets/images/view-mount-wilson.jpg" sizes="(max-width: 800px) 100vw, 800px" alt=""/>
         <figcaption>
-            <span style="color: #808080; font-size: 0.8em">View from Mount Wilson, Los Angeles, CA - 40 miles East of USC/ISI.</span>
+            <span style="color: #808080; font-size: 0.8em">View from Mount Wilson, Los Angeles, CA.</span>
         </figcaption>
     </figure>
 </div>

@@ -4004,3 +4004,12 @@ header .title a:hover {
     height: 100%;
     border: 0;
 }
+
+.date {
+    color: #fff;
+    font-size: 0.7em;
+    background-color: #999;
+    padding: 0.15em 0.5em;
+    border-radius: 0.5em;
+    margin-right: 0.5em
+}

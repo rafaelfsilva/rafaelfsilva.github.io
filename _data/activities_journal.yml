@@ -11,11 +11,15 @@
 - journal: IEEE Transactions on Cloud Computing
   acronym: TCC
   year: 2016–Present
-  link: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6245519
+  link: https://www.computer.org/csdl/journal/cc
+
+- journal: PeerJ Computer Science
+  year: 2020-Present
+  link: https://peerj.com/computer-science
 
 - journal: "Concurrency and Computation: Practice and Experience"
   acronym: CCPE
-  year: 2013–Present
+  year: 2013–2020
   link: https://onlinelibrary.wiley.com/journal/15320634
 
 - journal: ACM Computer Surveys
