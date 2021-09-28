@@ -29,16 +29,22 @@ layout: default
     <article class="post">
         <header>
             <div class="title">
-                <h2><a href="single.html">Recent News</a></h2>
+                <h2>What's new?</h2>
+                <p>News and recent publications</p>
             </div>
         </header>
 
-        {% include blogs.html %}
+        <div class="row">
+            <div class="col-sm-6 col-md-6" style="padding-right: 1em">
+                {% include blogs.html %}
+            </div>
+            <div class="col-sm-6 col-md-6">
+                {% include publications.html %}
+            </div>
+        </div>
 
         <footer>
-            <ul class="actions">
-                <li><a href="/blog" class="button large">See all News</a></li>
-            </ul>
+
         </footer>
 
     </article>
