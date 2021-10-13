@@ -1,3 +1,9 @@
+- conference: 36th IEEE International Parallel & Distributed Processing Symposium
+  series: IPDPS
+  year: 2022
+  location: Lyon, France
+  link: http://www.ipdps.org
+
 - conference: 35th IEEE International Parallel & Distributed Processing Symposium
   series: IPDPS
   year: 2021
@@ -21,6 +27,12 @@
   year: 2021
   location: Belo Horizonte, Brazil
   link: https://www.sbac-pad2021.dcc.ufmg.br
+
+- conference: 10th International Workshop on Clouds and Edge Computing, and Applications Management
+  series: CloudAM
+  year: 2021
+  location: Leicester, UK
+  link: https://sites.google.com/unizar.es/cloudam2021/
 
 - conference: 1st Workshop on High Performance Serverless Computing
   series: HiPS
@@ -56,7 +68,7 @@
   series: CloudAM
   year: 2020
   location: Leicester, UK
-  link: 
+  link: https://sites.google.com/unizar.es/cloudam2020
   
 - conference: IEEE Cluster
   series:
