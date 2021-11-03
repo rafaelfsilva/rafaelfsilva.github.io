@@ -4,6 +4,12 @@
   location: Lyon, France
   link: http://www.ipdps.org
 
+- conference: Platform for Advanced Scientific Computing
+  series: PASC
+  year: 2022
+  location: Basel, Switzerland
+  link: https://pasc22.pasc-conference.org/
+
 - conference: 35th IEEE International Parallel & Distributed Processing Symposium
   series: IPDPS
   year: 2021
