@@ -2178,3 +2178,22 @@ pre {
     border-radius: 0.5rem;
     padding: 2rem !important;
 }
+
+.media-venue {
+    color: var(--body-text-color);
+    font-size: 1.5rem;
+}
+
+.award-id {
+    font-size: 1.2rem !important;
+    color: var(--body-text-color);
+}
+
+.article-image figcaption {
+    margin-top: -2rem;
+    color: #aaa !important; 
+    text-shadow: #000 2px 2px 2px;
+    font-size: 1.2rem;
+    text-align: right;
+    padding-right: 1rem;
+}
