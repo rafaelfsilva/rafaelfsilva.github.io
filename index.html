@@ -2,121 +2,90 @@
 layout: default
 ---
 
-<!-- Research Interests -->
-<div class="row">
-    <article class="post">
-        <div class="title">
-            <h2>Research Interests</h2>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <strong>Modeling and Simulation</strong> of parallel and distributed computing systems
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <strong>Scientific Workflows</strong> scheduling, optimization, fault-tolerance, and
-                energy-efficiency
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <strong>Distributed Computing</strong> on clouds, grids, and HPC clusters
-            </div>
-        </div>
-        <br/>
-    </article>
-</div>
+<section class="article-list">
 
-<!-- Recent News -->
-<div class="row">
-    <article class="post">
-        <header>
-            <div class="title">
-                <h2>What's new?</h2>
-                <p>News and recent publications</p>
+    <!-- Research Interests -->
+    <article class="interests">
+        <header class="article-header">
+            <div class="article-details">
+                <h2 class="article-title">Research Interests</h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <strong>Modeling and Simulation</strong> of parallel and distributed computing systems
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <strong>Scientific Workflows</strong> scheduling, optimization, fault-tolerance, and
+                        energy-efficiency
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <strong>Distributed Computing</strong> on clouds, grids, and HPC clusters
+                    </div>
+                </div>
             </div>
         </header>
-
-        <div class="row">
-            <div class="col-sm-6 col-md-6" style="padding-right: 1em">
-                {% include blogs.html %}
-            </div>
-            <div class="col-sm-6 col-md-6">
-                {% include publications.html %}
-            </div>
-        </div>
-
-        <footer style="margin-top: 2em">
-            <div class="col-sm-6 col-md-6">
-                <ul class="actions">
-                    <li><a href="/blog" class="button large">See all News</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-6 col-md-6">
-                <ul class="actions">
-                    <li><a href="/publications" class="button large">See all Publications</a></li>
-                </ul>
-            </div>
-        </footer>
-
     </article>
-</div>
 
-<!-- Research Projects -->
-<div class="row">
-    <article class="post">
-        <header>
-            <div class="title">
-                <h2><a href="/projects">Research Projects</a></h2>
-                <p>Featured Research Projects</p>
-            </div>
-        </header>
+    <!-- Recent News -->
+    <h2 class="section-title">What's New?</h2>
+    <h3 class="section-subtitle">Recent talks and research outcomes</h3>
+    <div class="subsection-list">
+        <div class="article-list--tile">
+            {% for item in site.posts limit: 6 %}
+            <article class="has-image">
+                <a href="{{ item.url }}">
+                    <div class="article-image">
+                        <img src="{{ item.image }}" alt="{{ item.title }}" />
+                    </div>
+                    <div class="article-date">
+                        {{ item.date | date: "%a, %b %d, %Y" }}
+                    </div>
+                    <div class="article-details">
+                        <h2 class="article-title">{{ item.title }}</h2>
+                    </div>
+                </a>
+            </article>
+            {% endfor %}
+            <article>
+                <a href="/blog">
+                    <div class="article-details">
+                        <h2 class="article-title" style="text-shadow: none; font-size: 2rem">See all<br/>News</h2>
+                    </div>
+                </a>
+            </article>    
 
-        <div class="row">
-            <div class="col-sm-12 col-md-6" style="margin-bottom: 2em">
-                <div>
-                    <a href="https://wrench-project.org" target="_blank">
-                        <img src="assets/images/wrench.png" width="80" style="float: left; margin-right: 0.5em"/>
-                    </a>
-                    <p style="font-size: 0.8em; line-height: 1.3em">
-                        The <a href="https://wrench-project.org" target="_blank">WRENCH project</a> is a simulation
-                        framework
-                        that makes it possible to implement scalable and accurate simulators of complex
-                        cyberinfrastructure
-                        systems quickly and easily.
-                    </p>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6" style="margin-bottom: 2em">
-                <div>
-                    <a href="https://wfcommons.org" target="_blank">
-                        <img src="assets/images/wfcommons.png" width="55" style="float: left; margin-right: 0.5em"/>
-                    </a>
-                    <p style="font-size: 0.8em; line-height: 1.3em">
-                        The <a href="https://wfcommons.org" target="_blank">WfCommons project</a> is a framework
-                        that enables scientific workflow research and development by providing tools for analyzing
-                        workflow execution traces and generating synthetic traces.
-                    </p>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6" style="margin-bottom: 2em">
-                <div>
-                    <a href="https://workflowsri.org" target="_blank">
-                        <img src="assets/images/workflowsri.png" width="55" style="float: left; margin-right: 0.5em"/>
-                    </a>
-                    <p style="font-size: 0.8em; line-height: 1.3em">
-                        The <a href="https://workflowsri.org" target="_blank">workflowsRI project</a> seeks to engage
-                        with representatives from the workflows community (researchers, developers, science and
-                        engineering users, and cyberinfrastructure experts) to design an infrastructure that will
-                        have the potential to truly democratize workflows research.
-                    </p>
-                </div>
-            </div>
         </div>
+    </div>
 
-        <br/>
+    <!-- Recent Publications -->
+    <div class="archives-group">
+        <h2 class="section-title">Recent Publications</h2>
+        <h3 class="section-subtitle">Selected research publications</h3>
+        <div class="article-list--compact">
+            <div style="display: none">
+                {% cite casanova2021jpdc coleman2021fgcs ferreiradasilva2021wcs coleman2021escience wcs2021technical %}
+            </div>
+            {% bibliography --cited_in_order --template front %}
+            <a href="/publications" class="corner-button">
+                See all Publications
+            </a>
+        </div>
+    </div>
 
-        <footer>
-            <ul class="actions">
-                <li><a href="/projects" class="button large">See all Projects</a></li>
-            </ul>
-        </footer>
-    </article>
-</div>
+    <!-- Research Projects -->
+    <h2 class="section-title">Research Projects</h2>
+    <h3 class="section-subtitle">Featured Research Projects</h3>
+    <div class="subsection-list">
+        <div class="article-list--tile">
+            {% for item in site.data.research_projects %}
+            <article>
+                <a href="{{ item.url }}" target="_blank" style="text-align: center; text-decoration: none;">
+                    <img src="/assets/images/{{ item.icon }}" class="project-icon" alt="{{ item.name }}" />
+                    <br/><strong>{{ item.name }}</strong>
+                    <p class="project-description">{{ item.description }}</p>
+                </a>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+
+</section>
