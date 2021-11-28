@@ -4,42 +4,37 @@ title: Teaching
 permalink: /teaching/
 ---
 
-<h2>{{ page.title }}</h2>
-<br/>
-
-<div class="row">
-    <article class="post">
-        <div class="activities" style="margin-top: 1em">
-            <div class="row">
-                {% for n in site.data.teaching %}
-                <div class="col-sm-12 col-md-12" style="margin-bottom: 1em">
-                    <strong><i class="fas fa-graduation-cap"></i> {{ n.semester }} –
-                        {% if n.url %}<a href="{{n.url}}" target="_blank">{{ n.class }}</a> {% else %} {{ n.class }} {%
-                        endif %}
-                    </strong>
-                    <p style="font-size: 0.9em; line-height: 1.3em; color: #777">
-                        {{ n.description }}
-                        {% if n.material %}
-                        <br/>
-                        <span style="padding-left: 2em; line-height: 2em;">
-                    <i class="far fa-plus-square"></i>
-                    <a href="/teaching/{{ n.material }}">Additional Material:</a>
-                    {{ n.material_desc }}
-                </span>
-                    </p>
-                    {% endif %}
-                </div>
-                {% endfor %}
+<section class="article-page">
+    <article class="main-article has-image">
+        <header class="article-header">
+            <div class="article-image">
+                <img src="/assets/images/view-marina-del-rey.jpg"
+                    srcset="/assets/images/view-marina-del-rey.jpg 800w, /assets/images/view-marina-del-rey.jpg 1600w"
+                    width="800" height="600" loading="lazy" alt="View from Mount Wilson, Los Angeles, CA">
+                <figcaption>Marina del Rey, CA at sunrise</figcaption>
             </div>
-        </div>
-    </article>
-</div>
+            <div class="article-details">
+                <h2 class="article-title">{{ page.title }}</h2>
+                <h3 class="article-subtitle">Teaching activities at USC</h3>
+                <br />
+            </div>
+        </header>
 
-<div class="bottom">
-    <figure style="text-align: center">
-        <img src="/assets/images/view-palos-verdes.jpg" sizes="(max-width: 800px) 100vw, 800px" alt=""/>
-        <figcaption>
-            <span style="color: #808080; font-size: 0.8em">Sunset at Palos Verdes, CA.</span>
-        </figcaption>
-    </figure>
-</div>
+        {% assign teaching = site.teaching | sort: "year" | reverse %}
+        {% for n in teaching %}
+        <section class="article-content">
+            <h2>{{ n.semester }}</h2>
+            {% if n.url %}<a href="{{n.url}}" target="_blank">{{ n.class }}</a> {% else %} {{ n.class }} {% endif %}
+            <p style="font-size: 1.3rem; line-height: 1.3em; color: #999; margin: 0">
+                {{ n.description }}
+            </p>
+            <span style="padding-left: 2em; line-height: 2em; font-size: 1.3rem; margin: 0">
+                <i class="far fa-plus-square"></i>&nbsp;&nbsp;
+                <a href="/teaching/{{ n.material }}">Additional Material:</a>
+                {{ n.material_desc }}
+            </span>
+        </section>
+        {% endfor %}
+
+    </article>
+</section>
