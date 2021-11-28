@@ -22,7 +22,8 @@
   location: Auckland, New Zealand
   link:
 
-- conference: IEEE Cluster
+- conference: IEEE International Conference on Cluster Computing
+  series: CLUSTER
   year: 2016
   location: Taipei, Taiwan
   link:
@@ -51,7 +52,8 @@
   location: Krakow, Poland
   link:
 
-- conference: Euro-Par
+- conference: International European Conference on Parallel and Distributed Computing
+  series: Euro-Par
   year: 2015
   location: Vienna, Austria
   link:
