@@ -3,30 +3,28 @@ layout: default
 title: News
 ---
 
-<div class="row">
-    <article class="post">
-        <header>
-            <div class="title">
-                <h2>News</h2>
-                <p>Find all the posts here.</p>
-            </div>
-        </header>
-
-        <div class="news">
-            {% for post in paginator.posts %}
-            <a href="{{site.baseurl}}{{post.url}}" class="card mb-3">
-                <img src="{{ post.image }}" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h5 class="card-title">{{post.title}}</h5>
-                    <p class="card-text">{{post.content | strip_html | truncate: 250 }}</p>
-                    <p class="card-text"><small class="text-muted">{{post.date | date: '%B %d, %Y'}}</small></p>
+<div class="archives-group">
+    <h2 class="archives-date section-title" style="margin-top: 0; margin-bottom: 2rem"><a>{{page.title}}</a></h2>
+    <div class="article-list--compact">
+        {% for post in paginator.posts %}
+        <article>
+            <a href="{{site.baseurl}}{{post.url}}" style="text-decoration: none">
+                <div class="article-details">
+                    <h2 class="article-title">{{post.title}}</h2>
+                    <p style="color: #999">{{post.content | strip_html | truncate: 200 }}</p>
+                    <footer class="article-time">
+                        <time datetime="2019-03-11T00:00:00Z" style="color: #df7988">{{post.date | date: '%B %d, %Y'}}</time>
+                    </footer>
+                </div>
+                <div class="article-image">
+                    <img src="{{ post.image }}" width="120" height="120" loading="lazy">
                 </div>
             </a>
-            {% endfor %}
-        </div>
-
-        <footer>
-            {% include pagination.html %}
-        </footer>
-    </article>
+        </article>
+        {% endfor %}
+    </div>
 </div>
+
+<nav class="pagination">
+    {% include pagination.html %}
+</nav>

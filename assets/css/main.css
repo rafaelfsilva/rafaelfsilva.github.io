@@ -488,13 +488,16 @@
 
 @media(min-width:768px) {
     :root {
-    --card-padding: 25px;
+        --card-padding: 25px;
+    }
 }
-}@media(min-width:1280px) {
+
+@media(min-width:1280px) {
     :root {
-    --card-padding: 30px;
+        --card-padding: 30px;
+    }
 }
-}@media(min-width:768px) {
+@media(min-width:768px) {
     :root {
     --small-card-padding: 25px;
 }
@@ -1264,6 +1267,7 @@ footer.site-footer .powerby {
 footer.site-footer .powerby a {
     color: var(--body-text-color);
 }
+
 .pagination {
     display: flex;
     background-color: var(--card-background);
@@ -1273,11 +1277,15 @@ footer.site-footer .powerby a {
     flex-wrap: wrap;
     margin: var(--section-separation) 0;
 }
+
 .pagination .page-link {
     padding: 16px 32px;
     display: inline-flex;
     color: var(--card-text-color-secondary);
+    background-color: var(--card-background);
+    border: 0;
 }
+
 .pagination .page-link.current {
     font-weight: 700;
     background-color: var(--card-background-selected);
@@ -1527,7 +1535,7 @@ body {
 }
 
 .article-page .main-article .article-content {
-    margin: var(--card-padding);
+    margin: var(--card-padding) 0;
     color: var(--card-text-color-main);
     padding: var(--card-padding);
 }
@@ -2191,7 +2199,7 @@ pre {
 
 .article-image figcaption {
     margin-top: -2rem;
-    color: #aaa !important; 
+    color: #bbb !important; 
     text-shadow: #000 2px 2px 2px;
     font-size: 1.2rem;
     text-align: right;

@@ -24,7 +24,7 @@ permalink: /teaching/
         {% for n in teaching %}
         <section class="article-content">
             <h2>{{ n.semester }}</h2>
-            {% if n.url %}<a href="{{n.url}}" target="_blank">{{ n.class }}</a> {% else %} {{ n.class }} {% endif %}
+            {% if n.link %}<a href="{{n.link}}" target="_blank">{{ n.class }}</a> {% else %} {{ n.class }} {% endif %}
             <p style="font-size: 1.3rem; line-height: 1.3em; color: #999; margin: 0">
                 {{ n.description }}
             </p>

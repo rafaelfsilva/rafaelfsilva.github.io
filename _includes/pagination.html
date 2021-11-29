@@ -1,39 +1,26 @@
 {% if paginator.total_pages > 1 %}
-<br/><br/>
-<nav aria-label="...">
-    <ul class="pagination">
-        {% if paginator.previous_page %}
-        <li class="page-item">
-            <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
-               tabindex="-1">Previous</a></li>
-        {% else %}
-        <li class="page-item disabled"><span class="page-link">Previous</span></li>
-        {% endif %}
+{% if paginator.previous_page %}
+<a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+    tabindex="-1">Previous</a>
+{% else %}
+<a class="page-link">Previous</a>
+{% endif %}
 
-        {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-        <li class="page-item active"><span class="page-link">{{ page }} <span class="sr-only">(current)</span></span>
-        </li>
-        {% elsif page == 1 %}
-        <li class="page-item">
-            <a class="page-link"
-               href="{{site.baseurl}}/blog/">{{ page }}</a></li>
-        {% else %}
-        <li class="page-item">
-            <a class="page-link"
-               href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{
-                page }}</a></li>
-        {% endif %}
-        {% endfor %}
+{% for page in (1..paginator.total_pages) %}
+{% if page == paginator.page %}
+<span class="page-link current">{{ page }}</span>
+{% elsif page == 1 %}
+<a class="page-link" href="{{site.baseurl}}/blog/">{{ page }}</a>
+{% else %}
+<a class="page-link"
+    href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{
+    page }}</a>
+{% endif %}
+{% endfor %}
 
-        <li class="page-item">
-            {% if paginator.next_page %}
-            <a class="page-link"
-               href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next</a>
-            {% else %}
-            <span class="page-link">Next</span>
-            {% endif %}
-        </li>
-    </ul>
-</nav>
+{% if paginator.next_page %}
+<a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next</a>
+{% else %}
+<span class="page-link">Next</span>
+{% endif %}
 {% endif %}
