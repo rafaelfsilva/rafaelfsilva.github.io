@@ -3,6 +3,7 @@
     period: 10/2021-09/2024
     amount: "499,988"
     program: "Computer and Information Science and Engineering (CISE): Core Programs"
+    link: https://nsf.gov/awardsearch/showAward?AWD_ID=2106147
     awards:
       - id: 2106059
         link: https://nsf.gov/awardsearch/showAward?AWD_ID=2106059
@@ -13,6 +14,7 @@
     period: 08/2021-07/2024
     amount: "600,000"
     program: Software Institutes (CSSI)
+    link: https://nsf.gov/awardsearch/showAward?AWD_ID=2103508
     awards:
       - id: 2103489
         link: https://nsf.gov/awardsearch/showAward?AWD_ID=2103489
@@ -23,6 +25,7 @@
     period: 05/2021-10/2022
     amount: "264,500"
     program: Computing and Communication Foundations (CCF)
+    link: https://nsf.gov/awardsearch/showAward?AWD_ID=2100636
     awards:
       - id: 2100561
         link: https://nsf.gov/awardsearch/showAward?AWD_ID=2100561
@@ -33,6 +36,7 @@
     period: 03/2021-02/2024
     amount: "405,000"
     program: Computer and Network Systems (CNS)
+    link: https://nsf.gov/awardsearch/showAward?AWD_ID=2051101
     awards:
       - id: 2051101
         link: https://nsf.gov/awardsearch/showAward?AWD_ID=2051101
@@ -41,6 +45,7 @@
     period: 10/2020-09/2021
     amount: "100,000"
     program: CISE Community Research Infrastructure
+    link: https://nsf.gov/awardsearch/showAward?AWD_ID=2016619
     awards:
       - id: 2016610
         link: https://nsf.gov/awardsearch/showAward?AWD_ID=2016610
@@ -53,6 +58,7 @@
     period: "10/2020-09/2021"
     amount: "250,000"
     program: Scalable Parallelism in the Extreme (SPX)
+    link: https://nsf.gov/awardsearch/showAward?AWD_ID=2028930
     awards:
       - id: 2028881
         link: https://nsf.gov/awardsearch/showAward?AWD_ID=2028881
@@ -69,6 +75,7 @@
     period: 10/2019–09/2022
     amount: "500,000"
     program: CyberTraining – Training-based
+    link: https://nsf.gov/awardsearch/showAward?AWD_ID=1923539
     awards:
       - id: 1923539
         link: https://nsf.gov/awardsearch/showAward?AWD_ID=1923539
@@ -79,6 +86,7 @@
     period: 10/2018–09/2021
     amount: "300,000"
     program: IUSE
+    link: https://nsf.gov/awardsearch/showAward?AWD_ID=1826632
     awards:
       - id: 1826632
         link: https://nsf.gov/awardsearch/showAward?AWD_ID=1826632
@@ -87,6 +95,7 @@
     period: 10/2017–09/2021
     amount: "1,993,043"
     program: Big Data Science & Engineering
+    link: https://nsf.gov/awardsearch/showAward?AWD_ID=1741040
     awards:
       - id: 1741057
         link: https://nsf.gov/awardsearch/showAward?AWD_ID=1741057
@@ -99,6 +108,7 @@
     period: 01/2017—12/2019
     amount: "497,956"
     program: Software Institutes
+    link: https://nsf.gov/awardsearch/showAward?AWD_ID=1642335
     awards:
       - id: 1642369
         link: https://nsf.gov/awardsearch/showAward?AWD_ID=1642369
@@ -109,6 +119,7 @@
     period: 06/2018–05/2019
     amount: "85,065"
     program: Software Institutes
+    link: https://nsf.gov/awardsearch/showAward?AWD_ID=1831393
     awards:
       - id: 1831393
         link: https://nsf.gov/awardsearch/showAward?AWD_ID=1831393

@@ -1,16 +1,22 @@
-- agency: National Science Foundation
+- agency: U.S. Department of Energy
+  acronym: DOE
+  year: 2021
+  description: Ad-hoc Reviewer
+  link: https://www.energy.gov/
+
+- agency: U.S. National Science Foundation
   acronym: NSF
   year: 2021
   description: Virtual Review Panels and Ad-hoc Reviewer
   link: https://nsf.gov
 
-- agency: Army Research Office
+- agency: U.S. Army Research Office
   acronym: ARO
   year: 2020
   description: Ad-hoc Reviewer
   link: https://www.arl.army.mil/who-we-are/aro/
 
-- agency: National Science Foundation
+- agency: U.S. National Science Foundation
   acronym: NSF
   year: 2020
   description: Review Panel and Ad-hoc Reviewer
@@ -22,19 +28,19 @@
   description: Ad-hoc Reviewer
   link: https://www.nwo.nl/en
 
-- agency: National Science Foundation
+- agency: U.S. National Science Foundation
   acronym: NSF
   year: 2019
   description: Review Panels and Ad-hoc Reviewer
   link: https://nsf.gov
 
-- agency: National Science Foundation
+- agency: U.S. National Science Foundation
   acronym: NSF
   year: 2018
   description: Review Panels
   link: https://nsf.gov
 
-- agency: National Science Foundation
+- agency: U.S. National Science Foundation
   acronym: NSF
   year: 2017
   description: Review Panels

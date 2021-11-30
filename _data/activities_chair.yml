@@ -1,59 +1,65 @@
-- chair:
-  - conference: 16th WORKS, Workshop
-    year: 2021
-    location: Saint-Louis, USA
-    link: https://works-workshop.org
+- conference: 16th WORKS, Workshop
+  role: Chair
+  year: 2021
+  location: Saint-Louis, USA
+  link: https://works-workshop.org
 
-  - conference: 15th WORKS, Workshop
-    year: 2020
-    location: Atlanta, USA
-    link: https://works-workshop.org/2020
+- conference: 15th WORKS, Workshop
+  role: Chair
+  year: 2020
+  location: Atlanta, USA
+  link: https://works-workshop.org/2020
 
-  - conference: 14th WORKS, Workshop
-    year: 2019
-    location: Denver, USA
-    link: http://works.cs.cardiff.ac.uk
+- conference: 14th WORKS, Workshop
+  role: Chair
+  year: 2019
+  location: Denver, USA
+  link: http://works.cs.cardiff.ac.uk
 
-  - conference: BC2DC, Workshop
-    year: 2019
-    location: San Diego, CA
-    link: https://bc2dc.github.io
+- conference: BC2DC, Workshop
+  role: Chair
+  year: 2019
+  location: San Diego, CA
+  link: https://bc2dc.github.io
 
-  - conference: 13th WORKS, Workshop
-    year: 2018
-    location: Dallas, USA
-    link: http://works.cs.cf.ac.uk/2018/
+- conference: 13th WORKS, Workshop
+  role: Chair
+  year: 2018
+  location: Dallas, USA
+  link: http://works.cs.cf.ac.uk/2018/
 
-- track:
-  - conference: 15th eScience Conference
-    year: 2019
-    location: San Diego, USA
-    link: https://escience2019.sdsc.edu
+- conference: 15th eScience Conference
+  role: Track Chair
+  year: 2019
+  location: San Diego, USA
+  link: https://escience2019.sdsc.edu
 
-- organizer:
-  - conference: NSF SI2 PI Meeting
-    year: 2018
-    location: Washington D.C., USA
-    link: https://si2-pi-community.github.io/2018-meeting/
+- conference: NSF SI2 PI Meeting
+  role: Organizer
+  year: 2018
+  location: Washington D.C., USA
+  link: https://si2-pi-community.github.io/2018-meeting/
 
-- publicity:
-  - conference: 17th e-Science, Conference
-    year: 2021
-    location: Innsbruck, Austria
-    link: http://escience2021.org
+- conference: 17th e-Science, Conference
+  role: Publicity Chair
+  year: 2021
+  location: Innsbruck, Austria
+  link: http://escience2021.org
 
-  - conference: 12th WORKS, Workshop
-    year: 2017
-    location: Denver, USA
-    link: http://works.cs.cf.ac.uk/2017/
+- conference: 12th WORKS, Workshop
+  role: Publicity Chair
+  year: 2017
+  location: Denver, USA
+  link: http://works.cs.cf.ac.uk/2017/
 
-  - conference: 11th WORKS, Workshop
-    year: 2016
-    location: Salt Lake City, USA
-    link: http://works.cs.cf.ac.uk/2016
+- conference: 11th WORKS, Workshop
+  role: Publicity Chair
+  year: 2016
+  location: Salt Lake City, USA
+  link: http://works.cs.cf.ac.uk/2016
 
-- local:
-  - conference: 28th SBAC-PAD
-    year: 2016
-    location: Los Angeles, USA
-    link: http://www2.sbc.org.br/sbac/2016/
+- conference: 28th SBAC-PAD
+  role: Local Arrangements Chair
+  year: 2016
+  location: Los Angeles, USA
+  link: http://www2.sbc.org.br/sbac/2016/

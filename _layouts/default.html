@@ -1,29 +1,73 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     {% include head.html %}
 </head>
-<body class="is-preload">
-<!-- Wrapper -->
-<div id="wrapper">
-    {% include header.html %}
 
-    {% include menu.html %}
+<body>
+    <script>
+        (function () {
+            const colorSchemeKey = 'StackColorScheme';
+            if (!localStorage.getItem(colorSchemeKey)) {
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script>
+    <script>
+        (function () {
+            const colorSchemeKey = 'StackColorScheme';
+            const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+            const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
-    <!-- Main -->
-    <div id="main">
-        {{ content }}
+            if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+                document.documentElement.dataset.scheme = 'dark';
+            } else {
+                document.documentElement.dataset.scheme = 'light';
+            }
+        })();
+    </script>
+
+    <div class="container main-container flex on-phone--column extended">
+        <!-- Sidebar -->
+        {% include sidebar.html %}
+
+        <!-- Main -->
+        <main class="main full-width">
+            {{ content }}
+
+            <!-- Footer -->
+            {% include footer.html %}
+        </main>
+
+        <!-- Right Sidebar -->
+        {% include right-sidebar.html %}
     </div>
 
-    {% include sidebar.html %}
-</div>
+    <!-- Scripts -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <!-- <script src="/assets/js/browser.min.js"></script> -->
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
 
-<!-- Scripts -->
-<script src="/assets/js/jquery.min.js"></script>
-<script src="/assets/js/browser.min.js"></script>
-<script src="/assets/js/breakpoints.min.js"></script>
-<script src="/assets/js/util.js"></script>
-<script src="/assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+        integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous" defer="false">
+        </script>
+    <script type='text/javascript' defer
+        src='https://d33wubrfki0l68.cloudfront.net/js/8f6da31b7b577a254b13b355673d22fd37655360/ts/main.js'></script>
+    <script>
+        (function () {
+            const customFont = document.createElement('link');
+            customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+            customFont.type = "text/css";
+            customFont.rel = "stylesheet";
+
+            document.head.appendChild(customFont);
+        }());
+    </script>
 
 </body>
+
 </html>

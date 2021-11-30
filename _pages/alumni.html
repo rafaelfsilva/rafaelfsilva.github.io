@@ -1,105 +1,96 @@
 ---
 layout: default
-title: Current and Past Students
+title: Students
 permalink: /students/alumni/
 ---
 
-<h2>{{ page.title }}</h2>
-<br/>
-
-<div class="row">
-    <article class="post">
-        <header>
-            <div class="title">
-                <h2>PhD Students</h2>
+<div class="article-page">
+    <article class="has-image main-article">
+        <header class="article-header">
+            <div class="article-image">
+                <img src="/assets/images/view-palos-verdes.jpg"
+                    srcset="/assets/images/view-palos-verdes.jpg 800w, /assets/images/view-palos-verdes.jpg 1600w"
+                    width="800" height="600" loading="lazy" alt="Sunset at Palos Verdes, CA">
+                <figcaption>Sunset at Palos Verdes, CA</figcaption>
+            </div>
+            <div class="article-details">
+                <h2 class="article-title">{{ page.title }}</h2>
+                <h3 class="article-subtitle">Current and past students (Ph.D., M.S., B.S.)</h3>
+                <br />
             </div>
         </header>
-        <div class="activities" style="margin-top: 1em">
-            <div class="row">
+
+        <!-- PHD -->
+        <section class="article-content">
+            <h2>PhD Students</h2>
+            <div class="row" style="margin-top: 2rem">
                 {% for n in site.data.alumni %}
                 {% for c in n.phd %}
-                <div class="col-sm-6 col-md-6">
-                    <div style="float: left; margin-right: 1em">
-                        <img src="/assets/images/alumni/{{ c.photo }}" width="80px"
-                             style="border-radius: 0.5em; box-shadow: #666 2px 2px 2px"/>
+                <div class="col-sm-12 col-md-12">
+                    <div style="float: left; margin-right: 0.5em">
+                        <img src="/assets/images/alumni/{{ c.photo }}" width="60px" style="border-radius: 0.5em" />
                     </div>
-                    <a href="{{ c.linkedin }}" target="_blank"> <i
-                            class="fab {{site.data.main.social.linkedin.icon}}"></i></a>
-                    <strong>{{ c.name }}</strong> <br/>
-                    <p style="font-size: 0.8em; line-height: 1.3em">
-                        {{ c.period }}, {{ c.degree }}<br/>
-                        <i style="color: #999">{{ c.description }}</i>
+                    <a href="{{ c.linkedin }}" target="_blank">
+                        <i class="fab {{site.data.main.social.linkedin.icon}}"></i>&nbsp;&nbsp;<strong>{{ c.name
+                            }}</strong>
+                    </a>
+                    <p style="font-size: 1.3rem; line-height: 1.3em">
+                        {{ c.period }}, {{ c.degree }}<br />
+                        <span style="color: #999">{{ c.description }}</span>
                     </p>
                 </div>
                 {% endfor %}
                 {% endfor %}
             </div>
-        </div>
-    </article>
-</div>
+        </section>
 
-<div class="row">
-    <article class="post">
-        <header>
-            <div class="title">
-                <h2>Student Worker / Intern</h2>
-            </div>
-        </header>
-        <div class="activities" style="margin-top: 1em">
-            <div class="row">
+        <!-- INTERN -->
+        <section class="article-content">
+            <h2>Student Worker / Intern</h2>
+            <div class="row" style="margin-top: 2rem">
                 {% for n in site.data.alumni %}
                 {% for c in n.worker %}
-                <div class="col-sm-6 col-md-6">
-                    <div style="float: left; margin-right: 1em">
-                        <img src="/assets/images/alumni/{{ c.photo }}" width="60px"
-                             style="border-radius: 0.5em; box-shadow: #666 2px 2px 2px"/>
+                <div class="col-sm-6 col-md-6" style="margin-bottom: 2rem">
+                    <div style="float: left; margin-right: 1rem">
+                        <img src="/assets/images/alumni/{{ c.photo }}" width="40px" style="border-radius: 0.5em" />
                     </div>
-                    <a href="{{ c.linkedin }}" target="_blank"> <i
-                            class="fab {{site.data.main.social.linkedin.icon}}"></i></a>
-                    <strong>{{ c.name }}</strong> <br/>
-                    <p style="font-size: 0.8em; line-height: 1.3em">
-                        {{ c.period }}, {{ c.degree }}<br/>
-                        <i style="color: #999">{{ c.description }}</i>
+                    <p style="font-size: 1.4rem; line-height: 1.3rem">
+                        <a href="{{ c.linkedin }}" target="_blank">
+                            <i class="fab {{site.data.main.social.linkedin.icon}}"></i>&nbsp;&nbsp;<strong>{{ c.name
+                                }}</strong>
+                        </a>
+                    </p>
+                    <p style="font-size: 1.3rem; line-height: 1.5rem">
+                        {{ c.period }}, {{ c.degree }}<br />
+                        <span style="color: #999">{{ c.description }}</span>
                     </p>
                 </div>
                 {% endfor %}
                 {% endfor %}
             </div>
-        </div>
-    </article>
-</div>
+        </section>
 
-<div class="row">
-    <article class="post">
-        <header>
-            <div class="title">
-                <h2>Directed Research</h2>
-            </div>
-        </header>
-        <div class="activities" style="margin-top: 1em">
-            <div class="row">
+        <!-- DIRECTED RESEARCH -->
+        <section class="article-content">
+            <h2>Directed Research</h2>
+            <div class="row" style="margin-top: 2rem">
                 {% for n in site.data.alumni %}
                 {% for c in n.dr %}
                 <div class="col-sm-6 col-md-6" style="margin-bottom: 0.5em">
-                    <a href="{{ c.linkedin }}" target="_blank"> <i
-                            class="fab {{site.data.main.social.linkedin.icon}}"></i></a>
-                    <strong>{{ c.name }}</strong> <br/>
-                    <p style="font-size: 0.8em; line-height: 1.3em">
-                        {{ c.period }}, {{ c.degree }}<br/>
+                    <p style="font-size: 1.4rem; line-height: 1.3rem">
+                        <a href="{{ c.linkedin }}" target="_blank">
+                            <i class="fab {{site.data.main.social.linkedin.icon}}"></i>&nbsp;&nbsp;<strong>{{ c.name
+                                }}</strong>
+                        </a>
+                    </p>
+                    <p style="font-size: 1.3rem; line-height: 1.5rem; color: #999">
+                        {{ c.period }}, {{ c.degree }}
                     </p>
                 </div>
                 {% endfor %}
                 {% endfor %}
             </div>
-        </div>
-    </article>
-</div>
+        </section>
 
-<div class="bottom">
-    <figure style="text-align: center">
-        <img src="/assets/images/view-palos-verdes.jpg" sizes="(max-width: 800px) 100vw, 800px" alt=""/>
-        <figcaption>
-            <span style="color: #808080; font-size: 0.8em">Sunset from Palos Verdes, CA – 20 miles South of USC/ISI.</span>
-        </figcaption>
-    </figure>
+    </article>
 </div>

@@ -22,8 +22,8 @@
   location: USA
   link: http://sc21.supercomputing.org
 
-- conference: IEEE Cluster
-  series:
+- conference: IEEE International Conference on Cluster Computing
+  series: CLUSTER
   year: 2021
   location: Portland, USA
   link: https://clustercomp.org
@@ -76,8 +76,8 @@
   location: Leicester, UK
   link: https://sites.google.com/unizar.es/cloudam2020
   
-- conference: IEEE Cluster
-  series:
+- conference: IEEE International Conference on Cluster Computing
+  series: CLUSTER
   year: 2019
   location: Albuquerque, NM, USA
   link: https://clustercomp.org/2019/
@@ -106,8 +106,8 @@
   location: Campo Grande, Brazil
   link: http://sbac-pad.facom.ufms.br
 
-- conference: IEEE Cluster
-  series:
+- conference: IEEE International Conference on Cluster Computing
+  series: CLUSTER
   year: 2018
   location: Belfast, UK
   link: https://cluster2018.github.io
@@ -142,8 +142,8 @@
   location: Orléans, France
   link: http://hpcs2018.cisedu.info
 
-- conference: IEEE Cluster
-  series:
+- conference: IEEE International Conference on Cluster Computing
+  series: CLUSTER
   year: 2017
   location: Honolulu, USA
   link: https://cluster17.github.io

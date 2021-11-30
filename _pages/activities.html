@@ -5,185 +5,161 @@ permalink: /activities/
 description: Professional Activities
 ---
 
-<h2>Professional Activities</h2>
-<br/>
-
-<div class="row">
-    <article class="post">
-        <header>
-            <div class="title">
-                <h2>Journals Editor</h2>
+<section class="article-page">
+    <article class="main-article has-image">
+        <header class="article-header">
+            <div class="article-image">
+                <img src="/assets/images/view-tennessee.jpg"
+                    srcset="/assets/images/view-tennessee.jpg 800w, /assets/images/view-tennessee.jpg 1600w"
+                    width="800" height="600" loading="lazy" alt="Nearby Corryton, TN">
+                <figcaption>Nearby Corryton, TN</figcaption>
+            </div>
+            <div class="article-details">
+                <h2 class="article-title">{{ page.title }}</h2>
+                <h3 class="article-subtitle">Editor, chair, program committee member, reviewer</h3>
+                <br />
             </div>
         </header>
-        {% if site.data.activities_editor.size > 0 %}
-        <div class="row">
+    </article>
+
+    <!-- Editor -->
+    <article class="main-article">
+        <header class="article-header">
+            <div class="article-details">
+                <h2 class="article-title">Journals Editor</h2>
+                <h3 class="article-subtitle"></h3>
+            </div>
+        </header>
+        <div class="article-list--compact">
             {% for n in site.data.activities_editor %}
-            <div class="col-sm-12 col-md-12" style="margin-bottom: 0.5em">
-                <span class="date">{{ n.year }}</span>
-                <strong><a href="{{ n.link }}" target="_blank">{{ n.journal }}</a></strong>,
-                {{ n.role }}{% if n.description %}, {{ n.description }} {% endif %}
-            </div>
+            <article>
+                <a href="{{ n.link }}" target="_blank" style="text-decoration: none">
+                    <div class="article-details">
+                        {{ n.journal }}<br />
+                        <span class="media-venue">
+                            <strong style="color: #df7988">{{ n.role }}</strong> - {{ n.year }}
+                            {% if n.description %}<br />{{ n.description }} {% endif %}
+                        </span>
+                    </div>
+                </a>
+            </article>
             {% endfor %}
         </div>
-        <br/>
-        {% endif %}
     </article>
-</div>
 
-<div class="row">
-    <article class="post">
-        <header>
-            <div class="title">
-                <h2>Conferences Chair</h2>
+    <!-- Conferences Chair -->
+    <article class="main-article">
+        <header class="article-header">
+            <div class="article-details">
+                <h2 class="article-title">Conferences Chair</h2>
+                {% assign chair_total = site.data.activities_chair | size %}
+                <h3 class="article-subtitle">Served as chair in {{ chair_total }} conferences</h3>
             </div>
         </header>
-        {% if site.data.activities_chair.size > 0 %}
-        <div class="activities">
-            <div class="row">
-                <div class="col-sm-6 col-md-6">
-                    <strong>Chair</strong><br/>
-                    {% for n in site.data.activities_chair %}
-                    {% for c in n.chair %}
-                    <span class="date">{{ c.year }}</span>
-                    <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
-                    {% endfor %}
-                    {% endfor %}
-                </div>
-
-                <div class="col-sm-6 col-md-6">
-                    <strong>Publicity Chair</strong><br/>
-                    {% for n in site.data.activities_chair %}
-                    {% for c in n.publicity %}
-                    <span class="date">{{ c.year }}</span>
-                    <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
-                    {% endfor %}
-                    {% endfor %}
-                </div>
-
-                <div class="col-sm-6 col-md-6">
-                    <strong>Track Chair</strong><br/>
-                    {% for n in site.data.activities_chair %}
-                    {% for c in n.track %}
-                    <span class="date">{{ c.year }}</span>
-                    <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
-                    {% endfor %}
-                    {% endfor %}
-                </div>
-
-                <div class="col-sm-6 col-md-6">
-                    <strong>Organizer</strong><br/>
-                    {% for n in site.data.activities_chair %}
-                    {% for c in n.organizer %}
-                    <span class="date">{{ c.year }}</span>
-                    <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
-                    {% endfor %}
-                    {% endfor %}
-                </div>
-
-                <div class="col-sm-6 col-md-6">
-                    <strong>Local Arrangements Chair</strong><br/>
-                    {% for n in site.data.activities_chair %}
-                    {% for c in n.local %}
-                    <span class="date">{{ c.year }}</span>
-                    <a href="{{ c.link }}" target="_blank">{{ c.conference }}</a>, {{ c.location }}<br/>
-                    {% endfor %}
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-        <br/>
-        {% endif %}
-    </article>
-</div>
-
-<div class="row">
-    <article class="post">
-        <header>
-            <div class="title">
-                <h2>Program Committees Member</h2>
-                <p>Served as PC member for {{ site.data.activities_pc.size }} conferences</p>
-            </div>
-        </header>
-        {% for n in site.data.activities_pc %}
-        <div class="col-sm-12 col-md-12">
-            <span class="date">{{ n.year }}</span>
-            <a href="{{ n.link }}" target="_blank">{{ n.conference }}</a>{% if n.series %} ({{ n.series
-            }}){% endif %}, {{ n.location }}
-        </div>
-        {% endfor %}
-        <br/>
-    </article>
-</div>
-
-<div class="row">
-    <article class="post">
-        <header>
-            <div class="title">
-                <h2>Funding Agencies Reviewer</h2>
-            </div>
-        </header>
-        <div class="row">
-            {% for n in site.data.activities_funding %}
-            <div class="col-sm-12 col-md-12">
-                <span class="date">{{ n.year }}</span>
-                <a href="{{ n.link }}" target="_blank">{{ n.agency }}</a>{% if n.acronym %} ({{ n.acronym
-                }}){% endif %}, {{ n.description }}
-            </div>
+        <div class="article-list--compact">
+            {% assign chair = site.data.activities_chair | sort: "year" | reverse %}
+            {% for n in chair %}
+            <article>
+                <a href="{{ n.link }}" target="_blank" style="text-decoration: none">
+                    <div class="article-details">
+                        {{ n.conference }}<br />
+                        <span class="media-venue">
+                            <strong style="color: #2a9d8f">{{ n.role }}</strong> - {{ n.year }} - {{ n.location }}
+                        </span>
+                    </div>
+                </a>
+            </article>
             {% endfor %}
         </div>
-        <br/>
     </article>
-</div>
 
-<div class="row">
-    <article class="post">
-        <header>
-            <div class="title">
-                <h2>Journals Reviewer</h2>
-                <p>Reviewed for {{ site.data.activities_journal.size }} international journals</p>
+    <!-- PC -->
+    <article class="main-article">
+        <header class="article-header">
+            <div class="article-details">
+                <h2 class="article-title">Program Committees Member</h2>
+                <h3 class="article-subtitle">Served as PC member in {{ site.data.activities_pc.size }} conferences</h3>
             </div>
         </header>
-        <div class="row">
+        <div class="article-list--compact">
+            {% assign pc = site.data.activities_pc | sort: "year" | reverse %}
+            {% for n in pc %}
+            <article>
+                <a href="{{ n.link }}" target="_blank" style="text-decoration: none">
+                    <div class="article-details">
+                        <span><strong style="color: #df7988">{{ n.series }}</strong> - {{ n.conference }}</span>
+                        <span class="media-venue">{{ n.year }} - {{ n.location }}</span>
+                    </div>
+                </a>
+            </article>
+            {% endfor %}
+        </div>
+    </article>
+
+    <!-- Funding Agencies -->
+    <article class="main-article">
+        <header class="article-header">
+            <div class="article-details">
+                <h2 class="article-title">Funding Agencies Reviewer</h2>
+            </div>
+        </header>
+        <div class="article-list--compact">
+            {% assign funding = site.data.activities_funding | sort: "year" | reverse %}
+            {% for n in funding %}
+            <article>
+                <a href="{{ n.link }}" target="_blank" style="text-decoration: none">
+                    <div class="article-details">
+                        <span><strong style="color: #2a9d8f">{{ n.acronym }}</strong> - {{ n.agency }}</span>
+                        <span class="media-venue">{{ n.year }} - {{ n.description }}</span>
+                    </div>
+                </a>
+            </article>
+            {% endfor %}
+        </div>
+    </article>
+
+    <!-- Journals Reviewer -->
+    <article class="main-article">
+        <header class="article-header">
+            <div class="article-details">
+                <h2 class="article-title">Journals Reviewer</h2>
+                <h3 class="article-subtitle">Reviewed for {{ site.data.activities_journal.size }} international journals</h3>
+            </div>
+        </header>
+        <div class="article-list--compact">
             {% for n in site.data.activities_journal %}
-            <div class="col-sm-12 col-md-12">
-                <span class="date">{{ n.year }}</span>
-                <a href="{{ n.link }}" target="_blank">{{ n.journal }}</a>{% if n.acronym %} ({{
-                n.acronym
-                }}){% endif %}
-            </div>
+            <article>
+                <a href="{{ n.link }}" target="_blank" style="text-decoration: none">
+                    <div class="article-details">
+                        <span><strong style="color: #df7988">{{ n.acronym }}</strong> - {{ n.journal }}</span>
+                        <span class="media-venue">{{ n.year }}</span>
+                    </div>
+                </a>
+            </article>
             {% endfor %}
         </div>
-        <br/>
     </article>
-</div>
 
-<div class="row">
-    <article class="post">
-        <header>
-            <div class="title">
-                <h2>Conferences Reviewer</h2>
-                <p>Reviewed for {{ site.data.activities_conference.size }} international conferences</p>
+    <!-- Conferences Reviewer -->
+    <article class="main-article">
+        <header class="article-header">
+            <div class="article-details">
+                <h2 class="article-title">Conferences Reviewer</h2>
+                <h3 class="article-subtitle">Reviewed for {{ site.data.activities_conference.size }} international conferences</h3>
             </div>
         </header>
-        <div class="row">
+        <div class="article-list--compact">
             {% for n in site.data.activities_conference %}
-            <div class="col-sm-12 col-md-12">
-                <span class="date">{{ n.year }}</span>
-                <a href="{{ n.link }}" target="_blank">{{ n.conference }}</a>{% if n.series %} ({{
-                n.series
-                }}){% endif %}, {{ n.location }}
-            </div>
+            <article>
+                <a href="{{ n.link }}" target="_blank" style="text-decoration: none">
+                    <div class="article-details">
+                        <span><strong style="color: #2a9d8f">{{ n.series }}</strong> - {{ n.conference }}</span>
+                        <span class="media-venue">{{ n.year }} - {{ n.location }}</span>
+                    </div>
+                </a>
+            </article>
             {% endfor %}
         </div>
-        <br/>
     </article>
-</div>
-
-<div class="bottom">
-    <figure style="text-align: center">
-        <img src="/assets/images/view-palos-verdes.jpg" sizes="(max-width: 800px) 100vw, 800px" alt=""/>
-        <figcaption>
-            <span style="color: #808080; font-size: 0.8em">Sunset from Palos Verdes, CA.</span>
-        </figcaption>
-    </figure>
-</div>
+    
+</section>
