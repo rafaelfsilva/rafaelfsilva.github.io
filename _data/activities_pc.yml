@@ -4,6 +4,12 @@
   location: Lyon, France
   link: http://www.ipdps.org
 
+- conference: 22nd IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
+  series: CCGrid
+  year: 2022
+  location: Taormina, Italy
+  link: https://fcrlab.unime.it/ccgrid22/
+
 - conference: Platform for Advanced Scientific Computing
   series: PASC
   year: 2022
