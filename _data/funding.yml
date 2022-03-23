@@ -1,3 +1,11 @@
+- doe:
+  title: "ExaWorks: ECP Workflows Project"
+  period: 2017-09/2023
+  amount: "3,773,833"
+  program: Exascale Computing Project
+  awards:
+    - id: 17-SC-20-SC
+
 - nsf:
   - title: "Collaborative Research: OAC Core: Simulation-driven runtime resource management for distributed workflow applications"
     period: 10/2021-09/2024
