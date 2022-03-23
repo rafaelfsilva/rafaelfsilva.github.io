@@ -21,6 +21,38 @@ permalink: /funding/
         </header>
     </article>
 
+    <!-- DOE -->
+    <article class="main-article">
+        <header class="article-header">
+            <div class="article-details">
+                <h2 class="article-title">DOE</h2>
+                <h3 class="article-subtitle">Department of Energy</h3>
+            </div>
+        </header>
+        <div class="article-list--compact">
+            {% for n in site.data.funding %}
+            {% for c in n.doe %}
+            <article>
+                <a href="{{ c.link }}" target="_blank" style="text-decoration: none">
+                    <div class="article-details">
+                        {{ c.title }}<br />
+                        <span class="media-venue">
+                            <strong style="color: #00a8c8">{{ c.period }}</strong> – ${{ c.amount }}
+                            - {{ c.program }}
+                        </span>
+                        <span class="award-id">
+                            {% for d in c.awards %}
+                            #{{ d.id }}&nbsp;&nbsp;
+                            {% endfor %}
+                        </span>
+                    </div>
+                </a>
+            </article>
+            {% endfor %}
+            {% endfor %}
+        </div>
+    </article>
+
     <!-- NSF -->
     <article class="main-article">
         <header class="article-header">
@@ -69,7 +101,7 @@ permalink: /funding/
                     <div class="article-details">
                         {{ c.title }}<br />
                         <span class="media-venue">
-                            <strong style="color: #df7988">{{ c.period }}</strong> – ${{ c.amount }}
+                            <strong style="color: #00a8c8">{{ c.period }}</strong> – ${{ c.amount }}
                             - {{ c.program }}
                         </span>
                         <span class="award-id">
