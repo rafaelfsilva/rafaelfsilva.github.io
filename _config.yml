@@ -14,9 +14,6 @@ paginate_path: /blog/page:num/
 include:
   - _pages
 
-# Google Ananlytics Tracker.
-analytics: UA-338939-1
-
 # scholar
 scholar:
   sort_by: author
