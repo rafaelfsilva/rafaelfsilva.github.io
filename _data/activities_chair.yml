@@ -1,3 +1,9 @@
+- conference: 17th WORKS, Workshop
+  role: Chair
+  year: 2022
+  location: Dallas, USA
+  link: https://works-workshop.org
+
 - conference: 18th eScience, Conference
   role: Publicity and Web Chair
   year: 2022
@@ -5,7 +11,7 @@
   link: https://escience-conference.org/2022
 
 - conference: 2nd ERROR, Workshop
-  role: Co-Chair
+  role: Chair
   year: 2022
   location: Salt Lake City, USA
   link: https://error-workshop.org
@@ -14,7 +20,7 @@
   role: Chair
   year: 2021
   location: Saint-Louis, USA
-  link: https://works-workshop.org
+  link: https://works-workshop.org/2021
 
 - conference: 15th WORKS, Workshop
   role: Chair
