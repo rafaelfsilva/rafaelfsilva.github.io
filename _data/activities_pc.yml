@@ -1,245 +1,224 @@
-- conference: IEEE 34th International Symposium on Computer Architecture and High Performance Computing
-  series: SBAC-PAD
-  year: 2022
-  location: Bordeaux, France
-  link: https://project.inria.fr/sbac2022/
-
-- conference: 31st International Symposium on High-Performance Parallel and Distributed Computing
+- conference: ACM International Symposium on High-Performance Parallel and Distributed Computing
   series: HPDC
-  year: 2022
-  location: Minneapolis, USA
-  link: http://www.hpdc.org/2022/
+  entries:
+    - year: 2022
+      edition: 31st
+      location: Minneapolis, USA
+      link: http://www.hpdc.org/2022/
 
-- conference: 36th IEEE International Parallel & Distributed Processing Symposium
+- conference: IEEE International Parallel & Distributed Processing Symposium
   series: IPDPS
-  year: 2022
-  location: Lyon, France
-  link: http://www.ipdps.org
+  entries:
+    - year: 2022
+      edition: 36th
+      location: Lyon, France
+      link: http://www.ipdps.org
+    - year: 2021
+      edition: 35th
+      location: Portland, USA
+      link: http://www.ipdps.org
+    - year: 2018
+      edition: 18th
+      location: Washington DC, USA
+      link: https://ccgrid2018.seas.gwu.edu
 
-- conference: 22nd IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
+- conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
+  series: SC
+  entries:
+    - year: 2021
+      location: St. Louis, USA
+      link: http://sc21.supercomputing.org
+
+- conference: IEEE International Symposium on Computer Architecture and High Performance Computing
+  series: SBAC-PAD
+  entries:
+    - year: 2022
+      edition: 34th
+      location: Bordeaux, France
+      link: https://project.inria.fr/sbac2022/
+    - year: 2021
+      edition: 33rd
+      location: Belo Horizonte, Brazil
+      link: https://www.sbac-pad2021.dcc.ufmg.br
+    - year: 2019
+      edition: 31st
+      location: Campo Grande, Brazil
+      link: http://sbac-pad.facom.ufms.br
+    - year: 2018
+      edition: 30th
+      location: Lyon, France
+      link: https://graal.ens-lyon.fr/sbac-pad/
+    - year: 2017
+      edition: 29th
+      location: Campinas, Brazil
+      link: http://www2.sbc.org.br/sbac/2017/
+    - year: 2016
+      edition: 28th
+      location: Los Angeles, USA
+      link: http://www2.sbc.org.br/sbac/2016/
+
+- conference: IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
   series: CCGrid
-  year: 2022
-  location: Taormina, Italy
-  link: https://fcrlab.unime.it/ccgrid22/
+  entries:
+    - year: 2022
+      edition: 22nd
+      location: Taormina, Italy
+      link: https://fcrlab.unime.it/ccgrid22/
+    - year: 2017
+      edition: 17th
+      location: Madrid, Spain
+      link: https://www.arcos.inf.uc3m.es/ccgrid2017/
+    - year: 2016
+      edition: 16th
+      location: Cartagena, Colombia
+      link: http://ccgrid2016.uniandes.edu.co
+    - year: 2015
+      edition: 15th
+      location: Shenzhen, China
+      link: http://cloud.siat.ac.cn/ccgrid2015/
+
+- conference: IEEE International Conference on Cluster Computing
+  series: CLUSTER
+  entries:
+    - year: 2021
+      location: Portland, USA
+      link: https://clustercomp.org
+    - year: 2019
+      location: Albuquerque, NM, USA
+      link: https://clustercomp.org/2019/
+    - year: 2018
+      location: Belfast, UK
+      link: https://cluster2018.github.io
+    - year: 2017
+      location: Honolulu, USA
+      link: https://cluster17.github.io
 
 - conference: Platform for Advanced Scientific Computing
   series: PASC
-  year: 2022
-  location: Basel, Switzerland
-  link: https://pasc22.pasc-conference.org/
+  entries:
+    - year: 2022
+      location: Basel, Switzerland
+      link: https://pasc22.pasc-conference.org/
 
-- conference: 35th IEEE International Parallel & Distributed Processing Symposium
-  series: IPDPS
-  year: 2021
-  location: Portland, USA
-  link: http://www.ipdps.org
+- conference: International Conference on Parallel Processing
+  series: ICPP
+  entries:
+    - year: 2019
+      edition: 48th
+      location: Kyoto, Japan
+      link: https://www.hpcs.cs.tsukuba.ac.jp/icpp2019/index.html
 
-- conference: The International Conference for High Performance Computing, Networking, Storage, and Analysis
-  series: SC21
-  year: 2021
-  location: USA
-  link: http://sc21.supercomputing.org
+- conference: Workflows in Support of Large-Scale Science
+  series: WORKS
+  entries:
+    - year: 2020
+      edition: 15th
+      location: Atlanta, USA
+      link: https://works-workshop.org
+    - year: 2019
+      edition: 14th
+      location: Denver, USA
+      link: http://works.cs.cardiff.ac.uk
+    - year: 2018
+      edition: 13th
+      location: Dallas, USA
+      link: http://works.cs.cf.ac.uk/2018/
+    - year: 2017
+      edition: 12th
+      location: Denver, USA
+      link: http://works.cs.cf.ac.uk/2017/
+    - year: 2016
+      edition: 11th
+      location: Salt Lake City, USA
+      link: http://works.cs.cf.ac.uk/2016
 
-- conference: IEEE International Conference on Cluster Computing
-  series: CLUSTER
-  year: 2021
-  location: Portland, USA
-  link: https://clustercomp.org
-
-- conference: 33rd International Symposium on Computer Architecture and High Performance Computing
-  series: SBAC-PAD
-  year: 2021
-  location: Belo Horizonte, Brazil
-  link: https://www.sbac-pad2021.dcc.ufmg.br
-
-- conference: 10th International Workshop on Clouds and Edge Computing, and Applications Management
+- conference: International Workshop on Clouds and Edge Computing, and Applications Management
   series: CloudAM
-  year: 2021
-  location: Leicester, UK
-  link: https://sites.google.com/unizar.es/cloudam2021/
-
-- conference: 1st Workshop on High Performance Serverless Computing
-  series: HiPS
-  year: 2021
-  location: Stockholm, Sweden
-  link: https://highperformanceserverless.github.io
+  entries:
+    - year: 2021
+      edition: 10th
+      location: Leicester, UK
+      link: https://sites.google.com/unizar.es/cloudam2021/
+    - year: 2020
+      edition: 9th
+      location: Leicester, UK
+      link: https://sites.google.com/unizar.es/cloudam2020
+    - year: 2019
+      edition: 8th
+      location: Auckland, New Zealand
+      link: http://eventos.unizar.es/35766/detail/2019-international-workshop-on-cloud-and-edge-computing-and-applications-management.html
+    - year: 2018
+      edition: 7th
+      location: Zurich, Switzerland
+      link: http://webdiis.unizar.es/~rafaelt/cloudam2018/
+    - year: 2017
+      edition: 6th
+      location: Austin, USA
+      link: http://cloudam2017.lncc.br
+    - year: 2016
+      edition: 5th
+      location: Shanghai, China
+      link: http://cloudam2016.lncc.br
+    - year: 2015
+      edition: 4th
+      location: Limassol, Cyprus
+      link: http://cloudam2015.lncc.br
+    - year: 2014
+      edition: 3rd
+      location: London, UK
+      link: http://cloudam2014.lncc.br
 
 - conference: Workshop on Monitoring and Analysis for HPC Systems Plus Applications
   series: HPCMASPA
-  year: 2021
-  location: Portland, USA
-  link: https://sites.google.com/view/hpcmaspa2021
+  entries:
+    - year: 2021
+      location: Portland, USA
+      link: https://sites.google.com/view/hpcmaspa2021
 
 - conference: 1st Workshop on Reproducible Workflows, Data Management, and Security
-  series: ReWorDS21
-  year: 2021
-  location: Innsbruck, Austria
-  link: https://sites.google.com/view/rewords21/home
+  series: ReWorDS
+  entries:
+    - year: 2022
+      edition: 2nd
+      location: Salt Lake City, USA
+      link: https://sites.google.com/view/rewords22
+    - year: 2021
+      edition: 1st
+      location: Innsbruck, Austria
+      link: https://sites.google.com/view/rewords21/home
 
-- conference: 15th Workflows in Support of Large-Scale Science
-  series: WORKS
-  year: 2020
-  location: Atlanta, USA
-  link: https://works-workshop.org
+- conference: Workshop on High Performance Serverless Computing
+  series: HiPS
+  entries:
+    - year: 2021
+      edition: 1st
+      location: Stockholm, Sweden
+      link: https://highperformanceserverless.github.io
 
-- conference: 40th IEEE International Conference on Distributed Computing Systems
+- conference: IEEE International Conference on Distributed Computing Systems
   series: ICDCS
-  year: 2020
-  location: Singapore
-  link: https://icdcs2020.sg
+  entries:
+    - year: 2020
+      edition: 40th 
+      location: Singapore
+      link: https://icdcs2020.sg
 
-- conference: 9th International Workshop on Clouds and (eScience) Applications Management
-  series: CloudAM
-  year: 2020
-  location: Leicester, UK
-  link: https://sites.google.com/unizar.es/cloudam2020
-  
-- conference: IEEE International Conference on Cluster Computing
-  series: CLUSTER
-  year: 2019
-  location: Albuquerque, NM, USA
-  link: https://clustercomp.org/2019/
-
-- conference: 48th International Conference on Parallel Processing
-  series: ICPP
-  year: 2019
-  location: Kyoto, Japan
-  link: https://www.hpcs.cs.tsukuba.ac.jp/icpp2019/index.html
-
-- conference: 14th Workflows in Support of Large-Scale Science
-  series: WORKS
-  year: 2019
-  location: Denver, USA
-  link: http://works.cs.cardiff.ac.uk
-
-- conference: 8th International Workshop on Clouds and (eScience) Applications Management
-  series: CloudAM
-  year: 2019
-  location: Auckland, New Zealand
-  link: http://eventos.unizar.es/35766/detail/2019-international-workshop-on-cloud-and-edge-computing-and-applications-management.html
-
-- conference: 31st International Symposium on Computer Architecture and High Performance Computing
-  series: SBAC-PAD
-  year: 2019
-  location: Campo Grande, Brazil
-  link: http://sbac-pad.facom.ufms.br
-
-- conference: IEEE International Conference on Cluster Computing
-  series: CLUSTER
-  year: 2018
-  location: Belfast, UK
-  link: https://cluster2018.github.io
-
-- conference: 13th Workflows in Support of Large-Scale Science
-  series: WORKS
-  year: 2018
-  location: Dallas, USA
-  link: http://works.cs.cf.ac.uk/2018/
-
-- conference: 7th International Workshop on Clouds and (eScience) Applications Management
-  series: CloudAM
-  year: 2018
-  location: Zurich, Switzerland
-  link: http://webdiis.unizar.es/~rafaelt/cloudam2018/
-
-- conference: 30th International Symposium on Computer Architecture and High Performance Computing
-  series: SBAC-PAD
-  year: 2018
-  location: Lyon, France
-  link: https://graal.ens-lyon.fr/sbac-pad/
-
-- conference: 18th IEEE/ACM International Symposium on Cluster, Cloud, and Grid Computing
-  series: CCGrid
-  year: 2018
-  location: Washington DC, USA
-  link: https://ccgrid2018.seas.gwu.edu
-
-- conference: 16th International Conference on High Performance Computing & Simulation
+- conference: International Conference on High Performance Computing & Simulation
   series: HPCS
-  year: 2018
-  location: Orléans, France
-  link: http://hpcs2018.cisedu.info
+  entries:
+    - year: 2018
+      edition: 16th
+      location: Orléans, France
+      link: http://hpcs2018.cisedu.info
+    - year: 2017
+      edition: 15th
+      location: Genoa, Italy
+      link: http://hpcs2017.cisedu.info
 
-- conference: IEEE International Conference on Cluster Computing
-  series: CLUSTER
-  year: 2017
-  location: Honolulu, USA
-  link: https://cluster17.github.io
-
-- conference: 12th Workflows in Support of Large-Scale Science
-  series: WORKS
-  year: 2017
-  location: Denver, USA
-  link: http://works.cs.cf.ac.uk/2017/
-
-- conference: 6th International Workshop on Clouds and (eScience) Applications Management
-  series: CloudAM
-  year: 2017
-  location: Austin, USA
-  link: http://cloudam2017.lncc.br
-
-- conference: 29th International Symposium on Computer Architecture and High Performance Computing
-  series: SBAC-PAD
-  year: 2017
-  location: Campinas, Brazil
-  link: http://www2.sbc.org.br/sbac/2017/
-
-- conference: 17th IEEE/ACM International Symposium on Cluster, Cloud, and Grid Computing
-  series: CCGrid
-  year: 2017
-  location: Madrid, Spain
-  link: https://www.arcos.inf.uc3m.es/ccgrid2017/
-
-- conference: 15th International Conference on High Performance Computing & Simulation
-  series: HPCS
-  year: 2017
-  location: Genoa, Italy
-  link: http://hpcs2017.cisedu.info
-
-- conference: 11th Workflows in Support of Large-Scale Science
-  series: WORKS
-  year: 2016
-  location: Salt Lake City, USA
-  link: http://works.cs.cf.ac.uk/2016
-
-- conference: 5th International Workshop on Clouds and (eScience) Applications Management
-  series: CloudAM
-  year: 2016
-  location: Shanghai, China
-  link: http://cloudam2016.lncc.br
-
-- conference: 28th International Symposium on Computer Architecture and High Performance Computing
-  series: SBAC-PAD
-  year: 2016
-  location: Los Angeles, USA
-  link: http://www2.sbc.org.br/sbac/2016/
-
-- conference: 16th IEEE/ACM International Symposium on Cluster, Cloud, and Grid Computing
-  series: CCGrid
-  year: 2016
-  location: Cartagena, Colombia
-  link: http://ccgrid2016.uniandes.edu.co
-
-- conference: 1st International Workshop on Reproducible Open Science
+- conference: International Workshop on Reproducible Open Science
   series: RepScience
-  year: 2016
-  location: Hannover, Germany
-  link: http://repscience2016.research-infrastructures.eu
-
-- conference: 4th International Workshop on Clouds and (eScience) Applications Management
-  series: CloudAM
-  year: 2015
-  location: Limassol, Cyprus
-  link: http://cloudam2015.lncc.br
-
-- conference: 15th IEEE/ACM International Symposium on Cluster, Cloud, and Grid Computing
-  series: CCGrid
-  year: 2015
-  location: Shenzhen, China
-  link: http://cloud.siat.ac.cn/ccgrid2015/
-
-- conference: 3rd International Workshop on Clouds and (eScience) Applications Management
-  series: CloudAM
-  year: 2014
-  location: London, UK
-  link: http://cloudam2014.lncc.br
+  entries:
+    - year: 2016
+      edition: 1st
+      location: Hannover, Germany
+      link: http://repscience2016.research-infrastructures.eu

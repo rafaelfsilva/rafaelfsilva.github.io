@@ -2210,3 +2210,8 @@ pre {
     text-align: right;
     padding-right: 1rem;
 }
+
+.no-link {
+    padding: var(--small-card-padding) !important;
+    color: var(--accent-color);
+}
