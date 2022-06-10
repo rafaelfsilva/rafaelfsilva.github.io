@@ -48,26 +48,33 @@ description: Professional Activities
     </article>
 
     <!-- Conferences Chair -->
+    {% assign cc_count = 0 %}
+    {% for n in site.data.activities_chair %}
+        {% for e in n.entries %}
+            {% assign cc_count = cc_count | plus: 1 %}
+        {% endfor %}
+    {% endfor %}
     <article class="main-article">
         <header class="article-header">
             <div class="article-details">
                 <h2 class="article-title">Conferences Chair</h2>
-                {% assign chair_total = site.data.activities_chair | size %}
-                <h3 class="article-subtitle">Served as chair in {{ chair_total }} conferences</h3>
+                <h3 class="article-subtitle">Served as chair in {{ cc_count }} conferences</h3>
             </div>
         </header>
         <div class="article-list--compact">
-            {% assign chair = site.data.activities_chair | sort: "year" | reverse %}
+            {% assign chair = site.data.activities_chair %}
             {% for n in chair %}
             <article>
-                <a href="{{ n.link }}" target="_blank" style="text-decoration: none">
-                    <div class="article-details">
-                        {{ n.conference }}<br />
-                        <span class="media-venue">
-                            <strong style="color: #2a9d8f">{{ n.role }}</strong> - {{ n.year }} - {{ n.location }}
-                        </span>
-                    </div>
-                </a>
+                <div class="article-details no-link">
+                    <span>{{ n.series }} - {{ n.conference }}</span>
+                    <span class="media-venue">
+                        {% for e in n.entries %}
+                        <a href="{{ e.link }}" class="media-venue" style="margin-left: 2em;">
+                            <strong style="color: #2a9d8f">{{ e.role }}</strong> &#8212; {{ e.year }}, {{ e.edition }} {{ n.series }}, {{ e.location }}
+                        </a><br />
+                        {% endfor %}
+                    </span>
+                </div>
             </article>
             {% endfor %}
         </div>

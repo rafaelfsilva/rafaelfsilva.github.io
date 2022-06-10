@@ -1,83 +1,92 @@
-- conference: 17th WORKS, Workshop
-  role: Chair
-  year: 2022
-  location: Dallas, USA
-  link: https://works-workshop.org
+- conference: Workflows in Support of Large-Scale Science Workshop
+  series: WORKS
+  entries:
+    - role: Chair
+      year: 2022
+      edition: 17th
+      location: Dallas, USA
+      link: https://works-workshop.org
+    - role: Chair
+      year: 2021
+      edition: 16th
+      location: Saint-Louis, USA
+      link: https://works-workshop.org/2021
+    - role: Chair
+      edition: 15th
+      year: 2020
+      location: Atlanta, USA
+      link: https://works-workshop.org/2020
+    - role: Chair
+      edition: 14th
+      year: 2019
+      location: Denver, USA
+      link: http://works.cs.cardiff.ac.uk
+    - role: Chair
+      edition: 13th
+      year: 2018
+      location: Dallas, USA
+      link: http://works.cs.cf.ac.uk/2018/
+    - role: Publicity Chair
+      edition: 12th
+      year: 2017
+      location: Denver, USA
+      link: http://works.cs.cf.ac.uk/2017/
+    - role: Publicity Chair
+      edition: 11th
+      year: 2016
+      location: Salt Lake City, USA
+      link: http://works.cs.cf.ac.uk/2016
 
-- conference: 18th eScience, Conference
-  role: Publicity and Web Chair
-  year: 2022
-  location: Salt Lake City, USA
-  link: https://escience-conference.org/2022
+- conference: eScience Conference
+  series: eScience
+  entries:
+    - role: Publicity and Web Chair
+      year: 2022
+      edition: 18th
+      location: Salt Lake City, USA
+      link: https://escience-conference.org/2022
+    - role: Publicity Chair
+      edition: 17th
+      year: 2021
+      location: Innsbruck, Austria
+      link: http://escience2021.org
+    - role: Track Chair
+      year: 2019
+      edition: 15th
+      location: San Diego, USA
+      link: https://escience2019.sdsc.edu
 
-- conference: 2nd ERROR, Workshop
-  role: Chair
-  year: 2022
-  location: Salt Lake City, USA
-  link: https://error-workshop.org
+- conference: Workshop on E-science ReseaRch leading tO negative ResultsWorkshop
+  series: ERROR
+  entries:
+    - role: Chair
+      year: 2022
+      edition: 2nd
+      location: Salt Lake City, USA
+      link: https://error-workshop.org
 
-- conference: 16th WORKS, Workshop
-  role: Chair
-  year: 2021
-  location: Saint-Louis, USA
-  link: https://works-workshop.org/2021
+- conference: Bridging from Concepts to Data and Computation for eScience Workshop
+  series: BC2DC
+  entries:
+    - role: Chair
+      edition: 1st
+      year: 2019
+      location: San Diego, CA
+      link: https://bc2dc.github.io
 
-- conference: 15th WORKS, Workshop
-  role: Chair
-  year: 2020
-  location: Atlanta, USA
-  link: https://works-workshop.org/2020
+- conference: Software Infrastructure for Sustained Innovation Principal Investigator Workshop
+  series: NSF SI2 PI Meeting
+  entries:
+    - role: Organizer
+      year: 2018
+      location: Washington D.C., USA
+      link: https://si2-pi-community.github.io/2018-meeting/
 
-- conference: 14th WORKS, Workshop
-  role: Chair
-  year: 2019
-  location: Denver, USA
-  link: http://works.cs.cardiff.ac.uk
-
-- conference: BC2DC, Workshop
-  role: Chair
-  year: 2019
-  location: San Diego, CA
-  link: https://bc2dc.github.io
-
-- conference: 13th WORKS, Workshop
-  role: Chair
-  year: 2018
-  location: Dallas, USA
-  link: http://works.cs.cf.ac.uk/2018/
-
-- conference: 15th eScience Conference
-  role: Track Chair
-  year: 2019
-  location: San Diego, USA
-  link: https://escience2019.sdsc.edu
-
-- conference: NSF SI2 PI Meeting
-  role: Organizer
-  year: 2018
-  location: Washington D.C., USA
-  link: https://si2-pi-community.github.io/2018-meeting/
-
-- conference: 17th e-Science, Conference
-  role: Publicity Chair
-  year: 2021
-  location: Innsbruck, Austria
-  link: http://escience2021.org
-
-- conference: 12th WORKS, Workshop
-  role: Publicity Chair
-  year: 2017
-  location: Denver, USA
-  link: http://works.cs.cf.ac.uk/2017/
-
-- conference: 11th WORKS, Workshop
-  role: Publicity Chair
-  year: 2016
-  location: Salt Lake City, USA
-  link: http://works.cs.cf.ac.uk/2016
-
-- conference: 28th SBAC-PAD
-  role: Local Arrangements Chair
-  year: 2016
-  location: Los Angeles, USA
-  link: http://www2.sbc.org.br/sbac/2016/
+- conference: IEEE International Symposium on Computer Architecture and High Performance Computing
+  series: SBAC-PAD
+  entries:
+    - role: Local Arrangements Chair
+      year: 2016
+      edition: 28th
+      location: Los Angeles, USA
+      link: http://www2.sbc.org.br/sbac/2016/
