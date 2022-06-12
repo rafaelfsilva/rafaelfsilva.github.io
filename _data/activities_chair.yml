@@ -65,6 +65,13 @@
       location: Salt Lake City, USA
       link: https://error-workshop.org
 
+- conference: Gateways 2022
+  entries:
+    - role: Publication Chair
+      year: 2022
+      location: San Diego, CA, USA
+      link: https://sciencegateways.org/gateways2022
+
 - conference: Bridging from Concepts to Data and Computation for eScience Workshop
   series: BC2DC
   entries:
