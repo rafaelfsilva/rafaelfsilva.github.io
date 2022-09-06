@@ -564,7 +564,7 @@
 @media(min-width:1024px) {
     .container .right-sidebar {
         display: block;
-        min-width: 25%;
+        min-width: 20%;
     }
 }
 
