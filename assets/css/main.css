@@ -564,6 +564,7 @@
 @media(min-width:1024px) {
     .container .right-sidebar {
         display: block;
+        min-width: 25%;
     }
 }
 
@@ -2098,6 +2099,10 @@ a.link:hover {
     color: var(--body-text-color);
     font-size: 0.8em;
     font-weight: bold !important;
+}
+
+.twitter-timeline, #twitter-widget-0 {
+    height: 85vh !important;
 }
 
 .interests {
