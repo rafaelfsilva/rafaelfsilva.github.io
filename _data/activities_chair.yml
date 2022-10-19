@@ -1,3 +1,27 @@
+- conference: eScience Conference
+  series: eScience
+  entries:
+    - role: Program Chair
+      year: 2023
+      edition: 19th
+      location: Limassol, Cyprus
+      link: https://escience-conference.org/2023
+    - role: Publicity and Web Chair
+      year: 2022
+      edition: 18th
+      location: Salt Lake City, USA
+      link: https://escience-conference.org/2022
+    - role: Publicity Chair
+      edition: 17th
+      year: 2021
+      location: Innsbruck, Austria
+      link: http://escience2021.org
+    - role: Track Chair
+      year: 2019
+      edition: 15th
+      location: San Diego, USA
+      link: https://escience2019.sdsc.edu
+      
 - conference: Workflows in Support of Large-Scale Science Workshop
   series: WORKS
   entries:
@@ -36,25 +60,6 @@
       year: 2016
       location: Salt Lake City, USA
       link: http://works.cs.cf.ac.uk/2016
-
-- conference: eScience Conference
-  series: eScience
-  entries:
-    - role: Publicity and Web Chair
-      year: 2022
-      edition: 18th
-      location: Salt Lake City, USA
-      link: https://escience-conference.org/2022
-    - role: Publicity Chair
-      edition: 17th
-      year: 2021
-      location: Innsbruck, Austria
-      link: http://escience2021.org
-    - role: Track Chair
-      year: 2019
-      edition: 15th
-      location: San Diego, USA
-      link: https://escience2019.sdsc.edu
 
 - conference: Workshop on E-science ReseaRch leading tO negative ResultsWorkshop
   series: ERROR
