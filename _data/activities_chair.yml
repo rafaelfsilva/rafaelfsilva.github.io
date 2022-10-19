@@ -1,4 +1,4 @@
-- conference: eScience Conference
+- conference: IEEE eScience Conference
   series: eScience
   entries:
     - role: Program Chair
@@ -22,7 +22,7 @@
       location: San Diego, USA
       link: https://escience2019.sdsc.edu
       
-- conference: Workflows in Support of Large-Scale Science Workshop
+- conference: IEEE Workflows in Support of Large-Scale Science Workshop
   series: WORKS
   entries:
     - role: Chair
