@@ -21,7 +21,16 @@
       edition: 15th
       location: San Diego, USA
       link: https://escience2019.sdsc.edu
-      
+
+- conference: ACM International Symposium on High-Performance Parallel and Distributed Computing
+  series: HPDC
+  entries:
+    - role: Proceedings Chair
+      year: 2023
+      edition: 32nd
+      location: Orlando, USA
+      link: https://www.hpdc.org/2023/
+
 - conference: IEEE Workflows in Support of Large-Scale Science Workshop
   series: WORKS
   entries:
