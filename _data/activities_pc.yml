@@ -17,10 +17,6 @@
       edition: 35th
       location: Portland, USA
       link: http://www.ipdps.org
-    - year: 2018
-      edition: 18th
-      location: Washington DC, USA
-      link: https://ccgrid2018.seas.gwu.edu
 
 - conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
   series: SC
@@ -60,6 +56,10 @@
 - conference: IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
   series: CCGrid
   entries:
+    - year: 2023
+      edition: 23rd
+      location: Bangalore, India
+      link: https://ccgrid2023.iisc.ac.in/
     - year: 2022
       edition: 22nd
       location: Taormina, Italy
