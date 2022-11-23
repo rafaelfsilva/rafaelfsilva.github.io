@@ -1,6 +1,10 @@
 - conference: ACM International Symposium on High-Performance Parallel and Distributed Computing
   series: HPDC
   entries:
+    - year: 2023
+      edition: 32nd
+      location: Orlando, FL, USA
+      link: http://www.hpdc.org/2023/
     - year: 2022
       edition: 31st
       location: Minneapolis, USA
@@ -25,6 +29,30 @@
       location: St. Louis, USA
       link: http://sc21.supercomputing.org
 
+- conference: IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
+  series: CCGrid
+  entries:
+    - year: 2023
+      edition: 23rd
+      location: Bangalore, India
+      link: https://ccgrid2023.iisc.ac.in/
+    - year: 2022
+      edition: 22nd
+      location: Taormina, Italy
+      link: https://fcrlab.unime.it/ccgrid22/
+    - year: 2017
+      edition: 17th
+      location: Madrid, Spain
+      link: https://www.arcos.inf.uc3m.es/ccgrid2017/
+    - year: 2016
+      edition: 16th
+      location: Cartagena, Colombia
+      link: http://ccgrid2016.uniandes.edu.co
+    - year: 2015
+      edition: 15th
+      location: Shenzhen, China
+      link: http://cloud.siat.ac.cn/ccgrid2015/
+      
 - conference: IEEE International Symposium on Computer Architecture and High Performance Computing
   series: SBAC-PAD
   entries:
@@ -53,29 +81,12 @@
       location: Los Angeles, USA
       link: http://www2.sbc.org.br/sbac/2016/
 
-- conference: IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
-  series: CCGrid
+- conference: IEEE International Conference on Cloud Computing
+  series: CLOUD
   entries:
     - year: 2023
-      edition: 23rd
-      location: Bangalore, India
-      link: https://ccgrid2023.iisc.ac.in/
-    - year: 2022
-      edition: 22nd
-      location: Taormina, Italy
-      link: https://fcrlab.unime.it/ccgrid22/
-    - year: 2017
-      edition: 17th
-      location: Madrid, Spain
-      link: https://www.arcos.inf.uc3m.es/ccgrid2017/
-    - year: 2016
-      edition: 16th
-      location: Cartagena, Colombia
-      link: http://ccgrid2016.uniandes.edu.co
-    - year: 2015
-      edition: 15th
-      location: Shenzhen, China
-      link: http://cloud.siat.ac.cn/ccgrid2015/
+      location: Chicago, USA
+      link: https://conferences.computer.org/cloud/2023/
 
 - conference: IEEE International Conference on Cluster Computing
   series: CLUSTER
