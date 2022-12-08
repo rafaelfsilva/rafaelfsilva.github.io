@@ -18,25 +18,6 @@
       location: Limassol, Cyprus
       link: https://2023.euro-par.org
 
-- conference: IEEE International Parallel & Distributed Processing Symposium
-  series: IPDPS
-  entries:
-    - year: 2022
-      edition: 36th
-      location: Lyon, France
-      link: http://www.ipdps.org
-    - year: 2021
-      edition: 35th
-      location: Portland, USA
-      link: http://www.ipdps.org
-
-- conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
-  series: SC
-  entries:
-    - year: 2021
-      location: St. Louis, USA
-      link: http://sc21.supercomputing.org
-
 - conference: IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
   series: CCGrid
   entries:
@@ -60,6 +41,51 @@
       edition: 15th
       location: Shenzhen, China
       link: http://cloud.siat.ac.cn/ccgrid2015/
+
+- conference: IEEE International Conference on Cluster Computing
+  series: CLUSTER
+  entries:
+    - year: 2023
+      location: Santa Fe, NM, USA
+      link: https://clustercomp.org/2023/
+    - year: 2021
+      location: Portland, USA
+      link: https://clustercomp.org
+    - year: 2019
+      location: Albuquerque, NM, USA
+      link: https://clustercomp.org/2019/
+    - year: 2018
+      location: Belfast, UK
+      link: https://cluster2018.github.io
+    - year: 2017
+      location: Honolulu, USA
+      link: https://cluster17.github.io
+
+- conference: IEEE International Conference on Cloud Computing
+  series: CLOUD
+  entries:
+    - year: 2023
+      location: Chicago, USA
+      link: https://conferences.computer.org/cloud/2023/
+
+- conference: IEEE International Parallel & Distributed Processing Symposium
+  series: IPDPS
+  entries:
+    - year: 2022
+      edition: 36th
+      location: Lyon, France
+      link: http://www.ipdps.org
+    - year: 2021
+      edition: 35th
+      location: Portland, USA
+      link: http://www.ipdps.org
+
+- conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
+  series: SC
+  entries:
+    - year: 2021
+      location: St. Louis, USA
+      link: http://sc21.supercomputing.org
       
 - conference: IEEE International Symposium on Computer Architecture and High Performance Computing
   series: SBAC-PAD
@@ -88,29 +114,6 @@
       edition: 28th
       location: Los Angeles, USA
       link: http://www2.sbc.org.br/sbac/2016/
-
-- conference: IEEE International Conference on Cloud Computing
-  series: CLOUD
-  entries:
-    - year: 2023
-      location: Chicago, USA
-      link: https://conferences.computer.org/cloud/2023/
-
-- conference: IEEE International Conference on Cluster Computing
-  series: CLUSTER
-  entries:
-    - year: 2021
-      location: Portland, USA
-      link: https://clustercomp.org
-    - year: 2019
-      location: Albuquerque, NM, USA
-      link: https://clustercomp.org/2019/
-    - year: 2018
-      location: Belfast, UK
-      link: https://cluster2018.github.io
-    - year: 2017
-      location: Honolulu, USA
-      link: https://cluster17.github.io
 
 - conference: Platform for Advanced Scientific Computing
   series: PASC
