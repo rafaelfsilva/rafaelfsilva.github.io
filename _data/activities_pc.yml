@@ -1,3 +1,13 @@
+- conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
+  series: SC
+  entries:
+    - year: 2023
+      location: Workshops, Denver, USA
+      link: http://sc23.supercomputing.org
+    - year: 2021
+      location: St. Louis, USA
+      link: http://sc21.supercomputing.org
+
 - conference: ACM International Symposium on High-Performance Parallel and Distributed Computing
   series: HPDC
   entries:
@@ -79,13 +89,6 @@
       edition: 35th
       location: Portland, USA
       link: http://www.ipdps.org
-
-- conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
-  series: SC
-  entries:
-    - year: 2021
-      location: St. Louis, USA
-      link: http://sc21.supercomputing.org
       
 - conference: IEEE International Symposium on Computer Architecture and High Performance Computing
   series: SBAC-PAD
