@@ -128,10 +128,22 @@
 - conference: International Conference on Parallel Processing
   series: ICPP
   entries:
+    - year: 2023
+      edition: 52nd
+      location: Salt Lake City, UT, USA
+      link: https://icpp23.sci.utah.edu/
     - year: 2019
       edition: 48th
       location: Kyoto, Japan
       link: https://www.hpcs.cs.tsukuba.ac.jp/icpp2019/index.html
+
+- conference: International Workshop on Science Gateways
+  series: IWSG
+  entries:
+    - year: 2023
+      edition: 15th
+      location: Tübingen, Germany
+      link: https://iwsgateways.github.io/iwsg2023/
 
 - conference: Workflows in Support of Large-Scale Science
   series: WORKS
