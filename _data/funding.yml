@@ -1,6 +1,11 @@
 - doe:
+  - title: "Center for Sustaining Workflows and Application Services"
+    period: 04/2023-04/2024
+    amount: "120,000"
+    program: Advanced Scientific Computing Research (ASCR)
+    
   - title: "ExaWorks: ECP Workflows Project"
-    period: 2017-09/2023
+    period: 2017-12/2023
     amount: "3,773,833"
     program: Exascale Computing Project
     awards:
