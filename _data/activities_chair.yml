@@ -70,6 +70,20 @@
       location: Salt Lake City, USA
       link: http://works.cs.cf.ac.uk/2016
 
+- conference: IEEE International Symposium on Computer Architecture and High Performance Computing
+  series: SBAC-PAD
+  entries:
+    - role: "Track Chair: Performance Evaluation"
+      year: 2023
+      edition: 35th
+      location: Porto Alegre, Brazil
+      link: https://www.inf.pucrs.br/sbacpad2023/
+    - role: Local Arrangements Chair
+      year: 2016
+      edition: 28th
+      location: Los Angeles, USA
+      link: http://www2.sbc.org.br/sbac/2016/
+
 - conference: Workshop on E-science ReseaRch leading tO negative ResultsWorkshop
   series: ERROR
   entries:
@@ -103,17 +117,3 @@
       year: 2018
       location: Washington D.C., USA
       link: https://si2-pi-community.github.io/2018-meeting/
-
-- conference: IEEE International Symposium on Computer Architecture and High Performance Computing
-  series: SBAC-PAD
-  entries:
-    - role: "Track Chair: Performance Evaluation"
-      year: 2023
-      edition: 35th
-      location: Porto Alegre, Brazil
-      link: https://www.inf.pucrs.br/sbacpad2023/
-    - role: Local Arrangements Chair
-      year: 2016
-      edition: 28th
-      location: Los Angeles, USA
-      link: http://www2.sbc.org.br/sbac/2016/
