@@ -107,6 +107,11 @@
 - conference: IEEE International Symposium on Computer Architecture and High Performance Computing
   series: SBAC-PAD
   entries:
+    - role: "Track Chair: Performance Evaluation"
+      year: 2023
+      edition: 35th
+      location: Porto Alegre, Brazil
+      link: https://www.inf.pucrs.br/sbacpad2023/
     - role: Local Arrangements Chair
       year: 2016
       edition: 28th
