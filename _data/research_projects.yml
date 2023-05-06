@@ -1,3 +1,8 @@
+- name: SWAS
+  url: https://swas.center
+  icon: swas.png
+  description: SWAS fosters a sustainable software ecosystem for workflows. It collaborates with academia, national labs, and industry to provide reliable, secure, and interoperable software and application services for various workflows, including analysis, simulation, experiment, and machine learning.
+
 - name: Workflows Community Initiative
   url: https://workflows.community
   icon: wci.png
@@ -12,8 +17,3 @@
   url: https://wfcommons.org
   icon: wfcommons.png
   description: A framework that enables scientific workflow research and development by providing tools for analyzing workflow execution traces and generating synthetic traces.
-
-- name: workflowsRI
-  url: https://workflowsri.org
-  icon: workflowsri.png
-  description: Engage with representatives from the workflows community (researchers, developers, science and engineering users, and cyberinfrastructure experts) to design an infrastructure that will have the potential to truly democratize workflows research.
