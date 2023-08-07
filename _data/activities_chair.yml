@@ -33,7 +33,12 @@
 - conference: ACM International Symposium on High-Performance Parallel and Distributed Computing
   series: HPDC
   entries:
-    - role: Proceedings Chair
+    - role: Publication Chair
+      year: 2024
+      edition: 33rd
+      location: Pisa, Italy
+      link: https://www.hpdc.org/2024/
+    - role: Publication Chair
       year: 2023
       edition: 32nd
       location: Orlando, USA
