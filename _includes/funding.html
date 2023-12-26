@@ -1,0 +1,111 @@
+<section data-id="funding" class="animated-section">
+    <div class="section-content">
+        <div class="page-title">
+            <h2>Funding Awards</h2>
+            <h4>Research grants and collaborations</h4>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+
+                <!-- DOE -->
+                <div class="block-title">
+                    <h3>U.S. Department of Energy (DOE)</h3>
+                </div>
+                <div class="timeline timeline-second-style clearfix">
+                    {% for n in site.data.funding.doe %}
+                    <div class="timeline-item clearfix">
+                        <div class="left-part">
+                            <h5 class="item-period">{{ n.period }}</h5>
+                            <span class="item-company"></span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="right-part">
+                            <h4 class="item-title">{{ n.title }}</h4>
+                            <p>{{ n.amount }} &mdash; {{ n.program}} </p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="white-space-50"></div>
+
+                <!-- NSF -->
+                <div class="block-title">
+                    <h3>U.S. National Science Foundation (NSF)</h3>
+                </div>
+                <div class="timeline timeline-second-style clearfix">
+                    {% for n in site.data.funding.nsf %}
+                    <div class="timeline-item clearfix">
+                        <div class="left-part">
+                            <h5 class="item-period">{{ n.period }}</h5>
+                            <span class="item-company"></span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="right-part">
+                            <h4 class="item-title">{{ n.title }}</h4>
+                            <p>{{ n.amount }} &mdash; {{ n.program}}<br />
+                                {% for d in n.awards %}
+                                #{{ d.id }}&nbsp;&nbsp;
+                                {% endfor %}
+                            </p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="white-space-50"></div>
+
+                <!-- DARPA -->
+                <div class="block-title">
+                    <h3>U.S. Defense Advanced Research Projects Agency (DARPA)</h3>
+                </div>
+                <div class="timeline timeline-second-style clearfix">
+                    {% for n in site.data.funding.darpa %}
+                    <div class="timeline-item clearfix">
+                        <div class="left-part">
+                            <h5 class="item-period">{{ n.period }}</h5>
+                            <span class="item-company"></span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="right-part">
+                            <h4 class="item-title">{{ n.title }}</h4>
+                            <p>{{ n.amount }} &mdash; {{ n.program}}<br />
+                                {% for d in n.awards %}
+                                #{{ d.id }}&nbsp;&nbsp;
+                                {% endfor %}
+                            </p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="white-space-50"></div>
+
+                <!-- International -->
+                <div class="block-title">
+                    <h3>International Funding / Collaborations / Others</h3>
+                </div>
+                <div class="timeline timeline-second-style clearfix">
+                    {% for n in site.data.funding.international %}
+                    <div class="timeline-item clearfix">
+                        <div class="left-part">
+                            <h5 class="item-period">{{ n.period }}</h5>
+                            <span class="item-company"></span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="right-part">
+                            <h4 class="item-title">{{ n.title }}</h4>
+                            <p>{{ n.amount }} &mdash; {{ n.program}}<br />
+                                {% for d in n.awards %}
+                                #{{ d.id }}&nbsp;&nbsp;
+                                {% endfor %}
+                            </p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="white-space-50"></div>
+
+            </div>
+        </div>
+
+    </div>
+</section>

@@ -1,20 +1,20 @@
-- doe:
+doe:
   - title: "Center for Sustaining Workflows and Application Services"
     period: 04/2023-04/2024
-    amount: "120,000"
+    amount: "$120,000"
     program: Advanced Scientific Computing Research (ASCR)
     
   - title: "ExaWorks: ECP Workflows Project"
     period: 2017-12/2023
-    amount: "3,773,833"
+    amount: "$3,773,833"
     program: Exascale Computing Project
     awards:
       - id: 17-SC-20-SC
 
-- nsf:
+nsf:
   - title: "Collaborative Research: OAC Core: Simulation-driven runtime resource management for distributed workflow applications"
     period: 10/2021-09/2024
-    amount: "499,988"
+    amount: "$499,988"
     program: "Computer and Information Science and Engineering (CISE): Core Programs"
     link: https://nsf.gov/awardsearch/showAward?AWD_ID=2106147
     awards:
@@ -25,7 +25,7 @@
 
   - title: "Collaborative Research: Elements: Simulation-driven Evaluation of Cyberinfrastructure Systems"
     period: 08/2021-07/2024
-    amount: "600,000"
+    amount: "$600,000"
     program: Software Institutes (CSSI)
     link: https://nsf.gov/awardsearch/showAward?AWD_ID=2103508
     awards:
@@ -36,7 +36,7 @@
 
   - title: "Collaborative Research: EAGER: VisDict - Visual Dictionaries for Enhancing the Communication between Domain Scientists and Scientific Workflow Providers"
     period: 05/2021-10/2022
-    amount: "264,500"
+    amount: "$264,500"
     program: Computing and Communication Foundations (CCF)
     link: https://nsf.gov/awardsearch/showAward?AWD_ID=2100636
     awards:
@@ -47,7 +47,7 @@
 
   - title: "REU Site: SURF-I: Safe, Usable, Resilient and Fair Internet"
     period: 03/2021-02/2024
-    amount: "405,000"
+    amount: "$405,000"
     program: Computer and Network Systems (CNS)
     link: https://nsf.gov/awardsearch/showAward?AWD_ID=2051101
     awards:
@@ -56,7 +56,7 @@
       
   - title: "CCRI: Planning: Collaborative Research: Infrastructure for Enabling Systematic Development and Research of Scientific Workflow Management Systems"
     period: 10/2020-09/2021
-    amount: "100,000"
+    amount: "$100,000"
     program: CISE Community Research Infrastructure
     link: https://nsf.gov/awardsearch/showAward?AWD_ID=2016619
     awards:
@@ -69,7 +69,7 @@
         
   - title: "Collaborative Research: PPoSS: Planning: Performance Scalability, Trust, and Reproducibility: A Community Roadmap to Robust Science in High-throughput Applications"
     period: "10/2020-09/2021"
-    amount: "250,000"
+    amount: "$250,000"
     program: Scalable Parallelism in the Extreme (SPX)
     link: https://nsf.gov/awardsearch/showAward?AWD_ID=2028930
     awards:
@@ -86,7 +86,7 @@
     
   - title: "Collaborative Research: CyberTraining: Implementation: Small: Integrating core CI literacy and skills into university curricula via simulation-driven activities"
     period: 10/2019–09/2022
-    amount: "500,000"
+    amount: "$500,000"
     program: CyberTraining – Training-based
     link: https://nsf.gov/awardsearch/showAward?AWD_ID=1923539
     awards:
@@ -97,7 +97,7 @@
 
   - title: "Coordinating Curricula and User Preferences to Increase the Participation of Women and Students of Color in Engineering"
     period: 10/2018–09/2021
-    amount: "300,000"
+    amount: "$300,000"
     program: IUSE
     link: https://nsf.gov/awardsearch/showAward?AWD_ID=1826632
     awards:
@@ -106,7 +106,7 @@
 
   - title: "BIGDATA: IA: Collaborative Research: In Situ Data Analytics for Next Generation Molecular Dynamics Workflows"
     period: 10/2017–09/2021
-    amount: "1,993,043"
+    amount: "$1,993,043"
     program: Big Data Science & Engineering
     link: https://nsf.gov/awardsearch/showAward?AWD_ID=1741040
     awards:
@@ -119,7 +119,7 @@
 
   - title: "Collaborative Research: SI2-SSE: WRENCH: A Simulation Workbench for Scientific Workflow for Users, Developers, and Researchers"
     period: 01/2017—12/2019
-    amount: "497,956"
+    amount: "$497,956"
     program: Software Institutes
     link: https://nsf.gov/awardsearch/showAward?AWD_ID=1642335
     awards:
@@ -130,40 +130,40 @@
 
   - title: "2018 Software Infrastructure for Sustained Innovation (SI2) Principal Investigators Workshop"
     period: 06/2018–05/2019
-    amount: "85,065"
+    amount: "$85,065"
     program: Software Institutes
     link: https://nsf.gov/awardsearch/showAward?AWD_ID=1831393
     awards:
       - id: 1831393
         link: https://nsf.gov/awardsearch/showAward?AWD_ID=1831393
 
-- darpa:
+darpa:
   - title: "MINT: Model INTegration through Knowledge-Rich Data and Process Composition"
     period: 12/2017–11/2021
-    amount: "12,979,881"
+    amount: "$12,979,881"
     program: World Modelers
     awards:
       - id: W911NF-18-1-0027
 
-- international:
+international:
   - title: "Integrating Cyberinfrastructure Literacy into University Curricula"
     period: 08/2021 – 05/2022
-    amount: "4,400"
+    amount: "$4,400"
     program: USC URAP
 
   - title: "Teaching Parallel and Distributed Computing Concepts in Simulation"
     period: 08/2020 – 05/2021
-    amount: "3,300"
+    amount: "$3,300"
     program: USC URAP
     
   - title: "Integrating core CI literacy and skills into university curricula via simulation-driven activities"
     period: 08/2019 – 05/2020
-    amount: "2,825"
+    amount: "$2,825"
     program: USC URAP
     
   - title: "Laboratoire Virtuel pour la Conception de Systèmes de Gestion de Workflows"
     period: 1/2016–12/2018
     amount: "24,000 €"
-    program: CNRS PICS
+    program: "CNRS PICS (France)"
     awards:
       - id: PICS07239

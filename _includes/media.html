@@ -1,0 +1,39 @@
+<section data-id="media" class="animated-section">
+    <div class="section-content">
+        <div class="page-title">
+            <h2>Media</h2>
+            <h4>Press Coverage</h4>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <div class="blog-masonry two-columns clearfix">
+
+                    {% for n in site.data.media %}
+                    <div class="item post-1">
+                        <div class="blog-card">
+                            <div class="media-block">
+                                <div class="category">
+                                    <a href="#" title="View all posts in {{ n.venue }}">{{ n.venue }}</a>
+                                </div>
+                                <a href="{{ n.link }}" target="_blank">
+                                    <img src="{{ n.image}}" class="size-blog-masonry-image-two-c"
+                                        alt="{{ n.title }}" title="" style="background-color: #fff;" />
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+                            <div class="post-info">
+                                <div class="post-date">{{ n.date }}</div>
+                                <a href="{{ n.link }}">
+                                    <h4 class="blog-item-title">{{ n.title }}</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,72 +1,92 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en" class="no-js">
 
 <head>
     {% include head.html %}
 </head>
 
 <body>
-    <script>
-        (function () {
-            const colorSchemeKey = 'StackColorScheme';
-            if (!localStorage.getItem(colorSchemeKey)) {
-                localStorage.setItem(colorSchemeKey, "auto");
-            }
-        })();
-    </script>
-    <script>
-        (function () {
-            const colorSchemeKey = 'StackColorScheme';
-            const colorSchemeItem = localStorage.getItem(colorSchemeKey);
-            const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+    <!-- Animated Background -->
+    <div class="lm-animated-bg" style="background-image: url(assets/images/background-tahiti.jpg);"></div>
+    <!-- /Animated Background -->
+    <!-- Loading animation -->
+    <div class="preloader">
+        <div class="preloader-animation">
+            <div class="dot dot-1"></div>
+            <div class="dot dot-2"></div>
+            <div class="dot dot-3"></div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7" />
+                </filter>
+            </defs>
+        </svg>
+    </div>
+    <!-- /Loading animation -->
 
-            if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
-                document.documentElement.dataset.scheme = 'dark';
-            } else {
-                document.documentElement.dataset.scheme = 'light';
-            }
-        })();
-    </script>
+    <div class="half-bg"></div>
+    <div class="page">
+        <div class="page-content">
 
-    <div class="container main-container flex on-phone--column extended">
-        <!-- Sidebar -->
-        {% include sidebar.html %}
+            <!-- Sidebar -->
+            {% include sidebar.html %}
 
-        <!-- Main -->
-        <main class="main full-width">
-            {{ content }}
+            <!-- Mobile Navigation -->
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- End Mobile Navigation -->
 
-            <!-- Footer -->
-            {% include footer.html %}
-        </main>
+            <!-- Arrows Nav -->
+            <div class="lmpixels-arrows-nav">
+                <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
+                <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
+            </div>
+            <!-- End Arrows Nav -->
 
-        <!-- Right Sidebar -->
-        {% include right-sidebar.html %}
+            <div class="content-area">
+                <div class="animated-sections">
+
+                    <!-- About Me-->
+                    {% include about.html %}
+
+                    <!-- Publications -->
+                    {% include publications.html %}
+
+                    <!-- Professional Activities -->
+                    {% include activities.html %}
+
+                    <!-- Funding Awards -->
+                    {% include funding.html %}
+
+                    <!-- Media -->
+                    {% include media.html %}
+
+                </div>
+            </div>
+
+        </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="/assets/js/jquery.min.js"></script>
-    <!-- <script src="/assets/js/browser.min.js"></script> -->
-    <script src="/assets/js/breakpoints.min.js"></script>
-    <script src="/assets/js/util.js"></script>
-    <script src="/assets/js/main.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/animating.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
-        integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous" defer="false">
-        </script>
-    <script type='text/javascript' defer
-        src='https://d33wubrfki0l68.cloudfront.net/js/8f6da31b7b577a254b13b355673d22fd37655360/ts/main.js'></script>
-    <script>
-        (function () {
-            const customFont = document.createElement('link');
-            customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src='https://www.googleg.com/recaptcha/api.js'></script>
 
-            customFont.type = "text/css";
-            customFont.rel = "stylesheet";
+    <script src='assets/js/isotope.pkgd.min.js'></script>
+    <script src='assets/js/owl.carousel.min.js'></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
 
-            document.head.appendChild(customFont);
-        }());
-    </script>
+    <script src="assets/js/validator.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 

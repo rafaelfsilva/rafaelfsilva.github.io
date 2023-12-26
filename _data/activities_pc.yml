@@ -1,3 +1,19 @@
+- conference: ACM International Symposium on High-Performance Parallel and Distributed Computing
+  series: HPDC
+  entries:
+    - year: 2024
+      edition: 33rd
+      location: Pisa, Italy
+      link: http://www.hpdc.org/2024/
+    - year: 2023
+      edition: 32nd
+      location: Orlando, FL, USA
+      link: http://www.hpdc.org/2023/
+    - year: 2022
+      edition: 31st
+      location: Minneapolis, USA
+      link: http://www.hpdc.org/2022/
+
 - conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
   series: SC
   entries:
@@ -7,18 +23,6 @@
     - year: 2021
       location: St. Louis, USA
       link: http://sc21.supercomputing.org
-
-- conference: ACM International Symposium on High-Performance Parallel and Distributed Computing
-  series: HPDC
-  entries:
-    - year: 2023
-      edition: 32nd
-      location: Orlando, FL, USA
-      link: http://www.hpdc.org/2023/
-    - year: 2022
-      edition: 31st
-      location: Minneapolis, USA
-      link: http://www.hpdc.org/2022/
 
 - conference: International European Conference on Parallel and Distributed Computing
   series: Euro-Par
