@@ -1,3 +1,14 @@
+- agency: U.S. Department of Energy
+  acronym: DOE
+  link: https://www.energy.gov/
+  entries:
+    - year: 2024
+      description: Mail In Reviews
+    - year: 2023
+      description: Mail In Reviews
+    - year: 2021
+      description: Mail In Reviews
+
 - agency: U.S. National Science Foundation
   acronym: NSF
   link: https://nsf.gov
@@ -16,15 +27,6 @@
       description: Review Panels
     - year: 2017
       description: Review Panels
-
-- agency: U.S. Department of Energy
-  acronym: DOE
-  link: https://www.energy.gov/
-  entries:
-    - year: 2023
-      description: Mail In Reviews
-    - year: 2021
-      description: Mail In Reviews
   
 - agency: U.S. Army Research Office
   acronym: ARO
