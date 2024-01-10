@@ -4,6 +4,12 @@
   link: https://www.ornl.gov/sites/default/files/2023-11/Review%20v.56_n.2_web%20copy_0.pdf#page=23
   image: https://www.ornl.gov/sites/default/files/styles/crop_thumbnail/public/2023-11/Review%20v.56_n.2%20cover_0.jpg
 
+- title: Julia as a unifying end-to-end workflow language on the Frontier exascale system
+  venue: ORNL Research Highlights
+  date: November 2023
+  link: https://www.ornl.gov/research-highlight/julia-unifying-end-end-workflow-language-frontier-exascale-system
+  image: https://www.ornl.gov/sites/default/files/styles/large/public/2024-01/julia_gray_scott_ornl_3.png?itok=fgK-aRFE
+
 - title: ExaWorks Provides Access to Community Sustained, Hardened, and Tested Components to Create Award-Winning HPC Workflows
   venue: HPCwire
   date: July 2023
