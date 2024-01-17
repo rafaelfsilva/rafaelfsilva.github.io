@@ -14,6 +14,22 @@
       location: Minneapolis, USA
       link: http://www.hpdc.org/2022/
 
+- conference: International Conference on Parallel Processing
+  series: ICPP
+  entries:
+    - year: 2024
+      edition: 53rd
+      location: Gotland, Sweden
+      link: https://icpp2024.org/
+    - year: 2023
+      edition: 52nd
+      location: Salt Lake City, UT, USA
+      link: https://icpp23.sci.utah.edu/
+    - year: 2019
+      edition: 48th
+      location: Kyoto, Japan
+      link: https://www.hpcs.cs.tsukuba.ac.jp/icpp2019/index.html
+
 - conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
   series: SC
   entries:
@@ -31,6 +47,25 @@
       edition: 29th
       location: Limassol, Cyprus
       link: https://2023.euro-par.org
+
+- conference: IEEE International Conference on Cluster Computing
+  series: CLUSTER
+  entries:
+    - year: 2023
+      location: Santa Fe, NM, USA
+      link: https://clustercomp.org/2023/
+    - year: 2021
+      location: Portland, USA
+      link: https://clustercomp.org
+    - year: 2019
+      location: Albuquerque, NM, USA
+      link: https://clustercomp.org/2019/
+    - year: 2018
+      location: Belfast, UK
+      link: https://cluster2018.github.io
+    - year: 2017
+      location: Honolulu, USA
+      link: https://cluster17.github.io
 
 - conference: IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
   series: CCGrid
@@ -55,25 +90,6 @@
       edition: 15th
       location: Shenzhen, China
       link: http://cloud.siat.ac.cn/ccgrid2015/
-
-- conference: IEEE International Conference on Cluster Computing
-  series: CLUSTER
-  entries:
-    - year: 2023
-      location: Santa Fe, NM, USA
-      link: https://clustercomp.org/2023/
-    - year: 2021
-      location: Portland, USA
-      link: https://clustercomp.org
-    - year: 2019
-      location: Albuquerque, NM, USA
-      link: https://clustercomp.org/2019/
-    - year: 2018
-      location: Belfast, UK
-      link: https://cluster2018.github.io
-    - year: 2017
-      location: Honolulu, USA
-      link: https://cluster17.github.io
 
 - conference: IEEE International Conference on Cloud Computing
   series: CLOUD
@@ -128,18 +144,6 @@
     - year: 2022
       location: Basel, Switzerland
       link: https://pasc22.pasc-conference.org/
-
-- conference: International Conference on Parallel Processing
-  series: ICPP
-  entries:
-    - year: 2023
-      edition: 52nd
-      location: Salt Lake City, UT, USA
-      link: https://icpp23.sci.utah.edu/
-    - year: 2019
-      edition: 48th
-      location: Kyoto, Japan
-      link: https://www.hpcs.cs.tsukuba.ac.jp/icpp2019/index.html
 
 - conference: International Workshop on Science Gateways
   series: IWSG
