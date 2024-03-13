@@ -148,6 +148,10 @@
 - conference: International Workshop on Science Gateways
   series: IWSG
   entries:
+    - year: 2024
+      edition: 16th
+      location: Toulouse, France
+      link: https://iwsgateways.github.io/iwsg2024/
     - year: 2023
       edition: 15th
       location: Tübingen, Germany
