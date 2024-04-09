@@ -3,30 +3,32 @@
   link: https://www.energy.gov/
   entries:
     - year: 2024
-      description: Mail In Reviews
+      description: Mail In Reviews, ASCR
     - year: 2023
-      description: Mail In Reviews
+      description: Mail In Reviews, ASCR
     - year: 2021
-      description: Mail In Reviews
+      description: Mail In Reviews, ASCR
 
 - agency: U.S. National Science Foundation
   acronym: NSF
   link: https://nsf.gov
   entries:
+    - year: 2024
+      description: Virtual Review Panel, OAC
     - year: 2023
-      description: Virtual Review Panel
+      description: Virtual Review Panel, OAC
     - year: 2022
-      description: Virtual Review Panels
+      description: Virtual Review Panels, OAC
     - year: 2021
-      description: Virtual Review Panels and Ad-hoc Reviewer  
+      description: Virtual Review Panels and Ad-hoc Reviewer, OAC
     - year: 2020
-      description: Review Panel and Ad-hoc Reviewer
+      description: Review Panel and Ad-hoc Reviewer, OAC
     - year: 2019
-      description: Review Panels and Ad-hoc Reviewer
+      description: Review Panels and Ad-hoc Reviewer, OAC
     - year: 2018
-      description: Review Panels
+      description: Review Panels, OAC
     - year: 2017
-      description: Review Panels
+      description: Review Panels, OAC
   
 - agency: U.S. Army Research Office
   acronym: ARO
