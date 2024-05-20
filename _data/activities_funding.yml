@@ -29,6 +29,13 @@
       description: Review Panels, OAC
     - year: 2017
       description: Review Panels, OAC
+
+- agency: Austrian Science Fund
+  acronym: FWF
+  link: https://www.fwf.ac.at/en/
+  entries:
+    - year: 2024
+      description: Ad-hoc Reviewer
   
 - agency: U.S. Army Research Office
   acronym: ARO
