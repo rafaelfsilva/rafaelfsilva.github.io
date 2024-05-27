@@ -45,3 +45,7 @@ plugins:
   - jekyll-paginate   # Used for sorting posts by page numbers.
   - jekyll-seo-tag    # Adds all the important SEO meta tags by default.
   - jekyll-scholar
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from

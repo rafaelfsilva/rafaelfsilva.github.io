@@ -1,37 +1,6 @@
 ---
-layout: default
 title: Media
-permalink: /activities/media/
-description: Media
+permalink: /media
+redirect_to:
+  - /#media
 ---
-
-<section class="article-page">
-    <article class="main-article has-image">
-        <header class="article-header">
-            <div class="article-image">
-                <img src="/assets/images/view-mount-wilson.jpg"
-                    srcset="/assets/images/view-mount-wilson.jpg 800w, /assets/images/view-mount-wilson.jpg 1600w"
-                    width="800" height="600" loading="lazy" alt="View from Mount Wilson, Los Angeles, CA">
-                <figcaption>View from Mount Wilson, Los Angeles, CA</figcaption>
-            </div>
-            <div class="article-details">
-                <h2 class="article-title">{{ page.title }}</h2>
-                <h3 class="article-subtitle">Press coverage</h3>
-            </div>
-        </header>
-
-        <div class="article-list--compact">
-            {% for n in site.data.media %}
-            <article>
-                <a href="{{ n.link }}" target="_blank">
-                    <div class="article-details">
-                        {{ n.title }}<br />
-                        <span class="media-venue"><strong style="color: #df7988">{{ n.date }}</strong> – <i>{{ n.venue
-                                }}</i></span>
-                    </div>
-                </a>
-            </article>
-            {% endfor %}
-        </div>
-    </article>
-</section>
