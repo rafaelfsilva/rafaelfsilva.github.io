@@ -15,3 +15,4 @@ gem "jekyll-redirect-from"
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "webrick", "~> 1.7"
+gem "ffi", "1.16.3"
