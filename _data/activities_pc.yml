@@ -1,3 +1,39 @@
+- conference: IEEE ISC High Performance
+  series: ISC-HPC
+  entries:
+    - year: 2025
+      edition: 2025
+      location: Workshops, Hamburg, Germany
+      link: https://isc-hpc.com
+
+- conference: IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
+  series: CCGrid
+  entries:
+    - year: 2025
+      edition: 25th
+      location: Tromsø, Norway
+      link: https://site.uit.no/ccgrid2025
+    - year: 2023
+      edition: 23rd
+      location: Bangalore, India
+      link: https://ccgrid2023.iisc.ac.in/
+    - year: 2022
+      edition: 22nd
+      location: Taormina, Italy
+      link: https://fcrlab.unime.it/ccgrid22/
+    - year: 2017
+      edition: 17th
+      location: Madrid, Spain
+      link: https://www.arcos.inf.uc3m.es/ccgrid2017/
+    - year: 2016
+      edition: 16th
+      location: Cartagena, Colombia
+      link: http://ccgrid2016.uniandes.edu.co
+    - year: 2015
+      edition: 15th
+      location: Shenzhen, China
+      link: http://cloud.siat.ac.cn/ccgrid2015/
+
 - conference: ACM International Symposium on High-Performance Parallel and Distributed Computing
   series: HPDC
   entries:
@@ -78,30 +114,6 @@
     - year: 2017
       location: Honolulu, USA
       link: https://cluster17.github.io
-
-- conference: IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
-  series: CCGrid
-  entries:
-    - year: 2023
-      edition: 23rd
-      location: Bangalore, India
-      link: https://ccgrid2023.iisc.ac.in/
-    - year: 2022
-      edition: 22nd
-      location: Taormina, Italy
-      link: https://fcrlab.unime.it/ccgrid22/
-    - year: 2017
-      edition: 17th
-      location: Madrid, Spain
-      link: https://www.arcos.inf.uc3m.es/ccgrid2017/
-    - year: 2016
-      edition: 16th
-      location: Cartagena, Colombia
-      link: http://ccgrid2016.uniandes.edu.co
-    - year: 2015
-      edition: 15th
-      location: Shenzhen, China
-      link: http://cloud.siat.ac.cn/ccgrid2015/
 
 - conference: IEEE International Conference on Cloud Computing
   series: CLOUD
