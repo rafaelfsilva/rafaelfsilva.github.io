@@ -1,3 +1,22 @@
+- conference: ACM International Symposium on High-Performance Parallel and Distributed Computing
+  series: HPDC
+  entries:
+    - role: Student Program Chair
+      year: 2025
+      edition: 34th
+      location: Notre Dame, IN, USA
+      link: https://www.hpdc.org/2025/
+    - role: Publication Chair
+      year: 2024
+      edition: 33rd
+      location: Pisa, Italy
+      link: https://www.hpdc.org/2024/
+    - role: Publication Chair
+      year: 2023
+      edition: 32nd
+      location: Orlando, USA
+      link: https://www.hpdc.org/2023/
+
 - conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
   series: SC
   entries:
@@ -5,7 +24,7 @@
       year: 2024
       location: USA
       link: http://sc24.supercomputing.org
-
+     
 - conference: IEEE eScience Conference
   series: eScience
   entries:
@@ -29,20 +48,6 @@
       edition: 15th
       location: San Diego, USA
       link: https://escience2019.sdsc.edu
-
-- conference: ACM International Symposium on High-Performance Parallel and Distributed Computing
-  series: HPDC
-  entries:
-    - role: Publication Chair
-      year: 2024
-      edition: 33rd
-      location: Pisa, Italy
-      link: https://www.hpdc.org/2024/
-    - role: Publication Chair
-      year: 2023
-      edition: 32nd
-      location: Orlando, USA
-      link: https://www.hpdc.org/2023/
 
 - conference: IEEE Workflows in Support of Large-Scale Science Workshop
   series: WORKS
