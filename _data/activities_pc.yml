@@ -34,6 +34,14 @@
       location: Shenzhen, China
       link: http://cloud.siat.ac.cn/ccgrid2015/
 
+- conference: ACM/SIGAPP Symposium On Applied Computing
+  series: SAC
+  entries:
+    - year: 2025
+      edition: 40th
+      location: Track On Cloud Continuum, Sicily, Italy
+      link: https://www.sigapp.org/sac/sac2025/
+
 - conference: ACM International Symposium on High-Performance Parallel and Distributed Computing
   series: HPDC
   entries:
