@@ -6,6 +6,26 @@
       location: Workshops and Birds of a Feather, Hamburg, Germany
       link: https://isc-hpc.com
 
+- conference: ACM International Symposium on High-Performance Parallel and Distributed Computing
+  series: HPDC
+  entries:
+    - year: 2025
+      edition: 34th
+      location: Notre Dame, IN, USA
+      link: http://hpdc.sci.utah.edu/2025/
+    - year: 2024
+      edition: 33rd
+      location: Pisa, Italy
+      link: http://www.hpdc.org/2024/
+    - year: 2023
+      edition: 32nd
+      location: Orlando, FL, USA
+      link: http://www.hpdc.org/2023/
+    - year: 2022
+      edition: 31st
+      location: Minneapolis, USA
+      link: http://www.hpdc.org/2022/
+      
 - conference: IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
   series: CCGrid
   entries:
@@ -41,22 +61,6 @@
       edition: 40th
       location: Track On Cloud Continuum, Sicily, Italy
       link: https://www.sigapp.org/sac/sac2025/
-
-- conference: ACM International Symposium on High-Performance Parallel and Distributed Computing
-  series: HPDC
-  entries:
-    - year: 2024
-      edition: 33rd
-      location: Pisa, Italy
-      link: http://www.hpdc.org/2024/
-    - year: 2023
-      edition: 32nd
-      location: Orlando, FL, USA
-      link: http://www.hpdc.org/2023/
-    - year: 2022
-      edition: 31st
-      location: Minneapolis, USA
-      link: http://www.hpdc.org/2022/
 
 - conference: International Conference on Parallel Processing
   series: ICPP
