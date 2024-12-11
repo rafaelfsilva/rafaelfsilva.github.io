@@ -25,6 +25,28 @@
       edition: 31st
       location: Minneapolis, USA
       link: http://www.hpdc.org/2022/
+
+- conference: IEEE International Conference on Cluster Computing
+  series: CLUSTER
+  entries:
+    - year: 2025
+      location: Edinburgh, Scotland, UK
+      link: https://clustercomp.org/2025/
+    - year: 2023
+      location: Santa Fe, NM, USA
+      link: https://clustercomp.org/2023/
+    - year: 2021
+      location: Portland, USA
+      link: https://clustercomp.org
+    - year: 2019
+      location: Albuquerque, NM, USA
+      link: https://clustercomp.org/2019/
+    - year: 2018
+      location: Belfast, UK
+      link: https://cluster2018.github.io
+    - year: 2017
+      location: Honolulu, USA
+      link: https://cluster17.github.io
       
 - conference: IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
   series: CCGrid
@@ -107,25 +129,6 @@
     - year: 2021
       location: St. Louis, USA
       link: http://sc21.supercomputing.org
-
-- conference: IEEE International Conference on Cluster Computing
-  series: CLUSTER
-  entries:
-    - year: 2023
-      location: Santa Fe, NM, USA
-      link: https://clustercomp.org/2023/
-    - year: 2021
-      location: Portland, USA
-      link: https://clustercomp.org
-    - year: 2019
-      location: Albuquerque, NM, USA
-      link: https://clustercomp.org/2019/
-    - year: 2018
-      location: Belfast, UK
-      link: https://cluster2018.github.io
-    - year: 2017
-      location: Honolulu, USA
-      link: https://cluster17.github.io
 
 - conference: IEEE International Conference on Cloud Computing
   series: CLOUD
