@@ -76,6 +76,16 @@
       location: Shenzhen, China
       link: http://cloud.siat.ac.cn/ccgrid2015/
 
+- conference: Platform for Advanced Scientific Computing
+  series: PASC
+  entries:
+    - year: 2025
+      location: ACM Student Research Competition, Brugg, Switzerland
+      link: https://pasc25.pasc-conference.org/
+    - year: 2022
+      location: Basel, Switzerland
+      link: https://pasc22.pasc-conference.org/
+
 - conference: ACM/SIGAPP Symposium On Applied Computing
   series: SAC
   entries:
@@ -176,13 +186,6 @@
       edition: 28th
       location: Los Angeles, USA
       link: http://www2.sbc.org.br/sbac/2016/
-
-- conference: Platform for Advanced Scientific Computing
-  series: PASC
-  entries:
-    - year: 2022
-      location: Basel, Switzerland
-      link: https://pasc22.pasc-conference.org/
 
 - conference: International Workshop on Science Gateways
   series: IWSG
