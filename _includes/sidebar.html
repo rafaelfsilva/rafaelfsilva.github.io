@@ -1,111 +1,43 @@
-<header id="site_header" class="header mobile-menu-hide">
-    <div class="header-content">
-        <div class="header-photo">
-            <img src="/assets/images/2022-rafael-ferreira-da-silva-high-resolution.jpg" alt="Rafael Ferreira da Silva">
-        </div>
-        <div class="header-titles">
-            <h2>RAFAEL<br /><span style="font-size: 0.9em; font-weight: normal;">FERREIRA DA SILVA</span></h2>
-            <h4>Group Leader</h4>
-            <h4>Senior Research Scientist</h4>
-        </div>
+<header id="site_header" class="header mobile-menu-hide header-color-light">
+
+    <div class="my-photo tilt-effect">
+        <img src="/assets/images/2022-rafael-ferreira-da-silva-high-resolution.jpg" alt="Rafael Ferreira da Silva">
     </div>
 
-    <ul class="main-menu">
-        <li>
-            <a href="#about-me" class="nav-anim">
-                <span class="menu-icon lnr lnr-user"></span>
-                <span class="link-text">About Me</span>
-            </a>
-        </li>
-        <li>
-            <a href="#publications" class="nav-anim">
-                <span class="menu-icon lnr lnr-graduation-hat"></span>
-                <span class="link-text">Publications</span>
-            </a>
-        </li>
-        <li>
-            <a href="#activities" class="nav-anim">
-                <span class="menu-icon lnr lnr-briefcase"></span>
-                <span class="link-text">Professional Activities</span>
-            </a>
-        </li>
-        <li>
-            <a href="#funding" class="nav-anim">
-                <span class="menu-icon lnr lnr-star"></span>
-                <span class="link-text">Funding Awards</span>
-            </a>
-        </li>
-        <li>
-            <a href="#media" class="nav-anim">
-                <span class="menu-icon lnr lnr-film-play"></span>
-                <span class="link-text">Media</span>
-            </a>
-        </li>
-    </ul>
+    <div class="site-title-block">
+        <h1 class="site-title">Rafael<br /><span style="font-size: 0.8em; font-weight: normal;">Ferreira da Silva</span>
+        </h1>
+        <h4 style="font-size: 0.8em;">Group Leader <span style="color: #aaa; font-weight: normal;">&</span><br />Senior
+            Research Scientist</h4>
+    </div>
 
-    <div class="social-links">
-        <ul>
+    <!-- Navigation -->
+    <div class="site-nav">
+        <!-- Main menu -->
+        <ul id="nav" class="site-main-menu">
             <li>
-                <a href="{{site.data.main.social.linkedin.link}}" target="_blank">
-                    <i class="fab {{site.data.main.social.linkedin.icon}}"></i>
-                </a>
+                <a class="pt-trigger" href="#about-me" data-animation="21"><i
+                        class="menu-icon pe-7s-icon pe-7s-user"></i>About me</a>
             </li>
             <li>
-                <a href="{{site.data.main.social.googlescholar.link}}" target="_blank">
-                    <i class="ai {{site.data.main.social.googlescholar.icon}}"></i>
-                </a>
+                <a class="pt-trigger" href="#publications" data-animation="17"><i
+                        class="menu-icon pe-7s-icon pe-7s-comment"></i>Publications</a>
             </li>
             <li>
-                <a href="{{site.data.main.social.researchgate.link}}" target="_blank">
-                    <i class="ai {{site.data.main.social.researchgate.icon}}"></i>
-                </a>
+                <a class="pt-trigger" href="#activities" data-animation="18"><i
+                        class="menu-icon pe-7s-icon pe-7s-id"></i>Professional Activities</a>
             </li>
             <li>
-                <a href="{{site.data.main.social.dblp.link}}" target="_blank">
-                    <i class="ai {{site.data.main.social.dblp.icon}}"></i>
-                </a>
+                <a class="pt-trigger" href="#funding" data-animation="19"><i
+                        class="menu-icon pe-7s-icon pe-7s-check"></i>Funding Awards</a>
             </li>
             <li>
-                <a href="{{site.data.main.social.orcid.link}}" target="_blank">
-                    <i class="ai {{site.data.main.social.orcid.icon}}"></i>
-                </a>
-            </li>
-            <li>
-                <a href="{{site.data.main.social.github.link}}" target="_blank">
-                    <i class="fab {{site.data.main.social.github.icon}}"></i>
-                </a>
-            </li>
-            <li>
-                <a href="{{site.data.main.social.twitter.link}}" target="_blank">
-                    <i class="fab {{site.data.main.social.twitter.icon}}"></i>
-                </a>
+                <a class="pt-trigger" href="#media" data-animation="20"><i
+                        class="menu-icon pe-7s-icon pe-7s-video"></i>Media</a>
             </li>
         </ul>
     </div>
 
-    <div class="info-list">
-        <ul>
-            <li>
-                <a href="https://www.ornl.gov/group/workflows-and-ecosystem-services" target="_blank" style="color: #fff">
-                    Workflow and Ecosystem Services
-                </a>
-            </li>
-            <li>
-                <a href="https://www.ornl.gov/division/nccs" target="_blank" style="color: #fff">
-                    National Center for Computational Sciences
-                </a>
-            </li>
-            <li>
-                <a href="https://www.ornl.gov" target="_blank" style="color: #fff">
-                    Oak Ridge National Laboratory
-                </a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="header-buttons">
-        <a href="files/cv/RafaelFerreiraDaSilva-cv-2025-01.pdf" target="_blank" class="btn btn-primary">Download CV</a>
-    </div>
-
-    <div class="copyrights">&copy;2003-{{ site.time | date: '%Y' }} Rafael Ferreira da Silva, Ph.D.</div>
 </header>
+  
+<!-- <div class="copyrights">&copy;2003-{{ site.time | date: '%Y' }} Rafael Ferreira da Silva, Ph.D.</div> -->

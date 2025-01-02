@@ -6,52 +6,47 @@
 </head>
 
 <body>
-    <!-- Animated Background -->
-    <div class="lm-animated-bg" style="background-image: url(/assets/images/background-tahiti.jpg);"></div>
-    <!-- /Animated Background -->
     <!-- Loading animation -->
     <div class="preloader">
         <div class="preloader-animation">
-            <div class="dot dot-1"></div>
-            <div class="dot dot-2"></div>
-            <div class="dot dot-3"></div>
+            <div class="dot1"></div>
+            <div class="dot2"></div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-            <defs>
-                <filter id="goo">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                    <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7" />
-                </filter>
-            </defs>
-        </svg>
     </div>
     <!-- /Loading animation -->
 
-    <div class="half-bg"></div>
-    <div class="page">
-        <div class="page-content">
+    <div id="page" class="page">
 
-            <!-- Sidebar -->
-            {% include sidebar.html %}
+        <!-- Sidebar -->
+        {% include sidebar.html %}
 
-            <!-- Mobile Navigation -->
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+        <!-- Mobile Header -->
+        <div class="mobile-header mobile-visible">
+            <div class="mobile-logo-container">
+                <div class="mobile-site-title">Rafael Ferreira da Silva</div>
             </div>
-            <!-- End Mobile Navigation -->
 
-            <!-- Arrows Nav -->
-            <div class="lmpixels-arrows-nav">
-                <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
-                <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
-            </div>
-            <!-- End Arrows Nav -->
+            <a class="menu-toggle mobile-visible">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- /Mobile Header -->
 
-            <div class="content-area">
-                <div class="animated-sections">
+        <!-- Arrows Nav -->
+        <div class="lmpixels-arrows-nav">
+            <div class="lmpixels-arrow-left"><i class="pe-7s-icon pe-7s-angle-left"></i></div>
+            <div class="lmpixels-arrow-right"><i class="pe-7s-icon pe-7s-angle-right"></i></div>
+        </div>
+        <!-- /Arrows Nav -->
 
+        <!-- Main Content -->
+        <div id="main" class="site-main">
+
+            <!-- Page changer wrapper -->
+            <div class="pt-wrapper" style="background-image: url(/assets/images/background.webp);">
+
+                <!-- Subpages -->
+                <div class="subpages">
                     <!-- About Me-->
                     {% include about.html %}
 
@@ -66,25 +61,23 @@
 
                     <!-- Media -->
                     {% include media.html %}
-
                 </div>
+                
             </div>
-
         </div>
     </div>
 
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/modernizr.custom.js"></script>
-    <script src="/assets/js/animating.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
-
+    <script src="/assets/js/pages-switcher.js"></script>
     <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
-
-    <script src='/assets/js/isotope.pkgd.min.js'></script>
-    <script src='/assets/js/owl.carousel.min.js'></script>
-    <!-- <script src="/assets/js/jquery.magnific-popup.min.js"></script> -->
-    <!-- <script src="/assets/js/validator.js"></script> -->
-    
+    <script src="/assets/js/validator.js"></script>
+    <script src="/assets/js/jquery.shuffle.min.js"></script>
+    <script src="/assets/js/masonry.pkgd.min.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/assets/js/tilt.jquery.min.js"></script>
+    <script src="/assets/js/jquery.hoverdir.js"></script>
     <script src="/assets/js/main.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -96,7 +89,7 @@
 
         gtag('config', 'G-SDY4Q5NSK3');
     </script>
-    
+
 </body>
 
 </html>

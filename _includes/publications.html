@@ -1,19 +1,23 @@
-<section data-id="publications" class="animated-section">
-    <div class="section-content">
+<section class="pt-page pt-page-5" data-id="publications">
 
-        <div class="page-title">
-            <h2>Research Publications</h2>
-            <h4>List of peer-reviewed scientific publications</h4>
+    <div class="border-block-top-110"></div>
+
+    <div class="section-inner">
+        <div class="section-title-block">
+            <div class="section-title-wrapper">
+                <h2 class="section-title">Publications</h2>
+                <h5 class="section-description">Research Impact & Scientific Contributions</h5>
+            </div>
         </div>
 
         <div class="row">
-            <div class="col-xs-12 col-sm-12">
+            <div class="col-sm-12 subpage-block">
                 <article class="publication">
                     {% bibliography %}
                 </article>
             </div>
-
-            <div class="white-space-50"></div>
         </div>
+        
+        {% include footer.html %}
     </div>
 </section>

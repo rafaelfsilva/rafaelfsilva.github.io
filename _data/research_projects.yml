@@ -1,20 +1,22 @@
 - name: Workflows Community Initiative
   url: https://workflows.community
   icon: wci.png
-  description: Bring the workflows community together to provide community resources and capabilities to enable scientists and workflow systems developers to discover software products, related efforts, etc. and engage in community-wide efforts to tackle workflows grand challenges.
+  count: 240+
+  description: A thriving network of international workflow users, developers, and researchers
 
 - name: WfCommons
   url: https://wfcommons.org
   icon: wfcommons.png
-  description: A framework that enables scientific workflow research and development by providing tools for analyzing workflow execution traces and generating synthetic traces.
+  count: 36
+  description: Research articles using the WfCommons Framework
 
 - name: WRENCH
   url: https://wrench-project.org
   icon: wrench.png
-  description: A simulation framework that makes it possible to implement scalable and accurate simulators of complex cyberinfrastructure systems quickly and easily.
+  count: 37
+  description: Research articles using the WRENCH Cyberinfrastructure Simulation Workbench
 
-- name: SWAS
-  url: https://swas.center
-  icon: swas.png
-  description: SWAS fosters a sustainable software ecosystem for workflows. It collaborates with academia, national labs, and industry to provide reliable, secure, and interoperable software and application services for various workflows, including analysis, simulation, experiment, and machine learning.
-  
+# - name: SWAS
+#   url: https://swas.center
+#   icon: swas.png
+#   description: SWAS fosters a sustainable software ecosystem for workflows. It collaborates with academia, national labs, and industry to provide reliable, secure, and interoperable software and application services for various workflows, including analysis, simulation, experiment, and machine learning.

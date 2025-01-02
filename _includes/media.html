@@ -1,39 +1,41 @@
-<section data-id="media" class="animated-section">
-    <div class="section-content">
-        <div class="page-title">
-            <h2>Media</h2>
-            <h4>Press Coverage</h4>
-        </div>
+<section class="pt-page pt-page-4" data-id="media">
 
-        <div class="row">
-            <div class="col-xs-12 col-sm-12">
-                <div class="blog-masonry two-columns clearfix">
+    <div class="border-block-top-110"></div>
 
-                    {% for n in site.data.media %}
-                    <div class="item post-1">
-                        <div class="blog-card">
-                            <div class="media-block">
-                                <div class="category">
-                                    <a href="#" title="View all posts in {{ n.venue }}">{{ n.venue }}</a>
-                                </div>
-                                <a href="{{ n.link }}" target="_blank">
-                                    <img src="{{ n.image}}" class="size-blog-masonry-image-two-c"
-                                        alt="{{ n.title }}" title="" style="background-color: #fff;" />
-                                    <div class="mask"></div>
-                                </a>
-                            </div>
-                            <div class="post-info">
-                                <div class="post-date">{{ n.date }}</div>
-                                <a href="{{ n.link }}">
-                                    <h4 class="blog-item-title">{{ n.title }}</h4>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
+    <div class="section-inner">
 
-                </div>
+        <div class="section-title-block">
+            <div class="section-title-wrapper">
+                <h2 class="section-title">Media</h2>
+                <h5 class="section-description">Featured in the News</h5>
             </div>
         </div>
+
+        <!-- Media Content -->
+        <div class="portfolio-content">
+
+            <!-- Media Grid -->
+            <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
+
+                {% for n in site.data.media %}
+                <figure class="item" data-groups='["all", "media"]'>
+                    <a href="{{ n.link }}" target="_blank">
+                        <img src="{{ n.image}}" alt="{{ n.title }}"
+                            style="max-height: 15em; min-height: 15em; object-fit: cover;">
+                        <div>
+                            <h5 class="name">{{ n.title }}<br /><span
+                                    style="color: #999; font-size: 0.8em; font-weight: normal;">{{ n.date }}</span></h5>
+                            <small>{{ n.venue }}</small>
+                            <i class="pe-7s-icon pe-7s-display2"></i>
+                        </div>
+                    </a>
+                </figure>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <p>&nbsp;</p>
+        {% include footer.html %}
     </div>
 </section>

@@ -7,7 +7,7 @@
 </a>
 {% endif %}
 <a href="/files/publications/{{ entry.key }}.pdf" target="_blank">
-    <i class="far fa-file-pdf"></i>
+    <i class="fa fa-file-text"></i>
 </a>&nbsp;&nbsp;
 {{ reference }}
 <br />
@@ -16,8 +16,9 @@
     [BibTex]
 </a>
 
-<div class="collapse" id="bib-{{ entry.key }}">
+<div class="collapse" id="bib-{{ entry.key }}" style="font-size: 0.9em;">
 {% highlight plain %}
 {{ entry.bibtex }}
 {% endhighlight %}
 </div>
+<br /><br />

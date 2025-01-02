@@ -1,69 +1,48 @@
 /*
-* Template Name: CVup - Resume / CV / vCard / Portfolio Template
-* Author: LMPixels
+* Template Name: Unique - Responsive vCard Template
+* Author: lmpixels
 * Author URL: http://themeforest.net/user/lmpixels
-* Version: 1.2.0
+* Version: 2.1.0
 */
 
 (function($) {
 "use strict";
+    
     // Portfolio subpage filters
     function portfolio_init() {
-        var portfolio_grid = $('.portfolio-grid');
+        var portfolio_grid = $('#portfolio_grid'),
+            portfolio_filter = $('#portfolio_filters');
             
         if (portfolio_grid) {
 
-            portfolio_grid.isotope({
-                layoutMode: 'masonry',
-                itemSelector: 'figure',
+            portfolio_grid.shuffle({
+                speed: 450,
+                itemSelector: 'figure'
             });
 
-            var $optionSets = $('.portfolio-filters'),
-            $optionLinks = $optionSets.find('a.filter');
-         
-            $optionLinks.click(function(){
-                var $this = $(this);
+            $('.site-main-menu').on("click", "a", function (e) {
+                portfolio_grid.shuffle('update');
+            });
 
-                if ( $this.parent().hasClass('active') ) {
-                  return false;
-                }
-                $optionLinks.parent().removeClass('active');
+
+            portfolio_filter.on("click", ".filter", function (e) {
+                portfolio_grid.shuffle('update');
+                e.preventDefault();
+                $('#portfolio_filters .filter').parent().removeClass('active');
                 $(this).parent().addClass('active');
-             
-                var selector = $(this).attr('data-filter');
-                portfolio_grid.isotope({ filter: selector });
-             
-                return false;
+                portfolio_grid.shuffle('shuffle', $(this).attr('data-group') );
             });
 
         }
     }
     // /Portfolio subpage filters
 
-
-    // Hide Mobile menu
-    function mobileMenuHide() {
-        var windowWidth = $(window).width(),
-            siteHeader = $('#site_header');
-
-        if (windowWidth < 1025) {
-            siteHeader.addClass('mobile-menu-hide');
-            $('.menu-toggle').removeClass('open');
-            setTimeout(function(){
-                siteHeader.addClass('animate');
-            }, 500);
-        } else {
-            siteHeader.removeClass('animate');
-        }
-    }
-    // /Hide Mobile menu
-
     // Contact form validator
     $(function () {
 
-        $('#contact_form').validator();
+        $('#contact-form').validator();
 
-        $('#contact_form').on('submit', function (e) {
+        $('#contact-form').on('submit', function (e) {
             if (!e.isDefaultPrevented()) {
                 var url = "contact_form/contact_form.php";
 
@@ -78,8 +57,8 @@
 
                         var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
                         if (messageAlert && messageText) {
-                            $('#contact_form').find('.messages').html(alertBox);
-                            $('#contact_form')[0].reset();
+                            $('#contact-form').find('.messages').html(alertBox);
+                            $('#contact-form')[0].reset();
                         }
                     }
                 });
@@ -89,108 +68,81 @@
     });
     // /Contact form validator
 
+    // Hide Mobile menu
+    function mobileMenuHide() {
+        var windowWidth = $(window).width();
+        if (windowWidth < 1024) {
+            $('#site_header').addClass('mobile-menu-hide');
+        }
+    }
+    // /Hide Mobile menu
+
+    // Custom scroll
+    function customScroll() {
+        var windowWidth = $(window).width();
+        if (windowWidth > 991) {
+            // Custom Subpage Scroll
+            $(".pt-page").mCustomScrollbar({
+                scrollInertia: 8,
+                documentTouchScroll: false
+            });
+
+            // Custom Header Scroll
+            $("#site_header").mCustomScrollbar({
+                scrollInertia: 8,
+                documentTouchScroll: false
+            });
+        } else {
+            $(".pt-page").mCustomScrollbar('destroy');
+
+            $("#site_header").mCustomScrollbar('destroy');
+        }
+    }
+    // /Custom scroll
+
     //On Window load & Resize
     $(window)
         .on('load', function() { //Load
             // Animation on Page Loading
-            $(".preloader").fadeOut( 800, "linear" );
+            $(".preloader").fadeOut("slow");
 
             // initializing page transition.
-            var ptPage = $('.animated-sections');
+            var ptPage = $('.subpages');
             if (ptPage[0]) {
                 PageTransitions.init({
-                    menu: 'ul.main-menu',
+                    menu: 'ul.site-main-menu',
                 });
             }
+            customScroll();
         })
         .on('resize', function() { //Resize
              mobileMenuHide();
+             customScroll();
         });
 
 
     // On Document Load
-    $(document).ready(function () {
-        var movementStrength = 20;
-        var height = movementStrength / $(document).height();
-        var width = movementStrength / $(document).width();
-        $("body").on('mousemove', function(e){
-            var pageX = e.pageX - ($(document).width() / 2),
-                pageY = e.pageY - ($(document).height() / 2),
-                newvalueX = width * pageX * -1,
-                newvalueY = height * pageY * -1,
-                elements = $('.lm-animated-bg');
+    $(document).on('ready', function() {
+        // Initialize Portfolio grid
+        var $portfolio_container = $("#portfolio-grid");
 
-            elements.addClass('transition');
-            elements.css({
-                "background-position": "calc( 50% + " + newvalueX + "px ) calc( 50% + " + newvalueY + "px )",
-            });
+        $portfolio_container.imagesLoaded(function () {
+            setTimeout(function(){
+                portfolio_init(this);
+            }, 500);
+        });
 
-            setTimeout(function() {
-                elements.removeClass('transition');
-            }, 300);
-        })
+        // Portfolio hover effect init
+        $(' #portfolio_grid > figure > a ').each( function() { $(this).hoverdir(); } );
 
         // Mobile menu
         $('.menu-toggle').on("click", function () {
-            $('#site_header').addClass('animate');
             $('#site_header').toggleClass('mobile-menu-hide');
-            $('.menu-toggle').toggleClass('open');
         });
 
         // Mobile menu hide on main menu item click
-        $('.main-menu').on("click", "a", function (e) {
+        $('.site-main-menu').on("click", "a", function (e) {
             mobileMenuHide();
-        });
-
-        // Sidebar toggle
-        $('.sidebar-toggle').on("click", function () {
-            $('#blog-sidebar').toggleClass('open');
-        });
-
-        // Initialize Portfolio grid
-        var $portfolio_container = $(".portfolio-grid");
-        $portfolio_container.imagesLoaded(function () {
-            portfolio_init(this);
-        });
-
-        // Blog grid init
-        var $container = $(".blog-masonry");
-        $container.imagesLoaded(function(){
-            $container.isotope({
-                layoutMode: 'masonry',
-                itemSelector: '.item',
-            });
-            var $optionSets = $('.blog-filters'),
-            $optionLinks = $optionSets.find('a.filter');
-         
-            $optionLinks.click(function(){
-                var $this = $(this);
-
-                if ( $this.parent().hasClass('active') ) {
-                  return false;
-                }
-                $optionLinks.parent().removeClass('active');
-                $(this).parent().addClass('active');
-             
-                var selector = $(this).attr('data-filter');
-                $container.isotope({ filter: selector });
-             
-                return false;
-            });
-        });
-
-        // Text rotation
-        $('.text-rotation').owlCarousel({
-            loop: true,
-            dots: false,
-            nav: false,
-            margin: 0,
-            items: 1,
-            autoplay: true,
-            autoplayHoverPause: false,
-            autoplayTimeout: 3800,
-            animateOut: 'animated-section-scaleDown',
-            animateIn: 'animated-section-scaleUp'
         });
 
         // Testimonials Slider
@@ -199,8 +151,7 @@
             items: 3, // The number of items you want to see on the screen.
             loop: false, // Infinity loop. Duplicate last and first items to get loop illusion.
             navText: false,
-            autoHeight: true,
-            margin: 25,
+            margin: 10,
             responsive : {
                 // breakpoint from 0 up
                 0 : {
@@ -215,50 +166,27 @@
                     items: 2,
                 },
                 1200 : {
-                    items: 2,
+                    items: 3,
                 }
             }
         });
 
-        // Clients Slider
-        $(".clients.owl-carousel").imagesLoaded().owlCarousel({
-            nav: true, // Show next/prev buttons.
-            items: 2, // The number of items you want to see on the screen.
-            loop: false, // Infinity loop. Duplicate last and first items to get loop illusion.
-            navText: false,
+        // Text rotation
+        $('.text-rotation').owlCarousel({
+            loop: true,
+            dots: false,
+            nav: false,
             margin: 10,
-            autoHeight: true,
-            responsive : {
-                // breakpoint from 0 up
-                0 : {
-                    items: 2,
-                },
-                // breakpoint from 768 up
-                768 : {
-                    items: 4,
-                },
-                1200 : {
-                    items: 5,
-                }
-            }
+            items: 1,
+            autoplay: true,
+            autoplayHoverPause: false,
+            autoplayTimeout: 3800,
+            animateOut: 'zoomOut',
+            animateIn: 'zoomIn'
         });
-
-
-        //Form Controls
-        $('.form-control')
-            .val('')
-            .on("focusin", function(){
-                $(this).parent('.form-group').addClass('form-group-focus');
-            })
-            .on("focusout", function(){
-                if($(this).val().length === 0) {
-                    $(this).parent('.form-group').removeClass('form-group-focus');
-                }
-            });
 
         // Lightbox init
-        $('body').magnificPopup({
-            delegate: 'a.lightbox',
+        $('.lightbox').magnificPopup({
             type: 'image',
             removalDelay: 300,
 
@@ -284,12 +212,12 @@
                     youtube: {
                       index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
 
-                      id: null, // String that splits URL in a two parts, second part should be %id%
+                      id: 'v=', // String that splits URL in a two parts, second part should be %id%
                       // Or null - full URL will be returned
                       // Or a function that should return %id%, for example:
                       // id: function(url) { return 'parsed id'; }
 
-                      src: '%id%?autoplay=1' // URL that will be set as a source for iframe.
+                      src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
                     },
                     vimeo: {
                       index: 'vimeo.com/',
@@ -312,17 +240,19 @@
             },
         });
 
-        //Google Maps
-        if ($(".lmpixels-map")[0]){
-            var address = 'San Francisco, S601 Townsend Street, California, USA', //Replace with Your Address
-                address = encodeURIComponent(address),
-                src = 'https://maps.google.com/maps?q=' + address + '&amp;t=m&amp;z=16&amp;output=embed&amp;iwloc=near&output=embed';
-            $(".lmpixels-map iframe").attr("src", src);
-        }
-
-        $('.messages').on('click', '.close', function(){
-            $(this).parent().remove();
+        $('.ajax-page-load-link').magnificPopup({
+            type: 'ajax',
+            removalDelay: 300,
+            mainClass: 'mfp-fade',
+            gallery: {
+                enabled: true
+            },
         });
+
+        $('.tilt-effect').tilt({
+
+        });
+
     });
 
 })(jQuery);
