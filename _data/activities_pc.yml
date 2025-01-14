@@ -1,3 +1,16 @@
+- conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
+  series: SC
+  entries:
+    - year: 2025
+      location: Workshops and Symposiums, St. Louis, USA
+      link: http://sc25.supercomputing.org
+    - year: 2023
+      location: Workshops, Denver, USA
+      link: http://sc23.supercomputing.org
+    - year: 2021
+      location: St. Louis, USA
+      link: http://sc21.supercomputing.org
+
 - conference: IEEE ISC High Performance
   series: ISC-HPC
   entries:
