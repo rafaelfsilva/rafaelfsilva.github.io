@@ -33,3 +33,4 @@ plugins:
 
 whitelist:
   - jekyll-redirect-from
+  - jekyll-scholar
