@@ -104,21 +104,28 @@
         <div class="row">
             <div class="col-sm-6 col-md-3 subpage-block">
                 <div class="fun-fact-block gray-bg tilt-effect">
+                    <i class="pe-7s-icon pe-7s-pen"></i>
+                    <h4>Scientific Publications</h4>
+                    <span class="fun-value">{% bibliography_count -f references %}</span>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="fun-fact-block">
                     <i class="pe-7s-icon pe-7s-portfolio"></i>
                     <h4>Chair roles in conferences</h4>
                     <span class="fun-value">{{ cc_count }}</span>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3 subpage-block tilt-effect">
-                <div class="fun-fact-block">
+                <div class="fun-fact-block gray-bg tilt-effect">
                     <i class="pe-7s-icon pe-7s-comment"></i>
                     <h4>PC member in conferences</h4>
                     <span class="fun-value">{{ pc_count }}</span>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 subpage-block">
-                <div class="fun-fact-block gray-bg tilt-effect">
-                    <i class="pe-7s-icon pe-7s-portfolio"></i>
+            <div class="col-sm-6 col-md-3 subpage-block tilt-effect">
+                <div class="fun-fact-block">
+                    <i class="pe-7s-icon pe-7s-graph1"></i>
                     <h4>Research grants</h4>
                     <span class="fun-value">{{ rg_count }}</span>
                 </div>

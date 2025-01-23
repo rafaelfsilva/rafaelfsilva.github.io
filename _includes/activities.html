@@ -22,9 +22,14 @@
                     {% for n in site.data.activities_editor %}
                     <div class="timeline-event te-primary">
                         <p>
-                            <span class="event-date">{{ n.year }}</span>
+                            <span class="event-date">{{ n.acronym }}</span>
                             <strong class="event-name">{{ n.role }}</strong> &mdash;
                             <a href="{{ n.link }}" target="_blank" style="text-decoration: none">{{ n.journal }}</a>
+                        </p>
+                        <p>
+                            {% for e in n.entries %}
+                            <strong>{{ e.year }}</strong> &mdash; {{ e.role }}<br />
+                            {% endfor %}
                         </p>
                     </div>
                     {% endfor %}

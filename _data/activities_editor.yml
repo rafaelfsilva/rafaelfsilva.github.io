@@ -1,26 +1,24 @@
 - journal: Future Generation Computer Systems
-  role: Special Content Editor
-  year: 2023-present
+  acronym: FGCS
   link: https://www.journals.elsevier.com/future-generation-computer-systems
+  entries:
+    - year: 2023-present
+      role: Special Content Editor
+    - year: 2020-2023
+      role: Editor
+    - year: 2018
+      role: Co-Guest Editor, Special Issue for the 12th Workshop on Workflows in Support of Large-Scale Science
   
 - journal: Journal of Parallel and Distributed Computing
-  role: Associate Editor
-  year: 2019–2024
+  acronym: JPDC
   link: https://www.journals.elsevier.com/journal-of-parallel-and-distributed-computing
-
-- journal: Future Generation Computer Systems
-  role: Editor
-  year: 2020-2023
-  link: https://www.journals.elsevier.com/future-generation-computer-systems
+  entries:
+    - year: 2019–2024
+      role: Associate Editor
 
 - journal: "IEEE Computer Society, Computing in Science & Engineering"
-  description: "Special Issue on Science Gateways: Accelerating Research and Education"
-  role: Co-Guest Editor
-  year: 2023
+  acronym: CiSE
   link: https://www.computer.org/csdl/magazine/cs
-
-- journal: Future Generation Computer Systems
-  description: Special Issue for the 12th Workshop on Workflows in Support of Large-Scale Science
-  role: Co-Guest Editor
-  year: 2018
-  link: https://www.journals.elsevier.com/future-generation-computer-systems
+  entries:
+    - year: 2023
+      role: "Co-Guest Editor, Special Issue on Science Gateways: Accelerating Research and Education"
