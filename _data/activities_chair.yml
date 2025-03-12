@@ -17,6 +17,14 @@
       location: Orlando, USA
       link: https://www.hpdc.org/2023/
 
+- conference: International Conference on Parallel Processing
+  series: ICPP
+  entries:
+    - role: Poster Chair
+      year: 2025
+      location: San Diego, CA, USA
+      link: https://sites.google.com/view/icpp2025
+  
 - conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
   series: SC
   entries:
