@@ -1,0 +1,45 @@
+<section class="pt-page pt-page-4" data-id="talks">
+
+    <div class="border-block-top-110"></div>
+
+    <div class="section-inner">
+
+        <div class="section-title-block">
+            <div class="section-title-wrapper">
+                <h2 class="section-title">Invited Talks</h2>
+                <h5 class="section-description">Advancing Computational Science Through Knowledge Exchange</h5>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-12 subpage-block">
+                <div class="timeline">
+                    {% for n in site.data.invited_talks %}
+                    <div class="timeline-event te-primary">
+                        <p>
+                            <span class="event-date">{{ n.year }}</span>
+                            <!-- <strong class="event-name">{{ n.role }}</strong> &mdash; -->
+                            <!-- <a href="{{ n.link }}" target="_blank" style="text-decoration: none">{{ n.journal }}</a> -->
+                        </p>
+                        <p>
+                            {% for e in n.entries %}
+                            <a href="{{ e.link }}" target="_blank" style="color: #333">
+                                <strong>{{ e.title }}</strong>
+                            </a> 
+                            {% if e.video %}<a href="{{ e.video }}" target="_blank"><i class="pe-7s-icon pe-7s-video" style="color: red; font-weight: bold;"></i></a>{% endif %}
+                            &mdash; 
+                            {{ e.event }}<span style="color: #999">, {{ e.location }}</span>
+                            <br />
+                            {% endfor %}
+                        </p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+        </div>
+
+        {% include footer.html %}
+    </div>
+</section>

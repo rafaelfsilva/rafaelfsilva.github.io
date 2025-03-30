@@ -1,0 +1,65 @@
+- year: 2025
+  entries:
+    - title: Building Next-Generation Scientific Workflows for Autonomous Research Facilities
+      event: Multicore World XII
+      location: Christchurch, New Zealand
+      link: https://multicore.world/speakers-2025/rafael-ferreira-da-silva/
+    
+    - title: Building Next-Generation Scientific Workflows for Autonomous Research Facilities
+      event: SIGHPC Computing Continuum Chapter
+      location: Virtual
+      link: https://sighpc-continuum.acm.org/
+      video: https://drive.google.com/file/d/1ICSRARjL8OY5syWmzscR5XDZVhIYJoBf/view?usp=sharing
+  
+- year: 2024
+  entries:
+    - title: The Evolution of Scientific Workflows
+      event: Science and Technology Facilities Council (STFC) at UK Research and Innovation (UKRI)
+      location: Virtual
+      link: 
+
+    - title: "DOE's Integrated Research Infrastructure (IRI) Program"
+      event: Low Energy Community Meeting 2024
+      location: Knoxville, TN, USA
+      link: https://indico.frib.msu.edu/event/73/
+
+    - title: National Scale Research Workflows and Community Development
+      event: ABRF 2024 Annual Meeting
+      location: Minneapolis, MN, USA
+      link: https://web.cvent.com/event/5dd6933f-0d5d-40de-a33c-17edec6b28a4/websitePage:5722b7fb-57f3-4435-8d4b-47858389ff13
+      video: https://www.youtube.com/watch?v=G6Fs3hM12DI
+
+- year: 2023
+  entries:
+    - title: Modern Scientific Workflows in the Era of an Integrated Research Infrastructure
+      event: Monterey Data Conference 2023
+      location: Monterey, CA, USA
+      link: https://www.montereydataconference.org/2023
+
+    - title: The Workflows Community Initiative and Recent Summit
+      event: U.S. National Science Foundation (NSF) Office of Advanced Cyberinfrastructure (OAC) Brownbag
+      location: Virtual
+      link: 
+
+    - title: An Overview of AI Workflows for HPC Systems
+      event: Middleware and Grid Interagency Coordination (MAGIC) Meeting
+      location: Virtual
+      link: https://www.nitrd.gov/coordination-areas/lsn/magic/magic-meetings-2023/
+
+    - title: "Modern Scientific Workflows: State-of-the-art and Challenges"
+      event: 2023 Computer Science Department Inaugural Lecture, Fluminense Federal University
+      location: Rio de Janeiro, Brazil
+      link: https://www.youtube.com/watch?v=2KnBqEHfiQQ
+      video: https://www.youtube.com/watch?v=2KnBqEHfiQQ
+
+- year: 2022
+  entries:
+    - title: "Scientific Workflows: State-of-the-art and Challenges"
+      event: Keynote for the Foundations of Workflows for Large-Scale Scientific Data Analysis (FONDA) Retreat
+      location: Berlin, Germany
+      link: https://fonda.hu-berlin.de/?p=788
+
+    - title: "Workflows Community Initiative - Bringing the workflows community together: users, developers, researchers, and facilities"
+      event: "BoF: Software Engineering and Reuse in Modeling, Simulation, and Data Analytics for Science and Engineering, ISC HPC"
+      location: Hamburg, Germany
+      link: https://betterscientificsoftware.github.io/swe-cse-bof/2022-05-isc22-bof/
