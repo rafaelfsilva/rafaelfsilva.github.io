@@ -63,3 +63,51 @@
       event: "BoF: Software Engineering and Reuse in Modeling, Simulation, and Data Analytics for Science and Engineering, ISC HPC"
       location: Hamburg, Germany
       link: https://betterscientificsoftware.github.io/swe-cse-bof/2022-05-isc22-bof/
+
+- year: 2021
+  entries:
+    - title: "Building a FAIR Workflows Community: The Dawn of the Workflows Community Initiative"
+      event: "Data FAIR Working Session: FAIR Workflows - Best practices, services, and tools for helping researchers increase the portability and reproducibility of their work, AGU 2021"
+      location: Virtual
+      link: https://agu.confex.com/agu/fm21/meetingapp.cgi/Session/123615
+
+    - title: "The Role of Scientific Workflows in Modern Computational Science: State-of-the-art and Challenges"
+      event: CS&E colloquium series, University of Minnesota
+      location: Minneapolis, MN, 2021
+      link: https://cse.umn.edu/cs/events/cse-colloquium-role-scientific-workflows-modern-computational-science-state-art-and
+
+    - title: Towards an Infrastructure for Enabling Systematic Development and Research of Scientific Workflow Systems and Applications
+      event: FONDA - Foundations of Workflows for Large-Scale Scientific Data Analysis
+      location: Virtual
+      link: https://wikis.hu-berlin.de/fonda/Category:Lecture_Series
+
+- year: 2020
+  entries:
+    - title: FAIR Workflow Traces for Scientific Workflow Research and Development (workflowhub.org)
+      event: International FAIR Convergence Symposium, FAIR Workflows Session
+      location: Virtual
+      link: https://conference.codata.org/FAIRconvergence2020/sessions/218/
+
+    - title: Computational methods for improving reproducible results in analysis
+      event: "EPI Symposium: Toward more rigorous and informative nutritional epidemiology: the rational space between dismissal and defense of the status quo"
+      location: Indiana University
+      link: 
+
+- year: 2018
+  entries: 
+    - title: The Interplay of Workflow Execution and Resource Provisioning
+      event: "18th SIAM Conference on Parallel Processing for Scientific Computing - Resource Management, Scheduling, Workflows: Critical Middleware for HPC and Clouds, SIAM PP 18"
+      location: Tokyo, Japan
+      link: 
+
+- year: 2016
+  entries: 
+    - title: "Automating Real-Time Seismic Analysis: Through Streaming and High Throughput Workflows"
+      event: Workshop on Environmental Computing Applications - State of the art, ICCS
+      location: San Diego, CA, USA
+      link: https://www.iccs-meeting.org/iccs2016/wp-content/schedule/pages/ECASA.html
+
+    - title: "Automating Scientific Computations: From the User's Desktop to Clouds and World-Class Supercomputers"
+      event: IRIS Workshop
+      location: Vancouver, WA, USA
+      link: https://www.iris.edu/hq/workshops/2016/06/iris_workshop_2016#agenda
