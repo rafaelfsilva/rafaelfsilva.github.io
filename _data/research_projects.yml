@@ -13,7 +13,7 @@
 - name: WRENCH
   url: https://wrench-project.org
   icon: wrench.png
-  count: 37
+  count: 38
   description: Research articles using the WRENCH Cyberinfrastructure Simulation Workbench
 
 # - name: SWAS
