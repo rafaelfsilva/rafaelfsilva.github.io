@@ -107,6 +107,18 @@
       location: Track On Cloud Continuum, Sicily, Italy
       link: https://www.sigapp.org/sac/sac2025/
 
+- conference: IEEE eScience Conference
+  series: eScience
+  entries:
+    - year: 2025
+      edition: 21th
+      location: Chicago, IL, USA
+      link: https://www.escience-conference.org/2025/
+    - year: 2024
+      edition: 20th
+      location: Osaka, Japan
+      link: https://www.escience-conference.org/2024/
+
 - conference: International European Conference on Parallel and Distributed Computing
   series: Euro-Par
   entries:
@@ -138,24 +150,6 @@
       edition: 48th
       location: Kyoto, Japan
       link: https://www.hpcs.cs.tsukuba.ac.jp/icpp2019/index.html
-
-- conference: IEEE eScience Conference
-  series: eScience
-  entries:
-    - year: 2024
-      edition: 20th
-      location: Osaka, Japan
-      link: https://www.escience-conference.org/2024/
-
-- conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
-  series: SC
-  entries:
-    - year: 2023
-      location: Workshops, Denver, USA
-      link: http://sc23.supercomputing.org
-    - year: 2021
-      location: St. Louis, USA
-      link: http://sc21.supercomputing.org
 
 - conference: IEEE International Conference on Cloud Computing
   series: CLOUD
