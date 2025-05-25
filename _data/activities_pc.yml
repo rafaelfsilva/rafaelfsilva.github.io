@@ -135,6 +135,38 @@
       location: Limassol, Cyprus
       link: https://2023.euro-par.org
 
+- conference: IEEE International Symposium on Computer Architecture and High Performance Computing
+  series: SBAC-PAD
+  entries:
+    - year: 2025
+      edition: 37th
+      location: Bonito, Brazil
+      link: https://sbac-pad2025.ufms.br/
+    - year: 2022
+      edition: 34th
+      location: Bordeaux, France
+      link: https://project.inria.fr/sbac2022/
+    - year: 2021
+      edition: 33rd
+      location: Belo Horizonte, Brazil
+      link: https://www.sbac-pad2021.dcc.ufmg.br
+    - year: 2019
+      edition: 31st
+      location: Campo Grande, Brazil
+      link: http://sbac-pad.facom.ufms.br
+    - year: 2018
+      edition: 30th
+      location: Lyon, France
+      link: https://graal.ens-lyon.fr/sbac-pad/
+    - year: 2017
+      edition: 29th
+      location: Campinas, Brazil
+      link: http://www2.sbc.org.br/sbac/2017/
+    - year: 2016
+      edition: 28th
+      location: Los Angeles, USA
+      link: http://www2.sbc.org.br/sbac/2016/
+      
 - conference: International Conference on Parallel Processing
   series: ICPP
   entries:
@@ -169,38 +201,14 @@
       edition: 35th
       location: Portland, USA
       link: http://www.ipdps.org
-      
-- conference: IEEE International Symposium on Computer Architecture and High Performance Computing
-  series: SBAC-PAD
-  entries:
-    - year: 2022
-      edition: 34th
-      location: Bordeaux, France
-      link: https://project.inria.fr/sbac2022/
-    - year: 2021
-      edition: 33rd
-      location: Belo Horizonte, Brazil
-      link: https://www.sbac-pad2021.dcc.ufmg.br
-    - year: 2019
-      edition: 31st
-      location: Campo Grande, Brazil
-      link: http://sbac-pad.facom.ufms.br
-    - year: 2018
-      edition: 30th
-      location: Lyon, France
-      link: https://graal.ens-lyon.fr/sbac-pad/
-    - year: 2017
-      edition: 29th
-      location: Campinas, Brazil
-      link: http://www2.sbc.org.br/sbac/2017/
-    - year: 2016
-      edition: 28th
-      location: Los Angeles, USA
-      link: http://www2.sbc.org.br/sbac/2016/
 
 - conference: International Workshop on Science Gateways
   series: IWSG
   entries:
+    - year: 2025
+      edition: 17th
+      location: London, UK
+      link: https://iwsgateways.github.io/iwsg2025/
     - year: 2024
       edition: 16th
       location: Toulouse, France
