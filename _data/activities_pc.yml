@@ -202,33 +202,21 @@
       location: Portland, USA
       link: http://www.ipdps.org
 
-- conference: International Workshop on Science Gateways
-  series: IWSG
-  entries:
-    - year: 2025
-      edition: 17th
-      location: London, UK
-      link: https://iwsgateways.github.io/iwsg2025/
-    - year: 2024
-      edition: 16th
-      location: Toulouse, France
-      link: https://iwsgateways.github.io/iwsg2024/
-    - year: 2023
-      edition: 15th
-      location: Tübingen, Germany
-      link: https://iwsgateways.github.io/iwsg2023/
-
 - conference: Workflows in Support of Large-Scale Science
   series: WORKS
   entries:
+    - year: 2025
+      edition: 20th
+      location: Saint Louis, USA
+      link: https://works-workshop.org
     - year: 2024
       edition: 19th
       location: Atlanta, USA
-      link: https://works-workshop.org
+      link: https://works-workshop.org/2024
     - year: 2020
       edition: 15th
       location: Atlanta, USA
-      link: https://works-workshop.org
+      link: https://works-workshop.org/2020
     - year: 2019
       edition: 14th
       location: Denver, USA
@@ -245,6 +233,22 @@
       edition: 11th
       location: Salt Lake City, USA
       link: http://works.cs.cf.ac.uk/2016
+
+- conference: International Workshop on Science Gateways
+  series: IWSG
+  entries:
+    - year: 2025
+      edition: 17th
+      location: London, UK
+      link: https://iwsgateways.github.io/iwsg2025/
+    - year: 2024
+      edition: 16th
+      location: Toulouse, France
+      link: https://iwsgateways.github.io/iwsg2024/
+    - year: 2023
+      edition: 15th
+      location: Tübingen, Germany
+      link: https://iwsgateways.github.io/iwsg2023/
 
 - conference: IEEE/ACM International Workshop on Clouds and Edge Computing, and Applications Management
   series: CloudAM
