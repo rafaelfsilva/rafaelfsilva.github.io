@@ -7,7 +7,7 @@
 - name: WfCommons
   url: https://wfcommons.org
   icon: wfcommons.png
-  count: 46
+  count: 47
   description: Research articles using the WfCommons Framework
 
 - name: WRENCH
