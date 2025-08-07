@@ -234,6 +234,18 @@
       location: Salt Lake City, USA
       link: http://works.cs.cf.ac.uk/2016
 
+- conference: Workshop on Extreme-Scale Experiment-in-the-Loop Computing
+  series: XLOOP
+  entries:
+    - year: 2025
+      edition: 20th
+      location: Saint Louis, USA
+      link: https://works-workshop.org
+    - year: 2024
+      edition: 19th
+      location: Atlanta, USA
+      link: https://works-workshop.org/2024
+      
 - conference: International Workshop on Science Gateways
   series: IWSG
   entries:
