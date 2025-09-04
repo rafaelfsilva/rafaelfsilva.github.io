@@ -1,5 +1,13 @@
 - year: 2025
   entries:
+    - title: "AI-Ready Scientific Workflows at Scale: Bridging Data, Infrastructure, and Automation"
+      event: First International Symposium on Artificial Intelligence and Extreme-Scale Workflows (AIExScale)
+      location: St. Louis, USA
+
+    - title: Advancing Reproducible and Secure Workflows for Autonomous Science at Scale
+      event: Keynote for the 5th Workshop on Reproducible Workflows, Data Management, and Security (ReWorDS)
+      location: Chicago, USA
+      
     - title: Building Next-Generation Scientific Workflows for Autonomous Research Facilities
       event: Multicore World XII
       location: Christchurch, New Zealand
