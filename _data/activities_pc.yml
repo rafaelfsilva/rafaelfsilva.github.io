@@ -14,6 +14,10 @@
 - conference: IEEE ISC High Performance
   series: ISC-HPC
   entries:
+    - year: 2026
+      edition: 2026
+      location: Workshops, Hamburg, Germany
+      link: https://isc-hpc.com
     - year: 2025
       edition: 2025
       location: Workshops and Birds of a Feather, Hamburg, Germany
