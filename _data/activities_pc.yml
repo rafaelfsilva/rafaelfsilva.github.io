@@ -28,10 +28,14 @@
 - conference: ACM International Symposium on High-Performance Parallel and Distributed Computing
   series: HPDC
   entries:
+    - year: 2026
+      edition: 35th
+      location: Cleveland, OH, USA
+      link: https://hpdc.sci.utah.edu/2026/
     - year: 2025
       edition: 34th
       location: Notre Dame, IN, USA
-      link: http://hpdc.sci.utah.edu/2025/
+      link: https://hpdc.sci.utah.edu/2025/
     - year: 2024
       edition: 33rd
       location: Pisa, Italy
