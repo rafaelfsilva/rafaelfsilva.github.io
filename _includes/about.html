@@ -24,16 +24,14 @@
 {% assign rg_count = rg_count | plus: 1 %}
 {% endfor %}
 
-<section class="pt-page pt-page-1" data-id="about-me">
-
-    <div class="border-block-top-110"></div>
+<section class="page-section" data-id="about-me">
 
     <div class="section-inner">
 
         <div class="section-title-block">
             <div class="section-title-wrapper clearfix">
                 <h2 class="section-title">Rafael Ferreira da Silva</h2>
-                <h5 class="section-description"><strong>Group Leader </strong>and <strong>Senior Research
+                <h5 class="section-description"><strong>Section Head </strong>(interim) and <strong>Senior Research
                         Scientist</strong></h5>
             </div>
         </div>
@@ -63,35 +61,41 @@
 
             <div class="col-sm-12 col-md-12 col-lg-8">
                 <p>
-                    I am the Group Leader for the <a
+                    I am a Senior Research Scientist and Section Head (Interim) for <a href="https://www.ornl.gov/section/data-ai" target="_blank">Data and AI Systems</a> research in
+                    the <a href="https://www.ornl.gov/division/csmd" target="_blank">Computer Science and Mathematics</a> division at <a href="https://www.ornl.gov/"
+                        target="_blank">Oak Ridge National Laboratory</a> (ORNL). Previously, I led the <a
                         href="https://www.olcf.ornl.gov/about-olcf/staff-sections/advanced-technologies/workflows-ecosystem-services/"
-                        target="_blank">Workflow
-                        and Ecosystem Services</a> (WES) group and a Senior Research Scientist in the <a
+                        target="_blank">Workflow and Ecosystem Services</a> (WES) group within the <a
                         href="https://www.ornl.gov/division/nccs" target="_blank">National Center for Computational
-                        Sciences</a> (NCCS) at <a href="https://www.ornl.gov/" target="_blank">Oak Ridge National
-                        Laboratory</a> (ORNL). Additionally, I serve as the Special Content Editor for the <a
-                        href="https://www.sciencedirect.com/journal/future-generation-computer-systems"
-                        target="_blank">Future Generation Computer Systems</a> (FGCS) journal. I am also a Senior
-                    Member of IEEE and ACM professional associations.
+                        Sciences</a> (NCCS). I am a Senior Member of IEEE and ACM.
                 </p>
                 <p>
-                    I am a computer scientist at the intersection of advanced distributed systems and scientific
-                    innovation, specializing in parallel and distributed computing with expertise spanning scientific
-                    workflows, hybrid quantum classical systems, and autonomous science. My technical proficiency
-                    encompasses sophisticated scheduling algorithms, high fidelity modeling and simulation, multi
-                    objective optimization, fault tolerant system design, and energy efficient computing skills I deploy
-                    across cloud, edge, and HPC environments. Through my work optimizing complex computational
-                    ecosystems, I create resilient digital infrastructures that not only withstand computational
-                    uncertainty but adapt dynamically to changing research demands, ultimately accelerating scientific
-                    discovery by building the robust computational foundations necessary for next generation
-                    breakthroughs across disciplines.
+                    In this section head role, I provide strategic and operational leadership for the Data and AI
+                    Systems Section, which includes 45 researchers across five groups specializing in AI/ML,
+                    visualization, data workflows, engineering, and performance systems. The section spans all career
+                    stages, from early-career scientists to senior technical leaders.
+                </p>
+                <p>
+                    My research sits at the intersection of advanced distributed systems and scientific innovation,
+                    spanning scientific workflows, agentic workflows and provenance capture, autonomous science, and
+                    hybrid quantum-classical systems. I provide strategic direction and leadership for scheduling,
+                    modeling, and optimization methods that scale across cloud, edge, and HPC environments,
+                    accelerating discovery and ensuring robust, trustworthy computational pipelines.
+                </p>
+                <p>
+                    I am a co-PI for the <a href="https://www.energy.gov/articles/energy-department-advances-investments-ai-science" target="_blank">Transformational AI model consortium</a> (ModCon), a cornerstone of the <a href="https://genesis.energy.gov/" target="_blank">DOE
+                    Genesis Mission's</a> AI models and data efforts that will build and deploy self-improving AI models to
+                    advance science, engineering, and energy missions. I am also the PI of a DOE-funded project on
+                    robotics, automated laboratories, and autonomous control of large-scale experiments in support of
+                    Genesis, leveraging embodied AI, advanced automation, and robotics to transform laboratory
+                    environments and experimental workflows.
                 </p>
                 <p>
                     Additionally, as the Founder and Executive Director of the <a href="http://workflows.community"
-                        target="_blank">Workflows Community Initiative</a>, I am committed to fostering
-                    collaboration and advancement in the field of workflows research and development. This
-                    initiative plays a crucial role in uniting researchers and professionals to share knowledge and
-                    drive innovations in workflow management and applications.
+                        target="_blank">Workflows Community Initiative</a>, I foster collaboration and advancement in
+                    workflows research and development, connecting researchers and practitioners to share knowledge
+                    and drive innovation. I am also a co-Founder of the <a href="https://autonomousscience.org/"
+                        target="_blank">Autonomous Science Network</a>.
                 </p>
                 <div class="download-cv-block">
                     <a class="button" target="_blank" href="files/cv/RafaelFerreiraDaSilva-cv-2025-01.pdf">Download
@@ -105,33 +109,41 @@
         <div class="block-title">
             <h3>Professional Facts</h3>
         </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-3 subpage-block">
-                <div class="fun-fact-block gray-bg tilt-effect">
+        <div class="facts-grid">
+            <div class="facts-item">
+                <div class="facts-icon">
                     <i class="pe-7s-icon pe-7s-pen"></i>
+                </div>
+                <div class="facts-meta">
                     <h4>Scientific Publications</h4>
-                    <span class="fun-value">{% bibliography_count -f references %}</span>
+                    <span class="facts-value">{% bibliography_count -f references %}</span>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="fun-fact-block">
+            <div class="facts-item">
+                <div class="facts-icon">
                     <i class="pe-7s-icon pe-7s-portfolio"></i>
+                </div>
+                <div class="facts-meta">
                     <h4>Chair roles in conferences</h4>
-                    <span class="fun-value">{{ cc_count }}</span>
+                    <span class="facts-value">{{ cc_count }}</span>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 subpage-block tilt-effect">
-                <div class="fun-fact-block gray-bg tilt-effect">
+            <div class="facts-item">
+                <div class="facts-icon">
                     <i class="pe-7s-icon pe-7s-comment"></i>
+                </div>
+                <div class="facts-meta">
                     <h4>PC member in conferences</h4>
-                    <span class="fun-value">{{ pc_count }}</span>
+                    <span class="facts-value">{{ pc_count }}</span>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 subpage-block tilt-effect">
-                <div class="fun-fact-block">
+            <div class="facts-item">
+                <div class="facts-icon">
                     <i class="pe-7s-icon pe-7s-graph1"></i>
+                </div>
+                <div class="facts-meta">
                     <h4>Research grants</h4>
-                    <span class="fun-value">{{ rg_count }}</span>
+                    <span class="facts-value">{{ rg_count }}</span>
                 </div>
             </div>
         </div>
@@ -139,55 +151,40 @@
         <div class="block-title">
             <h3>Research Projects</h3>
         </div>
-        <div class="row">
+        <p class="section-lede">Flagship initiatives with measurable impact across the workflows and cyberinfrastructure communities.</p>
+        <div class="project-grid">
             {% for item in site.data.research_projects %}
-            <div class="col-sm-6 col-md-3 subpage-block">
-                <a href="{{ item.url }}" class="service-block" target="_blank">
-                    <div class="service-info">
-                        <img src="/assets/images/{{ item.icon }}" alt="Logo">
-                        <h2>{{ item.count }}</h2>
-                        <p style="color: #666">{{ item.description }}</p>
-                    </div>
-                </a>
-            </div>
+            <a href="{{ item.url }}" class="project-card" target="_blank">
+                <div class="project-icon">
+                    <img src="{{ item.icon }}" alt="Logo">
+                </div>
+                <div class="project-meta">
+                    <div class="project-name">{{ item.name }}</div>
+                    <div class="project-metric">{{ item.count }}</div>
+                    <p>{{ item.description }}</p>
+                </div>
+            </a>
             {% endfor %}
         </div>
 
         <div class="block-title">
             <h3>Get in Touch</h3>
         </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-6 subpage-block">
-                <div class="contact-info-block">
-                    <div class="ci-icon">
-                        <i class="pe-7s-icon pe-7s-map-marker"></i>
-                    </div>
-                    <div class="ci-text">
-                        <h5>
-                            <a href="https://ornl.gov" target="_blank" style="border: 0">
-                                <img src="/assets/images/ornl.png" alt="ORNL"
-                                    style="width: 10em; margin-bottom: 0.5em;" />
-                            </a><br />
-                            Rafael Ferreira da Silva, Ph.D.<br />
-                            Oak Ridge National Laboratory<br />
-                            P.O. Box 2008, Oak Ridge, TN, USA 37831
-                        </h5>
-                    </div>
-                </div>
-                <div class="contact-info-block">
-                    <div class="ci-icon">
-                        <i class="pe-7s-icon pe-7s-mail"></i>
-                    </div>
-                    <div class="ci-text">
-                        <h5>silvarf@ornl.gov</h5>
-                    </div>
-                </div>
-                <div class="contact-info-block">
-                    <div class="ci-icon">
-                        <i class="pe-7s-icon pe-7s-call"></i>
-                    </div>
-                    <div class="ci-text">
-                        <h5>+1 865-341-1894 (Office)</h5>
+        <p class="section-lede">Open to collaborations, invited talks, and research partnerships.</p>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <div class="contact-label">Office</div>
+                <div class="contact-content">
+                    <a href="https://ornl.gov" target="_blank" class="contact-org">
+                        <img src="/assets/images/ornl.png" alt="ORNL" />
+                    </a>
+                    <div>
+                        Rafael Ferreira da Silva, Ph.D.<br />
+                        Oak Ridge National Laboratory<br />
+                        P.O. Box 2008, Oak Ridge, TN, USA 37831<br />
+                        <a href="mailto:silvarf@ornl.gov">silvarf@ornl.gov</a><br />
+                        <a href="tel:+18653411894">+1 865-341-1894</a>
+                        <span class="contact-note">(Office)</span>
                     </div>
                 </div>
             </div>

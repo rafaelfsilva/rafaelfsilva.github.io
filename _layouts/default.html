@@ -5,7 +5,7 @@
     {% include head.html %}
 </head>
 
-<body>
+<body class="layout-pages">
     <!-- Loading animation -->
     <div class="preloader">
         <div class="preloader-animation">
@@ -15,63 +15,15 @@
     </div>
     <!-- /Loading animation -->
 
+    {% include topnav.html %}
+
     <div id="page" class="page">
-
-        <!-- Sidebar -->
-        {% include sidebar.html %}
-
-        <!-- Mobile Header -->
-        <div class="mobile-header mobile-visible">
-            <div class="mobile-logo-container">
-                <div class="mobile-site-title">Rafael Ferreira da Silva</div>
-            </div>
-
-            <a class="menu-toggle mobile-visible">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-        <!-- /Mobile Header -->
-
-        <!-- Arrows Nav -->
-        <div class="lmpixels-arrows-nav">
-            <div class="lmpixels-arrow-left"><i class="pe-7s-icon pe-7s-angle-left"></i></div>
-            <div class="lmpixels-arrow-right"><i class="pe-7s-icon pe-7s-angle-right"></i></div>
-        </div>
-        <!-- /Arrows Nav -->
-
-        <!-- Main Content -->
-        <div id="main" class="site-main">
-
-            <!-- Page changer wrapper -->
-            <div class="pt-wrapper" style="background-image: url(/assets/images/background.webp);">
-
-                <!-- Subpages -->
-                <div class="subpages">
-                    <!-- About Me-->
-                    {% include about.html %}
-
-                    <!-- Publications -->
-                    {% include publications.html %}
-
-                    <!-- Invited Talks -->
-                    {% include talks.html %}
-
-                    <!-- Professional Activities -->
-                    {% include activities.html %}
-
-                    <!-- Funding Awards -->
-                    {% include funding.html %}
-
-                    <!-- Media -->
-                    {% include media.html %}
-                </div>
-                
-            </div>
-        </div>
+        <main class="page-content">
+            {{ content }}
+        </main>
     </div>
 
     <script src="/assets/js/bootstrap.min.js"></script>
-    <script src="/assets/js/pages-switcher.js"></script>
     <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="/assets/js/validator.js"></script>
     <script src="/assets/js/jquery.shuffle.min.js"></script>

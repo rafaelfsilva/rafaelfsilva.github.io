@@ -1,6 +1,4 @@
-<section class="pt-page pt-page-4" data-id="funding">
-
-    <div class="border-block-top-110"></div>
+<section class="page-section" data-id="funding">
 
     <div class="section-inner">
 
@@ -11,79 +9,102 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-12 col-md-12 subpage-block">
-                <!-- DOE -->
-                <div class="block-title">
+        <div class="funding-grid">
+            <section class="funding-section">
+                <div class="funding-header">
                     <h3>U.S. Department of Energy (DOE)</h3>
+                    <p class="funding-kicker">Major federally funded initiatives and collaborative programs.</p>
                 </div>
-                <div class="timeline">
+                <div class="funding-list">
                     {% for n in site.data.funding.doe %}
-                    <div class="timeline-event te-primary">
-                        <h5 class="event-date">{{ n.period }}</h5>
-                        <h4 class="event-name">{{ n.title }}</h4>
-                        <span class="event-description">{{ n.amount }} &mdash; {{ n.program}}</span>
+                    <div class="funding-item">
+                        <div class="funding-period">{{ n.period }}</div>
+                        <div class="funding-body">
+                            <div class="funding-title">{{ n.title }}</div>
+                            <div class="funding-meta">{{ n.amount }} — {{ n.program }}</div>
+                        </div>
                     </div>
                     {% endfor %}
                 </div>
-                <p>&nbsp;</p>
+            </section>
 
-                <!-- NSF -->
-                <div class="block-title">
+            <section class="funding-section">
+                <div class="funding-header">
                     <h3>U.S. National Science Foundation (NSF)</h3>
+                    <p class="funding-kicker">Competitive awards supporting foundational research.</p>
                 </div>
-                <div class="timeline">
+                <div class="funding-list">
                     {% for n in site.data.funding.nsf %}
-                    <div class="timeline-event te-primary">
-                        <h5 class="event-date">{{ n.period }}</h5>
-                        <h4 class="event-name">{{ n.title }}</h4>
-                        <span class="event-description">{{ n.amount }} &mdash; {{ n.program}}<br />
-                            {% for d in n.awards %}
-                            #{{ d.id }}&nbsp;&nbsp;
-                            {% endfor %}</span>
+                    <div class="funding-item">
+                        <div class="funding-period">{{ n.period }}</div>
+                        <div class="funding-body">
+                            <div class="funding-title">{{ n.title }}</div>
+                            <div class="funding-meta">{{ n.amount }} — {{ n.program }}</div>
+                            {% if n.awards %}
+                            <div class="funding-awards">
+                                {% for d in n.awards %}
+                                <span>#{{ d.id }}</span>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        </div>
                     </div>
                     {% endfor %}
                 </div>
-                <p>&nbsp;</p>
+            </section>
 
-                <!-- DARPA -->
-                <div class="block-title">
+            <section class="funding-section">
+                <div class="funding-header">
                     <h3>U.S. Defense Advanced Research Projects Agency (DARPA)</h3>
+                    <p class="funding-kicker">High-impact, mission-driven research programs.</p>
                 </div>
-                <div class="timeline">
+                <div class="funding-list">
                     {% for n in site.data.funding.darpa %}
-                    <div class="timeline-event te-primary">
-                        <h5 class="event-date">{{ n.period }}</h5>
-                        <h4 class="event-name">{{ n.title }}</h4>
-                        <span class="event-description">{{ n.amount }} &mdash; {{ n.program}}<br />
-                            {% for d in n.awards %}
-                            #{{ d.id }}&nbsp;&nbsp;
-                            {% endfor %}</span>
+                    <div class="funding-item">
+                        <div class="funding-period">{{ n.period }}</div>
+                        <div class="funding-body">
+                            <div class="funding-title">{{ n.title }}</div>
+                            <div class="funding-meta">{{ n.amount }} — {{ n.program }}</div>
+                            {% if n.awards %}
+                            <div class="funding-awards">
+                                {% for d in n.awards %}
+                                <span>#{{ d.id }}</span>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        </div>
                     </div>
                     {% endfor %}
                 </div>
-                <p>&nbsp;</p>
+            </section>
 
-                <!-- OTHER -->
-                <div class="block-title">
+            <section class="funding-section">
+                <div class="funding-header">
                     <h3>International Funding / Collaborations / Others</h3>
+                    <p class="funding-kicker">Global partnerships and cross-institutional initiatives.</p>
                 </div>
-                <div class="timeline">
+                <div class="funding-list">
                     {% for n in site.data.funding.international %}
-                    <div class="timeline-event te-primary">
-                        <h5 class="event-date">{{ n.period }}</h5>
-                        <h4 class="event-name">{{ n.title }}</h4>
-                        <span class="event-description">{{ n.amount }} &mdash; {{ n.program}}<br />
-                            {% for d in n.awards %}
-                            #{{ d.id }}&nbsp;&nbsp;
-                            {% endfor %}</span>
+                    <div class="funding-item">
+                        <div class="funding-period">{{ n.period }}</div>
+                        <div class="funding-body">
+                            <div class="funding-title">{{ n.title }}</div>
+                            <div class="funding-meta">{{ n.amount }} — {{ n.program }}</div>
+                            {% if n.awards %}
+                            <div class="funding-awards">
+                                {% for d in n.awards %}
+                                <span>#{{ d.id }}</span>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        </div>
                     </div>
                     {% endfor %}
                 </div>
-
-            </div>
+            </section>
         </div>
-
+        <br /><br />
+        
         {% include footer.html %}
     </div>
 </section>

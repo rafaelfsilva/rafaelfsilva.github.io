@@ -1,6 +1,17 @@
-<section class="pt-page pt-page-4" data-id="activities">
+{% assign cc_count = 0 %}
+{% assign pc_count = 0 %}
+{% for n in site.data.activities_chair %}
+{% for e in n.entries %}
+{% assign cc_count = cc_count | plus: 1 %}
+{% endfor %}
+{% endfor %}
+{% for pc in site.data.activities_pc %}
+{% for e in pc.entries %}
+{% assign pc_count = pc_count | plus: 1 %}
+{% endfor %}
+{% endfor %}
 
-    <div class="border-block-top-110"></div>
+<section class="page-section" data-id="activities">
 
     <div class="section-inner">
 
@@ -11,155 +22,151 @@
             </div>
         </div>
 
-        <div class="row">
-
-            <!-- EDITOR -->
-            <div class="col-sm-12 subpage-block">
-                <div class="block-title">
+        <div class="activities-grid">
+            <section class="activity-section">
+                <div class="activity-header">
                     <h3>Journals Editor</h3>
+                    <p class="activity-kicker">Editorial leadership across top-tier venues.</p>
                 </div>
-                <div class="timeline">
+                <div class="activity-list">
                     {% for n in site.data.activities_editor %}
-                    <div class="timeline-event te-primary">
-                        <p>
-                            <span class="event-date">{{ n.acronym }}</span>
-                            <strong class="event-name">{{ n.role }}</strong> &mdash;
-                            <a href="{{ n.link }}" target="_blank" style="text-decoration: none">{{ n.journal }}</a>
-                        </p>
-                        <p>
-                            {% for e in n.entries %}
-                            <strong>{{ e.year }}</strong> &mdash; {{ e.role }}<br />
-                            {% endfor %}
-                        </p>
+                    <div class="activity-item">
+                        <div class="activity-tag">{{ n.acronym }}</div>
+                        <div class="activity-body">
+                            <div class="activity-title">{{ n.role }}</div>
+                            <div class="activity-subtitle">
+                                <a href="{{ n.link }}" target="_blank">{{ n.journal }}</a>
+                            </div>
+                            <div class="activity-meta">
+                                {% for e in n.entries %}
+                                <span class="activity-year">{{ e.year }}</span> {{ e.role }}<br />
+                                {% endfor %}
+                            </div>
+                        </div>
                     </div>
                     {% endfor %}
                 </div>
-            </div>
+            </section>
 
-            <!-- CHAIR -->
-            <div class="col-sm-12 subpage-block">
-                <div class="block-title">
-                    <h3>Chair Roles in Conferences
-                        <br /><span style="color: #999; font-weight: normal; font-size: 0.7em;">Served in chair roles in
-                            {{ cc_count }} conferences</span>
-                    </h3>
+            <section class="activity-section">
+                <div class="activity-header">
+                    <h3>Chair Roles in Conferences</h3>
+                    <p class="activity-kicker">Served in chair roles in {{ cc_count }} conferences.</p>
                 </div>
-                <div class="timeline">
+                <div class="activity-list">
                     {% assign chair = site.data.activities_chair %}
                     {% for n in chair %}
-                    <div class="timeline-event te-primary">
-                        <p>
-                            <span class="event-date">{{ n.series }}</span>
-                            <strong class="event-name">{{ n.conference }}</strong>
-                        </p>
-                        <p>
-                            {% for e in n.entries %}
-                            <strong>{{ e.year }}</strong> &mdash; {{ e.role }} &mdash; <a href="{{ e.link }}"
-                                target="_blank">{{ e.edition }} {{ n.series }}</a>, {{ e.location }}<br />
-                            {% endfor %}
-                        </p>
+                    <div class="activity-item">
+                        <div class="activity-tag">{{ n.series }}</div>
+                        <div class="activity-body">
+                            <div class="activity-title">{{ n.conference }}</div>
+                            <div class="activity-meta">
+                                {% for e in n.entries %}
+                                <span class="activity-year">{{ e.year }}</span> {{ e.role }} — <a href="{{ e.link }}"
+                                    target="_blank">{{ e.edition }} {{ n.series }}</a>, {{ e.location }}<br />
+                                {% endfor %}
+                            </div>
+                        </div>
                     </div>
                     {% endfor %}
                 </div>
-            </div>
+            </section>
 
-            <!-- PC -->
-            <div class="col-sm-12 subpage-block">
-                <div class="block-title">
-                    <h3>Program Committees Member
-                        <br /><span style="color: #999; font-weight: normal; font-size: 0.7em;">Served as PC member in
-                            {{ pc_count }} conferences</span>
-                    </h3>
+            <section class="activity-section">
+                <div class="activity-header">
+                    <h3>Program Committees Member</h3>
+                    <p class="activity-kicker">Served as PC member in {{ pc_count }} conferences.</p>
                 </div>
-                <div class="timeline">
+                <div class="activity-list">
                     {% assign pc = site.data.activities_pc %}
                     {% for n in pc %}
-                    <div class="timeline-event te-primary">
-                        <p>
-                            <span class="event-date">{{ n.series }}</span>
-                            <strong class="event-name">{{ n.conference }}</strong>
-                        </p>
-                        <p>
-                            {% for e in n.entries %}
-                            <strong>{{ e.year }}</strong> &mdash; <a href="{{ e.link }}" target="_blank">{{ e.edition }}
-                                {{ n.series }}</a>, {{ e.location }}<br />
-                            {% endfor %}
-                        </p>
+                    <div class="activity-item">
+                        <div class="activity-tag">{{ n.series }}</div>
+                        <div class="activity-body">
+                            <div class="activity-title">{{ n.conference }}</div>
+                            <div class="activity-meta">
+                                {% for e in n.entries %}
+                                <span class="activity-year">{{ e.year }}</span> <a href="{{ e.link }}"
+                                    target="_blank">{{ e.edition }} {{ n.series }}</a>, {{ e.location }}<br />
+                                {% endfor %}
+                            </div>
+                        </div>
                     </div>
                     {% endfor %}
                 </div>
-            </div>
+            </section>
 
-            <!-- Funding Agencies Reviewer -->
-            <div class="col-sm-12 subpage-block">
-                <div class="block-title">
+            <section class="activity-section">
+                <div class="activity-header">
                     <h3>Funding Agencies Reviewer</h3>
+                    <p class="activity-kicker">Peer review support for national and international agencies.</p>
                 </div>
-                <div class="timeline">
+                <div class="activity-list">
                     {% assign funding = site.data.activities_funding %}
                     {% for n in funding %}
-                    <div class="timeline-event te-primary">
-                        <p>
-                            <span class="event-date">{{ n.acronym }}</span>
-                            <strong class="event-name">{{ n.agency }}</strong>
-                        </p>
-                        <p>
-                            {% for e in n.entries %}
-                            <strong>{{ e.year }}</strong> &mdash; {{ e.description }}<br />
-                            {% endfor %}
-                        </p>
+                    <div class="activity-item">
+                        <div class="activity-tag">{{ n.acronym }}</div>
+                        <div class="activity-body">
+                            <div class="activity-title">{{ n.agency }}</div>
+                            <div class="activity-meta">
+                                {% for e in n.entries %}
+                                <span class="activity-year">{{ e.year }}</span> {{ e.description }}<br />
+                                {% endfor %}
+                            </div>
+                        </div>
                     </div>
                     {% endfor %}
                 </div>
-            </div>
+            </section>
 
-            <!-- Steering Committee -->
-            <div class="col-sm-12 subpage-block">
-                <div class="block-title">
+            <section class="activity-section">
+                <div class="activity-header">
                     <h3>Steering Committees</h3>
+                    <p class="activity-kicker">Long-term governance and strategic oversight.</p>
                 </div>
-                <div class="timeline">
+                <div class="activity-list">
                     {% for n in site.data.activities_sc %}
-                    <div class="timeline-event te-primary">
-                        <p>
-                            <span class="event-date">{{ n.year }}</span>
-                            <strong class="event-name">{{ n.role }}</strong> &mdash;
-                            <a href="{{ n.link }}" target="_blank" style="text-decoration: none">{{ n.conference }}</a>
-                        </p>
+                    <div class="activity-item">
+                        <div class="activity-tag">{{ n.year }}</div>
+                        <div class="activity-body">
+                            <div class="activity-title">{{ n.role }}</div>
+                            <div class="activity-subtitle">
+                                <a href="{{ n.link }}" target="_blank">{{ n.conference }}</a>
+                            </div>
+                        </div>
                     </div>
                     {% endfor %}
                 </div>
-            </div>
+            </section>
 
-            <!-- Professional Associations -->
-            <div class="col-sm-12 subpage-block">
-                <div class="block-title">
+            <section class="activity-section">
+                <div class="activity-header">
                     <h3>Professional Associations</h3>
+                    <p class="activity-kicker">Senior membership recognitions.</p>
                 </div>
-                <div class="timeline">
-                    <div class="timeline-event te-primary">
-                        <p>
-                            <span class="event-date">IEEE</span>
-                            <strong class="event-name">Institute of Electrical and Electronics Engineers</strong>
-                        </p>
-                        <p>
-                            <strong>2022&mdash;present</strong> &mdash; Senior Member<br />
-                            <strong>2017&mdash;2022</strong> &mdash; Member<br />
-                        </p>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-tag">IEEE</div>
+                        <div class="activity-body">
+                            <div class="activity-title">Institute of Electrical and Electronics Engineers</div>
+                            <div class="activity-meta">
+                                <span class="activity-year">2022–present</span> Senior Member<br />
+                                <span class="activity-year">2017–2022</span> Member<br />
+                            </div>
+                        </div>
                     </div>
-                    <div class="timeline-event te-primary">
-                        <p>
-                            <span class="event-date">ACM</span>
-                            <strong class="event-name">Association for Computing Machinery</strong>
-                        </p>
-                        <p>
-                            <strong>2023&mdash;present</strong> &mdash; Senior Member<br />
-                            <strong>2018&mdash;2023</strong> &mdash; Member<br />
-                        </p>
+                    <div class="activity-item">
+                        <div class="activity-tag">ACM</div>
+                        <div class="activity-body">
+                            <div class="activity-title">Association for Computing Machinery</div>
+                            <div class="activity-meta">
+                                <span class="activity-year">2023–present</span> Senior Member<br />
+                                <span class="activity-year">2018–2023</span> Member<br />
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
+            </section>
         </div>
         
         {% include footer.html %}

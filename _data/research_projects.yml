@@ -1,18 +1,18 @@
 - name: Workflows Community Initiative
   url: https://workflows.community
-  icon: wci.png
+  icon: https://workflows.community/favicon.ico
   count: 290+
   description: A thriving network of international workflow users, developers, and researchers
 
 - name: WfCommons
   url: https://wfcommons.org
-  icon: wfcommons.png
+  icon: https://wfcommons.org/favicon.ico
   count: 54
   description: Research articles using the WfCommons Framework
 
 - name: WRENCH
   url: https://wrench-project.org
-  icon: wrench.png
+  icon: https://wrench-project.org/favicon.ico
   count: 40
   description: Research articles using the WRENCH Cyberinfrastructure Simulation Workbench
 

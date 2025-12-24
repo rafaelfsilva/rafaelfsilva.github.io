@@ -1,6 +1,4 @@
-<section class="pt-page pt-page-4" data-id="talks">
-
-    <div class="border-block-top-110"></div>
+<section class="page-section" data-id="talks">
 
     <div class="section-inner">
 
@@ -11,34 +9,37 @@
             </div>
         </div>
 
-        <div class="row">
-
-            <div class="col-sm-12 subpage-block">
-                <div class="timeline">
-                    {% for n in site.data.invited_talks %}
-                    <div class="timeline-event te-primary">
-                        <p>
-                            <span class="event-date">{{ n.year }}</span>
-                            <!-- <strong class="event-name">{{ n.role }}</strong> &mdash; -->
-                            <!-- <a href="{{ n.link }}" target="_blank" style="text-decoration: none">{{ n.journal }}</a> -->
-                        </p>
-                        <p>
-                            {% for e in n.entries %}
-                            <a href="{{ e.link }}" target="_blank" style="color: #333">
-                                <strong>{{ e.title }}</strong>
-                            </a> 
-                            {% if e.video %}<a href="{{ e.video }}" target="_blank"><i class="pe-7s-icon pe-7s-video" style="color: red; font-weight: bold;"></i></a>{% endif %}
-                            &mdash; 
-                            {{ e.event }}<span style="color: #999">, {{ e.location }}</span>
-                            <br />
-                            {% endfor %}
-                        </p>
+        <div class="talks-grid">
+            {% for n in site.data.invited_talks %}
+            <div class="talk-year-block">
+                <div class="talk-year">{{ n.year }}</div>
+                <div class="talk-list">
+                    {% for e in n.entries %}
+                    <div class="talk-item">
+                        <div class="talk-title">
+                            {% if e.link and e.link != "" %}
+                            <a href="{{ e.link }}" target="_blank">{{ e.title }}</a>
+                            {% else %}
+                            {{ e.title }}
+                            {% endif %}
+                            {% if e.video %}
+                            <a class="talk-video" href="{{ e.video }}" target="_blank">
+                                <i class="pe-7s-icon pe-7s-video"></i>
+                            </a>
+                            {% endif %}
+                        </div>
+                        <div class="talk-meta">
+                            <span class="talk-event">{{ e.event }}</span>
+                            <span class="talk-location">{{ e.location }}</span>
+                        </div>
                     </div>
                     {% endfor %}
                 </div>
             </div>
-
+            {% endfor %}
         </div>
+
+        <br /><br />
 
         {% include footer.html %}
     </div>

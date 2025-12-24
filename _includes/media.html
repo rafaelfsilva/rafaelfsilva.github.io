@@ -1,6 +1,4 @@
-<section class="pt-page pt-page-4" data-id="media">
-
-    <div class="border-block-top-110"></div>
+<section class="page-section" data-id="media">
 
     <div class="section-inner">
 
@@ -11,28 +9,22 @@
             </div>
         </div>
 
-        <!-- Media Content -->
-        <div class="portfolio-content">
-
-            <!-- Media Grid -->
-            <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
-
-                {% for n in site.data.media %}
-                <figure class="item" data-groups='["all", "media"]'>
-                    <a href="{{ n.link }}" target="_blank">
-                        <img src="{{ n.image}}" alt="{{ n.title }}"
-                            style="max-height: 15em; min-height: 15em; object-fit: cover;">
-                        <div>
-                            <h5 class="name">{{ n.title }}<br /><span
-                                    style="color: #999; font-size: 0.8em; font-weight: normal;">{{ n.date }}</span></h5>
-                            <small>{{ n.venue }}</small>
-                            <i class="pe-7s-icon pe-7s-display2"></i>
-                        </div>
-                    </a>
-                </figure>
-                {% endfor %}
-
-            </div>
+        <div class="media-list">
+            {% for n in site.data.media %}
+            <a class="media-card" href="{{ n.link }}" target="_blank">
+                <div class="media-thumb">
+                    <img src="{{ n.image }}" alt="{{ n.title }}">
+                </div>
+                <div class="media-body">
+                    <div class="media-meta">
+                        <span class="media-venue">{{ n.venue }}</span>
+                        <span class="media-date">{{ n.date }}</span>
+                    </div>
+                    <h4 class="media-title">{{ n.title }}</h4>
+                    <span class="media-cta">Read the feature</span>
+                </div>
+            </a>
+            {% endfor %}
         </div>
 
         <p>&nbsp;</p>
