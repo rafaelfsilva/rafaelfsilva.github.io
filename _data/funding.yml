@@ -1,12 +1,33 @@
 doe:
+  - title: "ModCon &ndash; Transformational AI model consortium"
+    period: 10/2025-09/2027
+    amount: "$30,000,000"
+    role: Co-Principal Investigator
+    program: Office of Advanced Scientific Computing Research (ASCR)
+    award: DE-SCL0000139
+
+  - title: "OPAL &mdash; Orchestrated Platform for Autonomous Laboratories"
+    period: 10/2025-09/2027
+    amount: "$12,500,000"
+    role: Senior Personnel
+    program: Offices of Biological & Environmental Research (BER) and Advanced Scientific Computing Research (ASCR)
+
+  - title: "A Testbed for Multi-Agent Autonomous Science: From Lab Bench to Supercomputer"
+    period: 10/2025-09/2027
+    amount: "$250,000"
+    role: Principal Investigator
+    program: Office of Advanced Scientific Computing Research (ASCR)
+
   - title: "Center for Sustaining Workflows and Application Services"
     period: 04/2023-04/2024
     amount: "$120,000"
-    program: Advanced Scientific Computing Research (ASCR)
+    role: Principal Investigator
+    program: Office of Advanced Scientific Computing Research (ASCR)
     
   - title: "ExaWorks: ECP Workflows Project"
     period: 2017-12/2023
     amount: "$3,773,833"
+    role: Co-Principal Investigator
     program: Exascale Computing Project
     awards:
       - id: 17-SC-20-SC

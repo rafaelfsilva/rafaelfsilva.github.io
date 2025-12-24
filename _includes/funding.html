@@ -21,7 +21,8 @@
                         <div class="funding-period">{{ n.period }}</div>
                         <div class="funding-body">
                             <div class="funding-title">{{ n.title }}</div>
-                            <div class="funding-meta">{{ n.amount }} — {{ n.program }}</div>
+                            <div class="funding-meta">{{ n.amount }} — {{ n.role }}</div>
+                            <div class="funding-meta">{{ n.program }} {% if n.award %} &ndash; Award #{{{n.award}}{% endif %}</div>
                         </div>
                     </div>
                     {% endfor %}
