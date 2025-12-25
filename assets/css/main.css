@@ -2638,6 +2638,32 @@ input[type=button]:focus, button:hover, button:focus, a.button:hover, a.button:f
   font-size: 0.9em;
 }
 
+.activities-submenu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  margin: 8px 0 28px;
+  padding: 12px 16px;
+  border-radius: 16px;
+  background: rgba(12, 24, 37, 0.04);
+  border: 1px solid rgba(12, 24, 37, 0.08);
+}
+
+.activities-submenu a {
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-size: 0.74em;
+  font-weight: 600;
+  color: var(--ink);
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(12, 24, 37, 0.04);
+}
+
+.activities-submenu a:hover {
+  background: rgba(12, 24, 37, 0.1);
+}
+
 .activities-grid {
   display: grid;
   gap: 36px;

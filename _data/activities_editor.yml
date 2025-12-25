@@ -2,9 +2,9 @@
   acronym: FGCS
   link: https://www.journals.elsevier.com/future-generation-computer-systems
   entries:
-    - year: 2023-2025
+    - year: 2023&ndash;2025
       role: Special Content Editor
-    - year: 2020-2023
+    - year: 2020&ndash;2023
       role: Editor
     - year: 2018
       role: Co-Guest Editor, Special Issue for the 12th Workshop on Workflows in Support of Large-Scale Science
@@ -13,7 +13,7 @@
   acronym: JPDC
   link: https://www.journals.elsevier.com/journal-of-parallel-and-distributed-computing
   entries:
-    - year: 2019–2024
+    - year: 2019&ndash;2024
       role: Associate Editor
 
 - journal: "IEEE Computer Society, Computing in Science & Engineering"

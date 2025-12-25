@@ -2,8 +2,10 @@
   acronym: NSF
   link: https://nsf.gov
   entries:
+    - year: 2026
+      description: Virtual Review Panel, CISE/OAC
     - year: 2025
-      description: Virtual Review Panel, OAC
+      description: Virtual Review Panel, CISE/OAC
     - year: 2024
       description: Virtual Review Panel, OAC
     - year: 2023
@@ -25,6 +27,8 @@
   acronym: DOE
   link: https://www.energy.gov/
   entries:
+    - year: 2025
+      description: Mail In Reviews, ASCR
     - year: 2024
       description: Mail In Reviews, ASCR
     - year: 2023
