@@ -1042,6 +1042,12 @@ ul.social-links li:last-child a {
   font-family: 'PT Sans', Helvetica, sans-serif;
   min-width: 250px;
 }
+
+.footer-block {
+  margin: 0;
+  padding-top: 34px;
+  padding-bottom: 20px;
+}
 /* /About me list */
 
 /* Services */
@@ -2535,6 +2541,206 @@ input[type=button]:focus, button:hover, button:focus, a.button:hover, a.button:f
   color: var(--muted);
   font-size: 1em;
   margin: 0 0 26px;
+}
+
+.publications-shell {
+  padding: 64px 70px 56px;
+}
+
+.publications-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px 36px;
+  margin-bottom: 36px;
+}
+
+.publications-head {
+  max-width: 560px;
+}
+
+.publications-metrics {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 20px;
+  border-radius: 18px;
+  background: var(--surface);
+  border: 1px solid rgba(12, 24, 37, 0.1);
+  box-shadow: var(--shadow-soft);
+}
+
+.publications-metric {
+  display: grid;
+  gap: 4px;
+}
+
+.metric-label {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.metric-value {
+  font-family: "Space Grotesk", "PT Sans", sans-serif;
+  font-size: 2.1em;
+  color: var(--ink);
+}
+
+.publications-link {
+  font-weight: 600;
+  color: var(--ink);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 2px;
+}
+
+.publications-link:hover {
+  color: var(--accent-strong);
+  border-bottom-color: var(--accent-strong);
+}
+
+.publication-list {
+  display: grid;
+  gap: 18px;
+}
+
+.bibliography {
+  margin: 24px 0 10px;
+  font-size: 1.12em;
+  color: var(--ink);
+  letter-spacing: 0.6px;
+}
+
+ol.bibliography {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 18px;
+  counter-reset: pub-counter;
+}
+
+ol.bibliography > li {
+  margin: 0;
+  position: relative;
+  padding-left: 44px;
+  counter-increment: pub-counter;
+}
+
+ol.bibliography > li::before {
+  content: counter(pub-counter, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 18px;
+  font-size: 0.76em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--muted);
+  background: rgba(12, 24, 37, 0.06);
+  border-radius: 999px;
+  padding: 6px 10px;
+  min-width: 34px;
+  text-align: center;
+}
+
+.pub-card {
+  background: var(--surface);
+  border: 1px solid rgba(12, 24, 37, 0.1);
+  border-radius: 20px;
+  padding: 20px 22px 18px;
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  gap: 12px;
+  position: relative;
+}
+
+.pub-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pub-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(12, 24, 37, 0.12);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 0.72em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.pub-action i {
+  color: var(--accent);
+}
+
+.pub-action:hover {
+  border-color: rgba(12, 24, 37, 0.2);
+  color: var(--accent-strong);
+  transform: translateY(-1px);
+}
+
+.pub-reference {
+  font-size: 0.9em;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+.pub-reference a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: rgba(12, 24, 37, 0.2);
+  text-underline-offset: 3px;
+}
+
+.pub-reference a:hover {
+  color: var(--accent-strong);
+  text-decoration-color: rgba(255, 71, 26, 0.6);
+}
+
+.pub-bibtex {
+  background: rgba(12, 24, 37, 0.04);
+  border-radius: 16px;
+  padding: 10px 14px;
+  font-size: 0.82em;
+}
+
+.pub-bibtex pre {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  white-space: pre-wrap;
+}
+
+@media only screen and (max-width: 991px) {
+  .publications-shell {
+    padding: 54px 42px 48px;
+  }
+
+  .publications-hero {
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .publications-shell {
+    padding: 46px 28px 40px;
+  }
+
+  .publications-metrics {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .about-modern .section-inner {

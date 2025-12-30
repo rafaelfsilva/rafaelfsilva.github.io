@@ -1,24 +1,30 @@
 ---
 ---
 
-{% if entry.doi %}
-<a href="http://dx.doi.org/{{ entry.doi }}" target="_blank">
-    <i class="ai ai-doi"></i>
-</a>
-{% endif %}
-<a href="/files/publications/{{ entry.key }}.pdf" target="_blank">
-    <i class="fa fa-file-text"></i>
-</a>&nbsp;&nbsp;
-{{ reference }}
-<br />
-<a data-toggle="collapse" href="#bib-{{ entry.key }}" role="button" aria-expanded="false"
-   aria-controls="bib-{{ entry.key }}" style="color: #999">
-    [BibTex]
-</a>
-
-<div class="collapse" id="bib-{{ entry.key }}" style="font-size: 0.9em;">
-{% highlight plain %}
-{{ entry.bibtex }}
-{% endhighlight %}
+<div class="pub-card">
+  <div class="pub-actions">
+    {% if entry.doi %}
+    <a class="pub-action" href="http://dx.doi.org/{{ entry.doi }}" target="_blank" aria-label="Open DOI">
+      <i class="ai ai-doi"></i>
+      <span>DOI</span>
+    </a>
+    {% endif %}
+    <a class="pub-action" href="/files/publications/{{ entry.key }}.pdf" target="_blank" aria-label="Open PDF">
+      <i class="fa fa-file-text"></i>
+      <span>PDF</span>
+    </a>
+    <a class="pub-action pub-toggle" data-toggle="collapse" href="#bib-{{ entry.key }}" role="button"
+       aria-expanded="false" aria-controls="bib-{{ entry.key }}">
+      <i class="fa fa-code"></i>
+      <span>BibTeX</span>
+    </a>
+  </div>
+  <div class="pub-reference">
+    {{ reference }}
+  </div>
+  <div class="collapse pub-bibtex" id="bib-{{ entry.key }}">
+    {% highlight plain %}
+    {{ entry.bibtex }}
+    {% endhighlight %}
+  </div>
 </div>
-<br /><br />

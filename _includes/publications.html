@@ -1,19 +1,29 @@
-<section class="page-section" data-id="publications">
+<section class="page-section publications-page" data-id="publications">
 
-    <div class="section-inner">
-        <div class="section-title-block">
-            <div class="section-title-wrapper">
+    <div class="section-inner publications-shell">
+        <div class="publications-hero">
+            <div class="publications-head">
                 <h2 class="section-title">Publications</h2>
-                <h5 class="section-description"><strong>{% bibliography_count -f references %}</strong> Scientific publications and counting...</h5>
+                <p class="section-lede">
+                    Peer-reviewed articles, conference papers, and reports across workflows,
+                    data systems, and autonomous science.
+                </p>
+            </div>
+            <div class="publications-metrics">
+                <div class="publications-metric">
+                    <div class="metric-label">Total publications</div>
+                    <div class="metric-value">{% bibliography_count -f references %}</div>
+                </div>
+                <a class="publications-link" href="{{site.data.main.social.googlescholar.link}}" target="_blank">
+                    Google Scholar
+                </a>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-12 subpage-block">
-                <article class="publication">
-                    {% bibliography %}
-                </article>
-            </div>
+        <div class="publications-content">
+            <article class="publication-list">
+                {% bibliography %}
+            </article>
         </div>
         
         {% include footer.html %}
