@@ -1,28 +1,84 @@
-<section class="page-section" data-id="funding">
+{% assign funding_total = 0 %}
+{% assign funding_count = 0 %}
+{% for rg in site.data.funding.doe %}
+{% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
+{% assign funding_total = funding_total | plus: amount_clean %}
+{% assign funding_count = funding_count | plus: 1 %}
+{% endfor %}
+{% for rg in site.data.funding.nsf %}
+{% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
+{% assign funding_total = funding_total | plus: amount_clean %}
+{% assign funding_count = funding_count | plus: 1 %}
+{% endfor %}
+{% for rg in site.data.funding.darpa %}
+{% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
+{% assign funding_total = funding_total | plus: amount_clean %}
+{% assign funding_count = funding_count | plus: 1 %}
+{% endfor %}
+{% for rg in site.data.funding.international %}
+{% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
+{% assign funding_total = funding_total | plus: amount_clean %}
+{% assign funding_count = funding_count | plus: 1 %}
+{% endfor %}
+{% assign funding_total_millions = funding_total | times: 0.000001 | round: 1 %}
 
-    <div class="section-inner">
+<section class="page-section funding-page" data-id="funding">
 
-        <div class="section-title-block">
-            <div class="section-title-wrapper">
+    <div class="section-inner funding-shell">
+
+        <div class="funding-hero">
+            <div class="funding-head">
                 <h2 class="section-title">Funding Awards</h2>
-                <h5 class="section-description">Research grants and collaborations</h5>
+                <p class="section-lede">
+                    A portfolio of competitively funded programs across U.S. agencies and
+                    international collaborations.
+                </p>
+            </div>
+            <div class="funding-metrics">
+                <div class="funding-metric">
+                    <div class="metric-label">Total awards</div>
+                    <div class="metric-value">{{ funding_count }}</div>
+                </div>
+                <div class="funding-metric">
+                    <div class="metric-label">Gross funding</div>
+                    <div class="metric-value">${{ funding_total_millions }}M</div>
+                </div>
             </div>
         </div>
 
         <div class="funding-grid">
             <section class="funding-section">
                 <div class="funding-header">
-                    <h3>U.S. Department of Energy (DOE)</h3>
-                    <p class="funding-kicker">Major federally funded initiatives and collaborative programs.</p>
+                    <div>
+                        <h3>U.S. Department of Energy (DOE)</h3>
+                        <p class="funding-kicker">Major federally funded initiatives and collaborative programs.</p>
+                    </div>
+                    <span class="funding-count">{{ site.data.funding.doe | size }} awards</span>
                 </div>
                 <div class="funding-list">
                     {% for n in site.data.funding.doe %}
                     <div class="funding-item">
                         <div class="funding-period">{{ n.period }}</div>
                         <div class="funding-body">
+                            {% if n.link %}
+                            <a class="funding-title" href="{{ n.link }}" target="_blank">{{ n.title }}</a>
+                            {% else %}
                             <div class="funding-title">{{ n.title }}</div>
-                            <div class="funding-meta">{{ n.amount }} — {{ n.role }}</div>
-                            <div class="funding-meta">{{ n.program }} {% if n.award %} &ndash; Award #{{{n.award}}{% endif %}</div>
+                            {% endif %}
+                            <div class="funding-meta">
+                                <span class="funding-amount">{{ n.amount }}</span>
+                                {% if n.role %}<span>— {{ n.role }}</span>{% endif %}
+                            </div>
+                            <div class="funding-meta">
+                                {{ n.program }}{% if n.award %} &ndash; Award #{{ n.award }}{% endif %}
+                            </div>
+                            {% if n.awards %}
+                            <div class="funding-awards">
+                                {% for d in n.awards %}
+                                <span>#{{ d.id }}</span>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
                         </div>
                     </div>
                     {% endfor %}
@@ -31,16 +87,26 @@
 
             <section class="funding-section">
                 <div class="funding-header">
-                    <h3>U.S. National Science Foundation (NSF)</h3>
-                    <p class="funding-kicker">Competitive awards supporting foundational research.</p>
+                    <div>
+                        <h3>U.S. National Science Foundation (NSF)</h3>
+                        <p class="funding-kicker">Competitive awards supporting foundational research.</p>
+                    </div>
+                    <span class="funding-count">{{ site.data.funding.nsf | size }} awards</span>
                 </div>
                 <div class="funding-list">
                     {% for n in site.data.funding.nsf %}
                     <div class="funding-item">
                         <div class="funding-period">{{ n.period }}</div>
                         <div class="funding-body">
+                            {% if n.link %}
+                            <a class="funding-title" href="{{ n.link }}" target="_blank">{{ n.title }}</a>
+                            {% else %}
                             <div class="funding-title">{{ n.title }}</div>
-                            <div class="funding-meta">{{ n.amount }} — {{ n.program }}</div>
+                            {% endif %}
+                            <div class="funding-meta">
+                                <span class="funding-amount">{{ n.amount }}</span>
+                                <span>— {{ n.program }}</span>
+                            </div>
                             {% if n.awards %}
                             <div class="funding-awards">
                                 {% for d in n.awards %}
@@ -56,16 +122,26 @@
 
             <section class="funding-section">
                 <div class="funding-header">
-                    <h3>U.S. Defense Advanced Research Projects Agency (DARPA)</h3>
-                    <p class="funding-kicker">High-impact, mission-driven research programs.</p>
+                    <div>
+                        <h3>U.S. Defense Advanced Research Projects Agency (DARPA)</h3>
+                        <p class="funding-kicker">High-impact, mission-driven research programs.</p>
+                    </div>
+                    <span class="funding-count">{{ site.data.funding.darpa | size }} awards</span>
                 </div>
                 <div class="funding-list">
                     {% for n in site.data.funding.darpa %}
                     <div class="funding-item">
                         <div class="funding-period">{{ n.period }}</div>
                         <div class="funding-body">
+                            {% if n.link %}
+                            <a class="funding-title" href="{{ n.link }}" target="_blank">{{ n.title }}</a>
+                            {% else %}
                             <div class="funding-title">{{ n.title }}</div>
-                            <div class="funding-meta">{{ n.amount }} — {{ n.program }}</div>
+                            {% endif %}
+                            <div class="funding-meta">
+                                <span class="funding-amount">{{ n.amount }}</span>
+                                <span>— {{ n.program }}</span>
+                            </div>
                             {% if n.awards %}
                             <div class="funding-awards">
                                 {% for d in n.awards %}
@@ -81,16 +157,26 @@
 
             <section class="funding-section">
                 <div class="funding-header">
-                    <h3>International Funding / Collaborations / Others</h3>
-                    <p class="funding-kicker">Global partnerships and cross-institutional initiatives.</p>
+                    <div>
+                        <h3>International Funding / Collaborations / Others</h3>
+                        <p class="funding-kicker">Global partnerships and cross-institutional initiatives.</p>
+                    </div>
+                    <span class="funding-count">{{ site.data.funding.international | size }} awards</span>
                 </div>
                 <div class="funding-list">
                     {% for n in site.data.funding.international %}
                     <div class="funding-item">
                         <div class="funding-period">{{ n.period }}</div>
                         <div class="funding-body">
+                            {% if n.link %}
+                            <a class="funding-title" href="{{ n.link }}" target="_blank">{{ n.title }}</a>
+                            {% else %}
                             <div class="funding-title">{{ n.title }}</div>
-                            <div class="funding-meta">{{ n.amount }} — {{ n.program }}</div>
+                            {% endif %}
+                            <div class="funding-meta">
+                                <span class="funding-amount">{{ n.amount }}</span>
+                                <span>— {{ n.program }}</span>
+                            </div>
                             {% if n.awards %}
                             <div class="funding-awards">
                                 {% for d in n.awards %}
