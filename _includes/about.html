@@ -1,6 +1,6 @@
 {% assign cc_count = 0 %}
 {% assign pc_count = 0 %}
-{% assign rg_count = 0 %}
+{% assign funding_total = 0 %}
 {% for n in site.data.activities_chair %}
 {% for e in n.entries %}
 {% assign cc_count = cc_count | plus: 1 %}
@@ -12,36 +12,56 @@
 {% endfor %}
 {% endfor %}
 {% for rg in site.data.funding.doe %}
-{% assign rg_count = rg_count | plus: 1 %}
+{% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
+{% assign funding_total = funding_total | plus: amount_clean %}
 {% endfor %}
 {% for rg in site.data.funding.nsf %}
-{% assign rg_count = rg_count | plus: 1 %}
+{% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
+{% assign funding_total = funding_total | plus: amount_clean %}
 {% endfor %}
 {% for rg in site.data.funding.darpa %}
-{% assign rg_count = rg_count | plus: 1 %}
+{% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
+{% assign funding_total = funding_total | plus: amount_clean %}
 {% endfor %}
 {% for rg in site.data.funding.international %}
-{% assign rg_count = rg_count | plus: 1 %}
+{% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
+{% assign funding_total = funding_total | plus: amount_clean %}
 {% endfor %}
+{% assign funding_total_millions = funding_total | times: 0.000001 | round: 1 %}
 
-<section class="page-section" data-id="about-me">
-  <div class="section-inner">
-    <div class="section-title-block">
-      <div class="section-title-wrapper clearfix">
-        <h2 class="section-title">Rafael Ferreira da Silva</h2>
-        <h5 class="section-description">
-          <strong>Section Head </strong><span style="color: #999">(interim)</span> and
+<section class="page-section about-modern" data-id="about-me">
+  <div class="section-inner about-shell">
+    <div class="about-hero">
+      <div class="about-hero-content">
+        <div class="about-eyebrow">Data &amp; AI Systems</div>
+        <h2 class="about-title">Rafael Ferreira da Silva</h2>
+        <p class="about-role">
+          <strong>Section Head</strong> <span>(interim)</span> ·
           <strong>Senior Research Scientist</strong>
-        </h5>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-6 col-md-6 col-lg-4 subpage-block">
-        <div class="my-photo-block tilt-effect">
-          <img src="assets/images/rafael-frontier.jpg" alt="">
+        </p>
+        <p class="about-intro">
+          I am a Senior Research Scientist and Section Head (Interim) for
+          <a href="https://www.ornl.gov/section/data-ai" target="_blank">Data and AI Systems</a>
+          research in the
+          <a href="https://www.ornl.gov/division/csmd" target="_blank">
+            Computer Science and Mathematics
+          </a>
+          division at
+          <a href="https://www.ornl.gov/" target="_blank">Oak Ridge National Laboratory</a>
+          (ORNL), leading research and development in AI, data and agentic workflows, and
+          advanced computing systems.
+        </p>
+        <div class="about-actions">
+          <a
+            class="button"
+            target="_blank"
+            href="files/cv/RafaelFerreiraDaSilva-cv-2025-01.pdf"
+          >
+            Download CV
+          </a>
+          <!-- <a class="about-link" href="/funding">$65M+ in funded awards</a> -->
         </div>
-        <ul class="social-links">
+        <ul class="about-social">
           <li>
             <a
               class="tip social-button"
@@ -104,20 +124,16 @@
           </li>
         </ul>
       </div>
+      <div class="about-hero-media">
+        <div class="about-photo">
+          <img src="assets/images/rafael-frontier.jpg" alt="">
+        </div>
+      </div>
+    </div>
 
-      <div class="col-sm-12 col-md-12 col-lg-8">
-        <p>
-          I am a Senior Research Scientist and Section Head (Interim) for
-          <a href="https://www.ornl.gov/section/data-ai" target="_blank">Data and AI Systems</a>
-          research in the
-          <a href="https://www.ornl.gov/division/csmd" target="_blank">
-            Computer Science and Mathematics
-          </a>
-          division at
-          <a href="https://www.ornl.gov/" target="_blank">Oak Ridge National Laboratory</a>
-          (ORNL), leading research and development in AI, data and agentic workflows, and 
-          advanced computing systems.
-        </p>
+    <div class="about-story">
+      <div class="about-story-block">
+        <h3>Leadership &amp; Strategic Programs</h3>
         <p>
           In this section head role, I provide strategic and operational leadership for
           the organization, which includes 45+ researchers across five groups
@@ -144,6 +160,9 @@
           AI, advanced automation, and robotics to transform laboratory environments and
           experimental workflows.
         </p>
+      </div>
+      <div class="about-story-block">
+        <h3>Systems Research &amp; Community</h3>
         <p>
           My research sits at the intersection of advanced distributed systems and
           scientific innovation, spanning scientific workflows, agentic workflows and
@@ -175,21 +194,12 @@
           </a>
           (NCCS). I am a Senior Member of IEEE and ACM.
         </p>
-        <div class="download-cv-block">
-          <a
-            class="button"
-            target="_blank"
-            href="files/cv/RafaelFerreiraDaSilva-cv-2025-01.pdf"
-          >
-            Download CV
-          </a>
-        </div>
-        <p>&nbsp;</p>
       </div>
     </div>
 
-    <div class="block-title">
+    <div class="about-section-head">
       <h3>Professional Facts</h3>
+      <p class="section-lede">A snapshot of scholarship, service, and funded impact.</p>
     </div>
     <div class="facts-grid">
       <div class="facts-item">
@@ -224,19 +234,19 @@
           <i class="pe-7s-icon pe-7s-graph1"></i>
         </div>
         <div class="facts-meta">
-          <h4>Research grants</h4>
-          <span class="facts-value">{{ rg_count }}</span>
+          <h4>Total Awarded Funding</h4>
+          <span class="facts-value">${{ funding_total_millions }}M</span>
         </div>
       </div>
     </div>
 
-    <div class="block-title">
+    <div class="about-section-head">
       <h3>Research Projects</h3>
+      <p class="section-lede">
+        Flagship initiatives with measurable impact across the workflows and
+        cyberinfrastructure communities.
+      </p>
     </div>
-    <p class="section-lede">
-      Flagship initiatives with measurable impact across the workflows and
-      cyberinfrastructure communities.
-    </p>
     <div class="project-grid">
       {% for item in site.data.research_projects %}
       <a href="{{ item.url }}" class="project-card" target="_blank">
@@ -252,24 +262,28 @@
       {% endfor %}
     </div>
 
-    <div class="block-title">
-      <h3>Get in Touch</h3>
-    </div>
-    <p class="section-lede">Open to collaborations, invited talks, and research partnerships.</p>
-    <div class="contact-grid">
-      <div class="contact-item">
-        <div class="contact-label">Office</div>
-        <div class="contact-content">
-          <a href="https://ornl.gov" target="_blank" class="contact-org">
-            <img src="/assets/images/ornl.png" alt="ORNL" />
-          </a>
-          <div>
-            Rafael Ferreira da Silva, Ph.D.<br />
-            Oak Ridge National Laboratory<br />
-            P.O. Box 2008, Oak Ridge, TN, USA 37831<br />
-            <a href="mailto:silvarf@ornl.gov">silvarf@ornl.gov</a><br />
-            <a href="tel:+18653411894">+1 865-341-1894</a>
-            <span class="contact-note">(Office)</span>
+    <div class="about-contact">
+      <div class="about-contact-card">
+        <div class="about-section-head">
+          <h3>Get in Touch</h3>
+          <p class="section-lede">Open to collaborations, invited talks, and research partnerships.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <div class="contact-label">Office</div>
+            <div class="contact-content">
+              <a href="https://ornl.gov" target="_blank" class="contact-org">
+                <img src="/assets/images/ornl.png" alt="ORNL" />
+              </a>
+              <div>
+                Rafael Ferreira da Silva, Ph.D.<br />
+                Oak Ridge National Laboratory<br />
+                P.O. Box 2008, Oak Ridge, TN, USA 37831<br />
+                <a href="mailto:silvarf@ornl.gov">silvarf@ornl.gov</a><br />
+                <a href="tel:+18653411894">+1 865-341-1894</a>
+                <span class="contact-note">(Office)</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

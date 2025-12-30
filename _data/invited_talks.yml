@@ -1,3 +1,10 @@
+- year: 2026
+  entries:
+    - title: "Enabling quantum-HPC convergence for future scientific workflows"
+      event: Journées Informatique Quantique 2026
+      location: Bordeaux, France
+      link: https://quantique.labri.fr/jiq2026/
+
 - year: 2025
   entries:
     - title: "AI-Ready Scientific Workflows at Scale: Bridging Data, Infrastructure, and Automation"
