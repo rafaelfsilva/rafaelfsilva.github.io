@@ -1,15 +1,23 @@
-<section class="page-section" data-id="media">
+<section class="page-section media-page" data-id="media">
 
-    <div class="section-inner">
+    <div class="section-inner media-shell">
 
-        <div class="section-title-block">
-            <div class="section-title-wrapper">
+        <div class="media-hero">
+            <div class="media-head">
                 <h2 class="section-title">Media</h2>
-                <h5 class="section-description">Featured in the News</h5>
+                <p class="section-lede">
+                    A curated selection of press coverage, interviews, and feature stories
+                    on workflows, autonomous science, and large-scale AI systems.
+                </p>
             </div>
+            <!-- <div class="media-highlight">
+                <div class="media-highlight-label">Coverage highlights</div>
+                <div class="media-highlight-value">{{ site.data.media | size }}</div>
+                <span class="media-highlight-note">Featured stories</span>
+            </div> -->
         </div>
 
-        <div class="media-list">
+        <div class="media-grid">
             {% for n in site.data.media %}
             <a class="media-card" href="{{ n.link }}" target="_blank">
                 <div class="media-thumb">
@@ -21,13 +29,11 @@
                         <span class="media-date">{{ n.date }}</span>
                     </div>
                     <h4 class="media-title">{{ n.title }}</h4>
-                    <span class="media-cta">Read the feature</span>
                 </div>
             </a>
             {% endfor %}
         </div>
 
-        <p>&nbsp;</p>
         {% include footer.html %}
     </div>
 </section>
