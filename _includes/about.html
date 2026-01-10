@@ -11,19 +11,19 @@
 {% assign pc_count = pc_count | plus: 1 %}
 {% endfor %}
 {% endfor %}
-{% for rg in site.data.funding.doe %}
+{% for rg in site.data.rafael.funding.doe %}
 {% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
 {% assign funding_total = funding_total | plus: amount_clean %}
 {% endfor %}
-{% for rg in site.data.funding.nsf %}
+{% for rg in site.data.rafael.funding.nsf %}
 {% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
 {% assign funding_total = funding_total | plus: amount_clean %}
 {% endfor %}
-{% for rg in site.data.funding.darpa %}
+{% for rg in site.data.rafael.funding.darpa %}
 {% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
 {% assign funding_total = funding_total | plus: amount_clean %}
 {% endfor %}
-{% for rg in site.data.funding.international %}
+{% for rg in site.data.rafael.funding.international %}
 {% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
 {% assign funding_total = funding_total | plus: amount_clean %}
 {% endfor %}
@@ -34,28 +34,20 @@
     <div class="about-hero">
       <div class="about-hero-content">
         <div class="about-eyebrow">Data &amp; AI Systems</div>
-        <h2 class="about-title">Rafael Ferreira da Silva</h2>
+        <h2 class="about-title">{{ site.data.rafael.personal.name }}</h2>
         <p class="about-role">
-          <strong>Section Head</strong> <span>(interim)</span> ·
-          <strong>Senior Research Scientist</strong>
+          {% for position in site.data.rafael.personal.titles_full %}
+          <strong>{{ position.title }}</strong>{% if position.interim %} <span>(interim)</span>{% endif %}{% unless forloop.last %} ·{% endunless %}
+          {% endfor %}
         </p>
         <p class="about-intro">
-          I am a Senior Research Scientist and Section Head (Interim) for
-          <a href="https://www.ornl.gov/section/data-ai" target="_blank">Data and AI Systems</a>
-          research in the
-          <a href="https://www.ornl.gov/division/csmd" target="_blank">
-            Computer Science and Mathematics
-          </a>
-          division at
-          <a href="https://www.ornl.gov/" target="_blank">Oak Ridge National Laboratory</a>
-          (ORNL), leading research and development in AI, data and agentic workflows, and
-          advanced computing systems.
+          {{ site.data.rafael.personal.intro }}
         </p>
         <div class="about-actions">
           <a
             class="button"
             target="_blank"
-            href="files/cv/RafaelFerreiraDaSilva-cv-2025-01.pdf"
+            href="/files/cv/RafaelFerreiraDaSilva-cv.pdf"
           >
             Download CV
           </a>
@@ -65,136 +57,83 @@
           <li>
             <a
               class="tip social-button"
-              href="{{site.data.main.social.linkedin.link}}"
+              href="{{ site.data.rafael.social_media.linkedin }}"
               title="LinkedIn"
               target="_blank"
             >
-              <i class="fa {{site.data.main.social.linkedin.icon}}"></i>
+              <i class="fa fa-linkedin"></i>
             </a>
           </li>
           <li>
             <a
               class="tip social-button"
-              href="{{site.data.main.social.googlescholar.link}}"
-              title="GoogleScholar"
+              href="{{ site.data.rafael.social_media.google_scholar }}"
+              title="Google Scholar"
               target="_blank"
             >
-              <i class="ai {{site.data.main.social.googlescholar.icon}}"></i>
+              <i class="ai ai-google-scholar"></i>
             </a>
           </li>
           <li>
             <a
               class="tip social-button"
-              href="{{site.data.main.social.dblp.link}}"
+              href="{{ site.data.rafael.social_media.dblp }}"
+              title="DBLP"
+              target="_blank"
+            >
+              <i class="ai ai-dblp"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="tip social-button"
+              href="{{ site.data.rafael.social_media.orcid }}"
+              title="ORCID"
+              target="_blank"
+            >
+              <i class="ai ai-orcid"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="tip social-button"
+              href="{{ site.data.rafael.social_media.researchgate }}"
               title="ResearchGate"
               target="_blank"
             >
-              <i class="ai {{site.data.main.social.dblp.icon}}"></i>
+              <i class="ai ai-researchgate"></i>
             </a>
           </li>
           <li>
             <a
               class="tip social-button"
-              href="{{site.data.main.social.orcid.link}}"
-              title="ResearchGate"
+              href="{{ site.data.rafael.social_media.github }}"
+              title="GitHub"
               target="_blank"
             >
-              <i class="ai {{site.data.main.social.orcid.icon}}"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="tip social-button"
-              href="{{site.data.main.social.researchgate.link}}"
-              title="ResearchGate"
-              target="_blank"
-            >
-              <i class="ai {{site.data.main.social.researchgate.icon}}"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="tip social-button"
-              href="{{site.data.main.social.github.link}}"
-              title="ResearchGate"
-              target="_blank"
-            >
-              <i class="fa {{site.data.main.social.github.icon}}"></i>
+              <i class="fa fa-github"></i>
             </a>
           </li>
         </ul>
       </div>
       <div class="about-hero-media">
         <div class="about-photo">
-          <img src="assets/images/rafael-frontier.jpg" alt="">
+          <img src="{{ site.data.rafael.personal.photo }}" alt="{{ site.data.rafael.personal.name }}">
         </div>
       </div>
     </div>
 
     <div class="about-story">
+      {% for section in site.data.rafael.personal.about_sections %}
       <div class="about-story-block">
-        <h3>Leadership &amp; Strategic Programs</h3>
+        <h3>{{ section.title }}</h3>
+        {% for paragraph in section.paragraphs %}
         <p>
-          In this section head role, I provide strategic and operational leadership for
-          the organization, which includes 45+ researchers across five groups
-          specializing in AI/ML, visualization, data workflows, engineering, and
-          performance systems. I also lead program development and proposal efforts,
-          securing <a href="/funding">$65M+ in funded awards</a> across 21 competitively reviewed
-          proposals, advancing work in autonomous laboratories, scientific workflow
-          systems, cyberinfrastructure, and AI-driven data analytics.
+          {{ paragraph }}
         </p>
-        <p>
-          I am a co-PI for the
-          <a
-            href="https://www.energy.gov/articles/energy-department-advances-investments-ai-science"
-            target="_blank"
-          >
-            Transformational AI model consortium
-          </a>
-          (ModCon), a cornerstone of the U.S. DOE
-          <a href="https://genesis.energy.gov/" target="_blank">Genesis Mission</a>'s AI
-          models and data efforts that will build and deploy self-improving AI models to
-          advance science, engineering, and energy missions. I am also the PI of a
-          DOE-funded project on robotics, automated laboratories, and autonomous
-          control of large-scale experiments in support of Genesis, leveraging embodied
-          AI, advanced automation, and robotics to transform laboratory environments and
-          experimental workflows.
-        </p>
+        {% endfor %}
       </div>
-      <div class="about-story-block">
-        <h3>Systems Research &amp; Community</h3>
-        <p>
-          My research sits at the intersection of advanced distributed systems and
-          scientific innovation, spanning scientific workflows, agentic workflows and
-          provenance capture, autonomous science, and hybrid quantum-classical systems.
-          I provide strategic direction and leadership for scheduling, modeling, and
-          optimization methods that scale across cloud, edge, and HPC environments,
-          accelerating discovery and ensuring robust, trustworthy computational
-          pipelines.
-        </p>
-        <p>
-          Additionally, as the Founder and Executive Director of the
-          <a href="http://workflows.community" target="_blank">
-            Workflows Community Initiative
-          </a>, I foster collaboration and advancement in workflows research and
-          development, connecting researchers and practitioners to share knowledge and
-          drive innovation. I am also a co-Founder of the
-          <a href="https://autonomousscience.org/" target="_blank">
-            Autonomous Science Network
-          </a>. Previously, I led the
-          <a
-            href="https://www.olcf.ornl.gov/about-olcf/staff-sections/advanced-technologies/workflows-ecosystem-services/"
-            target="_blank"
-          >
-            Workflow and Ecosystem Services
-          </a>
-          (WES) group within the
-          <a href="https://www.ornl.gov/division/nccs" target="_blank">
-            National Center for Computational Sciences
-          </a>
-          (NCCS). I am a Senior Member of IEEE and ACM.
-        </p>
-      </div>
+      {% endfor %}
     </div>
 
     <div class="about-section-head">
@@ -248,7 +187,7 @@
       </p>
     </div>
     <div class="project-grid">
-      {% for item in site.data.research_projects %}
+      {% for item in site.data.rafael.research_projects %}
       <a href="{{ item.url }}" class="project-card" target="_blank">
         <div class="project-icon">
           <img src="{{ item.icon }}" alt="Logo">
@@ -276,11 +215,11 @@
                 <img src="/assets/images/ornl.png" alt="ORNL" />
               </a>
               <div>
-                Rafael Ferreira da Silva, Ph.D.<br />
-                Oak Ridge National Laboratory<br />
-                P.O. Box 2008, Oak Ridge, TN, USA 37831<br />
-                <a href="mailto:silvarf@ornl.gov">silvarf@ornl.gov</a><br />
-                <a href="tel:+18653411894">+1 865-341-1894</a>
+                {{ site.data.rafael.personal.name }}, {{ site.data.rafael.personal.title }}<br />
+                {{ site.data.rafael.personal.office.institution }}<br />
+                {{ site.data.rafael.personal.office.address }}<br />
+                <a href="mailto:{{ site.data.rafael.personal.contact.email }}">{{ site.data.rafael.personal.contact.email }}</a><br />
+                <a href="tel:{{ site.data.rafael.personal.contact.phone | remove: ' ' | remove: '-' }}">{{ site.data.rafael.personal.contact.phone }}</a>
                 <span class="contact-note">(Office)</span>
               </div>
             </div>

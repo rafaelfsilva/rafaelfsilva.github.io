@@ -1,0 +1,946 @@
+# Rafael Ferreira da Silva - Complete CV and Website Data
+# Generated from CV and website content analysis
+# Last updated: 2025-01-09
+
+# ==============================================================================
+# PERSONAL INFORMATION
+# ==============================================================================
+personal:
+  name: Rafael Ferreira da Silva
+  title: Ph.D.
+  titles_full:
+    - title: Section Head
+      interim: true
+    - title: Senior Research Scientist
+      interim: false
+
+  contact:
+    email: silvarf@ornl.gov
+    phone: "+1 865-341-1894"
+    website: https://rafaelsilva.com
+
+  office:
+    institution: Oak Ridge National Laboratory
+    address: P.O. Box 2008, Oak Ridge, TN, USA 37831
+
+  photo: assets/images/rafael-frontier.jpg
+  photo_square: assets/images/2019-rafael-ferreira-da-silva-square.jpg
+
+  memberships:
+    - organization: IEEE
+      level: Senior Member
+      period: 2022-present
+    - organization: ACM
+      level: Senior Member
+      period: 2023-present
+    - organization: ACM
+      level: Member
+      period: 2018-2023
+    - organization: IEEE
+      level: Member
+      period: 2017-2022
+
+  certifications:
+    - title: Ground Instructor
+      organization: Federal Aviation Administration
+      date: December 2020
+    - title: Private Aircraft Pilot
+      organization: Federal Aviation Administration
+      date: November 2020
+
+  # About page content sections
+  intro: |
+    I am a Senior Research Scientist and Section Head (Interim) for <a href="https://www.ornl.gov/section/data-ai" target="_blank">Data and AI Systems</a> research in the <a href="https://www.ornl.gov/division/csmd" target="_blank">Computer Science and Mathematics</a> division at <a href="https://www.ornl.gov/" target="_blank">Oak Ridge National Laboratory</a> (ORNL), leading research and development in AI, data and agentic workflows, and advanced computing systems.
+
+  about_sections:
+    - title: Leadership & Strategic Programs
+      paragraphs:
+        - |
+          In this section head role, I provide strategic and operational leadership for the organization, which includes 45+ researchers across five groups specializing in AI/ML, visualization, data workflows, engineering, and performance systems. I also lead program development and proposal efforts, securing <a href="/funding">$65M+ in funded awards</a> across 21 competitively reviewed proposals, advancing work in autonomous laboratories, scientific workflow systems, cyberinfrastructure, and AI-driven data analytics.
+        - |
+          I am a co-PI for the <a href="https://www.energy.gov/articles/energy-department-advances-investments-ai-science" target="_blank">Transformational AI model consortium</a> (ModCon), a cornerstone of the U.S. DOE <a href="https://genesis.energy.gov/" target="_blank">Genesis Mission</a>'s AI models and data efforts that will build and deploy self-improving AI models to advance science, engineering, and energy missions. I am also the PI of a DOE-funded project on robotics, automated laboratories, and autonomous control of large-scale experiments in support of Genesis, leveraging embodied AI, advanced automation, and robotics to transform laboratory environments and experimental workflows.
+
+    - title: Systems Research & Community
+      paragraphs:
+        - |
+          My research sits at the intersection of advanced distributed systems and scientific innovation, spanning scientific workflows, agentic workflows and provenance capture, autonomous science, and hybrid quantum-classical systems. I provide strategic direction and leadership for scheduling, modeling, and optimization methods that scale across cloud, edge, and HPC environments, accelerating discovery and ensuring robust, trustworthy computational pipelines.
+        - |
+          Additionally, as the Founder and Executive Director of the <a href="http://workflows.community" target="_blank">Workflows Community Initiative</a>, I foster collaboration and advancement in workflows research and development, connecting researchers and practitioners to share knowledge and drive innovation. I am also a co-Founder of the <a href="https://autonomousscience.org/" target="_blank">Autonomous Science Network</a>. Previously, I led the <a href="https://www.olcf.ornl.gov/about-olcf/staff-sections/advanced-technologies/workflows-ecosystem-services/" target="_blank">Workflow and Ecosystem Services</a> (WES) group within the <a href="https://www.ornl.gov/division/nccs" target="_blank">National Center for Computational Sciences</a> (NCCS). I am a Senior Member of IEEE and ACM.
+
+# ==============================================================================
+# SOCIAL MEDIA & PROFILES
+# ==============================================================================
+social_media:
+  linkedin: https://www.linkedin.com/in/rafaelfsilva
+  github: https://github.com/rafaelfsilva
+  google_scholar: https://scholar.google.com/citations?user=N63oC44AAAAJ&hl=en
+  researchgate: https://www.researchgate.net/profile/Rafael_Ferreira_da_Silva
+  dblp: http://dblp.uni-trier.de/pers/hd/s/Silva:Rafael_Ferreira_da.html
+  orcid: http://orcid.org/0000-0002-1720-0928
+  twitter: https://twitter.com/RafaelSilva_com
+
+# ==============================================================================
+# CURRENT POSITIONS & APPOINTMENTS
+# ==============================================================================
+appointments:
+  current:
+    - institution: Oak Ridge National Laboratory
+      country: USA
+      positions:
+        - title: Section Head (Interim), Data and AI Systems
+          division: Computer Science and Mathematics
+          period: 2025-present
+        - title: Group Leader, Workflow and Ecosystem Services
+          division: National Center for Computational Sciences
+          period: 2023-2025
+        - title: Senior Research Scientist
+          period: 2021-present
+
+    - institution: Workflows Community Initiative (WCI)
+      url: https://workflows.community
+      positions:
+        - title: Co-Founder and Executive Director
+          period: 2022-present
+
+    - institution: Future Generation Computer Systems Journal
+      publisher: Elsevier
+      positions:
+        - title: Special Issues Editor-in-Chief
+          period: 2023-2025
+
+  past:
+    - institution: University of Southern California
+      department: Department of Computer Science
+      country: USA
+      positions:
+        - title: Adjunct Research Assistant Professor
+          period: 2021-2024
+        - title: Research Assistant Professor
+          period: 2016-2021
+
+    - institution: University of Southern California
+      department: Information Sciences Institute
+      country: USA
+      positions:
+        - title: Research Lead
+          period: 2019-2021
+        - title: Computer Scientist
+          period: 2013-2019
+
+    - institution: Centre National de la Recherche Scientifique (CNRS)
+      country: France
+      positions:
+        - title: Software Engineer
+          period: 2010-2013
+
+# ==============================================================================
+# EDUCATION
+# ==============================================================================
+education:
+  - degree: Doctor of Philosophy in Computer Science
+    year: 2013
+    institution: Institut National des Sciences Appliquées de Lyon
+    country: France
+    thesis_title: "A science-gateway for workflow executions: online and non-clairvoyant self-healing of workflow executions on grids"
+
+  - degree: Master of Science in Computer Science
+    year: 2010
+    institution: Federal University of Campina Grande (UFCG)
+    country: Brazil
+
+  - degree: Bachelor of Science in Computer Science
+    year: 2007
+    institution: Federal University of Paraiba (UFPB)
+    country: Brazil
+
+# ==============================================================================
+# RESEARCH INTERESTS & EXPERTISE
+# ==============================================================================
+research:
+  description: |
+    My research sits at the intersection of advanced distributed systems and scientific innovation,
+    spanning scientific workflows, agentic workflows and provenance capture, autonomous science,
+    and hybrid quantum-classical systems. I provide strategic direction and leadership for scheduling,
+    modeling, and optimization methods that scale across cloud, edge, and HPC environments.
+
+  areas:
+    - Scientific Workflows
+    - Agentic Workflows
+    - Autonomous Science
+    - Hybrid Quantum-Classical Systems
+    - Workflow Scheduling and Optimization
+    - Modeling and Simulation of Distributed Systems
+    - Cyberinfrastructure
+    - AI-driven Data Analytics
+    - Provenance Capture
+    - High Performance Computing (HPC)
+    - Cloud and Edge Computing
+
+  leadership_highlights:
+    - Strategic and operational leadership for 45+ researchers across five groups
+    - $65M+ in funded awards across 21 competitively reviewed proposals
+    - Co-PI for Transformational AI model consortium (ModCon) - DOE Genesis Mission
+    - PI for robotics and automated laboratories project supporting Genesis
+    - Founder and Executive Director of Workflows Community Initiative
+    - Co-Founder of Autonomous Science Network
+    - Former Group Leader of Workflow and Ecosystem Services (WES) at NCCS
+
+# ==============================================================================
+# RESEARCH PROJECTS
+# ==============================================================================
+research_projects:
+  - name: Workflows Community Initiative
+    url: https://workflows.community
+    icon: https://workflows.community/favicon.ico
+    count: 290+
+    description: A thriving network of international workflow users, developers, and researchers
+
+  - name: WfCommons
+    url: https://wfcommons.org
+    icon: https://wfcommons.org/favicon.ico
+    count: 54
+    description: Research articles using the WfCommons Framework
+
+  - name: WRENCH
+    url: https://wrench-project.org
+    icon: https://wrench-project.org/favicon.ico
+    count: 40
+    description: Research articles using the WRENCH Cyberinfrastructure Simulation Workbench
+
+# ==============================================================================
+# FUNDING & GRANTS
+# ==============================================================================
+funding:
+  doe:
+    - title: "ModCon – Transformational AI model consortium"
+      period: 10/2025-09/2027
+      amount: "$30,000,000"
+      role: Co-Principal Investigator
+      program: Office of Advanced Scientific Computing Research (ASCR)
+      award: DE-SCL0000139
+
+    - title: "OPAL – Orchestrated Platform for Autonomous Laboratories"
+      period: 10/2025-09/2027
+      amount: "$12,500,000"
+      role: Senior Personnel
+      program: Offices of Biological & Environmental Research (BER) and Advanced Scientific Computing Research (ASCR)
+
+    - title: "A Testbed for Multi-Agent Autonomous Science: From Lab Bench to Supercomputer"
+      period: 10/2025-09/2026
+      amount: "$250,000"
+      role: Principal Investigator
+      program: Office of Advanced Scientific Computing Research (ASCR)
+
+    - title: "Center for Sustaining Workflows and Application Services"
+      period: 04/2023-04/2024
+      amount: "$120,000"
+      role: Principal Investigator
+      program: Office of Advanced Scientific Computing Research (ASCR)
+
+    - title: "ExaWorks: ECP Workflows Project"
+      period: 2017-12/2023
+      amount: "$3,773,833"
+      role: Co-Principal Investigator
+      program: Exascale Computing Project
+      award: 17-SC-20-SC
+
+  nsf:
+    - title: "Collaborative Research: OAC Core: Simulation-driven runtime resource management for distributed workflow applications"
+      period: 10/2021-09/2024
+      amount: "$499,988"
+      role: Co-Principal Investigator
+      program: "Computer and Information Science and Engineering (CISE): Core Programs"
+      awards:
+        - id: 2106059
+        - id: 2106147
+
+    - title: "Collaborative Research: Elements: Simulation-driven Evaluation of Cyberinfrastructure Systems"
+      period: 08/2021-07/2024
+      amount: "$600,000"
+      role: Principal Investigator
+      program: Software Institutes (CSSI)
+      awards:
+        - id: 2103489
+        - id: 2103508
+
+    - title: "Collaborative Research: EAGER: VisDict - Visual Dictionaries for Enhancing the Communication between Domain Scientists and Scientific Workflow Providers"
+      period: 05/2021-10/2022
+      amount: "$264,500"
+      role: Co-Principal Investigator
+      program: Computing and Communication Foundations (CCF)
+      awards:
+        - id: 2100561
+        - id: 2100636
+
+    - title: "REU Site: SURF-I: Safe, Usable, Resilient and Fair Internet"
+      period: 03/2021-02/2024
+      amount: "$405,000"
+      role: Co-Principal Investigator
+      program: Computer and Network Systems (CNS)
+      awards:
+        - id: 2051101
+
+    - title: "CCRI: Planning: Collaborative Research: Infrastructure for Enabling Systematic Development and Research of Scientific Workflow Management Systems"
+      period: 10/2020-09/2021
+      amount: "$100,000"
+      role: Principal Investigator
+      program: CISE Community Research Infrastructure
+      awards:
+        - id: 2016610
+        - id: 2016619
+        - id: 2016682
+
+    - title: "Collaborative Research: PPoSS: Planning: Performance Scalability, Trust, and Reproducibility: A Community Roadmap to Robust Science in High-throughput Applications"
+      period: 10/2020-09/2021
+      amount: "$250,000"
+      role: Co-Principal Investigator
+      program: Scalable Parallelism in the Extreme (SPX)
+      awards:
+        - id: 2028881
+        - id: 2028923
+        - id: 2028930
+        - id: 2028955
+        - id: 2028956
+
+    - title: "Collaborative Research: CyberTraining: Implementation: Small: Integrating core CI literacy and skills into university curricula via simulation-driven activities"
+      period: 10/2019–09/2022
+      amount: "$500,000"
+      role: Co-Principal Investigator
+      program: CyberTraining – Training-based
+      awards:
+        - id: 1923539
+        - id: 1923621
+
+    - title: "Coordinating Curricula and User Preferences to Increase the Participation of Women and Students of Color in Engineering"
+      period: 10/2018–09/2021
+      amount: "$300,000"
+      role: Co-Principal Investigator
+      program: IUSE
+      awards:
+        - id: 1826632
+
+    - title: "BIGDATA: IA: Collaborative Research: In Situ Data Analytics for Next Generation Molecular Dynamics Workflows"
+      period: 10/2017–09/2021
+      amount: "$1,993,043"
+      role: Co-Principal Investigator
+      program: Big Data Science & Engineering
+      awards:
+        - id: 1741057
+        - id: 1740990
+        - id: 1741040
+
+    - title: "Collaborative Research: SI2-SSE: WRENCH: A Simulation Workbench for Scientific Workflow for Users, Developers, and Researchers"
+      period: 01/2017—12/2019
+      amount: "$497,956"
+      role: Co-Principal Investigator
+      program: Software Institutes
+      awards:
+        - id: 1642369
+        - id: 1642335
+
+    - title: "2018 Software Infrastructure for Sustained Innovation (SI2) Principal Investigators Workshop"
+      period: 06/2018–05/2019
+      amount: "$85,065"
+      role: Co-Principal Investigator
+      program: Software Institutes
+      awards:
+        - id: 1831393
+
+  darpa:
+    - title: "MINT: Model INTegration through Knowledge-Rich Data and Process Composition"
+      period: 12/2017–11/2021
+      amount: "$12,979,881"
+      role: Co-Principal Investigator
+      program: World Modelers
+      award: W911NF-18-1-0027
+
+  international:
+    - title: "Integrating Cyberinfrastructure Literacy into University Curricula"
+      period: 08/2021 – 05/2022
+      amount: "$4,400"
+      role: Principal Investigator
+      program: USC URAP
+
+    - title: "Teaching Parallel and Distributed Computing Concepts in Simulation"
+      period: 08/2020 – 05/2021
+      amount: "$3,300"
+      role: Principal Investigator
+      program: USC URAP
+
+    - title: "Integrating core CI literacy and skills into university curricula via simulation-driven activities"
+      period: 08/2019 – 05/2020
+      amount: "$2,825"
+      role: Principal Investigator
+      program: USC URAP
+
+    - title: "Laboratoire Virtuel pour la Conception de Systèmes de Gestion de Workflows"
+      period: 1/2016–12/2018
+      amount: "24,000 €"
+      program: "CNRS PICS (France)"
+      award: PICS07239
+
+  total_funding:
+    amount: "$65,000,000+"
+    projects: 21
+
+# ==============================================================================
+# PUBLICATIONS (Reference to BibTeX file)
+# ==============================================================================
+publications:
+  bibliography_file: _bibliography/references.bib
+  note: |
+    Full publication list is maintained in the references.bib file.
+    Publications are organized by type: journals, conference/workshop papers,
+    book chapters, and technical reports.
+
+  categories:
+    - Journals
+    - Conference/Workshop Papers
+    - Book Chapters
+    - Technical Reports
+
+  metrics:
+    note: "Use {% bibliography_count -f references %} for total count"
+
+# ==============================================================================
+# PROFESSIONAL ACTIVITIES
+# ==============================================================================
+professional_activities:
+
+  funding_reviewer:
+    - agency: U.S. National Science Foundation (NSF)
+      office: Office of Advanced Cyberinfrastructure (CISE/OAC)
+      role: In-person and Virtual Review Panels Reviewer
+      period: 2017-2026
+
+    - agency: U.S. Department of Energy (DoE)
+      office: Advanced Scientific Computing Research (ASCR)
+      role: Mail In Reviews
+      period: 2021-2025
+
+    - agency: Austrian Science Fund (FWF)
+      role: Ad-hoc Reviewer
+      period: 2024-2025
+
+    - agency: U.S. Army Research Office (ARO)
+      role: Ad-hoc Reviewer
+      period: 2020
+
+    - agency: Netherlands Organisation for Scientific Research (NWO)
+      role: Ad-hoc reviewer
+      period: 2019
+
+  steering_committees:
+    - organization: IEEE Technical Community on High Performance Computing (TCHPC)
+      role: Vice-Chair
+      period: 2025-present
+
+    - organization: IEEE eScience Conference
+      role: Vice-Chair
+      period: 2023-present
+
+  editorial:
+    - journal: Future Generation Computer Systems
+      publisher: Elsevier
+      impact_factor: 7.5
+      role: Special Issue Editor-in-Chief
+      period: 2023-2025
+
+    - journal: Journal of Parallel and Distributed Computing
+      impact_factor: 3.8
+      role: Associated Editor
+      period: 2019-2024
+
+    - journal: Future Generation Computer Systems
+      impact_factor: 7.5
+      role: Editor
+      period: 2020-2023
+
+    - journal: Computing in Science & Engineering
+      publisher: IEEE Computer Society
+      impact_factor: 2.1
+      role: Guest Editor
+      period: 2023
+
+    - journal: Future Generation Computer Systems
+      impact_factor: 7.5
+      role: Guest Editor
+      period: 2018
+      special_issue: Workflows in Support of Large-Scale Science
+
+  journal_reviewer:
+    - IEEE Transactions on Parallel and Distributed Systems (2014-2022)
+    - IEEE Computer (2022)
+    - IEEE Transactions on Services Computing (2022)
+    - PeerJ Computer Science (2020-2023)
+    - Future Generation Computer Systems (2013-2021)
+    - IEEE Transactions on Cloud Computing (2016-2021)
+    - Concurrency and Computation Practice and Experience (2013-2019)
+    - ACM Computer Surveys (2018-2019)
+    - SoftwareX (2018-2019)
+    - Journal of Grid Computing (2016-2018)
+    - ACM Transactions on Parallel Computing (2017-2018)
+    - Computers & Electrical Engineering (2015-2017)
+    - Journal of Parallel and Distributed Computing (2015)
+    - Computing and Informatics (2015)
+    - IEEE Communications Magazine (2014)
+    - Scientific Programming (2014)
+    - The Computer Journal (2014)
+
+# ==============================================================================
+# INVITED TALKS
+# ==============================================================================
+invited_talks:
+  - year: 2026
+    entries:
+      - title: "Enabling quantum-HPC convergence for future scientific workflows"
+        event: Journées Informatique Quantique 2026
+        location: Bordeaux, France
+        link: https://quantique.labri.fr/jiq2026/
+
+  - year: 2025
+    entries:
+      - title: "AI-Ready Scientific Workflows at Scale: Bridging Data, Infrastructure, and Automation"
+        event: First International Symposium on Artificial Intelligence and Extreme-Scale Workflows (AIExScale)
+        location: St. Louis, USA
+        link: https://aiexscale.github.io/
+
+      - title: Advancing Reproducible and Secure Workflows for Autonomous Science at Scale
+        event: Keynote for the 5th Workshop on Reproducible Workflows, Data Management, and Security (ReWorDS)
+        location: Chicago, USA
+        link: https://sites.google.com/view/rewords25/
+
+      - title: Building Next-Generation Scientific Workflows for Autonomous Research Facilities
+        event: Multicore World XII
+        location: Christchurch, New Zealand
+        link: https://multicore.world/speakers-2025/rafael-ferreira-da-silva/
+        video: https://youtu.be/-Wlg1tmee9Y?si=X2XIkWZpM7wXN3rJ
+
+      - title: Building Next-Generation Scientific Workflows for Autonomous Research Facilities
+        event: SIGHPC Computing Continuum Chapter
+        location: Virtual
+        link: https://sighpc-continuum.acm.org/
+        video: https://drive.google.com/file/d/1ICSRARjL8OY5syWmzscR5XDZVhIYJoBf/view?usp=sharing
+
+  - year: 2024
+    entries:
+      - title: The Evolution of Scientific Workflows
+        event: Science and Technology Facilities Council (STFC) at UK Research and Innovation (UKRI)
+        location: Virtual
+
+      - title: "DOE's Integrated Research Infrastructure (IRI) Program"
+        event: Low Energy Community Meeting 2024
+        location: Knoxville, TN, USA
+        link: https://indico.frib.msu.edu/event/73/
+
+      - title: National Scale Research Workflows and Community Development
+        event: ABRF 2024 Annual Meeting
+        location: Minneapolis, MN, USA
+        link: https://web.cvent.com/event/5dd6933f-0d5d-40de-a33c-17edec6b28a4/websitePage:5722b7fb-57f3-4435-8d4b-47858389ff13
+        video: https://www.youtube.com/watch?v=G6Fs3hM12DI
+
+  - year: 2023
+    entries:
+      - title: Modern Scientific Workflows in the Era of an Integrated Research Infrastructure
+        event: Monterey Data Conference 2023
+        location: Monterey, CA, USA
+        link: https://www.montereydataconference.org/2023
+
+      - title: The Workflows Community Initiative and Recent Summit
+        event: U.S. National Science Foundation (NSF) Office of Advanced Cyberinfrastructure (OAC) Brownbag
+        location: Virtual
+
+      - title: An Overview of AI Workflows for HPC Systems
+        event: Middleware and Grid Interagency Coordination (MAGIC) Meeting
+        location: Virtual
+        link: https://www.nitrd.gov/coordination-areas/lsn/magic/magic-meetings-2023/
+
+      - title: "Modern Scientific Workflows: State-of-the-art and Challenges"
+        event: 2023 Computer Science Department Inaugural Lecture, Fluminense Federal University
+        location: Rio de Janeiro, Brazil
+        link: https://www.youtube.com/watch?v=2KnBqEHfiQQ
+        video: https://www.youtube.com/watch?v=2KnBqEHfiQQ
+
+# ==============================================================================
+# TEACHING
+# ==============================================================================
+teaching:
+  - institution: USC
+    department: Computer Science Department
+    course: INF 553 Data Mining
+    level: graduate
+    semester: Fall 2018
+
+  - institution: USC
+    department: Computer Science Department
+    course: CS 104 Data Structures and Object-Oriented Design
+    level: undergraduate
+    semester: Spring 2017
+
+# ==============================================================================
+# STUDENTS & MENTORING
+# ==============================================================================
+students:
+  phd:
+    - name: Tainã Coleman
+      photo: taina-coleman.jpg
+      linkedin: https://www.linkedin.com/in/tainacoleman/
+      degree: Ph.D. in Computer Science
+      period: 2020-2023
+      description: "Tainã's research is in Scientific Workflows Structure and Benchmarks. Specifically, she contributes to the WfCommons open source project. She holds a Bachelor's degree in Computer Engineering from Universidade Federal de Itajubá in Brazil and a Master's degree in Computer Science from California State University, Long Beach."
+
+  worker:
+    - name: Jason Feuerstein
+      photo: jason-feuerstein.png
+      linkedin: https://www.linkedin.com/in/jasonfeuerstein
+      degree: B.S. in Computer Science
+      period: 2020-2021
+      description: 'Jason works on the NSF-funded <a href="https://eduwrench.org" target="_blank">eduWRENCH</a> project. His work is focused on the front-end development of the UI for hosting pedagogical modules.'
+
+    - name: Tabitha See Ya Lee
+      photo: tabitha-see-ya-lee.jpg
+      linkedin: https://www.linkedin.com/in/tabitha-sy-lee/
+      degree: B.S. in Computer Science (Vanderbilt University)
+      period: 2020-2020
+      description: 'Tabitha worked on the NSF-funded <a href="https://eduwrench.org" target="_blank">eduWRENCH</a> project. Her work was focused on the development of simulation-driven pedagogical modules for CI Services concepts.'
+
+    - name: Vivian (Tongyu) Zhu
+      photo: tongyu-zhu.jpg
+      linkedin: https://www.linkedin.com/in/tongyu-zhu-00091/
+      degree: B.S. in Computer Science
+      period: 2019-2020
+      description: 'Vivian worked on the NSF-funded <a href="https://eduwrench.org" target="_blank">eduWRENCH</a> project. Her work was focused on the development of React-based web UI for hosting pedagogical modules.'
+
+    - name: Gautam Jethwani
+      photo: gautam-jethwani.jpg
+      linkedin: https://www.linkedin.com/in/gautamjethwani/
+      degree: B.S. in Computer Science
+      period: 2018-2021
+      description: 'Gautam works on the NSF-funded <a href="https://wrench-project.org" target="_blank">WRENCH</a> project. His work is focused on the development of visualization components for simulation outputs based on D3.js.'
+
+    - name: Samuel He
+      photo: samuel-he.jpg
+      linkedin: https://www.linkedin.com/in/samuel-he-001a2b16a
+      degree: B.S. in Computer Science
+      period: 2020-2020
+      description: 'Samuel worked on the NSF-funded <a href="https://wrench-project.org" target="_blank">WRENCH</a> project. His work focused on the development of WRENCH-enabled simulators for energy efficiency and scheduling.'
+
+    - name: James Oeth
+      photo: james-oeth.jpg
+      linkedin: https://www.linkedin.com/in/james-oeth-8942b4133/
+      degree: B.S. in Computer Science
+      period: 2017-2018
+      description: 'James worked on the NSF-funded <a href="https://wrench-project.org" target="_blank">WRENCH</a> project. His work focused on the development of WRENCH-enabled simualtors of workflow systems.'
+
+  dr:
+    - name: Manav Kaushik
+      period: Spring 2021
+      linkedin: https://www.linkedin.com/in/manav-kaushik-cs/
+      degree: undergraduate student, B.S. in Computer Science
+
+    - name: Gautam Jethwani
+      period: Fall 2019
+      linkedin: https://www.linkedin.com/in/gautamjethwani/
+      degree: undergraduate student, B.S. in Computer Science
+
+    - name: James Oeth
+      period: Fall 2019
+      linkedin: https://www.linkedin.com/in/james-oeth-8942b4133/
+      degree: undergraduate student, B.S. in Computer Science
+
+    - name: Prithvi Kumar
+      period: Spring 2019
+      linkedin: https://www.linkedin.com/in/prithviak
+      degree: graduate student, M.S. in Computer Science
+
+    - name: Radhika Agarwal
+      period: Spring 2019
+      linkedin: https://www.linkedin.com/in/radsagar/
+      degree: graduate student, M.S. in Computer Science
+
+    - name: Varad Kulkarni
+      period: Spring 2019
+      linkedin: https://www.linkedin.com/in/varad25/
+      degree: graduate student, M.S. in Computer Science
+
+    - name: Spencer Albrecht
+      period: Spring 2019
+      linkedin: https://www.linkedin.com/in/spenceralbrecht/
+      degree: undergraduate student, B.S. in Computer Science
+
+    - name: Shiva Deviah
+      period: Spring 2019
+      linkedin: https://www.linkedin.com/in/shivakdeviah/
+      degree: graduate student, M.S. in Computer Science
+
+    - name: Vishal Oswal
+      period: Fall 2017
+      linkedin: https://www.linkedin.com/in/vishal13may
+      degree: graduate student, M.S. in Computer Science
+
+    - name: Harshil Shah
+      period: Fall 2017
+      linkedin: https://www.linkedin.com/in/shahharshil46/
+      degree: graduate student, M.S. in Computer Science
+
+    - name: Akshay Joshi
+      period: Fall 2017
+      linkedin: https://www.linkedin.com/in/akshay-joshi-8a961192/
+      degree: graduate student, M.S. in Computer Science
+
+  thesis_committee:
+    - name: Alok Kamatar
+      degree: MS Thesis
+      institution: University of Chicago, USA
+      year: 2025
+
+    - name: Alessio Orsino
+      degree: PhD Thesis
+      institution: University of Calabria, Italy
+      year: 2025
+
+    - name: Aymen Al Saadi
+      degree: PhD Thesis
+      institution: Rutgers University, USA
+      year: 2024
+
+    - name: Tainã Coleman
+      degree: PhD Thesis
+      institution: University of Southern California, USA
+      year: 2023
+
+# ==============================================================================
+# AWARDS & HONORS
+# ==============================================================================
+awards:
+  - title: Best Short Paper Award
+    event: PEARC '25 Practice and Experience in Advanced Research Computing 2025
+    year: 2025
+    paper: "Secure API-Driven Research Automation to Accelerate Scientific Discovery"
+
+  - title: Best Paper Award
+    event: 2024 6th Annual Workshop on Extreme-Scale Experiment-in-the-Loop Computing (XLOOP)
+    year: 2024
+    paper: "Integrating ORNL's HPC and Neutron Facilities with a Performance-Portable CPU/GPU Ecosystem"
+
+  - title: Best Paper Award
+    event: 2023 IEEE/ACM Workshop on Workflows in Support of Large-Scale Science (WORKS)
+    year: 2023
+    paper: "Julia as a unifying end-to-end workflow language on the Frontier exascale system"
+
+  - title: Best Paper Candidate
+    event: 19th IEEE Conference on eScience (eScience 23)
+    year: 2023
+    paper: "Driving Next-Generation Workflows from the Data Plane"
+
+  - title: Future Generation Computer Systems 2021 Best Paper Award
+    year: 2021
+    paper: "End-to-End Online Performance Data Capture and Analysis for Scientific Workflows"
+
+  - title: FGCS Fall 2024 Editor's Choice Papers
+    year: 2024
+    paper: "Integrating Quantum Computing Resources into Scientific HPC Ecosystems"
+
+  - title: IEEE Senior Member Elevation
+    organization: IEEE
+    year: 2022
+
+  - title: ACM Senior Member Elevation
+    organization: ACM
+    year: 2023
+
+# ==============================================================================
+# MEDIA COVERAGE
+# ==============================================================================
+media:
+  - title: "ORNL Study Outlines Software Blueprint for Unified Quantum-HPC Integration"
+    venue: Quantum Computing Report
+    date: August 2025
+    link: https://quantumcomputingreport.com/ornl-study-outlines-software-blueprint-for-unified-quantum-hpc-integration/
+    image: https://quantumcomputingreport.com/wp-content/uploads/2025/08/image-128.png
+
+  - title: "ORNL Study Plans Quantum-HPC Software Stack"
+    venue: ORNL News
+    date: August 2025
+    link: https://www.olcf.ornl.gov/2025/08/29/ornl-study-plans-quantum-hpc-software-stack/
+    image: https://www.olcf.ornl.gov/wp-content/uploads/Quantum-Frontier-banner-ORNL-v3.png
+
+  - title: "Scientists lay out vision for AI-based 'labs of the future'"
+    venue: ORNL News
+    date: February 2025
+    link: https://www.ornl.gov/news/scientists-lay-out-vision-ai-based-labs-future
+    image: https://www.ornl.gov/sites/default/files/styles/large/public/2025-02/LabsoftheFuture.jpg?itok=EnQhXEqG
+
+  - title: "EPCC at SC24: the Data Analytics, Visualization, and Storage track"
+    venue: EPCC
+    date: November 2024
+    link: https://www.epcc.ed.ac.uk/whats-happening/articles/epcc-sc24-data-analytics-visualization-and-storage-track
+    image: https://www.epcc.ed.ac.uk/sites/default/files/styles/content_image_small/public/listing-images/SC24%20web%20preview.jpg?itok=o2sp7-Xw
+
+  - title: "ORNL: Study Seeks to Unite HPC and Quantum Computing for Science"
+    venue: HPCwire
+    date: August 2024
+    link: https://www.hpcwire.com/off-the-wire/ornl-study-seeks-to-unite-hpc-and-quantum-computing-for-science/
+    image: https://www.hpcwire.com/wp-content/uploads/2024/08/BeckOralSilvaMain_0-600x480.jpg
+
+  - title: Study seeks to unite high-performance computing, quantum computing for science
+    venue: Tech Xplore
+    date: August 2024
+    link: https://techxplore.com/news/2024-08-high-quantum-science.html
+    image: https://scx1.b-cdn.net/csz/news/800a/2024/study-seeks-to-unite-h.jpg
+
+  - title: Research Aims to Unite High-Performance, Quantum Computing
+    venue: Mirage.News
+    date: August 2024
+    link: https://www.miragenews.com/research-aims-to-unite-high-performance-quantum-1304788/
+    image: https://www.ornl.gov/sites/default/files/styles/large/public/2024-08/BeckOralSilvaMain_0.jpg?itok=r5ry8Dwy
+
+  - title: Study Seeks to Unite High-Performance Computing, Quantum Computing for Science
+    venue: OLCF News
+    date: August 2024
+    link: https://www.olcf.ornl.gov/2024/08/28/study-seeks-to-unite-high-performance-computing-quantum-computing-for-science/
+    image: https://www.olcf.ornl.gov/wp-content/uploads/SilvaBeckOral-2048x1152.jpg
+
+  - title: Study seeks to unite high-performance computing, quantum computing for science
+    venue: ORNL News
+    date: August 2024
+    link: https://www.ornl.gov/news/study-seeks-unite-high-performance-computing-quantum-computing-science
+    image: https://www.ornl.gov/sites/default/files/styles/large/public/2024-08/BeckOralSilvaMain_0.jpg?itok=r5ry8Dwy
+
+  - title: "Introducing the Consortium for the Advancement of Scientific Software (CASS)"
+    venue: Better Scientific Software
+    date: June 2024
+    link: https://bssw.io/blog_posts/introducing-the-consortium-for-the-advancement-of-scientific-software-cass
+    image: https://res.cloudinary.com/bssw/image/fetch/https://raw.githubusercontent.com/betterscientificsoftware/bssw.io/main/images/2024-06-announcing-cass-slide.png?raw=true
+
+  - title: "Pioneering Frontier: Here are a few of the many talented ORNL employees behind the construction and operation of Frontier"
+    venue: ORNL Review
+    date: December 2023
+    link: https://www.ornl.gov/sites/default/files/2023-11/Review%20v.56_n.2_web%20copy_0.pdf#page=23
+    image: https://www.ornl.gov/sites/default/files/styles/crop_thumbnail/public/2023-11/Review%20v.56_n.2%20cover_0.jpg
+
+  - title: Julia as a unifying end-to-end workflow language on the Frontier exascale system
+    venue: ORNL Research Highlights
+    date: November 2023
+    link: https://www.ornl.gov/research-highlight/julia-unifying-end-end-workflow-language-frontier-exascale-system
+    image: https://www.ornl.gov/sites/default/files/styles/large/public/2024-01/julia_gray_scott_ornl_3.png?itok=fgK-aRFE
+
+  - title: ExaWorks Provides Access to Community Sustained, Hardened, and Tested Components to Create Award-Winning HPC Workflows
+    venue: HPCwire
+    date: July 2023
+    link: https://www.hpcwire.com/off-the-wire/exaworks-provides-access-to-community-sustained-hardened-and-tested-components-to-create-award-winning-hpc-workflows/
+    image: https://www.hpcwire.com/wp-content/uploads/2023/07/exaworks_figure1.png
+
+  - title: "ExaWorks: Tested Component for HPC Workflows"
+    venue: insideHPC
+    date: July 2023
+    link: https://insidehpc.com/2023/07/exaworks-tested-component-for-hpc-workflows/
+    image: https://insidehpc.com/wp-content/uploads/2023/07/ExaWorks-image-4.png
+
+  - title: DOE ASCR Selects Seed Collaborations for Software Sustainability
+    venue: HPCwire
+    date: April 2023
+    link: https://www.hpcwire.com/off-the-wire/doe-ascr-selects-seed-collaborations-for-software-sustainability/
+    image: https://www.hpcwire.com/wp-content/uploads/2022/12/doe-new-600x254.png
+
+  - title: DOE/ASCR Picks 3 National Labs for HPC and Post-Exascale Software Sustainability
+    venue: insideHPC
+    date: April 2023
+    link: https://insidehpc.com/2023/04/doe-ascr-picks-3-national-labs-for-hpc-and-post-exascale-software-sustainability/
+    image: https://insidehpc.com/wp-content/uploads/2023/03/DOE-Office-of-Science-logo-1022.jpg
+
+  - title: "HPC Career Notes: August 2022 Edition"
+    venue: HPCwire
+    date: August 2022
+    link: https://www.hpcwire.com/2022/08/05/hpc-career-notes-august-2022-edition/
+    image: https://www.hpcwire.com/wp-content/uploads/2022/07/ORNL-Da-Silva-300x169.jpg
+
+  - title: "Pioneering Frontier: Automating Exascale"
+    venue: OLCF News
+    date: July 2022
+    link: https://www.olcf.ornl.gov/2022/07/25/pioneering-frontier-automating-at-exascale/
+    image: https://www.olcf.ornl.gov/wp-content/uploads/RFdaSilva_Summit-2048x1365.jpg
+
+  - title: "ORNL's Rafael Ferreira da Silva Elevated to IEEE Senior Member"
+    venue: HPCwire
+    date: July 2022
+    link: https://www.hpcwire.com/off-the-wire/ornls-rafael-ferreira-da-silva-elevated-to-ieee-senior-member/
+    image: https://www.hpcwire.com/wp-content/uploads/2022/07/ORNL-Da-Silva.jpg
+
+  - title: "ORNL's Rafael Ferreira da Silva Elevated to IEEE Senior Member"
+    venue: insideHPC
+    date: July 2022
+    link: https://insidehpc.com/2022/07/ornls-rafael-ferreira-da-silva-elevated-to-ieee-senior-member/
+    image: https://insidehpc.com/wp-content/uploads/2020/08/Oak-Ridge-logo.png
+
+  - title: Rafael Ferreira da Silva Elevated to IEEE Senior Member
+    venue: OLCF News
+    date: July 2022
+    link: https://www.olcf.ornl.gov/2022/07/25/rafael-ferreira-da-silva-elevated-to-ieee-senior-member/
+    image: https://www.olcf.ornl.gov/wp-content/uploads/FdaSilvaIEEE-scaled.jpg
+
+  - title: At ISC, the Green500 Witnesses a New Frontier in Efficient Computing
+    venue: HPCwire
+    date: June 2022
+    link: https://www.hpcwire.com/2022/06/08/at-isc-the-green500-witnesses-a-new-frontier-in-efficient-computing/
+    image: https://www.hpcwire.com/wp-content/uploads/2022/06/isc-header-2.fw_-675x380.png
+
+  - title: ORNL and UChicago Launch Workflows Community Platform
+    venue: insideHPC
+    date: March 2022
+    link: https://insidehpc.com/2022/03/ornl-and-uchicago-launch-workflows-community-platform/
+    image: https://www.hpcwire.com/wp-content/uploads/2022/03/Workflows-Community-Initiative_logo.png
+
+  - title: ORNL and UChicago Lead the Launch of Unique Workflows Community Platform
+    venue: HPCwire
+    date: March 2022
+    link: https://www.hpcwire.com/off-the-wire/ornl-and-uchicago-lead-the-launch-of-unique-workflows-community-platform/
+    image: https://www.hpcwire.com/wp-content/uploads/2022/03/Workflows-Community-Initiative_logo.png
+
+  - title: International Volunteer Team of Researchers Launch Groundbreaking Workflows Community Platform
+    venue: OLCF News
+    date: March 2022
+    link: https://www.olcf.ornl.gov/2022/03/23/international-volunteer-team-of-researchers-launch-groundbreaking-workflows-community-platform/
+    image: https://www.olcf.ornl.gov/wp-content/uploads/2022/03/Screen-Shot-2022-03-23-at-12.39.07-PM.png
+
+  - title: Future Generation Computer Systems 2021 Best Paper Award
+    venue: Future Generation Computer Systems Awards
+    date: October 2021
+    link: https://www.sciencedirect.com/journal/future-generation-computer-systems/about/awards
+    image: https://ars.els-cdn.com/content/image/X0167739X.jpg
+
+  - title: "What's New in HPC Research: JUWELS, MEEP, WRENCH & More"
+    venue: HPCwire
+    date: June 2021
+    link: https://www.hpcwire.com/2021/06/07/whats-new-in-hpc-research-juwels-meep-wrench-more/
+    image: https://www.hpcwire.com/wp-content/uploads/2021/06/millions-of-atoms-675x380.png
+
+  - title: "ISI Researchers to 'Model the World' with New DARPA Award"
+    venue: USC Viterbi News
+    date: March 2018
+    link: https://viterbischool.usc.edu/news/2018/03/modeling-impact-climate-human-activities-water-food/
+    image: https://viterbischool.usc.edu/wp-content/uploads/2018/02/Mekong.jpg
+
+  - title: Computer Scientist wins NSF Grant
+    venue: UDaily
+    date: December 2017
+    link: https://www.udel.edu/udaily/2017/december/michela-taufer-NSF-analytics-molecular-dynamics/
+    image: https://www.udel.edu/udaily/2017/december/michela-taufer-NSF-analytics-molecular-dynamics/_jcr_content/udaily_Image.coreimg.jpeg/1513029816546/michela-taufer-nsf-grant-2017-600x315.jpeg
+
+  - title: Nobel Prize-winning discovery on gravitational waves came about with contributions from USC scientists
+    venue: USC News
+    date: October 2017
+    link: https://news.usc.edu/129550/nobel-prize-winning-discovery-on-gravitational-waves-came-about-with-contributions-from-usc-scientists/
+    image: https://today.usc.edu/wp-content/uploads/2017/10/gravitational-waves-1800x1200-1-1280x720.jpg
+
+  - title: ISI Publication Recognition Awards Celebrate Stellar Research
+    venue: USC Viterbi News
+    date: August 2017
+    link: https://viterbischool.usc.edu/news/2017/08/isi-publication-recognition-awards-celebrate-stellar-research/
+    image: https://viterbischool.usc.edu/wp-content/uploads/2021/06/publications-award.jpg
+
+  - title: UH Mãnoa Professor Casanova receives $499,000 NSF grant
+    venue: University of Hawai'i News
+    date: September 2016
+    link: https://www.hawaii.edu/news/2016/09/28/uh-manoa-professor-casanova-receives-499000-nsf-grant/
+    image: https://www.hawaii.edu/news/wp-content/uploads/2017/08/seal-name@2x.png

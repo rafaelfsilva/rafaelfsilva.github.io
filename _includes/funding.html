@@ -1,21 +1,21 @@
 {% assign funding_total = 0 %}
 {% assign funding_count = 0 %}
-{% for rg in site.data.funding.doe %}
+{% for rg in site.data.rafael.funding.doe %}
 {% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
 {% assign funding_total = funding_total | plus: amount_clean %}
 {% assign funding_count = funding_count | plus: 1 %}
 {% endfor %}
-{% for rg in site.data.funding.nsf %}
+{% for rg in site.data.rafael.funding.nsf %}
 {% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
 {% assign funding_total = funding_total | plus: amount_clean %}
 {% assign funding_count = funding_count | plus: 1 %}
 {% endfor %}
-{% for rg in site.data.funding.darpa %}
+{% for rg in site.data.rafael.funding.darpa %}
 {% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
 {% assign funding_total = funding_total | plus: amount_clean %}
 {% assign funding_count = funding_count | plus: 1 %}
 {% endfor %}
-{% for rg in site.data.funding.international %}
+{% for rg in site.data.rafael.funding.international %}
 {% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
 {% assign funding_total = funding_total | plus: amount_clean %}
 {% assign funding_count = funding_count | plus: 1 %}
@@ -53,10 +53,10 @@
                         <h3>U.S. Department of Energy (DOE)</h3>
                         <p class="funding-kicker">Major federally funded initiatives and collaborative programs.</p>
                     </div>
-                    <span class="funding-count">{{ site.data.funding.doe | size }} awards</span>
+                    <span class="funding-count">{{ site.data.rafael.funding.doe | size }} awards</span>
                 </div>
                 <div class="funding-list">
-                    {% for n in site.data.funding.doe %}
+                    {% for n in site.data.rafael.funding.doe %}
                     <div class="funding-item">
                         <div class="funding-period">{{ n.period }}</div>
                         <div class="funding-body">
@@ -91,10 +91,10 @@
                         <h3>U.S. National Science Foundation (NSF)</h3>
                         <p class="funding-kicker">Competitive awards supporting foundational research.</p>
                     </div>
-                    <span class="funding-count">{{ site.data.funding.nsf | size }} awards</span>
+                    <span class="funding-count">{{ site.data.rafael.funding.nsf | size }} awards</span>
                 </div>
                 <div class="funding-list">
-                    {% for n in site.data.funding.nsf %}
+                    {% for n in site.data.rafael.funding.nsf %}
                     <div class="funding-item">
                         <div class="funding-period">{{ n.period }}</div>
                         <div class="funding-body">
@@ -126,10 +126,10 @@
                         <h3>U.S. Defense Advanced Research Projects Agency (DARPA)</h3>
                         <p class="funding-kicker">High-impact, mission-driven research programs.</p>
                     </div>
-                    <span class="funding-count">{{ site.data.funding.darpa | size }} awards</span>
+                    <span class="funding-count">{{ site.data.rafael.funding.darpa | size }} awards</span>
                 </div>
                 <div class="funding-list">
-                    {% for n in site.data.funding.darpa %}
+                    {% for n in site.data.rafael.funding.darpa %}
                     <div class="funding-item">
                         <div class="funding-period">{{ n.period }}</div>
                         <div class="funding-body">
@@ -161,10 +161,10 @@
                         <h3>International Funding / Collaborations / Others</h3>
                         <p class="funding-kicker">Global partnerships and cross-institutional initiatives.</p>
                     </div>
-                    <span class="funding-count">{{ site.data.funding.international | size }} awards</span>
+                    <span class="funding-count">{{ site.data.rafael.funding.international | size }} awards</span>
                 </div>
                 <div class="funding-list">
-                    {% for n in site.data.funding.international %}
+                    {% for n in site.data.rafael.funding.international %}
                     <div class="funding-item">
                         <div class="funding-period">{{ n.period }}</div>
                         <div class="funding-body">
