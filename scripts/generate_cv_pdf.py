@@ -903,9 +903,9 @@ class CVGenerator:
                 role = item.get('role', '')
                 period = item.get('period', '')
 
-                self.story.append(Paragraph(
-                    f"{role}, {org} ({period})",
-                    self.styles['CVBody']
+                self.story.append(self._two_column_row(
+                    Paragraph(f"{role}, {org}", self.styles['CVBody']),
+                    Paragraph(period, self.styles['EntryMeta'])
                 ))
             self.story.append(Spacer(1, 0.06*inch))
 
