@@ -193,19 +193,25 @@ research_projects:
     url: https://workflows.community
     icon: https://workflows.community/favicon.ico
     count: 290+
-    description: A thriving network of international workflow users, developers, and researchers
+    description: Aligns users, developers, and facilities to share resources, surface challenges, and accelerate community-driven workflow innovation
+    academic_description: Aligns users, developers, and facilities to share resources, surface challenges, and accelerate community-driven workflow innovation
+    industry_description: Connects labs, platforms, and partners to accelerate workflow adoption, reduce duplication, and drive shared roadmaps for scalable automation
 
   - name: WfCommons
     url: https://wfcommons.org
     icon: https://wfcommons.org/favicon.ico
     count: 54
-    description: Research articles using the WfCommons Framework
+    description: Open-source benchmark ecosystem for realistic workflow traces and generators to compare scheduling, performance, and resilience at scale
+    academic_description: Open-source benchmark ecosystem for realistic workflow traces and generators to compare scheduling, performance, and resilience at scale
+    industry_description: Benchmark suite for stress-testing workflow platforms with realistic traces, enabling faster evaluation of performance, reliability, and cost
 
   - name: WRENCH
     url: https://wrench-project.org
     icon: https://wrench-project.org/favicon.ico
     count: 40
-    description: Research articles using the WRENCH Cyberinfrastructure Simulation Workbench
+    description: Simulation workbench on SimGrid that enables fast, validated what-if studies of workflow runtimes before deployment
+    academic_description: Simulation workbench on SimGrid that enables fast, validated what-if studies of workflow runtimes before deployment
+    industry_description: Simulation platform to validate workflow architectures, compare strategies, and de-risk large-scale deployments before rollout
 
 # ==============================================================================
 # FUNDING & GRANTS
@@ -467,6 +473,18 @@ professional_activities:
       role: Guest Editor
       period: 2018
       special_issue: Workflows in Support of Large-Scale Science
+
+  advisory_boards:
+    - name: Future Generation Computer Systems
+      type: Journal
+      period: 2026-present
+      note: Impact Factor 6.1
+      url: https://www.sciencedirect.com/journal/future-generation-computer-systems/about/editorial-board
+
+    - name: "PESO: Partnering for Scientific-Software Ecosystem Opportunities"
+      type: Project
+      period: 2026-present
+      url: https://pesoproject.org/
 
   journal_reviewer:
     - IEEE Transactions on Parallel and Distributed Systems (2014-2022)

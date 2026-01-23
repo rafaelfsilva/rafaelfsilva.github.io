@@ -27,6 +27,7 @@
             <a href="#activities-chair">Chair Roles</a>
             <a href="#activities-pc">Program Committees</a>
             <a href="#activities-funding">Funding Reviewer</a>
+            <a href="#activities-advisory">Advisory Boards</a>
             <a href="#activities-steering">Steering Committees</a>
             <a href="#activities-associations">Associations</a>
         </nav>
@@ -121,6 +122,28 @@
                                 {% for e in n.entries %}
                                 <span class="activity-year">{{ e.year }}</span> {{ e.description }}<br />
                                 {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+
+            <section class="activity-section" id="activities-advisory">
+                <div class="activity-header">
+                    <h3>Advisory Boards</h3>
+                    <p class="activity-kicker">Strategic guidance for journals and projects.</p>
+                </div>
+                <div class="activity-list">
+                    {% for n in site.data.rafael.professional_activities.advisory_boards %}
+                    <div class="activity-item">
+                        <div class="activity-tag">{{ n.type }}</div>
+                        <div class="activity-body">
+                            <div class="activity-title">
+                                <a href="{{ n.url }}" target="_blank">{{ n.name }}</a>
+                            </div>
+                            <div class="activity-meta">
+                                <span class="activity-year">{{ n.period }}</span>{% if n.note %} · {{ n.note }}{% endif %}
                             </div>
                         </div>
                     </div>

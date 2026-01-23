@@ -886,25 +886,48 @@ class CVGenerator:
 
     def _add_professional_activities(self):
         """Add all professional activities."""
-        if not self.activities:
+        activities = self.data.get('professional_activities', {})
+
+        if not self.activities and not activities:
             return
 
         self._add_section('Professional Activities')
 
-        # Steering Committees
-        sc_data = self.activities.get('sc', [])
-        if sc_data:
+        # Steering Committees (from rafael.yml)
+        steering_committees = activities.get('steering_committees', [])
+        if steering_committees:
             self.story.append(Paragraph('<b>Steering Committees</b>',
                                        self.styles['SubsectionHeading']))
-            for conf in sc_data:
-                conf_name = conf.get('conference', '')
-                for entry in conf.get('entries', []):
-                    role = entry.get('role', '')
-                    year = entry.get('year', '')
-                    self.story.append(Paragraph(
-                        f"{role}, {conf_name} ({year})",
-                        self.styles['CVBody']
-                    ))
+            for item in steering_committees:
+                org = item.get('organization', '')
+                role = item.get('role', '')
+                period = item.get('period', '')
+
+                self.story.append(Paragraph(
+                    f"{role}, {org} ({period})",
+                    self.styles['CVBody']
+                ))
+            self.story.append(Spacer(1, 0.06*inch))
+
+        # Advisory Boards (from rafael.yml)
+        advisory_boards = activities.get('advisory_boards', [])
+        if advisory_boards:
+            self.story.append(Paragraph('<b>Advisory Boards</b>',
+                                       self.styles['SubsectionHeading']))
+            for item in advisory_boards:
+                name = item.get('name', '')
+                board_type = item.get('type', '')
+                period = item.get('period', '')
+                note = item.get('note', '')
+
+                text = f"{name} ({board_type})"
+                if note:
+                    text += f" — {note}"
+
+                self.story.append(self._two_column_row(
+                    Paragraph(text, self.styles['CVBody']),
+                    Paragraph(period, self.styles['EntryMeta'])
+                ))
             self.story.append(Spacer(1, 0.06*inch))
 
         # Conference Chair Roles
@@ -951,8 +974,7 @@ class CVGenerator:
                 self.story.append(Paragraph(text, self.styles['CVBody']))
             self.story.append(Spacer(1, 0.06*inch))
 
-        # Editorial positions (from main data)
-        activities = self.data.get('professional_activities', {})
+        # Editorial positions
         editorial = activities.get('editorial', [])
         if editorial:
             self.story.append(Paragraph('<b>Editorial Positions</b>',
