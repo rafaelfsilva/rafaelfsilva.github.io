@@ -731,6 +731,10 @@ students:
 # AWARDS & HONORS
 # ==============================================================================
 awards:
+  - title: "2025 Outstanding Editors Awards"
+    year: 2025
+    paper: Future Generation Computer Systems
+  
   - title: Best Short Paper Award
     event: PEARC '25 Practice and Experience in Advanced Research Computing 2025
     year: 2025
