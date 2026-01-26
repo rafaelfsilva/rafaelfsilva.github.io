@@ -200,7 +200,7 @@ research_projects:
   - name: WfCommons
     url: https://wfcommons.org
     icon: https://wfcommons.org/favicon.ico
-    count: 55
+    count: 56
     description: Open-source benchmark ecosystem for realistic workflow traces and generators to compare scheduling, performance, and resilience at scale
     academic_description: Open-source benchmark ecosystem for realistic workflow traces and generators to compare scheduling, performance, and resilience at scale
     industry_description: Benchmark suite for stress-testing workflow platforms with realistic traces, enabling faster evaluation of performance, reliability, and cost
