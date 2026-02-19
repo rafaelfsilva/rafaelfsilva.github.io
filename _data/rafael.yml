@@ -50,13 +50,13 @@ personal:
 
   # About page content sections
   intro: |
-    I am a Senior Research Scientist and Section Head (Interim) for <a href="https://www.ornl.gov/section/data-ai" target="_blank">Data and AI Systems</a> research in the <a href="https://www.ornl.gov/division/csmd" target="_blank">Computer Science and Mathematics</a> division at <a href="https://www.ornl.gov/" target="_blank">Oak Ridge National Laboratory</a> (ORNL), leading research and development in AI, data and agentic workflows, and advanced computing systems.
+    I am a Senior Research Scientist and Section Head (Interim) for <a href="https://www.ornl.gov/section/data-ai" target="_blank">Data and AI Systems</a> research in the <a href="https://www.ornl.gov/division/csmd" target="_blank">Computer Science and Mathematics</a> division at <a href="https://www.ornl.gov/" target="_blank">Oak Ridge National Laboratory</a> (ORNL), leading research and development in AI, data and agentic workflows, and advanced computing systems. I am also leading a task for OLCF's next supercomputer (<a href="https://www.olcf.ornl.gov/discovery/" target="_blank">Discovery</a>) focused on developing and evaluating workflow benchmarks.
 
   about_sections:
     - title: Leadership & Strategic Programs
       paragraphs:
         - |
-          In this section head role, I provide strategic and operational leadership for the organization, which includes 45+ researchers across five groups specializing in AI/ML, visualization, data workflows, engineering, and performance systems. I also lead program development and proposal efforts, securing <a href="/funding">$65M+ in funded awards</a> across 21 competitively reviewed proposals, advancing work in autonomous laboratories, scientific workflow systems, cyberinfrastructure, and AI-driven data analytics.
+          In this section head role, I provide strategic and operational leadership for the organization, which includes 45+ researchers across five groups specializing in AI/ML, visualization, data workflows, engineering, and performance systems. I also lead program development and proposal efforts, securing <a href="/funding">$65M+ in funded awards</a> across 21 competitively reviewed proposals, advancing work in autonomous laboratories, scientific workflow systems, cyberinfrastructure, and AI-driven data analytics. Additionally, I lead a task for OLCF's next supercomputer (<a href="https://www.olcf.ornl.gov/discovery/" target="_blank">Discovery</a>) focused on developing and evaluating workflow benchmarks to ensure day-one readiness for complex scientific workflows.
         - |
           I am a co-PI for the <a href="https://www.energy.gov/articles/energy-department-advances-investments-ai-science" target="_blank">Transformational AI model consortium</a> (ModCon), a cornerstone of the U.S. DOE <a href="https://genesis.energy.gov/" target="_blank">Genesis Mission</a>'s AI models and data efforts that will build and deploy self-improving AI models to advance science, engineering, and energy missions. I am also the PI of a DOE-funded project on robotics, automated laboratories, and autonomous control of large-scale experiments in support of Genesis, leveraging embodied AI, advanced automation, and robotics to transform laboratory environments and experimental workflows.
 
@@ -181,6 +181,7 @@ research:
     - $65M+ in funded awards across 21 competitively reviewed proposals
     - Co-PI for Transformational AI model consortium (ModCon) - DOE Genesis Mission
     - PI for robotics and automated laboratories project supporting Genesis
+    - Task Lead for OLCF's Discovery supercomputer workflow benchmarks
     - Founder and Executive Director of Workflows Community Initiative
     - Co-Founder of Autonomous Science Network
     - Former Group Leader of Workflow and Ecosystem Services (WES) at NCCS

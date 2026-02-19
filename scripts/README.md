@@ -2,7 +2,7 @@
 
 This directory contains scripts for generating comprehensive CV documents from the centralized data file (`_data/rafael.yml`), including all publications from BibTeX and professional activities.
 
-## Generate Complete PDF CV
+## Generate Complete CV (PDF and DOCX)
 
 ### Prerequisites
 
@@ -16,7 +16,7 @@ pip install -r scripts/requirements.txt
 
 Or install individually:
 ```bash
-pip install reportlab pyyaml bibtexparser
+pip install reportlab pyyaml bibtexparser pylatexenc python-docx
 ```
 
 ### Usage
@@ -26,15 +26,16 @@ source .venv/bin/activate  # Activate virtual environment if needed
 python scripts/generate_cv_pdf.py
 ```
 
-This will generate a comprehensive PDF CV with:
+This will generate comprehensive CV documents in both **PDF** and **DOCX** formats with:
 - **Executive Summary** with key metrics (funding, publications, awards)
 - **Modern, recruiter-friendly layout** highlighting major accomplishments first
 - **All data from YAML file** (`_data/rafael.yml`)
 - **All publications** from BibTeX file (`_bibliography/references.bib`)
 - **All professional activities** from activities YAML files (`_data/activities_*.yml`)
 - **Professional formatting** optimized for impact and readability
-- **Current date in filename** (e.g., `RafaelFerreiraDaSilva-cv-2026-01.pdf`)
 - **Output location**: `files/cv/`
+  - `RafaelFerreiraDaSilva-cv.pdf` - PDF format
+  - `RafaelFerreiraDaSilva-cv.docx` - Microsoft Word format
 
 ### What's Included
 
@@ -79,24 +80,34 @@ Example output:
 ```
 Generating comprehensive CV from _data/rafael.yml...
 Loading publications and activities data...
-Loaded 150 publications from BibTeX file
+Loaded 156 publications from BibTeX file
 Building CV sections...
 Generating PDF...
 ✓ Comprehensive CV generated successfully
 
-✓ CV Location: files/cv/RafaelFerreiraDaSilva-cv-2025-01.pdf
-✓ File size: 285.3 KB
-✓ Included 150 publications
+✓ PDF CV Location: files/cv/RafaelFerreiraDaSilva-cv.pdf
+✓ PDF File size: 62.5 KB
+✓ Included 156 publications
 ✓ Included professional activities from 7 categories
+
+Generating DOCX CV...
+Building DOCX CV sections...
+Saving DOCX...
+DOCX CV generated successfully
+
+✓ DOCX CV Location: files/cv/RafaelFerreiraDaSilva-cv.docx
+✓ DOCX File size: 61.5 KB
+✓ Included 156 publications
 ```
 
 ### Customization
 
 To modify the CV layout or content:
 1. Edit `generate_cv_pdf.py`
-2. Modify the `CVGenerator` class methods
-3. Adjust styles in `_create_styles()` method
-4. Change colors, fonts, spacing, or sections as needed
+2. Modify the `CVGenerator` class methods for PDF output
+3. Modify the `CVDocxGenerator` class methods for DOCX output
+4. Adjust styles in `_create_styles()` (PDF) or `_setup_styles()` (DOCX) methods
+5. Change colors, fonts, spacing, or sections as needed
 
 ### Color Scheme
 
@@ -128,8 +139,10 @@ The CV uses a professional blue/gray color scheme:
 ### Dependencies
 
 - **reportlab**: High-quality PDF generation
+- **python-docx**: Microsoft Word DOCX generation
 - **pyyaml**: YAML file parsing
 - **bibtexparser**: BibTeX bibliography parsing
+- **pylatexenc**: LaTeX accent conversion for proper author name rendering
 
 ### Troubleshooting
 
@@ -137,6 +150,18 @@ If bibtexparser is not installed, the script will run but skip the publications 
 ```
 Warning: bibtexparser not installed. Publications will be skipped.
 Install with: pip install bibtexparser
+```
+
+If python-docx is not installed, the script will generate the PDF but skip DOCX generation:
+```
+Warning: python-docx not installed. DOCX generation will be skipped.
+Install with: pip install python-docx
+```
+
+If pylatexenc is not installed, LaTeX accents in author names may not render correctly:
+```
+Warning: pylatexenc not installed. LaTeX accents may not render correctly.
+Install with: pip install pylatexenc
 ```
 
 ### Future Enhancements
@@ -147,3 +172,4 @@ Possible additions:
 - Configurable templates/themes
 - Citation count integration
 - h-index display
+- Selective section generation via command-line arguments
