@@ -209,7 +209,7 @@ research_projects:
   - name: WRENCH
     url: https://wrench-project.org
     icon: https://wrench-project.org/favicon.ico
-    count: 40
+    count: 41
     description: Simulation workbench on SimGrid that enables fast, validated what-if studies of workflow runtimes before deployment
     academic_description: Simulation workbench on SimGrid that enables fast, validated what-if studies of workflow runtimes before deployment
     industry_description: Simulation platform to validate workflow architectures, compare strategies, and de-risk large-scale deployments before rollout
