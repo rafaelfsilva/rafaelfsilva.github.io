@@ -39,8 +39,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r scripts/requirements.txt
-      - name: Fetch Google Scholar metrics
-        run: python scripts/fetch_scholar_metrics.py
       - name: Generate CV PDF
         run: python scripts/generate_cv_pdf.py
       - name: Setup Pages
