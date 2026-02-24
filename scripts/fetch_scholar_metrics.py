@@ -1,0 +1,80 @@
+#!/usr/bin/env python3
+"""
+Fetch Google Scholar metrics (citations, h-index) and save to YAML for Jekyll.
+"""
+
+import os
+import re
+import yaml
+from datetime import datetime
+from scholarly import scholarly
+
+
+def get_author_id_from_url(url: str) -> str:
+    """Extract author ID from Google Scholar URL."""
+    match = re.search(r'user=([^&]+)', url)
+    if match:
+        return match.group(1)
+    raise ValueError(f"Could not extract author ID from URL: {url}")
+
+
+def fetch_scholar_metrics(author_id: str) -> dict:
+    """Fetch citation metrics from Google Scholar."""
+    print(f"Fetching metrics for author ID: {author_id}")
+
+    # Search for the author by ID
+    author = scholarly.search_author_id(author_id)
+
+    # Fill in the author details to get citation metrics
+    author = scholarly.fill(author, sections=['basics', 'indices'])
+
+    citations = author.get('citedby', 0)
+    h_index = author.get('hindex', 0)
+    i10_index = author.get('i10index', 0)
+
+    print(f"  Citations: {citations}")
+    print(f"  h-index: {h_index}")
+    print(f"  i10-index: {i10_index}")
+
+    return {
+        'citations': citations,
+        'h_index': h_index,
+        'i10_index': i10_index,
+        'last_updated': datetime.now().strftime('%Y-%m-%d')
+    }
+
+
+def main():
+    # Determine paths
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)
+    rafael_yml_path = os.path.join(project_root, '_data', 'rafael.yml')
+    output_path = os.path.join(project_root, '_data', 'scholar_metrics.yml')
+
+    # Load rafael.yml to get Google Scholar URL
+    print(f"Reading {rafael_yml_path}")
+    with open(rafael_yml_path, 'r', encoding='utf-8') as f:
+        rafael_data = yaml.safe_load(f)
+
+    scholar_url = rafael_data.get('social_media', {}).get('google_scholar')
+    if not scholar_url:
+        raise ValueError("Google Scholar URL not found in rafael.yml")
+
+    print(f"Google Scholar URL: {scholar_url}")
+
+    # Extract author ID and fetch metrics
+    author_id = get_author_id_from_url(scholar_url)
+    metrics = fetch_scholar_metrics(author_id)
+
+    # Save metrics to YAML
+    print(f"Writing metrics to {output_path}")
+    with open(output_path, 'w', encoding='utf-8') as f:
+        f.write("# Google Scholar metrics - auto-generated, do not edit manually\n")
+        f.write(f"# Last updated: {metrics['last_updated']}\n\n")
+        yaml.dump(metrics, f, default_flow_style=False)
+
+    print("Done!")
+
+
+if __name__ == '__main__':
+    main()
