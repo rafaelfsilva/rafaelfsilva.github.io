@@ -193,7 +193,7 @@ research_projects:
   - name: Workflows Community Initiative
     url: https://workflows.community
     icon: https://workflows.community/favicon.ico
-    count: 290+
+    count: 300+
     description: Aligns users, developers, and facilities to share resources, surface challenges, and accelerate community-driven workflow innovation
     academic_description: Aligns users, developers, and facilities to share resources, surface challenges, and accelerate community-driven workflow innovation
     industry_description: Connects labs, platforms, and partners to accelerate workflow adoption, reduce duplication, and drive shared roadmaps for scalable automation
