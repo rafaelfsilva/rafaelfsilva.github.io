@@ -49,6 +49,22 @@
       location: Minneapolis, USA
       link: http://www.hpdc.org/2022/
 
+- conference: IEEE eScience Conference
+  series: eScience
+  entries:
+    - year: 2026
+      edition: 22nd
+      location: Naples, Italy
+      link: https://www.escience-conference.org/2026/
+    - year: 2025
+      edition: 21th
+      location: Chicago, IL, USA
+      link: https://www.escience-conference.org/2025/
+    - year: 2024
+      edition: 20th
+      location: Osaka, Japan
+      link: https://www.escience-conference.org/2024/
+      
 - conference: IEEE International Conference on Cluster Computing
   series: CLUSTER
   entries:
@@ -99,36 +115,6 @@
       location: Shenzhen, China
       link: http://cloud.siat.ac.cn/ccgrid2015/
 
-- conference: Platform for Advanced Scientific Computing
-  series: PASC
-  entries:
-    - year: 2025
-      location: ACM Student Research Competition, Brugg, Switzerland
-      link: https://pasc25.pasc-conference.org/
-    - year: 2022
-      location: Basel, Switzerland
-      link: https://pasc22.pasc-conference.org/
-
-- conference: ACM/SIGAPP Symposium On Applied Computing
-  series: SAC
-  entries:
-    - year: 2025
-      edition: 40th
-      location: Track On Cloud Continuum, Sicily, Italy
-      link: https://www.sigapp.org/sac/sac2025/
-
-- conference: IEEE eScience Conference
-  series: eScience
-  entries:
-    - year: 2025
-      edition: 21th
-      location: Chicago, IL, USA
-      link: https://www.escience-conference.org/2025/
-    - year: 2024
-      edition: 20th
-      location: Osaka, Japan
-      link: https://www.escience-conference.org/2024/
-
 - conference: IEEE International Symposium on Computer Architecture and High Performance Computing
   series: SBAC-PAD
   entries:
@@ -164,6 +150,24 @@
       edition: 28th
       location: Los Angeles, USA
       link: http://www2.sbc.org.br/sbac/2016/
+
+- conference: Platform for Advanced Scientific Computing
+  series: PASC
+  entries:
+    - year: 2025
+      location: ACM Student Research Competition, Brugg, Switzerland
+      link: https://pasc25.pasc-conference.org/
+    - year: 2022
+      location: Basel, Switzerland
+      link: https://pasc22.pasc-conference.org/
+
+- conference: ACM/SIGAPP Symposium On Applied Computing
+  series: SAC
+  entries:
+    - year: 2025
+      edition: 40th
+      location: Track On Cloud Continuum, Sicily, Italy
+      link: https://www.sigapp.org/sac/sac2025/
 
 - conference: International European Conference on Parallel and Distributed Computing
   series: Euro-Par
