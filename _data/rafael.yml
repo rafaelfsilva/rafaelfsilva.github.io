@@ -1,6 +1,4 @@
 # Rafael Ferreira da Silva - Complete CV and Website Data
-# Generated from CV and website content analysis
-# Last updated: 2025-01-09
 
 # ==============================================================================
 # PERSONAL INFORMATION
@@ -512,6 +510,11 @@ professional_activities:
 invited_talks:
   - year: 2026
     entries:
+      - title: "Evolving Scientific Workflows Toward Autonomous Discovery Through Agentic AI and Multi-Agent Coordination"
+        event: SOS-28 Workshop
+        location: Santa Barbara, CA, USA
+        link: https://sos-28.highspeedcomputing.org/
+        
       - title: "Enabling quantum-HPC convergence for future scientific workflows"
         event: Journées Informatique Quantique 2026
         location: Bordeaux, France
