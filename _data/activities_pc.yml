@@ -68,6 +68,9 @@
 - conference: IEEE International Conference on Cluster Computing
   series: CLUSTER
   entries:
+    - year: 2026
+      location: Alexandria, VA, USA
+      link: https://clustercomp.org/2026/
     - year: 2025
       location: Edinburgh, Scotland, UK
       link: https://clustercomp.org/2025/
