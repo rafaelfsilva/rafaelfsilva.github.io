@@ -56,6 +56,11 @@ except ImportError:
 class CVGenerator:
     """Generate a comprehensive PDF CV from YAML data."""
 
+    # Page layout constants
+    PAGE_WIDTH = letter[0]  # 8.5 inches
+    MARGIN = 0.65 * inch
+    CONTENT_WIDTH = PAGE_WIDTH - (2 * MARGIN)  # Available width for content
+
     def __init__(self, yaml_path, project_root):
         """Initialize the CV generator with data from YAML file."""
         with open(yaml_path, 'r') as f:
@@ -252,6 +257,32 @@ class CVGenerator:
             fontName='Helvetica'
         ))
 
+        # Sub-entry style (indented, with bullet)
+        styles.add(ParagraphStyle(
+            name='SubEntry',
+            parent=styles['Normal'],
+            fontSize=9.5,
+            textColor=self.palette['ink'],
+            spaceAfter=2,
+            fontName='Helvetica',
+            leading=12,
+            leftIndent=0.15*inch,
+            bulletIndent=0,
+            bulletFontSize=9.5
+        ))
+
+        # Sub-entry detail style (further indented)
+        styles.add(ParagraphStyle(
+            name='SubEntryDetail',
+            parent=styles['Normal'],
+            fontSize=8.5,
+            textColor=self.palette['muted'],
+            spaceAfter=4,
+            fontName='Helvetica',
+            leading=10,
+            leftIndent=0.15*inch
+        ))
+
         # Publication style
         styles.add(ParagraphStyle(
             name='Publication',
@@ -349,9 +380,13 @@ class CVGenerator:
         if not right_column:
             right_column = [Paragraph('', self.styles['ContactInfo'])]
 
+        # Use content width for proper alignment
+        right_col_width = 2.2 * inch
+        left_col_width = self.CONTENT_WIDTH - right_col_width
+
         header_table = Table(
             [[left_column, right_column]],
-            colWidths=[4.6*inch, 2.3*inch]
+            colWidths=[left_col_width, right_col_width]
         )
         header_table.setStyle(TableStyle([
             ('VALIGN', (0, 0), (-1, -1), 'TOP'),
@@ -359,7 +394,8 @@ class CVGenerator:
             ('RIGHTPADDING', (0, 0), (-1, -1), 0),
             ('TOPPADDING', (0, 0), (-1, -1), 0),
             ('BOTTOMPADDING', (0, 0), (-1, -1), 0),
-            ('LINEBELOW', (0, 0), (-1, -1), 1.2, self.palette['accent'])
+            ('LINEBELOW', (0, 0), (-1, -1), 1.2, self.palette['accent']),
+            ('ALIGN', (1, 0), (1, -1), 'RIGHT')
         ]))
 
         self.story.append(header_table)
@@ -512,26 +548,44 @@ class CVGenerator:
     def _add_section(self, title):
         """Add a section heading."""
         self.story.append(Paragraph(title.upper(), self.styles['SectionHeading']))
-        self.story.append(HRFlowable(width="100%", thickness=0.6,
+        self.story.append(HRFlowable(width=self.CONTENT_WIDTH, thickness=0.6,
                                      color=self.palette['border']))
         self.story.append(Spacer(1, 0.04*inch))
 
-    def _two_column_row(self, left_flowables, right_flowables, col_widths=None):
-        """Create a two-column row with aligned metadata."""
+    def _two_column_row(self, left_flowables, right_flowables, col_widths=None, left_indent=0):
+        """Create a two-column row with aligned metadata.
+
+        Args:
+            left_flowables: Content for the left column
+            right_flowables: Content for the right column
+            col_widths: Optional custom column widths
+            left_indent: Optional left indentation for sub-entries
+        """
         if not isinstance(left_flowables, list):
             left_flowables = [left_flowables]
         if not isinstance(right_flowables, list):
             right_flowables = [right_flowables]
         if not right_flowables:
             right_flowables = [Spacer(1, 0)]
+
+        # Calculate column widths based on content width minus any indent
+        available_width = self.CONTENT_WIDTH - left_indent
+        right_col_width = 1.4 * inch  # Fixed width for dates/metadata
+        left_col_width = available_width - right_col_width
+
+        if col_widths:
+            left_col_width, right_col_width = col_widths
+
         table = Table([[left_flowables, right_flowables]],
-                      colWidths=col_widths or [4.9*inch, 2.0*inch])
+                      colWidths=[left_col_width, right_col_width])
         table.setStyle(TableStyle([
             ('VALIGN', (0, 0), (-1, -1), 'TOP'),
-            ('LEFTPADDING', (0, 0), (-1, -1), 0),
+            ('LEFTPADDING', (0, 0), (0, -1), left_indent),
+            ('LEFTPADDING', (1, 0), (-1, -1), 0),
             ('RIGHTPADDING', (0, 0), (-1, -1), 0),
             ('TOPPADDING', (0, 0), (-1, -1), 0),
-            ('BOTTOMPADDING', (0, 0), (-1, -1), 2)
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 2),
+            ('ALIGN', (1, 0), (1, -1), 'RIGHT')
         ]))
         return table
 
@@ -541,6 +595,9 @@ class CVGenerator:
 
         self._add_section('Professional Appointments')
 
+        # Indentation for sub-entries
+        sub_indent = 0.15 * inch
+
         # Current positions
         current = appointments.get('current', [])
         if current:
@@ -549,6 +606,7 @@ class CVGenerator:
                 country = appt.get('country', '')
                 inst_line = f"{institution}, {country}" if country else institution
 
+                # Institution header (full width, no indent)
                 self.story.append(self._two_column_row(
                     Paragraph(f"<b>{inst_line}</b>", self.styles['SubsectionHeading']),
                     Paragraph('', self.styles['EntryMeta'])
@@ -559,15 +617,18 @@ class CVGenerator:
                     period = pos.get('period', '')
                     division = pos.get('division', '')
 
-                    pos_text = f"{title}"
+                    # Build position text with bullet indicator
+                    pos_text = f"<bullet>&bull;</bullet> {title}"
                     if division:
-                        pos_text += f", {division}"
+                        pos_text += f", <i>{division}</i>"
+
                     self.story.append(self._two_column_row(
-                        Paragraph(pos_text, self.styles['CVBody']),
-                        Paragraph(period, self.styles['EntryMeta'])
+                        Paragraph(pos_text, self.styles['SubEntry']),
+                        Paragraph(period, self.styles['EntryMeta']),
+                        left_indent=sub_indent
                     ))
 
-                self.story.append(Spacer(1, 0.05*inch))
+                self.story.append(Spacer(1, 0.06*inch))
 
         # Past positions
         past = appointments.get('past', [])
@@ -583,6 +644,7 @@ class CVGenerator:
                 if country:
                     inst_line += f", {country}"
 
+                # Institution header (full width, no indent)
                 self.story.append(self._two_column_row(
                     Paragraph(f"<b>{inst_line}</b>", self.styles['SubsectionHeading']),
                     Paragraph('', self.styles['EntryMeta'])
@@ -592,12 +654,16 @@ class CVGenerator:
                     title = pos.get('title', '')
                     period = pos.get('period', '')
 
+                    # Build position text with bullet indicator
+                    pos_text = f"<bullet>&bull;</bullet> {title}"
+
                     self.story.append(self._two_column_row(
-                        Paragraph(title, self.styles['CVBody']),
-                        Paragraph(period, self.styles['EntryMeta'])
+                        Paragraph(pos_text, self.styles['SubEntry']),
+                        Paragraph(period, self.styles['EntryMeta']),
+                        left_indent=sub_indent
                     ))
 
-                self.story.append(Spacer(1, 0.05*inch))
+                self.story.append(Spacer(1, 0.06*inch))
 
     def _add_education(self):
         """Add education section."""
