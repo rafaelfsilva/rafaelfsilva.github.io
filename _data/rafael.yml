@@ -48,7 +48,7 @@ personal:
 
   # About page content sections
   intro: |
-    I am a Distinguished Research Scientist and Section Head (Interim) for <a href="https://www.ornl.gov/section/data-ai" target="_blank">Data and AI Systems</a> research in the <a href="https://www.ornl.gov/division/csmd" target="_blank">Computer Science and Mathematics</a> division at <a href="https://www.ornl.gov/" target="_blank">Oak Ridge National Laboratory</a> (ORNL), leading research and development in AI, data and agentic workflows, and advanced computing systems. I am also leading a task for OLCF's next supercomputer (<a href="https://www.olcf.ornl.gov/discovery/" target="_blank">Discovery</a>) focused on developing and evaluating workflow benchmarks.
+    I am a Distinguished Research Scientist and Section Head (Interim) for <a href="https://www.ornl.gov/section/data-ai" target="_blank">Data and AI Systems</a> research in the <a href="https://www.ornl.gov/division/csmd" target="_blank">Computer Science and Mathematics</a> division at <a href="https://www.ornl.gov/" target="_blank">Oak Ridge National Laboratory</a> (ORNL), leading research and development in AI, data and agentic workflows, and advanced computing systems. I am also leading a task for OLCF's next supercomputer (<a href="https://www.olcf.ornl.gov/discovery/" target="_blank">Discovery</a>) focused on developing and evaluating HPC/AI workflow benchmarks.
 
   about_sections:
     - title: Leadership & Strategic Programs
@@ -61,7 +61,7 @@ personal:
     - title: Systems Research & Community
       paragraphs:
         - |
-          My research sits at the intersection of advanced distributed systems and scientific innovation, spanning scientific workflows, agentic workflows and provenance capture, autonomous science, and hybrid quantum-classical systems. I provide strategic direction and leadership for scheduling, modeling, and optimization methods that scale across cloud, edge, and HPC environments, accelerating discovery and ensuring robust, trustworthy computational pipelines.
+          My research sits at the intersection of advanced distributed systems and scientific innovation, spanning HPC/AI workflows, agentic workflows and provenance capture, autonomous science, and hybrid quantum-classical systems. I provide strategic direction and leadership for scheduling, modeling, and optimization methods that scale across cloud, edge, and HPC environments, accelerating discovery and ensuring robust, trustworthy computational pipelines.
         - |
           Additionally, as the Founder and Executive Director of the <a href="http://workflows.community" target="_blank">Workflows Community Initiative</a>, I foster collaboration and advancement in workflows research and development, connecting researchers and practitioners to share knowledge and drive innovation. I am also a co-Founder of the <a href="https://autonomousscience.org/" target="_blank">Autonomous Science Network</a>. Previously, I led the <a href="https://www.olcf.ornl.gov/about-olcf/staff-sections/advanced-technologies/workflows-ecosystem-services/" target="_blank">Workflow and Ecosystem Services</a> (WES) group within the <a href="https://www.ornl.gov/division/nccs" target="_blank">National Center for Computational Sciences</a> (NCCS). I am a Senior Member of IEEE and ACM.
 
@@ -164,11 +164,11 @@ research:
     modeling, and optimization methods that scale across cloud, edge, and HPC environments.
 
   areas:
-    - Scientific Workflows
+    - HPC/AI Workflows
     - Agentic Workflows
     - Autonomous Science
     - Hybrid Quantum-Classical Systems
-    - Workflow Scheduling and Optimization
+    - HPC/AI Workflow Scheduling and Optimization
     - Modeling and Simulation of Distributed Systems
     - Cyberinfrastructure
     - AI-driven Data Analytics
