@@ -89,6 +89,14 @@
     - year: 2017
       location: Honolulu, USA
       link: https://cluster17.github.io
+
+- conference: ACM International Conference on Scalable Scientific Data Management
+  series: SSDBM
+  entries:
+    - year: 2026
+      edition: 38th
+      location: San Diego, CA, USA
+      link: https://ssdbm.org/2026
       
 - conference: IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
   series: CCGrid
