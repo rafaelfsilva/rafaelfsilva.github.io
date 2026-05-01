@@ -61,6 +61,16 @@ class CVGenerator:
     MARGIN = 0.65 * inch
     CONTENT_WIDTH = PAGE_WIDTH - (2 * MARGIN)  # Available width for content
 
+    # Consistent spacing constants
+    SPACE_SECTION = 0.10 * inch      # Space after a section (before next section)
+    SPACE_SUBSECTION = 0.06 * inch   # Space after a subsection/institution block
+    SPACE_ITEM = 0.04 * inch         # Space between items within a section
+    SPACE_DETAIL = 0.02 * inch       # Space after detail/small text
+
+    # Consistent indentation constants
+    INDENT_BULLET = 0.15 * inch      # Indentation for bulleted/sub-entries
+    INDENT_DETAIL = 0.15 * inch      # Indentation for detail text under entries
+
     def __init__(self, yaml_path, project_root):
         """Initialize the CV generator with data from YAML file."""
         with open(yaml_path, 'r') as f:
@@ -190,7 +200,7 @@ class CVGenerator:
             leading=12
         ))
 
-        # Small text
+        # Small text (flush left, for use under entries that are already indented via table)
         styles.add(ParagraphStyle(
             name='CVSmall',
             parent=styles['Normal'],
@@ -198,7 +208,20 @@ class CVGenerator:
             textColor=self.palette['muted'],
             spaceAfter=3,
             fontName='Helvetica',
-            leading=10
+            leading=10,
+            leftIndent=0
+        ))
+
+        # Detail text (indented, for standalone detail lines)
+        styles.add(ParagraphStyle(
+            name='CVDetail',
+            parent=styles['Normal'],
+            fontSize=8.5,
+            textColor=self.palette['muted'],
+            spaceAfter=3,
+            fontName='Helvetica',
+            leading=10,
+            leftIndent=self.INDENT_DETAIL
         ))
 
         # Highlight box style
@@ -266,7 +289,7 @@ class CVGenerator:
             spaceAfter=2,
             fontName='Helvetica',
             leading=12,
-            leftIndent=0.15*inch,
+            leftIndent=self.INDENT_BULLET,
             bulletIndent=0,
             bulletFontSize=9.5
         ))
@@ -280,7 +303,7 @@ class CVGenerator:
             spaceAfter=4,
             fontName='Helvetica',
             leading=10,
-            leftIndent=0.15*inch
+            leftIndent=self.INDENT_DETAIL
         ))
 
         # Publication style
@@ -409,7 +432,7 @@ class CVGenerator:
         if intro:
             clean_intro = self._strip_html(intro)
             self.story.append(Paragraph(clean_intro, self.styles['CVBody']))
-            self.story.append(Spacer(1, 0.08*inch))
+            self.story.append(Spacer(1, self.SPACE_ITEM))
 
         # Integrated highlights and signature initiatives
         research = self.data.get('research', {})
@@ -452,12 +475,12 @@ class CVGenerator:
         if accomplishments:
             highlight_line = '; '.join([self._emphasize_numbers(item) for item in accomplishments])
             self.story.append(Paragraph(highlight_line, self.styles['CVBody']))
-            self.story.append(Spacer(1, 0.05*inch))
+            self.story.append(Spacer(1, self.SPACE_ITEM))
 
         if initiative_parts:
             initiatives_line = "Signature initiatives: " + '; '.join(initiative_parts) + "."
             self.story.append(Paragraph(initiatives_line, self.styles['CVBody']))
-            self.story.append(Spacer(1, 0.08*inch))
+            self.story.append(Spacer(1, self.SPACE_SECTION))
 
     def _add_signature_initiatives(self):
         """Add signature initiatives/projects with impact metrics."""
@@ -482,9 +505,9 @@ class CVGenerator:
                 right_flowables.append(Paragraph('Impact signals', self.styles['CVSmall']))
 
             self.story.append(self._two_column_row(left_flowables, right_flowables))
-            self.story.append(Spacer(1, 0.03*inch))
+            self.story.append(Spacer(1, self.SPACE_ITEM))
 
-        self.story.append(Spacer(1, 0.06*inch))
+        self.story.append(Spacer(1, self.SPACE_SECTION))
 
     def _add_major_funding(self, top_n=4):
         """Highlight the most significant funded programs."""
@@ -541,16 +564,16 @@ class CVGenerator:
                 right_flowables.append(Paragraph(period, self.styles['EntryMeta']))
 
             self.story.append(self._two_column_row(left_flowables, right_flowables))
-            self.story.append(Spacer(1, 0.03*inch))
+            self.story.append(Spacer(1, self.SPACE_ITEM))
 
-        self.story.append(Spacer(1, 0.08*inch))
+        self.story.append(Spacer(1, self.SPACE_SECTION))
 
     def _add_section(self, title):
         """Add a section heading."""
         self.story.append(Paragraph(title.upper(), self.styles['SectionHeading']))
         self.story.append(HRFlowable(width=self.CONTENT_WIDTH, thickness=0.6,
                                      color=self.palette['border']))
-        self.story.append(Spacer(1, 0.04*inch))
+        self.story.append(Spacer(1, self.SPACE_ITEM))
 
     def _two_column_row(self, left_flowables, right_flowables, col_widths=None, left_indent=0):
         """Create a two-column row with aligned metadata.
@@ -596,7 +619,7 @@ class CVGenerator:
         self._add_section('Professional Appointments')
 
         # Indentation for sub-entries
-        sub_indent = 0.15 * inch
+        sub_indent = self.INDENT_BULLET
 
         # Current positions
         current = appointments.get('current', [])
@@ -628,7 +651,7 @@ class CVGenerator:
                         left_indent=sub_indent
                     ))
 
-                self.story.append(Spacer(1, 0.06*inch))
+                self.story.append(Spacer(1, self.SPACE_SUBSECTION))
 
         # Past positions
         past = appointments.get('past', [])
@@ -663,7 +686,7 @@ class CVGenerator:
                         left_indent=sub_indent
                     ))
 
-                self.story.append(Spacer(1, 0.06*inch))
+                self.story.append(Spacer(1, self.SPACE_SUBSECTION))
 
     def _add_education(self):
         """Add education section."""
@@ -679,21 +702,22 @@ class CVGenerator:
             institution = edu.get('institution', '')
             country = edu.get('country', '')
 
-            self.story.append(self._two_column_row(
-                Paragraph(f"<b>{degree}</b>", self.styles['SubsectionHeading']),
-                Paragraph(str(year), self.styles['EntryMeta'])
-            ))
-
             inst_line = f"{institution}, {country}" if country else institution
-            self.story.append(Paragraph(inst_line, self.styles['CVBody']))
-
+            left_flowables = [
+                Paragraph(f"<b>{degree}</b>", self.styles['SubsectionHeading']),
+                Paragraph(inst_line, self.styles['CVSmall'])
+            ]
             if edu.get('thesis_title'):
-                self.story.append(Paragraph(
+                left_flowables.append(Paragraph(
                     f"<i>Thesis: {edu['thesis_title']}</i>",
                     self.styles['CVSmall']
                 ))
 
-            self.story.append(Spacer(1, 0.05*inch))
+            self.story.append(self._two_column_row(
+                left_flowables,
+                Paragraph(str(year), self.styles['EntryMeta'])
+            ))
+            self.story.append(Spacer(1, self.SPACE_ITEM))
 
     def _add_research(self):
         """Add research interests section."""
@@ -707,14 +731,14 @@ class CVGenerator:
         if description:
             clean_desc = self._strip_html(description)
             self.story.append(Paragraph(clean_desc, self.styles['CVBody']))
-            self.story.append(Spacer(1, 0.04*inch))
+            self.story.append(Spacer(1, self.SPACE_ITEM))
 
         areas = research.get('areas', [])
         if areas:
             areas_text = '; '.join([f"<b>{area}</b>" for area in areas])
             focus_line = f"Focus areas: {areas_text}."
             self.story.append(Paragraph(focus_line, self.styles['CVBody']))
-            self.story.append(Spacer(1, 0.08*inch))
+            self.story.append(Spacer(1, self.SPACE_SECTION))
 
     def _add_selected_publications(self, count=10):
         """Add selected recent publications."""
@@ -768,7 +792,7 @@ class CVGenerator:
             pub_number -= 1
             shown += 1
 
-        self.story.append(Spacer(1, 0.08*inch))
+        self.story.append(Spacer(1, self.SPACE_SECTION))
 
     def _add_publications(self):
         """Add all publications from BibTeX."""
@@ -786,7 +810,7 @@ class CVGenerator:
             # Add year heading
             if year != current_year:
                 current_year = year
-                self.story.append(Spacer(1, 0.04*inch))
+                self.story.append(Spacer(1, self.SPACE_ITEM))
                 self.story.append(Paragraph(
                     f"<b>{year}</b>",
                     self.styles['SubsectionHeading']
@@ -841,7 +865,7 @@ class CVGenerator:
         if total:
             summary = f"<b>Total: {total.get('amount', '')}</b> across {total.get('projects', '')} competitively reviewed proposals"
             self.story.append(Paragraph(summary, self.styles['CVBody']))
-            self.story.append(Spacer(1, 0.08*inch))
+            self.story.append(Spacer(1, self.SPACE_SUBSECTION))
 
         # DOE Awards
         doe = funding.get('doe', [])
@@ -859,9 +883,9 @@ class CVGenerator:
                     Paragraph(amount, self.styles['EntryMeta'])
                 ))
                 detail_parts = [part for part in [role, period] if part]
-                self.story.append(Paragraph(', '.join(detail_parts), self.styles['CVSmall']))
-                self.story.append(Spacer(1, 0.03*inch))
-            self.story.append(Spacer(1, 0.04*inch))
+                self.story.append(Paragraph(', '.join(detail_parts), self.styles['CVDetail']))
+                self.story.append(Spacer(1, self.SPACE_ITEM))
+            self.story.append(Spacer(1, self.SPACE_SUBSECTION))
 
         # NSF Awards
         nsf = funding.get('nsf', [])
@@ -887,9 +911,9 @@ class CVGenerator:
                 if award_nums:
                     detail += f" ({award_nums})"
 
-                self.story.append(Paragraph(detail, self.styles['CVSmall']))
-                self.story.append(Spacer(1, 0.03*inch))
-            self.story.append(Spacer(1, 0.04*inch))
+                self.story.append(Paragraph(detail, self.styles['CVDetail']))
+                self.story.append(Spacer(1, self.SPACE_ITEM))
+            self.story.append(Spacer(1, self.SPACE_SUBSECTION))
 
         # DARPA Awards
         darpa = funding.get('darpa', [])
@@ -907,9 +931,9 @@ class CVGenerator:
                     Paragraph(amount, self.styles['EntryMeta'])
                 ))
                 detail_parts = [part for part in [role, period] if part]
-                self.story.append(Paragraph(', '.join(detail_parts), self.styles['CVSmall']))
-                self.story.append(Spacer(1, 0.03*inch))
-            self.story.append(Spacer(1, 0.04*inch))
+                self.story.append(Paragraph(', '.join(detail_parts), self.styles['CVDetail']))
+                self.story.append(Spacer(1, self.SPACE_ITEM))
+            self.story.append(Spacer(1, self.SPACE_SUBSECTION))
 
         # International/Other
         intl = funding.get('international', [])
@@ -928,8 +952,8 @@ class CVGenerator:
                 ))
 
                 detail_parts = [part for part in [role, period] if part]
-                self.story.append(Paragraph(', '.join(detail_parts), self.styles['CVSmall']))
-                self.story.append(Spacer(1, 0.03*inch))
+                self.story.append(Paragraph(', '.join(detail_parts), self.styles['CVDetail']))
+                self.story.append(Spacer(1, self.SPACE_ITEM))
 
     def _add_awards(self):
         """Add awards and honors section with enhanced visual design."""
@@ -958,9 +982,9 @@ class CVGenerator:
             ))
 
             if paper:
-                self.story.append(Paragraph(f"&nbsp;&nbsp;&nbsp;&nbsp;<i>{paper}</i>", self.styles['CVSmall']))
+                self.story.append(Paragraph(f"<i>{paper}</i>", self.styles['CVDetail']))
 
-            self.story.append(Spacer(1, 0.02*inch))
+            self.story.append(Spacer(1, self.SPACE_ITEM))
 
     def _add_professional_activities(self):
         """Add all professional activities."""
@@ -985,7 +1009,7 @@ class CVGenerator:
                     Paragraph(f"{role}, {org}", self.styles['CVBody']),
                     Paragraph(period, self.styles['EntryMeta'])
                 ))
-            self.story.append(Spacer(1, 0.06*inch))
+            self.story.append(Spacer(1, self.SPACE_SUBSECTION))
 
         # Advisory Boards (from rafael.yml)
         advisory_boards = activities.get('advisory_boards', [])
@@ -1006,7 +1030,7 @@ class CVGenerator:
                     Paragraph(text, self.styles['CVBody']),
                     Paragraph(period, self.styles['EntryMeta'])
                 ))
-            self.story.append(Spacer(1, 0.06*inch))
+            self.story.append(Spacer(1, self.SPACE_SUBSECTION))
 
         # Conference Chair Roles
         chair_data = self.activities.get('chair', [])
@@ -1027,7 +1051,7 @@ class CVGenerator:
                     text += f", {location}, {year}"
 
                     self.story.append(Paragraph(text, self.styles['CVBody']))
-            self.story.append(Spacer(1, 0.06*inch))
+            self.story.append(Spacer(1, self.SPACE_SUBSECTION))
 
         # Program Committee
         pc_data = self.activities.get('pc', [])
@@ -1050,7 +1074,7 @@ class CVGenerator:
                 text += f": {years_str}"
 
                 self.story.append(Paragraph(text, self.styles['CVBody']))
-            self.story.append(Spacer(1, 0.06*inch))
+            self.story.append(Spacer(1, self.SPACE_SUBSECTION))
 
         # Editorial positions
         editorial = activities.get('editorial', [])
@@ -1066,7 +1090,7 @@ class CVGenerator:
                     f"{role}, <i>{journal}</i> ({period})",
                     self.styles['CVBody']
                 ))
-            self.story.append(Spacer(1, 0.06*inch))
+            self.story.append(Spacer(1, self.SPACE_SUBSECTION))
 
         # Funding Reviewer
         funding_rev = activities.get('funding_reviewer', [])
@@ -1108,9 +1132,9 @@ class CVGenerator:
                 ))
                 self.story.append(Paragraph(
                     f"{event}, {location}",
-                    self.styles['CVSmall']
+                    self.styles['CVDetail']
                 ))
-                self.story.append(Spacer(1, 0.03*inch))
+                self.story.append(Spacer(1, self.SPACE_ITEM))
 
     def _add_teaching(self):
         """Add teaching experience."""
@@ -1126,15 +1150,15 @@ class CVGenerator:
             level = course.get('level', '')
             semester = course.get('semester', '')
 
-            self.story.append(self._two_column_row(
+            left_flowables = [
                 Paragraph(f"<b>{course_name}</b> ({level})", self.styles['SubsectionHeading']),
+                Paragraph(institution, self.styles['CVSmall'])
+            ]
+            self.story.append(self._two_column_row(
+                left_flowables,
                 Paragraph(semester, self.styles['EntryMeta'])
             ))
-            self.story.append(Paragraph(
-                f"{institution}",
-                self.styles['CVBody']
-            ))
-            self.story.append(Spacer(1, 0.04*inch))
+            self.story.append(Spacer(1, self.SPACE_ITEM))
 
     def _add_students(self):
         """Add students and mentoring section."""
@@ -1158,7 +1182,7 @@ class CVGenerator:
                     f"{name}, {degree} ({period})",
                     self.styles['CVBody']
                 ))
-            self.story.append(Spacer(1, 0.05*inch))
+            self.story.append(Spacer(1, self.SPACE_SUBSECTION))
 
         # Student Workers
         workers = students.get('worker', [])
@@ -1174,7 +1198,7 @@ class CVGenerator:
                     f"{name}, {degree} ({period})",
                     self.styles['CVBody']
                 ))
-            self.story.append(Spacer(1, 0.05*inch))
+            self.story.append(Spacer(1, self.SPACE_SUBSECTION))
 
         # Directed Research
         dr = students.get('dr', [])
@@ -1190,7 +1214,7 @@ class CVGenerator:
                     f"{name}, {degree} ({period})",
                     self.styles['CVBody']
                 ))
-            self.story.append(Spacer(1, 0.05*inch))
+            self.story.append(Spacer(1, self.SPACE_SUBSECTION))
 
         # Thesis Committee
         committee = students.get('thesis_committee', [])
@@ -1233,7 +1257,7 @@ class CVGenerator:
                     Paragraph(title, self.styles['CVBody']),
                     Paragraph(period, self.styles['EntryMeta'])
                 ))
-            self.story.append(Spacer(1, 0.05*inch))
+            self.story.append(Spacer(1, self.SPACE_SUBSECTION))
 
         if certifications:
             self.story.append(Paragraph('<b>Certifications</b>',
@@ -1252,11 +1276,11 @@ class CVGenerator:
 
     def _add_footer(self):
         """Add footer separator."""
-        self.story.append(Spacer(1, 0.2*inch))
+        self.story.append(Spacer(1, self.SPACE_SECTION))
         self.story.append(HRFlowable(width="100%", thickness=0.5,
                                      color=self.palette['border']))
         updated = datetime.now().strftime("%B %Y")
-        self.story.append(Spacer(1, 0.06*inch))
+        self.story.append(Spacer(1, self.SPACE_ITEM))
         self.story.append(Paragraph(f"Last updated: {updated}", self.styles['CVSmall']))
 
     def generate(self, output_path):
