@@ -183,20 +183,27 @@
       <h3>Research Projects</h3>
       <p class="section-lede">
         Flagship initiatives with measurable impact across the workflows and
-        cyberinfrastructure communities.
+        cyberinfrastructure communities &mdash; from a global community of
+        practitioners to open-source tools powering peer-reviewed research.
       </p>
     </div>
     <div class="project-grid">
       {% for item in site.data.rafael.research_projects %}
-      <a href="{{ item.url }}" class="project-card" target="_blank">
-        <div class="project-icon">
-          <img src="{{ item.icon }}" alt="Logo">
-        </div>
-        <div class="project-meta">
+      <a href="{{ item.url }}" class="project-card" target="_blank" rel="noopener">
+        <div class="project-card-head">
+          <div class="project-icon">
+            <img src="{{ item.icon }}" alt="{{ item.name }} logo">
+          </div>
           <div class="project-name">{{ item.name }}</div>
-          <div class="project-metric">{{ item.count }}</div>
-          <p>{{ item.description }}</p>
+          <i class="fa fa-external-link project-link-icon" aria-hidden="true"></i>
         </div>
+        <div class="project-metric-row">
+          <span class="project-metric">{{ item.count }}</span>
+          {% if item.metric_label %}
+          <span class="project-metric-label">{{ item.metric_label }}</span>
+          {% endif %}
+        </div>
+        <p class="project-description">{{ item.description }}</p>
       </a>
       {% endfor %}
     </div>
