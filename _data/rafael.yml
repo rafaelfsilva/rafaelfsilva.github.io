@@ -724,6 +724,11 @@ students:
       degree: graduate student, M.S. in Computer Science
 
   thesis_committee:
+    - name: Gilbert Netzer
+      degree: PhD Thesis
+      institution: KTH Royal Institute of Technology, Sweden
+      year: 2026
+    
     - name: Alok Kamatar
       degree: MS Thesis
       institution: University of Chicago, USA
