@@ -797,6 +797,12 @@ awards:
 # MEDIA COVERAGE
 # ==============================================================================
 media:
+  - title: "ORNL researchers showcase AI-driven science at national expo"
+    venue: ORNL News
+    date: June 2026
+    link: https://www.ornl.gov/news/ornl-researchers-showcase-ai-driven-science-national-expo
+    image: https://www.ornl.gov/sites/default/files/styles/large/public/2026-06/AI%20Expo%2026.jpg?itok=kLYkC-I2
+  
   - title: "ORNL Study Outlines Software Blueprint for Unified Quantum-HPC Integration"
     venue: Quantum Computing Report
     date: August 2025
