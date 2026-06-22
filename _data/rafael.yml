@@ -527,6 +527,11 @@ professional_activities:
 invited_talks:
   - year: 2026
     entries:
+      - title: "Beyond the Chatbot: Where Agentic AI is Driving Government Missions"
+        event: Federal AI Forum, Panelist
+        location: Reston, VA, USA
+        link: https://govciomedia.com/federal-ai-forum/
+      
       - title: "Evolving Scientific Workflows Toward Autonomous Discovery Through Agentic AI and Multi-Agent Coordination"
         event: SOS-28 Workshop
         location: Santa Barbara, CA, USA
