@@ -8,7 +8,7 @@ personal:
   title: Ph.D.
   titles_full:
     - title: Section Head
-      interim: true
+      interim: false
     - title: Distinguished Research Scientist
       interim: false
 
@@ -48,7 +48,7 @@ personal:
 
   # About page content sections
   intro: |
-    I am a Distinguished Research Scientist and Section Head (Interim) for <a href="https://www.ornl.gov/section/data-ai" target="_blank">Data and AI Systems</a> research in the <a href="https://www.ornl.gov/division/csmd" target="_blank">Computer Science and Mathematics</a> division at <a href="https://www.ornl.gov/" target="_blank">Oak Ridge National Laboratory</a> (ORNL), leading research and development in AI, data and agentic workflows, and advanced computing systems. I am also leading a task for OLCF's next supercomputer (<a href="https://www.olcf.ornl.gov/discovery/" target="_blank">Discovery</a>) focused on developing and evaluating HPC/AI workflow benchmarks.
+    I am a Distinguished Research Scientist and Section Head for <a href="https://www.ornl.gov/section/data-ai" target="_blank">Data and AI Systems</a> research in the <a href="https://www.ornl.gov/division/csmd" target="_blank">Computer Science and Mathematics</a> division at <a href="https://www.ornl.gov/" target="_blank">Oak Ridge National Laboratory</a> (ORNL), leading research and development in AI, data and agentic workflows, and advanced computing systems. I am also leading a task for OLCF's next supercomputer (<a href="https://www.olcf.ornl.gov/discovery/" target="_blank">Discovery</a>) focused on developing and evaluating HPC/AI workflow benchmarks.
 
   about_sections:
     - title: Leadership & Strategic Programs
@@ -85,7 +85,7 @@ appointments:
     - institution: Oak Ridge National Laboratory
       country: USA
       positions:
-        - title: Section Head (Interim), Data and AI Systems
+        - title: Section Head, Data and AI Systems
           division: Computer Science and Mathematics
           period: 2025-present
         - title: Distinguished Research Scientist
