@@ -270,14 +270,18 @@
 - conference: Workshop on Extreme-Scale Experiment-in-the-Loop Computing
   series: XLOOP
   entries:
+    - year: 2026
+      edition: 8th
+      location: Chicago, USA
+      link: https://wordpress.cels.anl.gov/xloop-2026/
     - year: 2025
-      edition: 20th
+      edition: 7th
       location: Saint Louis, USA
-      link: https://works-workshop.org
+      link: https://wordpress.cels.anl.gov/xloop-2025/
     - year: 2024
-      edition: 19th
+      edition: 6th
       location: Atlanta, USA
-      link: https://works-workshop.org/2024
+      link: https://wordpress.cels.anl.gov/xloop-2024/
       
 - conference: International Workshop on Science Gateways
   series: IWSG
