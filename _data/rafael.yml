@@ -235,6 +235,18 @@ funding:
       role: Senior Personnel
       program: Offices of Biological & Environmental Research (BER) and Advanced Scientific Computing Research (ASCR)
 
+    - title: "Science-Aware Network Operations for Research Networks (SciNet)"
+      period: 08/2026-03/2027
+      amount: "$750,000"
+      role: Co-Principal Investigator
+      program: Office of Advanced Scientific Computing Research (ASCR)
+
+    - title: "SPOTTER-AI: Scientific Provenance-Oriented Threat Tracing and Attribution for Genesis Workflows"
+      period: 08/2026-03/2027
+      amount: "$750,000"
+      role: Senior Personnel
+      program: Office of Advanced Scientific Computing Research (ASCR)
+    
     - title: "A Testbed for Multi-Agent Autonomous Science: From Lab Bench to Supercomputer"
       period: 10/2025-09/2026
       amount: "$250,000"
