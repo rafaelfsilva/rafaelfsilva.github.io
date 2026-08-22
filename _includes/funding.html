@@ -1,26 +1,4 @@
-{% assign funding_total = 0 %}
-{% assign funding_count = 0 %}
-{% for rg in site.data.rafael.funding.doe %}
-{% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
-{% assign funding_total = funding_total | plus: amount_clean %}
-{% assign funding_count = funding_count | plus: 1 %}
-{% endfor %}
-{% for rg in site.data.rafael.funding.nsf %}
-{% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
-{% assign funding_total = funding_total | plus: amount_clean %}
-{% assign funding_count = funding_count | plus: 1 %}
-{% endfor %}
-{% for rg in site.data.rafael.funding.darpa %}
-{% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
-{% assign funding_total = funding_total | plus: amount_clean %}
-{% assign funding_count = funding_count | plus: 1 %}
-{% endfor %}
-{% for rg in site.data.rafael.funding.international %}
-{% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
-{% assign funding_total = funding_total | plus: amount_clean %}
-{% assign funding_count = funding_count | plus: 1 %}
-{% endfor %}
-{% assign funding_total_millions = funding_total | times: 0.000001 | round: 1 %}
+{% include funding_totals.html %}
 
 <section class="page-section funding-page" data-id="funding">
 

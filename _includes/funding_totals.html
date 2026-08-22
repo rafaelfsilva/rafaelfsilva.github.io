@@ -1,0 +1,25 @@
+{%- comment -%}
+Computes the funding portfolio totals from _data/rafael.yml at build time.
+Never hardcode these numbers -- include this file and use the variables below.
+
+Exposes:
+  funding_count          -> number of awards (e.g. 23)
+  funding_total          -> raw sum (e.g. 78153791)
+  funding_total_millions -> sum in millions, 1 decimal (e.g. 78.2) -> use for stat tiles
+  funding_total_label    -> prose label, floored (e.g. "$78M+")   -> use in sentences
+
+The Python CV/resume generators mirror this logic in scripts/funding_utils.py.
+{%- endcomment -%}
+{%- assign funding_total = 0 -%}
+{%- assign funding_count = 0 -%}
+{%- assign funding_agencies = "doe,nsf,darpa,international" | split: "," -%}
+{%- for agency in funding_agencies -%}
+{%- for rg in site.data.rafael.funding[agency] -%}
+{%- assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" -%}
+{%- assign funding_total = funding_total | plus: amount_clean -%}
+{%- assign funding_count = funding_count | plus: 1 -%}
+{%- endfor -%}
+{%- endfor -%}
+{%- assign funding_total_millions = funding_total | times: 0.000001 | round: 1 -%}
+{%- assign funding_total_floor = funding_total | times: 0.000001 | floor -%}
+{%- capture funding_total_label -%}${{ funding_total_floor }}M+{%- endcapture -%}

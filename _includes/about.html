@@ -1,6 +1,5 @@
 {% assign cc_count = 0 %}
 {% assign pc_count = 0 %}
-{% assign funding_total = 0 %}
 {% for n in site.data.activities_chair %}
 {% for e in n.entries %}
 {% assign cc_count = cc_count | plus: 1 %}
@@ -11,23 +10,7 @@
 {% assign pc_count = pc_count | plus: 1 %}
 {% endfor %}
 {% endfor %}
-{% for rg in site.data.rafael.funding.doe %}
-{% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
-{% assign funding_total = funding_total | plus: amount_clean %}
-{% endfor %}
-{% for rg in site.data.rafael.funding.nsf %}
-{% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
-{% assign funding_total = funding_total | plus: amount_clean %}
-{% endfor %}
-{% for rg in site.data.rafael.funding.darpa %}
-{% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
-{% assign funding_total = funding_total | plus: amount_clean %}
-{% endfor %}
-{% for rg in site.data.rafael.funding.international %}
-{% assign amount_clean = rg.amount | replace: "$", "" | replace: ",", "" | replace: "€", "" | replace: " ", "" %}
-{% assign funding_total = funding_total | plus: amount_clean %}
-{% endfor %}
-{% assign funding_total_millions = funding_total | times: 0.000001 | round: 1 %}
+{% include funding_totals.html %}
 
 <section class="page-section about-modern" data-id="about-me">
   <div class="section-inner about-shell">
@@ -41,7 +24,7 @@
           {% endfor %}
         </p>
         <p class="about-intro">
-          {{ site.data.rafael.personal.intro }}
+          {{ site.data.rafael.personal.intro | replace: "%FUNDING_TOTAL%", funding_total_label | replace: "%FUNDING_COUNT%", funding_count }}
         </p>
         <div class="about-actions">
           <a
@@ -51,7 +34,7 @@
           >
             Download CV
           </a>
-          <!-- <a class="about-link" href="/funding">$65M+ in funded awards</a> -->
+          <!-- <a class="about-link" href="/funding">{{ funding_total_label }} in funded awards</a> -->
         </div>
         <ul class="about-social">
           <li>
@@ -129,7 +112,7 @@
         <h3>{{ section.title }}</h3>
         {% for paragraph in section.paragraphs %}
         <p>
-          {{ paragraph }}
+          {{ paragraph | replace: "%FUNDING_TOTAL%", funding_total_label | replace: "%FUNDING_COUNT%", funding_count }}
         </p>
         {% endfor %}
       </div>

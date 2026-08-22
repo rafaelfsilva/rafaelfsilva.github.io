@@ -11,9 +11,14 @@ Usage:
 
 import os
 import re
+import sys
 from datetime import datetime
 
 import yaml
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from funding_utils import funding_totals, parse_amount, resolve_funding_tokens  # noqa: E402
+
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY, TA_LEFT, TA_RIGHT
 from reportlab.lib.pagesizes import letter
@@ -122,16 +127,6 @@ def normalize_bibtex_text(text):
     return cleaned.strip()
 
 
-def parse_amount(amount_str):
-    if not amount_str:
-        return 0
-    cleaned = re.sub(r'[^0-9.]', '', str(amount_str))
-    try:
-        return float(cleaned)
-    except ValueError:
-        return 0
-
-
 def emphasize_numbers(text):
     if not text:
         return ""
@@ -174,6 +169,9 @@ class CVGenerator:
     def __init__(self, yaml_path, project_root):
         with open(yaml_path, 'r') as f:
             self.data = yaml.safe_load(f)
+
+        self.funding = funding_totals(self.data)
+        self.data = resolve_funding_tokens(self.data)
 
         self.project_root = project_root
 
@@ -507,22 +505,8 @@ class CVGenerator:
 
     def _add_metrics_row(self):
         """KPI strip: funded $, publications, grants, awards."""
-        funding = self.data.get('funding', {})
-        total = funding.get('total_funding', {})
-        total_amount = total.get('amount') if total else None
-
-        funding_count = sum(
-            len(funding.get(cat, [])) for cat in ('doe', 'nsf', 'darpa', 'international')
-        )
-        if not total_amount:
-            # Fallback: sum of individual award amounts
-            total = sum(
-                parse_amount(a.get('amount'))
-                for cat in ('doe', 'nsf', 'darpa', 'international')
-                for a in funding.get(cat, [])
-            )
-            if total >= 1_000_000:
-                total_amount = f"${total/1_000_000:.0f}M+"
+        total_amount = self.funding['label'] if self.funding['total'] else None
+        funding_count = self.funding['count']
 
         awards = self.data.get('awards', [])
         pub_count = len(self.publications) if self.publications else 0
@@ -812,11 +796,10 @@ class CVGenerator:
             return
         self._section('Funding Awards')
 
-        total = funding.get('total_funding', {})
-        if total:
+        if self.funding['total']:
             summary = (
-                f"<b><font color=\"#1e3a8a\">Total: {total.get('amount', '')}</font></b>"
-                f" across {total.get('projects', '')} competitively reviewed proposals."
+                f"<b><font color=\"#1e3a8a\">Total: {self.funding['label']}</font></b>"
+                f" across {self.funding['count']} competitively reviewed proposals."
             )
             self.story.append(Paragraph(summary, self.styles['CVBody']))
             self.story.append(Spacer(1, self.SPACE_SUBSECTION))
@@ -1214,6 +1197,8 @@ class CVDocxGenerator:
     def __init__(self, yaml_path, project_root):
         with open(yaml_path, 'r') as f:
             self.data = yaml.safe_load(f)
+        self.funding = funding_totals(self.data)
+        self.data = resolve_funding_tokens(self.data)
         self.project_root = project_root
         self.doc = Document()
         self._set_page_margins()
@@ -1355,10 +1340,10 @@ class CVDocxGenerator:
         highlights = research.get('leadership_highlights', [])
         accomplishments = list(highlights[:4])
 
-        funding = self.data.get('funding', {})
-        funding_count = sum(len(funding.get(c, [])) for c in ('doe', 'nsf', 'darpa', 'international'))
-        if funding_count:
-            accomplishments.append(f"{funding_count} competitively reviewed grants led or co-led")
+        if self.funding['count']:
+            accomplishments.append(
+                f"{self.funding['count']} competitively reviewed grants led or co-led"
+            )
 
         awards = self.data.get('awards', [])
         if awards:
@@ -1539,11 +1524,10 @@ class CVDocxGenerator:
         if not funding:
             return
         self._section('Funding Awards')
-        total = funding.get('total_funding', {})
-        if total:
+        if self.funding['total']:
             p = self.doc.add_paragraph(style='CV Body')
-            self._add_run(p, f"Total: {total.get('amount', '')}", bold=True, color=self.PALETTE['primary'])
-            p.add_run(f" across {total.get('projects', '')} competitively reviewed proposals.")
+            self._add_run(p, f"Total: {self.funding['label']}", bold=True, color=self.PALETTE['primary'])
+            p.add_run(f" across {self.funding['count']} competitively reviewed proposals.")
 
         groups = [
             ('doe', 'U.S. Department of Energy (DOE)'),

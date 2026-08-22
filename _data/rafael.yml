@@ -47,6 +47,12 @@ personal:
       date: November 2020
 
   # About page content sections
+  #
+  # Tokens available in intro / about_sections / leadership_highlights, resolved at
+  # build time from the `funding:` awards below (see _includes/funding_totals.html
+  # and scripts/funding_utils.py). Never hardcode these numbers:
+  #   %FUNDING_TOTAL%  -> total awarded funding, e.g. "$78M+"
+  #   %FUNDING_COUNT%  -> number of awards, e.g. "23"
   intro: |
     I am a Distinguished Research Scientist and Section Head for <a href="https://www.ornl.gov/section/data-ai" target="_blank">Data and AI Systems</a> research in the <a href="https://www.ornl.gov/division/csmd" target="_blank">Computer Science and Mathematics</a> division at <a href="https://www.ornl.gov/" target="_blank">Oak Ridge National Laboratory</a> (ORNL), leading research and development in AI, data and agentic workflows, and advanced computing systems. I am also leading a task for OLCF's next supercomputer (<a href="https://www.olcf.ornl.gov/discovery/" target="_blank">Discovery</a>) focused on developing and evaluating HPC/AI workflow benchmarks.
 
@@ -54,7 +60,7 @@ personal:
     - title: Leadership & Strategic Programs
       paragraphs:
         - |
-          As section head, I provide strategic and operational leadership for 45+ researchers across five groups (AI/ML, visualization, data workflows, engineering, and performance systems) and drive program development efforts that have secured <a href="/funding">$75M+ in funded awards</a> across 21 proposals in autonomous laboratories, scientific workflows, cyberinfrastructure, and AI-driven analytics. I also lead a task for OLCF's next supercomputer (<a href="https://www.olcf.ornl.gov/discovery/" target="_blank">Discovery</a>) focused on developing and evaluating workflow benchmarks.
+          As section head, I provide strategic and operational leadership for 45+ researchers across five groups (AI/ML, visualization, data workflows, engineering, and performance systems) and drive program development efforts that have secured <a href="/funding">%FUNDING_TOTAL% in funded awards</a> across %FUNDING_COUNT% proposals in autonomous laboratories, scientific workflows, cyberinfrastructure, and AI-driven analytics. I also lead a task for OLCF's next supercomputer (<a href="https://www.olcf.ornl.gov/discovery/" target="_blank">Discovery</a>) focused on developing and evaluating workflow benchmarks.
         - |
           I am a co-PI for the <a href="https://www.energy.gov/articles/energy-department-advances-investments-ai-science" target="_blank">Transformational AI model consortium</a> (ModCon), part of the DOE <a href="https://genesis.energy.gov/" target="_blank">Genesis Mission</a> to build and deploy self-improving AI models for science, engineering, and energy missions. I also serve as PI for a DOE-funded project on robotics and automated laboratories, leveraging embodied AI and advanced automation to transform laboratory environments and experimental workflows.
 
@@ -178,7 +184,7 @@ research:
 
   leadership_highlights:
     - Strategic and operational leadership for 45+ researchers across five groups
-    - $65M+ in funded awards across 21 competitively reviewed proposals
+    - "%FUNDING_TOTAL% in funded awards across %FUNDING_COUNT% competitively reviewed proposals"
     - Co-PI for Transformational AI model consortium (ModCon) - DOE Genesis Mission
     - PI for robotics and automated laboratories project supporting Genesis
     - Task Lead for OLCF's Discovery supercomputer workflow benchmarks
@@ -241,7 +247,7 @@ funding:
       role: Co-Principal Investigator
       program: Office of Advanced Scientific Computing Research (ASCR)
 
-    - title: "enesis Mission: Phase 1: SPOTTER-AI: Scientific Provenance-Oriented Threat Tracing and Attribution for Genesis Workflows"
+    - title: "Genesis Mission: Phase 1: SPOTTER-AI: Scientific Provenance-Oriented Threat Tracing and Attribution for Genesis Workflows"
       period: 08/2026-03/2027
       amount: "$750,000"
       role: Senior Personnel
@@ -401,9 +407,9 @@ funding:
       program: "CNRS PICS (France)"
       award: PICS07239
 
-  total_funding:
-    amount: "$65,000,000+"
-    projects: 21
+  # NOTE: the portfolio total and award count are computed at build time from the
+  # awards above -- see _includes/funding_totals.html (site) and
+  # scripts/funding_utils.py (CV/resume). Do not reintroduce a hardcoded total.
 
 # ==============================================================================
 # PUBLICATIONS (Reference to BibTeX file)
