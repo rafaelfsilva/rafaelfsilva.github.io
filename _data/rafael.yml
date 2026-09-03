@@ -208,7 +208,7 @@ research_projects:
   - name: WfCommons
     url: https://wfcommons.org
     icon: https://wfcommons.org/favicon.ico
-    count: 84
+    count: 85
     metric_label: Research articles enabled
     description: Open-source benchmark ecosystem for realistic workflow traces and generators to compare scheduling, performance, and resilience at scale
     academic_description: Open-source benchmark ecosystem for realistic workflow traces and generators to compare scheduling, performance, and resilience at scale
@@ -217,7 +217,7 @@ research_projects:
   - name: WRENCH
     url: https://wrench-project.org
     icon: https://wrench-project.org/favicon.ico
-    count: 44
+    count: 45
     metric_label: Research articles enabled
     description: Simulation workbench on SimGrid that enables fast, validated what-if studies of workflow runtimes before deployment
     academic_description: Simulation workbench on SimGrid that enables fast, validated what-if studies of workflow runtimes before deployment
