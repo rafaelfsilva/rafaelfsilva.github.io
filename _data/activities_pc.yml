@@ -90,6 +90,22 @@
       location: Honolulu, USA
       link: https://cluster17.github.io
 
+- conference: IEEE International Parallel & Distributed Processing Symposium
+  series: IPDPS
+  entries:
+    - year: 2027
+      edition: 41st
+      location: Seattle, USA
+      link: http://www.ipdps.org
+    - year: 2022
+      edition: 36th
+      location: Lyon, France
+      link: https://www.ipdps.org/ipdps2022/index.html
+    - year: 2021
+      edition: 35th
+      location: Portland, USA
+      link: https://www.ipdps.org/ipdps2021/index.html
+      
 - conference: ACM International Conference on Scalable Scientific Data Management
   series: SSDBM
   entries:
@@ -218,18 +234,6 @@
     - year: 2023
       location: Chicago, USA
       link: https://conferences.computer.org/cloud/2023/
-
-- conference: IEEE International Parallel & Distributed Processing Symposium
-  series: IPDPS
-  entries:
-    - year: 2022
-      edition: 36th
-      location: Lyon, France
-      link: http://www.ipdps.org
-    - year: 2021
-      edition: 35th
-      location: Portland, USA
-      link: http://www.ipdps.org
 
 - conference: Workflows in Support of Large-Scale Science
   series: WORKS
