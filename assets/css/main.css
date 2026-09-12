@@ -3187,6 +3187,26 @@ ol.bibliography > li::before {
   color: var(--ink);
 }
 
+.activity-venue {
+  color: var(--muted);
+  font-size: 0.9em;
+  margin-bottom: 4px;
+}
+
+.activity-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: rgba(12, 24, 37, 0.08);
+  color: var(--ink);
+  font-size: 0.66em;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
 .talks-grid {
   display: grid;
   gap: 28px;

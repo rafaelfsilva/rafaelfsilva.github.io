@@ -74,6 +74,7 @@ ACTIVITY_FILES = {
     'editor': 'activities_editor.yml',
     'funding': 'activities_funding.yml',
     'sc': 'activities_sc.yml',
+    'bof': 'activities_bof.yml',
 }
 
 
@@ -125,6 +126,29 @@ def normalize_bibtex_text(text):
     if LATEX_AVAILABLE:
         return LatexNodes2Text().latex_to_text(cleaned).strip()
     return cleaned.strip()
+
+
+def bof_sessions(activities):
+    """BoF sessions, newest first, flagged `upcoming` when their date is still ahead."""
+    today = datetime.now().date().isoformat()
+    sessions = [
+        {**s, 'upcoming': str(s.get('date', '')) > today}
+        for s in (activities.get('bof') or [])
+    ]
+    return sorted(sessions, key=lambda s: str(s.get('date', '')), reverse=True)
+
+
+def bof_detail(session):
+    """One-line CV summary of a BoF: role, venue, location, co-organizers."""
+    venue = ' '.join(str(p) for p in (session.get('series'), session.get('year')) if p)
+    where = ', '.join(p for p in (venue, session.get('location', '')) if p)
+    text = ' — '.join(p for p in (session.get('role', ''), where) if p)
+    if session.get('upcoming'):
+        text += ' (upcoming)'
+    co_organizers = session.get('co_organizers') or []
+    if co_organizers:
+        text += f"; with {', '.join(co_organizers)}"
+    return text
 
 
 def emphasize_numbers(text):
@@ -912,6 +936,23 @@ class CVGenerator:
                     self.story.append(Spacer(1, self.SPACE_DETAIL))
             self.story.append(Spacer(1, self.SPACE_SUBSECTION))
 
+        bofs = bof_sessions(self.activities)
+        if bofs:
+            self.story.append(Paragraph('Birds of a Feather Sessions', self.styles['CategoryHeading']))
+            self.story.append(Spacer(1, 0.03 * inch))
+            for session in bofs:
+                left = [
+                    Paragraph(f"<b>{session.get('title', '')}</b>", self.styles['CVEntry']),
+                    Paragraph(bof_detail(session), self.styles['CVSmall']),
+                ]
+                self.story.append(self._two_col_row(
+                    left,
+                    Paragraph(str(session.get('year', '')), self.styles['EntryMetaMuted']),
+                    left_indent=self.INDENT_SUB,
+                ))
+                self.story.append(Spacer(1, self.SPACE_DETAIL))
+            self.story.append(Spacer(1, self.SPACE_SUBSECTION))
+
         pc_data = self.activities.get('pc', [])
         if pc_data:
             self.story.append(Paragraph('Program Committee Member', self.styles['CategoryHeading']))
@@ -1612,6 +1653,15 @@ class CVDocxGenerator:
                         text += f" ({series})"
                     text += f", {e.get('location', '')}, {e.get('year', '')}"
                     self.doc.add_paragraph(text, style='CV Body')
+
+        bofs = bof_sessions(self.activities)
+        if bofs:
+            p = self.doc.add_paragraph(style='CV Category')
+            p.add_run('Birds of a Feather Sessions')
+            for session in bofs:
+                p = self.doc.add_paragraph(style='CV Body')
+                p.add_run(session.get('title', '')).bold = True
+                self.doc.add_paragraph(bof_detail(session), style='CV Small')
 
         pc = self.activities.get('pc', [])
         if pc:

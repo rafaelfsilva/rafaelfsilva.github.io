@@ -10,6 +10,11 @@
 {% assign pc_count = pc_count | plus: 1 %}
 {% endfor %}
 {% endfor %}
+{% assign bof_sessions = site.data.activities_bof | sort: 'date' | reverse %}
+{% assign bof_count = bof_sessions | size %}
+{% assign bof_led = bof_sessions | where: 'role', 'Lead Organizer' | size %}
+{% assign bof_series = bof_sessions | map: 'series' | uniq | join: ', ' %}
+{% assign build_ts = site.time | date: '%s' | plus: 0 %}
 
 <section class="page-section" data-id="activities">
 
@@ -25,6 +30,7 @@
         <nav class="activities-submenu" aria-label="Activities sections">
             <a href="#activities-editor">Journals Editor</a>
             <a href="#activities-chair">Chair Roles</a>
+            <a href="#activities-bof">BoF Sessions</a>
             <a href="#activities-pc">Program Committees</a>
             <a href="#activities-funding">Funding Reviewer</a>
             <a href="#activities-advisory">Advisory Boards</a>
@@ -75,6 +81,32 @@
                                 <span class="activity-year">{{ e.year }}</span> {{ e.role }} — <a href="{{ e.link }}"
                                     target="_blank">{{ e.edition }} {{ n.series }}</a>, {{ e.location }}<br />
                                 {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+
+            <section class="activity-section" id="activities-bof">
+                <div class="activity-header">
+                    <h3>Birds of a Feather Sessions</h3>
+                    <p class="activity-kicker">Organized {{ bof_count }} community sessions at {{ bof_series }}, {{ bof_led }} as lead organizer.</p>
+                </div>
+                <div class="activity-list">
+                    {% for n in bof_sessions %}
+                    {% assign session_ts = n.date | date: '%s' | plus: 0 %}
+                    <div class="activity-item">
+                        <div class="activity-tag">{{ n.series }} {{ n.year }}</div>
+                        <div class="activity-body">
+                            <div class="activity-title">
+                                <a href="{{ n.link }}" target="_blank">{{ n.title }}</a>
+                                {% if session_ts > build_ts %}<span class="activity-badge">Upcoming</span>{% endif %}
+                            </div>
+                            <div class="activity-venue">{{ n.conference }} · {{ n.community }}</div>
+                            <div class="activity-meta">
+                                <span class="activity-year">{{ n.role }}</span> — {{ n.date | date: "%b %-d, %Y" }}, {{ n.location }}{% if n.program %} · <a href="{{ n.program }}" target="_blank">Program</a>{% endif %}
+                                {% if n.co_organizers %}<br />with {{ n.co_organizers | join: ', ' }}{% endif %}
                             </div>
                         </div>
                     </div>

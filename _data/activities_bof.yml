@@ -1,0 +1,173 @@
+# Birds of a Feather (BoF) sessions organized. Rendered on /activities/ and in the CV.
+# Sources: https://workflows.community/bof and https://autonomousscience.org/bofs
+#
+#   role:          "Lead Organizer" or "Co-organizer"
+#   date:          ISO date (YYYY-MM-DD); sessions dated after the build are shown as upcoming
+#   co_organizers: other organizers, "Name (Affiliation)"
+#   program:       optional link to the official conference program entry
+
+- title: "Next-Generation Workflows for HPC: AI, Agentic Systems, and Scientific Discovery"
+  series: SC
+  conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
+  year: 2026
+  date: 2026-11-17
+  location: Chicago, IL, USA
+  community: Workflows Community Initiative
+  role: Co-organizer
+  co_organizers:
+    - Stephen Hudson (ANL)
+    - Daniela Cassol (LBNL)
+    - Kyle Chard (U Chicago)
+  link: https://workflows.community/bof/sc26/
+
+- title: "A Grassroots Community for Trustworthy Science"
+  series: SC
+  conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
+  year: 2026
+  date: 2026-11-18
+  location: Chicago, IL, USA
+  community: Autonomous Science Network
+  role: Lead Organizer
+  link: https://autonomousscience.org/bofs/sc26/
+
+- title: "Real-Time Scientific Data Streaming to HPC Nodes: Challenges and Innovations VI"
+  series: SC
+  conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
+  year: 2026
+  date: 2026-11-19
+  location: Chicago, IL, USA
+  community: Workflows Community Initiative
+  role: Co-organizer
+  co_organizers:
+    - Bjoern Enders (LBNL)
+  link: https://workflows.community/bof/sc26-streaming/
+
+- title: "Real-Time Scientific Data Streaming to HPC Nodes: Challenges and Innovations V"
+  series: ISC
+  conference: ISC High Performance
+  year: 2026
+  date: 2026-06-23
+  location: Hamburg, Germany
+  community: Workflows Community Initiative
+  role: Co-organizer
+  co_organizers:
+    - Bjoern Enders (NERSC)
+    - Alex Upton (CSCS)
+  link: https://workflows.community/bof/isc26-streaming/
+
+- title: "Interconnected Autonomous Science Labs Empowered by HPC and Intelligent Agents"
+  series: SC
+  conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
+  year: 2025
+  date: 2025-11-19
+  location: St. Louis, MO, USA
+  community: Autonomous Science Network
+  role: Lead Organizer
+  co_organizers:
+    - Michela Taufer (UTK)
+    - Ian Foster (ANL)
+    - Thomas Gibbs (NVIDIA)
+    - Noah Paulson (ANL)
+  link: https://autonomousscience.org/bofs/sc25/
+  program: https://sc25.conference-program.com/presentation/?id=bof213&sess=sess450
+
+- title: "Real-Time Scientific Data Streaming to HPC Nodes: Challenges and Innovations"
+  series: SC
+  conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
+  year: 2025
+  date: 2025-11-19
+  location: St. Louis, MO, USA
+  community: Workflows Community Initiative
+  role: Co-organizer
+  co_organizers:
+    - Bjoern Enders (LBNL)
+  link: https://workflows.community/bof/sc25-streaming/
+
+- title: "Bridging Intelligent Workflows with Quantum and HPC for Scientific Discovery"
+  series: SC
+  conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
+  year: 2025
+  date: 2025-11-18
+  location: St. Louis, MO, USA
+  community: Workflows Community Initiative
+  role: Lead Organizer
+  co_organizers:
+    - Daniela Cassol (LBNL)
+    - Fred Suter (ORNL)
+    - Kyle Chard (U Chicago)
+  link: https://workflows.community/bof/sc25/
+
+- title: "Real-Time Scientific Data Streaming to HPC Nodes: Challenges and Innovations"
+  series: ISC
+  conference: ISC High Performance
+  year: 2025
+  date: 2025-06-12
+  location: Hamburg, Germany
+  community: Workflows Community Initiative
+  role: Co-organizer
+  co_organizers:
+    - Bjoern Enders (NERSC)
+  link: https://workflows.community/bof/isc25-streaming/
+
+- title: "Collaborative Pathways for Designing an Integrated Infrastructure for Research Excellence"
+  series: SC
+  conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
+  year: 2024
+  date: 2024-11-19
+  location: Atlanta, GA, USA
+  community: Workflows Community Initiative
+  role: Lead Organizer
+  co_organizers:
+    - Debbie Bard (NERSC)
+    - Fred Suter (ORNL)
+    - Kyle Chard (U Chicago)
+  link: https://workflows.community/bof/sc24/
+
+- title: "Real-Time Scientific Data Streaming to HPC Nodes: Challenges and Innovations"
+  series: SC
+  conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
+  year: 2024
+  date: 2024-11-19
+  location: Atlanta, GA, USA
+  community: Workflows Community Initiative
+  role: Co-organizer
+  co_organizers:
+    - Bjoern Enders (NERSC)
+  link: https://workflows.community/bof/sc24-streaming/
+
+- title: "Modern Workflows for Continuum and Cross-Facility Computing"
+  series: SC
+  conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
+  year: 2023
+  date: 2023-11-14
+  location: Denver, CO, USA
+  community: Workflows Community Initiative
+  role: Lead Organizer
+  co_organizers:
+    - Kyle Chard (U Chicago)
+    - Olivier Terzo (LINKS Foundation)
+  link: https://workflows.community/bof/sc23/
+
+- title: "Exascale Workflows Community: A Post-ECP Roadmap for Workflow Systems and Applications"
+  series: ECP AM
+  conference: Exascale Computing Project (ECP) Annual Meeting
+  year: 2023
+  date: 2023-01-19
+  location: Houston, TX, USA
+  community: Workflows Community Initiative
+  role: Lead Organizer
+  link: https://workflows.community/bof/ecpam23/
+
+- title: "An Update on the Community Roadmap for HPC and AI Scientific Workflows Research and Development"
+  series: SC
+  conference: IEEE/ACM The International Conference for High Performance Computing, Networking, Storage, and Analysis
+  year: 2022
+  date: 2022-11-15
+  location: Dallas, TX, USA
+  community: Workflows Community Initiative
+  role: Lead Organizer
+  co_organizers:
+    - Rosa M. Badia (BSC)
+    - Kyle Chard (U Chicago)
+    - Olivier Terzo (LINKS Foundation)
+  link: https://workflows.community/bof/sc22/
