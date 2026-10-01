@@ -229,8 +229,8 @@ research_projects:
 funding:
   doe:
     - title: "ModCon – Transformational AI model consortium"
-      period: 10/2025-09/2027
-      amount: "$30,000,000"
+      period: 10/2025-10/2027
+      amount: "$36,000,000"
       role: Co-Principal Investigator
       program: Office of Advanced Scientific Computing Research (ASCR)
       award: DE-SCL0000139
