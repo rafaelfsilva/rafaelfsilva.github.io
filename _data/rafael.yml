@@ -54,7 +54,7 @@ personal:
   #   %FUNDING_TOTAL%  -> total awarded funding, e.g. "$78M+"
   #   %FUNDING_COUNT%  -> number of awards, e.g. "23"
   intro: |
-    I am a Distinguished Research Scientist and Section Head for <a href="https://www.ornl.gov/section/data-ai" target="_blank">Data and AI Systems</a> research in the <a href="https://www.ornl.gov/division/csmd" target="_blank">Computer Science and Mathematics</a> division at <a href="https://www.ornl.gov/" target="_blank">Oak Ridge National Laboratory</a> (ORNL), leading research and development in AI, data and agentic workflows, and advanced computing systems. I am also leading a task for OLCF's next supercomputer (<a href="https://www.olcf.ornl.gov/discovery/" target="_blank">Discovery</a>) focused on developing and evaluating HPC/AI workflow benchmarks.
+    I am a Distinguished Research Scientist and Section Head for <a href="https://www.ornl.gov/data-and-ai-systems-section/" target="_blank">Data and AI Systems</a> research in the <a href="https://www.ornl.gov/computer-science-and-mathematics-division/" target="_blank">Computer Science and Mathematics</a> division at <a href="https://www.ornl.gov/" target="_blank">Oak Ridge National Laboratory</a> (ORNL), leading research and development in AI, data and agentic workflows, and advanced computing systems. I am also leading a task for OLCF's next supercomputer (<a href="https://www.olcf.ornl.gov/discovery/" target="_blank">Discovery</a>) focused on developing and evaluating HPC/AI workflow benchmarks.
 
   about_sections:
     - title: Leadership & Strategic Programs
