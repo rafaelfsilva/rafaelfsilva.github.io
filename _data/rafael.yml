@@ -228,6 +228,13 @@ research_projects:
 # ==============================================================================
 funding:
   doe:
+    - title: "TRACE: Testbed for Robotics and Autonomy in Connected Experiments"
+      period: 9/2026-8/2029
+      amount: "$500,000"
+      role: Co-Principal Investigator
+      program: Office of Advanced Scientific Computing Research (ASCR)
+      award: DE-SCL0000336
+  
     - title: "ModCon – Transformational AI model consortium"
       period: 10/2025-10/2027
       amount: "$36,000,000"
