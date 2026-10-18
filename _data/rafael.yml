@@ -780,7 +780,20 @@ students:
 # ==============================================================================
 # AWARDS & HONORS
 # ==============================================================================
-awards:
+awards: 
+  - title: "DOE Secretary’s Honor Award"
+    year: 2026
+    paper: Member of the Genesis Mission team
+  
+  - title: Best Student Paper Award
+    event: 22nd IEEE Conference on eScience
+    year: 2026
+    paper: "Workflow Cards: Structured Summaries of Workflow Executions Using Provenance Data"
+
+  - title: "CCSD Director's Award for the AmSC team​"
+    year: 2025
+    paper: Computing and Computational Sciences Directorate (CCSD)
+
   - title: "2025 Outstanding Editors Awards"
     year: 2025
     paper: Future Generation Computer Systems
