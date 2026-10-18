@@ -543,7 +543,7 @@ class CVGenerator:
         if funding_count:
             metrics.append((str(funding_count), 'Competitive grants'))
         if awards:
-            metrics.append((str(len(awards)), 'Best paper awards'))
+            metrics.append((str(len(awards)), 'Awards & Honors'))
 
         if not metrics:
             return
