@@ -552,6 +552,11 @@ professional_activities:
 invited_talks:
   - year: 2026
     entries:
+      - title: What agents need from infrastructure to produce science that is auditable and reproducible, and what facilities need from agents to keep shared systems safe, efficient and fair
+        event: VAST Data for Breakfast at SC26, Panelist
+        location: Chicago, IL, USA
+        link: https://events.vastdata.com/joinusforbreakfastatsc26
+    
       - title: "Beyond the Chatbot: Where Agentic AI is Driving Government Missions"
         event: Federal AI Forum, Panelist
         location: Reston, VA, USA
