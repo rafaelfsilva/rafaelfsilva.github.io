@@ -556,6 +556,11 @@ invited_talks:
         event: VAST Data for Breakfast at SC26, Panelist
         location: Chicago, IL, USA
         link: https://events.vastdata.com/joinusforbreakfastatsc26
+
+      - title: "Python as the Connective Tissue of the Genesis Mission: From exascale workflows to federated scientific agents"
+        event: High Performance Python for Science at Scale (HPPSS)
+        location: Chicago, IL, USA
+        link: https://hppss.github.io/SC26/index.html
     
       - title: "Beyond the Chatbot: Where Agentic AI is Driving Government Missions"
         event: Federal AI Forum, Panelist
