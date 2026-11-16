@@ -859,7 +859,7 @@ media:
     venue: ORNL News
     date: June 2026
     link: https://www.ornl.gov/news/ornl-researchers-showcase-ai-driven-science-national-expo
-    image: https://www.ornl.gov/sites/default/files/styles/large/public/2026-06/AI%20Expo%2026.jpg?itok=kLYkC-I2
+    image: https://www.ornl.gov/wp-content/uploads/2026/06/AI-Expo-26-1-768x576.jpg
   
   - title: "ORNL Study Outlines Software Blueprint for Unified Quantum-HPC Integration"
     venue: Quantum Computing Report
@@ -877,7 +877,7 @@ media:
     venue: ORNL News
     date: February 2025
     link: https://www.ornl.gov/news/scientists-lay-out-vision-ai-based-labs-future
-    image: https://www.ornl.gov/sites/default/files/styles/large/public/2025-02/LabsoftheFuture.jpg?itok=EnQhXEqG
+    image: https://www.ornl.gov/wp-content/uploads/2026/06/LabsoftheFuture-768x432.jpg
 
   - title: "EPCC at SC24: the Data Analytics, Visualization, and Storage track"
     venue: EPCC
@@ -901,7 +901,7 @@ media:
     venue: Mirage.News
     date: August 2024
     link: https://www.miragenews.com/research-aims-to-unite-high-performance-quantum-1304788/
-    image: https://www.ornl.gov/sites/default/files/styles/large/public/2024-08/BeckOralSilvaMain_0.jpg?itok=r5ry8Dwy
+    image: https://www.ornl.gov/wp-content/uploads/2026/06/BeckOralSilvaMain_0-768x614.jpg
 
   - title: Study Seeks to Unite High-Performance Computing, Quantum Computing for Science
     venue: OLCF News
@@ -913,7 +913,7 @@ media:
     venue: ORNL News
     date: August 2024
     link: https://www.ornl.gov/news/study-seeks-unite-high-performance-computing-quantum-computing-science
-    image: https://www.ornl.gov/sites/default/files/styles/large/public/2024-08/BeckOralSilvaMain_0.jpg?itok=r5ry8Dwy
+    image: https://www.ornl.gov/wp-content/uploads/2026/06/BeckOralSilvaMain_0-768x614.jpg
 
   - title: "Introducing the Consortium for the Advancement of Scientific Software (CASS)"
     venue: Better Scientific Software
@@ -924,14 +924,14 @@ media:
   - title: "Pioneering Frontier: Here are a few of the many talented ORNL employees behind the construction and operation of Frontier"
     venue: ORNL Review
     date: December 2023
-    link: https://www.ornl.gov/sites/default/files/2023-11/Review%20v.56_n.2_web%20copy_0.pdf#page=23
-    image: https://www.ornl.gov/sites/default/files/styles/crop_thumbnail/public/2023-11/Review%20v.56_n.2%20cover_0.jpg
+    link: https://web.archive.org/web/20250928061457/https://www.ornl.gov/sites/default/files/2023-11/Review%20v.56_n.2_web%20copy_0.pdf#page=23
+    image: /assets/images/news/ornl-review-v56-n2-cover.jpg
 
   - title: Julia as a unifying end-to-end workflow language on the Frontier exascale system
     venue: ORNL Research Highlights
     date: November 2023
     link: https://www.ornl.gov/research-highlight/julia-unifying-end-end-workflow-language-frontier-exascale-system
-    image: https://www.ornl.gov/sites/default/files/styles/large/public/2024-01/julia_gray_scott_ornl_3.png?itok=fgK-aRFE
+    image: https://www.ornl.gov/wp-content/uploads/2026/06/julia_gray_scott_ornl_3.png
 
   - title: ExaWorks Provides Access to Community Sustained, Hardened, and Tested Components to Create Award-Winning HPC Workflows
     venue: HPCwire
@@ -943,7 +943,7 @@ media:
     venue: insideHPC
     date: July 2023
     link: https://insidehpc.com/2023/07/exaworks-tested-component-for-hpc-workflows/
-    image: https://insidehpc.com/wp-content/uploads/2023/07/ExaWorks-image-4.png
+    image: /assets/images/news/insidehpc-exaworks.png
 
   - title: DOE ASCR Selects Seed Collaborations for Software Sustainability
     venue: HPCwire
@@ -955,7 +955,7 @@ media:
     venue: insideHPC
     date: April 2023
     link: https://insidehpc.com/2023/04/doe-ascr-picks-3-national-labs-for-hpc-and-post-exascale-software-sustainability/
-    image: https://insidehpc.com/wp-content/uploads/2023/03/DOE-Office-of-Science-logo-1022.jpg
+    image: /assets/images/news/doe-office-of-science-logo.jpg
 
   - title: "HPC Career Notes: August 2022 Edition"
     venue: HPCwire
@@ -979,7 +979,7 @@ media:
     venue: insideHPC
     date: July 2022
     link: https://insidehpc.com/2022/07/ornls-rafael-ferreira-da-silva-elevated-to-ieee-senior-member/
-    image: https://insidehpc.com/wp-content/uploads/2020/08/Oak-Ridge-logo.png
+    image: /assets/images/news/oak-ridge-logo.png
 
   - title: Rafael Ferreira da Silva Elevated to IEEE Senior Member
     venue: OLCF News
