@@ -1,0 +1,135 @@
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 400; src: url("fonts/Inter-Regular.ttf") format("truetype"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 500; src: url("fonts/Inter-Medium.ttf") format("truetype"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 600; src: url("fonts/Inter-SemiBold.ttf") format("truetype"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 700; src: url("fonts/Inter-Bold.ttf") format("truetype"); }
+@font-face { font-family: "Inter"; font-style: italic; font-weight: 400; src: url("fonts/Inter-Italic.ttf") format("truetype"); }
+@font-face { font-family: "Inter Display"; font-style: normal; font-weight: 700; src: url("fonts/InterDisplay-Bold.ttf") format("truetype"); }
+
+@page { size: 8.5in 11in; margin: 0; }
+
+:root {
+  --ink: #0d1117;
+  --body: #333a44;
+  --muted: #6c7682;
+  --line: #e2e6ea;
+  --soft: #f5f7f2;
+  --accent: #76b900;
+  --accent-deep: #4f7d00;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: 8.75pt;
+  line-height: 1.44;
+  color: var(--body);
+  font-feature-settings: "calt", "ss03", "cv11";
+}
+
+.page {
+  width: 8.5in;
+  height: 11in;
+  padding: 0.5in 0.62in 0.4in;
+  position: relative;
+  overflow: hidden;
+  break-after: page;
+}
+.page:last-child { break-after: auto; }
+.page::before {
+  content: "";
+  position: absolute; top: 0; left: 0; right: 0; height: 5px;
+  background: linear-gradient(90deg, var(--accent) 0 18%, var(--ink) 18% 100%);
+}
+
+a { color: inherit; text-decoration: none; }
+b, strong { color: var(--ink); font-weight: 600; }
+p { margin: 0; }
+
+/* ---------- masthead ---------- */
+.masthead { display: block; }
+h1 {
+  font-family: "Inter Display", "Inter", sans-serif;
+  margin: 0; font-size: 25pt; line-height: 1.05; font-weight: 700;
+  letter-spacing: -0.028em; color: var(--ink);
+}
+h1 .cred { font-weight: 400; color: var(--muted); font-size: 15pt; letter-spacing: -0.01em; }
+.tagline { margin-top: 6px; font-size: 9.6pt; font-weight: 500; color: var(--ink); letter-spacing: -0.003em; }
+.tagline i { font-style: normal; color: var(--accent); padding: 0 5px; font-weight: 700; }
+.contact { margin: 9px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 2px 0; font-size: 7.9pt; color: var(--muted); }
+.contact li { padding: 0; margin: 0; white-space: nowrap; }
+.contact li + li::before { content: "·"; display: inline; position: static; background: none; width: auto; height: auto; padding: 0 5.5px; color: #b6bdc6; }
+.contact li:first-child::before { display: none; }
+.contact b { font-weight: 500; color: var(--body); }
+
+.summary { margin-top: 13px; font-size: 9.35pt; line-height: 1.5; color: var(--body); }
+
+/* ---------- KPI strip ---------- */
+.kpis {
+  margin-top: 13px; display: grid; grid-template-columns: repeat(5, 1fr);
+  background: var(--soft); border-radius: 9px; padding: 10px 4px 9px;
+}
+.kpi { padding: 0 12px; border-left: 1px solid #dfe5d6; }
+.kpi:first-child { border-left: 0; }
+.kpi .n { font-family: "Inter Display", "Inter", sans-serif; font-size: 17.5pt; line-height: 1.05; font-weight: 700; letter-spacing: -0.03em; color: var(--ink); font-variant-numeric: tabular-nums; }
+.kpi .n sup { font-size: 10pt; color: var(--accent-deep); vertical-align: top; position: relative; top: 1px; margin-left: 1px; font-weight: 700; }
+.kpi .l { margin-top: 4px; font-size: 6.9pt; line-height: 1.32; color: var(--muted); font-weight: 500; }
+
+/* ---------- sections ---------- */
+h2 {
+  margin: 14px 0 7px; font-size: 7.4pt; font-weight: 700; letter-spacing: 0.17em;
+  text-transform: uppercase; color: var(--ink);
+  display: flex; align-items: center; gap: 8px;
+}
+h2::before { content: ""; width: 7px; height: 7px; border-radius: 1.5px; background: var(--accent); flex: none; }
+h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+.org { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.org-name { font-size: 10.4pt; font-weight: 700; color: var(--ink); letter-spacing: -0.012em; }
+.org-meta { font-size: 7.9pt; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.org-note { font-size: 7.9pt; color: var(--muted); margin-top: 1px; }
+
+.role { margin-top: 7px; padding-left: 12px; border-left: 1.5px solid var(--line); }
+.role.current { border-left-color: var(--accent); }
+.role-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.role-title { font-size: 9.2pt; font-weight: 600; color: var(--ink); letter-spacing: -0.006em; }
+.role-title span { font-weight: 400; color: var(--muted); }
+.when { font-size: 7.9pt; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; font-weight: 500; }
+
+ul { margin: 3px 0 0; padding: 0; list-style: none; }
+li { position: relative; padding-left: 11px; margin: 2.4px 0; }
+li::before { content: ""; position: absolute; left: 1px; top: 0.6em; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }
+
+.org + .org, .role + .org { margin-top: 11px; }
+.block { margin-top: 10px; }
+
+/* ---------- page 2 running head ---------- */
+.runhead { display: flex; justify-content: space-between; align-items: baseline; font-size: 7.6pt; color: var(--muted); padding-bottom: 7px; border-bottom: 1px solid var(--line); }
+.runhead b { font-weight: 700; letter-spacing: -0.005em; }
+
+/* ---------- program cards ---------- */
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 7px 9px; }
+.card { border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px 8px; position: relative; }
+.card-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.card-name { font-weight: 700; color: var(--ink); font-size: 9pt; letter-spacing: -0.008em; }
+.card-amt { font-weight: 700; color: var(--accent-deep); font-size: 8.6pt; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.card-role { font-size: 7.3pt; color: var(--muted); font-weight: 500; letter-spacing: 0.02em; margin-top: 1px; }
+.card p { margin-top: 3px; font-size: 8.15pt; line-height: 1.4; }
+
+/* ---------- two-column lower area ---------- */
+.cols { display: grid; grid-template-columns: 1.12fr 0.88fr; gap: 0 26px; }
+.skills { display: grid; grid-template-columns: 78px 1fr; gap: 5px 10px; font-size: 8.3pt; line-height: 1.42; }
+.skills dt { margin: 0; font-weight: 600; color: var(--ink); font-size: 7.6pt; letter-spacing: 0.02em; padding-top: 1px; }
+.skills dd { margin: 0; }
+.plain li { margin: 2px 0; }
+.edu { font-size: 8.3pt; }
+.edu div { display: flex; justify-content: space-between; gap: 10px; margin: 2px 0; }
+.edu span:last-child { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.pubs li { font-size: 8.05pt; line-height: 1.4; }
+.pubs em { font-style: normal; color: var(--muted); }
+
+/* ---------- founded & built cards ---------- */
+.card-tag { font-size: 7.1pt; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-deep); white-space: nowrap; }
+.stats { display: flex; flex-wrap: wrap; gap: 3px 12px; margin-top: 4px; font-size: 7.6pt; color: var(--muted); }
+.stats b { font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; }

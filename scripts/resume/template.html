@@ -1,0 +1,209 @@
+<!doctype html>
+<!--
+  Résumé template rendered by scripts/generate_resume.py into
+  files/cv/RafaelFerreiraDaSilva-resume.pdf.
+
+  Double-brace tokens are filled with figures computed from _data/ and
+  _bibliography/ at build time. Edit the prose here; never hardcode a token's
+  number. The layout is tuned to exactly two US Letter pages, so added text
+  has to displace something (the script warns if the page count changes).
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rafael Ferreira da Silva, Ph.D. — Résumé</title>
+<meta name="author" content="Rafael Ferreira da Silva">
+<base href="{{ base_href }}">
+<link rel="stylesheet" href="resume.css">
+</head>
+<body>
+
+<!-- ============================== PAGE 1 ============================== -->
+<section class="page">
+
+  <header class="masthead">
+    <h1>Rafael Ferreira da Silva<span class="cred">, Ph.D.</span></h1>
+    <p class="tagline">AI for Science &amp; HPC Leader<i>/</i>Agentic AI<i>/</i>Accelerated Computing at Exascale</p>
+    <ul class="contact">
+      <li>Knoxville, Tennessee</li>
+      <li><a href="mailto:silvarf@ornl.gov">silvarf@ornl.gov</a></li>
+      <li><a href="https://rafaelsilva.com">rafaelsilva.com</a></li>
+      <li><a href="https://www.linkedin.com/in/rafaelfsilva">linkedin.com/in/rafaelfsilva</a></li>
+      <li><a href="https://github.com/rafaelfsilva">github.com/rafaelfsilva</a></li>
+    </ul>
+  </header>
+
+  <p class="summary">
+    Technically hands-on R&amp;D leader who builds high-trust, high-performance teams where AI for science meets
+    accelerated computing. Lead a <b>45+ person organization</b> at Oak Ridge National Laboratory delivering
+    agentic AI, data, and workflow systems for the world's largest GPU-accelerated supercomputers;
+    <b>promoted three times in five years</b>. Co-PI in the DOE Genesis Mission,
+    contributor to <b>{{ funding_label }}</b> in competitive awards, and co-founder of two international research communities.
+    Known for turning research prototypes into production services.
+  </p>
+
+  <div class="kpis">
+    <div class="kpi"><div class="n">45<sup>+</sup></div><div class="l">researchers and engineers led across five groups</div></div>
+    <div class="kpi"><div class="n">{{ kpi_funding }}</div><div class="l">in competitive R&amp;D awards as PI, co-PI, or senior personnel</div></div>
+    <div class="kpi"><div class="n">{{ kpi_wci_members }}</div><div class="l">members across 28 countries in the community I co-founded</div></div>
+    <div class="kpi"><div class="n">{{ kpi_citations }}</div><div class="l">citations, h-index {{ h_index }}, across {{ publications }} publications</div></div>
+    <div class="kpi"><div class="n">{{ honors_count }}</div><div class="l">honors, including the DOE Secretary's Honor Award</div></div>
+  </div>
+
+  <h2>Experience</h2>
+
+  <div class="org">
+    <div class="org-name">Oak Ridge National Laboratory</div>
+    <div class="org-meta">Oak Ridge, TN · 2021 – Present</div>
+  </div>
+  <p class="org-note">The U.S. Department of Energy's largest science and energy laboratory; home of Frontier, the first exascale supercomputer.</p>
+
+  <div class="role current">
+    <div class="role-head">
+      <div class="role-title">Section Head, Data and AI Systems <span>· Distinguished Research Scientist (2026)</span></div>
+      <div class="when">2025 – Present</div>
+    </div>
+    <ul>
+      <li>Lead a <b>45+ person R&amp;D organization of five groups</b> (Learning Systems, Workflow Systems, Data Engineering, Performance Engineering, Visualization), owning technical strategy, hiring, and delivery in a matrixed, multi-program lab.</li>
+      <li>Grew the program portfolio by helping win <b>{{ recent_doe_count_word }} new DOE awards worth {{ recent_doe_total }}</b> (total value) in {{ recent_doe_years }}, across AI foundation models, autonomous laboratories, science-aware networking, and security for agentic workflows.</li>
+      <li>Co-PI of <b>ModCon</b>, the DOE Genesis Mission consortium of 17 national labs, industry, and academia building self-improving AI models for science; co-lead its <b>23-member, 11-lab core team</b> on scientific workflows. Member of the team awarded the <b>2026 DOE Secretary's Honor Award</b>.</li>
+      <li>ORNL AI Lead for <b>OPAL</b>, a four-lab autonomous-laboratory program. Our agentic AI demonstration at the 2026 AI+ Expo cut detection-to-response cycles <b>from a week to under a minute</b>.</li>
+      <li>Task lead for HPC/AI workflow benchmarks for <b>Discovery</b>, ORNL's next leadership supercomputer.</li>
+    </ul>
+  </div>
+
+  <div class="role">
+    <div class="role-head">
+      <div class="role-title">Group Leader, Workflow and Ecosystem Services <span>· Oak Ridge Leadership Computing Facility</span></div>
+      <div class="when">2023 – 2025</div>
+    </div>
+    <ul>
+      <li>Led the group that evaluates, deploys, and supports workflow and automation services for science teams on OLCF's leadership systems, including <b>Frontier</b> (exascale) and <b>Summit</b> (NVIDIA GPU-accelerated).</li>
+      <li>Senior author of <b>S3M</b>, the Secure Scientific Service Mesh: OLCF's API layer for compute, data streaming, and workflow automation, now serving internal users <b>(Best Short Paper, PEARC '25)</b>.</li>
+      <li>Connected supercomputers to experiments: HPC and neutron-facility integration on a performance-portable CPU/GPU stack <b>(Best Paper, XLOOP '24)</b>, and a real-time data-streaming initiative with NERSC, now in its sixth edition.</li>
+      <li>Co-authored ORNL's software blueprint for <b>hybrid quantum-classical HPC</b> integration (FGCS Editor's Choice 2024; covered by HPCwire and Quantum Computing Report).</li>
+    </ul>
+  </div>
+
+  <div class="role">
+    <div class="role-head">
+      <div class="role-title">Senior Research Scientist <span>· National Center for Computational Sciences</span></div>
+      <div class="when">2021 – 2023</div>
+    </div>
+    <ul>
+      <li>Led the effort to scale and deploy scientific workflows for the launch of Frontier, standing up five officially supported workflow systems with user training.</li>
+      <li>Co-PI of <b>ExaWorks</b> (DOE Exascale Computing Project, $3.8M): shipped a hardened workflow SDK adopted by <b>six exascale applications</b>; its technologies were used by the 2020 Gordon Bell COVID-19 Special Prize winner.</li>
+      <li>Led the winning proposal for a DOE-funded center on sustaining workflow software and services.</li>
+    </ul>
+  </div>
+
+  <div class="org">
+    <div class="org-name">University of Southern California · Information Sciences Institute</div>
+    <div class="org-meta">Los Angeles, CA · 2013 – 2021</div>
+  </div>
+  <div class="role">
+    <div class="role-head">
+      <div class="role-title">Research Lead <span>· Research Assistant Professor of Computer Science · Computer Scientist</span></div>
+      <div class="when">2013 – 2021</div>
+    </div>
+    <ul>
+      <li>Contributed to <b>Pegasus</b>, the workflow system used in LIGO's Nobel-winning gravitational-wave detection; co-authored its reference paper <b>(1,300+ citations)</b>.</li>
+      <li>Co-PI of the <b>$13M DARPA MINT</b> program and PI or co-PI on 11 NSF awards; mentored 15+ student researchers.</li>
+    </ul>
+  </div>
+
+</section>
+
+<!-- ============================== PAGE 2 ============================== -->
+<section class="page">
+
+  <div class="runhead"><span><b>Rafael Ferreira da Silva, Ph.D.</b></span><span>Page 2 of 2</span></div>
+
+  <h2>Earlier Experience</h2>
+
+  <div class="org">
+    <div class="org-name">CNRS · CREATIS Laboratory</div>
+    <div class="org-meta">Lyon, France · 2010 – 2013</div>
+  </div>
+  <div class="role">
+    <div class="role-head">
+      <div class="role-title">Software Engineer</div>
+      <div class="when">2010 – 2013</div>
+    </div>
+    <ul>
+      <li>Built self-healing workflow execution for a production science gateway on the European Grid Infrastructure.</li>
+    </ul>
+  </div>
+
+  <h2>Founded and Built</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="card-head"><span class="card-name">Workflows Community Initiative</span><span class="card-tag">Co-Founder · 2022</span></div>
+      <p>International community I direct; its summits produce the roadmaps guiding workflow R&amp;D in the U.S. and Europe.</p>
+      <div class="stats"><span><b>{{ wci_members }}</b> members</span><span><b>28</b> countries</span><span><b>38</b> workflow systems</span><span><b>7</b> reports</span></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="card-name">Autonomous Science Network</span><span class="card-tag">Co-Founder · 2025</span></div>
+      <p>Grassroots network of national labs, universities, and industry building interoperable, agent-driven autonomous laboratories.</p>
+      <div class="stats"><span><b>2</b> community roadmaps</span><span><b>18</b> milestones</span><span>lead author of both</span></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="card-name">WfCommons</span><span class="card-tag">Creator · Open Source</span></div>
+      <p>Benchmark ecosystem of real workflow traces and generators for evaluating schedulers and platforms at scale.</p>
+      <div class="stats"><span><b>{{ wfcommons_articles }}</b> research articles enabled</span><span><b>318+</b> workflow instances</span></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="card-name">WRENCH</span><span class="card-tag">Co-Creator · Open Source</span></div>
+      <p>Simulation workbench for fast, validated what-if studies of distributed systems before deployment.</p>
+      <div class="stats"><span><b>{{ wrench_articles }}</b> papers and theses</span><span><b>20</b> releases</span><span><b>28K</b> lines of C++</span></div>
+    </div>
+  </div>
+
+  <h2>External Leadership</h2>
+  <ul>
+    <li><b>{{ bof_count }} Birds of a Feather sessions at {{ bof_venues }}</b> ({{ bof_years }}), {{ bof_lead_word }} as lead organizer, on AI-driven workflows, real-time data streaming, and autonomous science, with co-leaders and speakers from <b>NVIDIA</b>, Argonne, NERSC, and CSCS.</li>
+    <li><b>Research ecosystem:</b> active collaborations with principal investigators and computing leaders at 11+ DOE national laboratories, U.S. universities, and European HPC centers (BSC, CSCS, EPCC).</li>
+    <li><b>Governance:</b> Vice-Chair, IEEE Technical Community on High Performance Computing; Vice-Chair, IEEE eScience Steering Committee; Track Chair, SC24; Program Chair, IEEE eScience 2023; Special Issues Editor-in-Chief, <i>Future Generation Computer Systems</i> (2023 – 2025).</li>
+    <li><b>Speaking:</b> Federal AI Forum 2026 panel on agentic AI for government missions; SC26 panel on infrastructure for science agents; keynotes and invited talks at SOS-28 and Multicore World.</li>
+  </ul>
+
+  <div class="cols">
+    <div>
+      <h2>Core Expertise</h2>
+      <dl class="skills">
+        <dt>Leadership</dt><dd>Building high-trust, high-performance teams; technical strategy and roadmaps; hiring and talent development; program development; technical partnerships in matrixed organizations</dd>
+        <dt>AI for Science</dt><dd>Agentic AI and multi-agent systems, LLM agents and inference on leadership-class systems, scientific foundation models, federated learning, autonomous laboratories, provenance and trustworthy AI</dd>
+        <dt>Accelerated Computing</dt><dd>GPU-accelerated exascale systems, workflow orchestration, scheduling and resource management, benchmarking, performance modeling and simulation</dd>
+        <dt>Systems</dt><dd>Cross-facility orchestration, instrument-to-HPC data streaming, hybrid quantum-classical integration, cloud-edge-HPC continuum</dd>
+        <dt>Software</dt><dd>Python, C++; open-source stewardship (WfCommons, WRENCH, ExaWorks SDK, Pegasus)</dd>
+      </dl>
+    </div>
+    <div>
+      <h2>Recognition</h2>
+      <ul class="plain">
+        <li><b>DOE Secretary's Honor Award</b>, Genesis Mission team (2026)</li>
+        <li><b>Distinguished Research Scientist</b>, ORNL (2026)</li>
+        <li><b>CCSD Director's Award</b>, American Science Cloud team (2025)</li>
+        <li><b>{{ best_paper_word }} best paper awards</b> ({{ best_paper_years }})</li>
+        <li><b>Senior Member</b>, IEEE (2022) and ACM (2023)</li>
+      </ul>
+      <h2>Education</h2>
+      <div class="edu">
+        <div><span><b>Ph.D., Computer Science</b>, INSA Lyon, France</span><span>2013</span></div>
+        <div><span><b>M.S., Computer Science</b>, UFCG, Brazil</span><span>2010</span></div>
+        <div><span><b>B.S., Computer Science</b>, UFPB, Brazil</span><span>2007</span></div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Selected Publications</h2>
+  <ul class="pubs">
+    <li><b>Toward Trustworthy Autonomous Science: A Two-Year Community Roadmap.</b> <em>Lead author of 28, 2026.</em></li>
+    <li><b>The (R)evolution of Scientific Workflows in the Agentic AI Era: Towards Autonomous Science.</b> <em>SC '25 Workshops, 2025.</em></li>
+    <li><b>Frontiers in Scientific Workflows: Pervasive Integration with HPC.</b> <em>Lead author, IEEE Computer, 2024.</em></li>
+    <li><b>Integrating Quantum Computing Resources into Scientific HPC Ecosystems.</b> <em>FGCS, 2024 (Editor's Choice).</em></li>
+  </ul>
+
+</section>
+</body>
+</html>

@@ -41,6 +41,8 @@ jobs:
           pip install -r scripts/requirements.txt
       - name: Generate CV PDF
         run: python scripts/generate_cv_pdf.py
+      - name: Generate Résumé PDF
+        run: python scripts/generate_resume.py
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5

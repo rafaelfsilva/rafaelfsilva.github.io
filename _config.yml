@@ -23,6 +23,7 @@ exclude:
   - .github
   - .idea
   - .jekyll-cache
+  - scripts
 
 plugins:
   - jekyll-sitemap    # Adds sitemap to the website at /sitemap.xml
