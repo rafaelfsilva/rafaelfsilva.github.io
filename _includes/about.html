@@ -215,9 +215,11 @@
                 {{ site.data.rafael.personal.name }}, {{ site.data.rafael.personal.title }}<br />
                 {{ site.data.rafael.personal.office.institution }}<br />
                 {{ site.data.rafael.personal.office.address }}<br />
-                <a href="mailto:{{ site.data.rafael.personal.contact.email }}">{{ site.data.rafael.personal.contact.email }}</a><br />
+                <a href="mailto:{{ site.data.rafael.personal.contact.email }}">{{ site.data.rafael.personal.contact.email }}</a>
+                {% if site.data.rafael.personal.contact.phone %}<br />
                 <a href="tel:{{ site.data.rafael.personal.contact.phone | remove: ' ' | remove: '-' }}">{{ site.data.rafael.personal.contact.phone }}</a>
                 <span class="contact-note">(Office)</span>
+                {% endif %}
               </div>
             </div>
           </div>
